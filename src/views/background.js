@@ -5,6 +5,7 @@ import ChapterTitle from '../components/ChapterTitle.js';
 import SectionHeading from '../components/SectionHeading.js';
 import PhotoContainer from '../components/PhotoContainer.js';
 import QuotePhoto from '../components/QuotePhoto.js';
+import Footer from '../components/Footer.js';
 
 import chapter1_1 from '../resources/Chapter1/Chapter1_1.png';
 import chapter1_2 from '../resources/Chapter1/Chapter1_2.png';
@@ -12,6 +13,8 @@ import chapter1_3 from '../resources/Chapter1/Chapter1_3.png';
 
 import mural from '../resources/Chapter1/images/Mural.png';
 import museam from '../resources/Chapter1/images/museam.png';
+
+import quote from '../resources/Chapter1/images/quote1.png';
 
 const imgArrCh1 = [
   {
@@ -82,8 +85,68 @@ function Background(){
       </div>
 
       <div className={styles.view_fw_content}>
-        <QuotePhoto/>
+        <QuotePhoto
+          quote
+          addedMargin
+          photo={quote}
+          photoClassName={'ch1Q'}
+          quoteTxt="As part of this statist project, Urdu was projected as the only national language, much to the chagrin of Bengali leaders who, for a good reason, saw it as discriminatory against the Bengali majority. "
+        />
       </div>
+
+      <div className={styles.view_content_wrapper}>
+        <div className={styles.view_content_container}>
+          <SectionHeading heading='East Pakistanis choose the United Front Coalition over the Muslim league in 1954 provincial elections'/>
+          <p className={styles.view_para}>
+            As a result of this disillusionment with the Pakistan project soon after independence and the trajectory that it had taken, the Bengali voters routed the ruling Muslim League out of power in the first provincial elections held in 1954. The United Front of a conglomerate of Bengali opposition parties secured more than 300 seats compared to less than a dozen won by the Muslim League. Such a dramatic reversal of electoral fortunes in just seven years after independence effectively sealed the prospects of an all-Pakistan-based polity.
+          </p>
+          <p className={styles.view_para}>
+            To their credit, Bengali leadership, led by H. S. Suharawardy – and supported by his young lieutenant – Sheikh Mujib-ur-Rehman – put up spirited opposition in the assembly debates between 1954-56. They warned against the excessive rhetoric of an Islamic state as a ruse to push statist agenda of homogenization, denial of equal citizenship to non-Muslims, and diluting of Bengali political power.
+          </p>
+
+          <PhotoContainer
+            noScroll
+            imgArr = {[
+              {image: mural, caption: "Lorem ipsum dolor sit amet, consectetur adipiscing elit", widthID: "fiftyFive"},
+              {image: museam, caption: "Lorem ipsum dolor sit amet, consectetur adipiscing elit", widthID: "fortyFive"},
+            ]}
+          />
+
+          <SectionHeading heading='Martial Law and the Rise of Sheikh Mujib ur Rehman'/>
+          <p className={styles.view_para}>
+            This active phase of political opposition came to an end with the imposition of Martial Law in 1958.
+          </p>
+          <p className={styles.view_para}>
+            With the death of prominent Bengali leaders like H. S. Suharwardy, A. K. Fazlul Haq, and Khawaja Nazimuddin in quick succession, a power vacuum emerged, filled by the fiery and charismatic Sheikh Mujib-ur-Rehman.
+          </p>
+          <p className={styles.view_para}>
+            By the 1960s, in addition to the systematic denial of political rights to the Bengali majority and imposition of Urdu-centric cultural policy on the region, the question of economic disparity had become an enormous concern. Bengali leaders felt that West Pakistan was gaining at the expense of East Pakistan. As industrial growth picked up in West Pakistan, a growing sense of disillusionment in the Eastern wing had remained rural and backward. In the popular imagination, raw material from East Pakistan – especially jute – was being sold in the international market to earn foreign exchange, which was then spent on capital investments in West Pakistan. Much of the rhetoric in East Pakistan during the 1960s – especially as the much-trumpeted ‘decade of progress’ of General Ayub Khan came to a close – was that West Pakistan was using Bengal as its colony.
+          </p>
+          <p className={styles.view_para}>
+            Sheikh Mujib spearheaded the movement capitalizing on the sentiment of deprivation, inequality, unfair treatment, and exploitation. Despite his disillusionment with the Pakistan project, Mujib made a last attempt at all-Pakistan federal politics by supporting the candidacy of Fatima Jinnah – sister of the late founder of the country – against ‘Field Marshal’ Ayub Khan. Despite the tremendous public response, Fatima Jinnah lost the elections that were massively rigged against her. Sheikh Mujib had accompanied Fatima Jinnah during the election trail. The resulting electoral disaster sealed the fate of a democratic change for an inclusive federal polity.
+          </p>
+
+          <PhotoContainer
+            imgArr = {[
+              {image: mural, caption: "Lorem ipsum dolor sit amet, consectetur adipiscing elit", widthID: "fiftyFive"},
+              {image: museam, caption: "Lorem ipsum dolor sit amet, consectetur adipiscing elit", widthID: "fortyFive"},
+              {image: mural, caption: "Lorem ipsum dolor sit amet, consectetur adipiscing elit", widthID: "fiftyFive"},
+              {image: museam, caption: "Lorem ipsum dolor sit amet, consectetur adipiscing elit", widthID: "fortyFive"},
+            ]}
+          />
+
+          <p className={styles.view_para}>
+            Sheikh Mujib was subsequently arrested for his role in conspiring with India to plan the country’s dismemberment. While the trial was still underway, Ayub Khan’s regime had become immensely unpopular, leading to massive protests by students and workers, resulting in his eventual ouster. As a last-minute attempt to salvage political space for himself, Ayub Khan agreed to release Sheikh Mujib and his associates, even though charges against them were severe.
+          </p>
+        </div>
+      </div>
+
+
+      <Footer
+        projectName="Bangladesh’s Liberation War"
+        projectSubTitle="A visual history"
+        projectDescription="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
+      />
 
     </div>
   )

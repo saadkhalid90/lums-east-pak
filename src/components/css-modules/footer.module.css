@@ -1,0 +1,64 @@
+.container {
+  background: #f1f1f1;
+  padding: 50px 70px;
+  box-sizing: border-box;
+  margin-top: 40px;
+}
+
+.content_container {
+  display: flex;
+  flex-direction: column;
+}
+
+.heading_container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer_logo {
+  width: 300px;
+}
+
+.footer_heading {
+  font-family: 'Playfair Display', serif;
+  font-size: 30px;
+  color: #1B489D;
+  margin: 0px;
+}
+
+.heading_text {
+  display: flex;
+  align-items: flex-end;
+  margin: 0px;
+}
+
+.footer_sub_heading {
+  margin: 0px;
+  color: #222;
+  margin-left: 15px;
+}
+
+.footer_paragraph {
+  width: 70%;
+  color: #222;
+}
+
+.nav_sec_t {
+  color: #1B489D;
+  margin: 0px;
+}
+
+.navigation_options {
+  display: flex;
+}
+
+.navigation_options a {
+  text-decoration: none;
+  color: #222;
+  margin-right: 20px;
+}
+
+.navigation_options a:hover {
+  color: #1B489D;
+}

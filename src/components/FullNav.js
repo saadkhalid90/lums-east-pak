@@ -89,22 +89,22 @@ class FullNav extends Component {
         <MdCancel className={styles.closeIcon} onClick={() => this.closeNav()}/>
         <div ref={this.fadeRef} style={{position: 'relative'}} className={styles.project_nav_options_container}>
           <p className={styles.browse_proj_heading}>Explore more themes</p>
-          <Link to="/">
+          <Link to="/" style={{textDecoration: 'none', width: 'fit-content', cursor: 'default'}}>
             <div className={styles.navItem}>
               <p className={styles.projectTitle}><span className={styles.underline}>About the Project</span></p>
             </div>
           </Link>
-          <Link to="/ch1">
+          <Link to="/ch1" style={{textDecoration: 'none', width: 'fit-content', cursor: 'default'}}>
             <div className={styles.navItem}>
               <p className={styles.projectTitle}><span className={styles.underline}>Chapter 1</span></p>
             </div>
           </Link>
-          <Link to="/ch2">
+          <Link to="/ch2" style={{textDecoration: 'none', width: 'fit-content', cursor: 'default'}}>
             <div className={styles.navItem}>
               <p className={styles.projectTitle}><span className={styles.underline}>Chapter 2</span></p>
             </div>
           </Link>
-          <Link to="/ch3">
+          <Link to="/ch3" style={{textDecoration: 'none', width: 'fit-content', cursor: 'default'}}>
             <div className={styles.navItem}>
               <p className={styles.projectTitle}><span className={styles.underline}>Chapter 3</span></p>
             </div>
@@ -118,10 +118,10 @@ class FullNav extends Component {
           <div className={styles.disclaimer_container}>
             <p className={styles.disclaimer}>{this.props.disclaimer}</p>
           </div>
-          <div className={styles.designed_by} onClick={() => this.plotree()}>
+          {/*<div className={styles.designed_by} onClick={() => this.plotree()}>
             <i style={{marginRight: '10px'}}>Designed by Plotree Info Design</i>
             <img alt="Plotree Info Design" className={styles.plotreeLogo} src="https://res.cloudinary.com/plotree/image/upload/v1588508395/logoAlone_ueznfi.svg"/>
-          </div>
+          </div> */}
         </div>
       </div>
     )

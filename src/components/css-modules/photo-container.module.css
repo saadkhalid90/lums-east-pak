@@ -1,6 +1,7 @@
 .photo_container {
   width: 100%;
   margin: 25px 0px;
+  overflow-x: hidden;
 }
 
 .flexed_photo_container {
@@ -17,6 +18,7 @@
   display: flex;
   flex-wrap: nowrap;
   flex-shrink: 0;
+  transition: transform 0.9s cubic-bezier(0.65, 0, 0.35, 1);
 }
 
 .image_parent {
@@ -32,10 +34,15 @@
 }
 
 .image_animate {
-  width: 100%;
+  width: 110%;
   height: 100%;
   object-fit: cover;
   object-position: center;
+  transition: transform 1.4s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.image_animate:hover {
+  transform: translate3d(-8%, 0px, 0px);
 }
 
 .caption_container {
@@ -62,12 +69,13 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: #1B489D;
-  color: white;
+  background: #e0e0e0;
+  color: black;
   cursor: pointer;
+  transition: 0.25s cubic-bezier(0.76, 0, 0.24, 1);
 }
 
 .chevron_container:hover {
-  background: lightblue;
-  color: black;
+  background: #1B489D;
+  color: #F4FF72;
 }

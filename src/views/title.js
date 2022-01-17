@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import styles from './css-modules/view-styles.module.css';
 import Navbar from '../components/Navbar.js';
+import Footer from '../components/Footer.js';
 
 import chapter1_1 from '../resources/Chapter1/Chapter1_1.png';
 import chapter1_2 from '../resources/Chapter1/Chapter1_2.png';

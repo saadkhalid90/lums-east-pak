@@ -16,10 +16,10 @@ function Navbar(){
   return (
     <div>
       <nav className={styles.navbar}>
-        <img className={styles.logo} src={lumsLogo}/>
-        <img className={styles.menu} onClick={() => toggleProjectNav()} src={hambMenu}/>
+        <img alt="Lahore University of Management Sciences" className={styles.logo} src={lumsLogo}/>
+        <img alt="Menu Icon" className={styles.menu} onClick={() => toggleProjectNav()} src={hambMenu}/>
       </nav>
-      {navOpen ? <FullNav projectNavOpen={navOpen} toggleProjectNav={toggleProjectNav} disclaimer=<span>These projects are based on research conducted by students for the course <i>Walking in the City: Mapping Everyday Life in Lahore.</i></span>/> : <div></div>}
+      {navOpen ? <FullNav projectNavOpen={navOpen} toggleProjectNav={toggleProjectNav} disclaimer=<span>This project is based on research conducted by Team member names?</span>/> : <div></div>}
     </div>
   )
 }
