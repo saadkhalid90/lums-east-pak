@@ -1,0 +1,35 @@
+.sixty {
+  width: 59%;
+}
+
+.sixtyvw {
+  width: 45vw;
+}
+
+.fiftyFive {
+  width: 54%;
+}
+
+.fiftyFivevw {
+  width: 40vw;
+}
+
+.fortyFive {
+  width: 44%;
+}
+
+.fortyFivevw {
+  width: 35vw;
+}
+
+.forty {
+  width: 39%;
+}
+
+.fortyvw {
+  width: 30vw;
+}
+
+.constant_margin {
+  margin-right: 25px;
+}

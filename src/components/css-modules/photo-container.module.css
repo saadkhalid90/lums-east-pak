@@ -1,0 +1,73 @@
+.photo_container {
+  width: 100%;
+  margin: 25px 0px;
+}
+
+.flexed_photo_container {
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.horizontal_scroll_container {
+  min-width: 100%;
+  width: fit-content;
+  overflow: visible;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-shrink: 0;
+}
+
+.image_parent {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.image_container {
+  height: 325px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.image_animate {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.caption_container {
+  display: flex;
+  flex-direction: column;
+}
+
+.caption {
+  font-size: 14px;
+  margin: 10px 0px;
+}
+
+.scroll_button_container {
+  display: flex;
+  border-radius: 50px;
+  overflow: hidden;
+  width: fit-content;
+}
+
+.chevron_container {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #1B489D;
+  color: white;
+  cursor: pointer;
+}
+
+.chevron_container:hover {
+  background: lightblue;
+  color: black;
+}

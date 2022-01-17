@@ -1,0 +1,22 @@
+.navbar {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: calc(100% - 140px);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 25px 70px;
+  z-index: 3;
+}
+
+.logo {
+  width: calc(200px + 5vw);
+  cursor: pointer;
+}
+
+.menu {
+  width: calc(20px + 0.7vw);
+  cursor: pointer;
+}

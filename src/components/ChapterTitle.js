@@ -1,5 +1,7 @@
-import styles from '../css-modules/chapter-title.module.css';
+import { useState } from 'react';
+import styles from './css-modules/chapter-title.module.css';
 import mujeebBG from '../resources/MujeebBG.jpg';
+import FullNav from './FullNav';
 
 import lumsLogo from '../resources/nav/LumsArchiveLogo.png';
 import hambMenu from '../resources/nav/hamburger.png';
@@ -9,14 +11,9 @@ const titleStyle = {
   backgroundSize: `cover`
 }
 
-
 function ChapterTitle({number, imgArr, title, subtitle, desc}){
   return (
     <header className={styles.chapter_title} style={titleStyle}>
-      <nav className={styles.navbar}>
-        <img className={styles.logo} src={lumsLogo}/>
-        <img className={styles.menu} src={hambMenu}/>
-      </nav>
       <div className={styles.chapter_title_content}>
         <p className={styles.chapter_no}>Chapter - <span>{number}</span></p>
         <div className={styles.img_contain}>

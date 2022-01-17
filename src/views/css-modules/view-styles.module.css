@@ -1,0 +1,15 @@
+.view_container {
+  position: relative;
+}
+
+
+.view_content_wrapper {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+.view_content_container {
+  width: 62%;
+}
