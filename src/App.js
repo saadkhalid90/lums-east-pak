@@ -19,7 +19,7 @@ function App() {
         <Routes>
           <Route exact path="/"
             element={
-              <Chapter1/>
+              <Title/>
             }
           />
           <Route exact path="/ch1"

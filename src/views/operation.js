@@ -32,7 +32,7 @@ const imgArrCh3 = [
 function Operation(){
   return (
     <div className={styles.view_container}>
-      <Navbar/>
+      <Navbar type="chapter_title"/>
       <ChapterTitle
         number="3"
         imgArr={imgArrCh3}

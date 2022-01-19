@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+
+.chapter_title {
+  height: 100vh;
+  position: relative;
+}
+
+.navbar {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: calc(100% - 140px);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 25px 70px;
+}
+
+.logo {
+  width: calc(200px + 5vw);
+}
+
+.menu {
+  width: calc(20px + 0.7vw);
+}
+
+.chapter_title_content {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.chapter_no {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: .2rem;
+  font-size: calc(1rem + 0.8vw);
+  color: #1B489D;
+  border: 1px solid #1B489D;
+  padding: 8px 8px;
+  margin: 16px 0px 65px 0px;
+}
+
+.chapter_no span {
+    font-family: 'Playfair', serif;
+    font-size: calc(1.1rem + 0.8vw);
+    font-weight: 600;
+}
+
+.img_contain {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0px calc(19vw - 50px);
+}
+
+.img_contain img{
+  margin: 0 2px;
+}
+
+.title {
+  color: #1B489D;
+  font-size: calc(1.8rem + 1.5vw);
+  font-family: 'Playfair', serif;
+  font-weight: normal;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-family: 'Roboto', sans-serif;
+  font-size: calc(1rem + 0.8vw);
+  color: #585858;
+  font-weight: 500;
+  margin: 5px 0 12px 0px;
+}
+
+.desc {
+  font-family: 'Roboto', sans-serif;
+  font-size: calc(0.8rem + 0.2vw);
+  font-weight: 400;
+  width: max(62%, 400px);
+}
+
+.img1 {
+  width: 20%;
+}
+.img3 {
+  width: 20%;
+}
+.img2 {
+  width: 50%;
+}
+
+@media screen and (max-width: 50em) {
+
+  .img_contain {
+    flex-wrap: wrap;
+    margin: 0px 30vw;
+  }
+  .img1 {
+    width: calc(50% - 10px);
+    order:2
+  }
+  .img3 {
+    width: calc(50% - 10px);
+    order:3
+  }
+  .img2 {
+    width: 100%;
+    order:1
+  }
+
+  .chapter_no {
+    margin: 40px 0px 20px 0px;
+  }
+
+}

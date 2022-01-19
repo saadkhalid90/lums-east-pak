@@ -32,7 +32,7 @@ const imgArrCh2 = [
 function Polls(){
   return (
     <div className={styles.view_container}>
-      <Navbar/>
+      <Navbar type="chapter_title"/>
       <ChapterTitle
         number="2"
         imgArr={imgArrCh2}

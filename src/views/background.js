@@ -40,7 +40,7 @@ const imgArrCh1 = [
 function Background(){
   return (
     <div className={styles.view_container}>
-      <Navbar/>
+      <Navbar type="chapter_title"/>
       <ChapterTitle
         number="1"
         imgArr={imgArrCh1}

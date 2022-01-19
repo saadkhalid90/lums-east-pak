@@ -5,7 +5,7 @@ import FullNav from './FullNav';
 import lumsLogo from '../resources/nav/LumsArchiveLogo.png';
 import hambMenu from '../resources/nav/hamburger.png';
 
-function Navbar(){
+function Navbar({type}){
 
   const [navOpen, setNavOpen] = useState(false);
 
@@ -15,8 +15,14 @@ function Navbar(){
 
   return (
     <div>
-      <nav className={styles.navbar}>
-        <img alt="Lahore University of Management Sciences" className={styles.logo} src={lumsLogo}/>
+      <nav className={`${styles.navbar} ${styles[[type]]}`}>
+        {
+          type=="chapter_title" ? (
+            <img alt="Lahore University of Management Sciences" className={styles.logo} src={lumsLogo}/>
+          ) : (
+            <></>
+          )
+        }
         <img alt="Menu Icon" className={styles.menu} onClick={() => toggleProjectNav()} src={hambMenu}/>
       </nav>
       {navOpen ? <FullNav projectNavOpen={navOpen} toggleProjectNav={toggleProjectNav} disclaimer=<span>This project is based on research conducted by Team member names?</span>/> : <div></div>}

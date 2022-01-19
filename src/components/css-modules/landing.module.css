@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+
+.chapter_title {
+  height: 100vh;
+  position: relative;
+}
+
+.chapter_title_content {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.archive_logo {
+  width: max(22%, 250px);
+  margin-bottom: 35px;
+}
+
+.img_contain {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 0px calc(19vw - 50px);
+}
+
+.img_contain img{
+  margin: 0 3px;
+  width: 20%;
+}
+
+.title {
+  color: #1B489D;
+  font-size: calc(1.8rem + 1.5vw);
+  font-family: 'Playfair Display', serif;
+  font-weight: normal;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.subtitle {
+  font-family: 'Roboto', sans-serif;
+  font-size: calc(1rem + 0.8vw);
+  color: #585858;
+  font-weight: 500;
+  margin: 5px 0 12px 0px;
+  text-align: center;
+}
+
+.desc {
+  font-family: 'Roboto', sans-serif;
+  font-size: calc(0.8rem + 0.2vw);
+  font-weight: 400;
+  width: max(62%, 400px);
+  text-align: center;
+}
+
+
+
+@media screen and (max-width: 50em) {
+
+  .img_contain {
+    flex-wrap: wrap;
+    margin: 0px 5vw;
+  }
+  .img_contain img{
+    width: 30%
+  }
+  .img3 {
+    display: none;
+  }
+  .img4 {
+    display: none;
+  }
+  .img5 {
+    display: none;
+  }
+
+  .chapter_no {
+    margin: 40px 0px 20px 0px;
+  }
+
+}

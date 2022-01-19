@@ -5,10 +5,18 @@
   width: calc(100% - 140px);
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
   margin: 25px 70px;
   z-index: 3;
+  align-items: center;
+}
+
+.navbar.chapter_title {
+  justify-content: space-between;
+
+}
+
+.navbar.landing {
+  justify-content: flex-end;
 }
 
 .logo {
