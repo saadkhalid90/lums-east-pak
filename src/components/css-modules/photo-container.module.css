@@ -34,15 +34,16 @@
 }
 
 .image_animate {
-  width: 110%;
-  height: 100%;
+  width: 105%;
+  height: 105%;
   object-fit: cover;
   object-position: center;
   transition: transform 1.4s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 .image_animate:hover {
-  transform: translate3d(-8%, 0px, 0px);
+  transform: scale(1.075) translate3d(-3%, -2%, 0);
+
 }
 
 .caption_container {
