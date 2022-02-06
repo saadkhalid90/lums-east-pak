@@ -16,6 +16,7 @@ import museam from '../resources/Chapter1/images/museam.png';
 
 import quote from '../resources/Chapter1/images/quote1.png';
 
+
 const imgArrCh1 = [
   {
     image: chapter1_1,
@@ -94,6 +95,9 @@ function Background(){
           photo={quote}
           photoClassName={'ch1Q'}
           quoteTxt="As part of this statist project, Urdu was projected as the only national language, much to the chagrin of Bengali leaders who, for a good reason, saw it as discriminatory against the Bengali majority. "
+          quoteAlign="center"
+          color="yellow"
+          fontSize="big"
         />
       </div>
 
@@ -147,6 +151,7 @@ function Background(){
           </div>
         </div>
       </div>
+      
 
 
       <Footer
@@ -159,7 +164,6 @@ function Background(){
         nextLink="/ch2"
         chapterID={1}
       />
-
     </div>
   )
 }

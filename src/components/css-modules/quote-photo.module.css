@@ -38,9 +38,30 @@
 
 .quote {
   font-family: 'Playfair Display', serif;
+}
+
+.quote_center {
   text-align: center;
-  font-size: 24px;
-  color: #F4FF72;
+}
+
+.quote_left {
+  text-align: left;
+}
+
+.quote_white {
+  color: #FFFFFF
+}
+
+.quote_yellow {
+  color: #F4FF72
+}
+
+.quote_big {
+  font-size: 21px;
+}
+
+.quote_small {
+  font-size: 16px;
 }
 
 .quote_markers_container {
@@ -52,7 +73,7 @@
 
 .quote_marker_line {
   width: 47%;
-  height: 2px;
+  height: 1px;
   background: #F4FF72;
 }
 
