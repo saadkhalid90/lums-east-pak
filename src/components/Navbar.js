@@ -20,7 +20,7 @@ function Navbar({type}){
           type=="chapter_title" ? (
             <img alt="Lahore University of Management Sciences" className={styles.logo} src={lumsLogo}/>
           ) : (
-            <></>
+            <div></div>
           )
         }
         <img alt="Menu Icon" className={styles.menu} onClick={() => toggleProjectNav()} src={hambMenu}/>
