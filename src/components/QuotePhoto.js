@@ -17,13 +17,13 @@ function QuotePhoto({
     <div className={classNames(styles.quote_container, addedMargin && styles.added_margin_quote)}>
       <div className={styles.content_container}>
         <div className={styles.photo_container}>
-          <img src={photo} className={classNames(styles.quote_photo,photoClassName && styles[photoClassName])}/>
+          <img src={photo} className={classNames(styles.quote_photo, photoClassName && styles[photoClassName])}/>
         </div>
         <div className={styles.quote_content_container}>
           {quote ?
-            <p 
+            <p
               className={classNames(
-                styles.quote, 
+                styles.quote,
                 quoteAlign == 'left' ? styles.quote_left : styles.quote_center,
                 color == 'white' ? styles.quote_white : styles.quote_yellow,
                 fontSize == "big" ? styles.quote_big : styles.quote_small
@@ -33,6 +33,7 @@ function QuotePhoto({
             </p>
             :
             <div className={styles.content}>{content}</div>
+
           }
           {quote &&
             <div className={styles.quote_markers_container}>
