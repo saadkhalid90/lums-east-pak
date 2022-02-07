@@ -3,7 +3,7 @@ import {useState, useEffect, useRef} from 'react';
 import {useGeoData} from './useGeoData.js';
 import {useData} from './useData.js';
 import MapComp from './mapComp.js';
-import HomePara from './home_para.js';
+import HomePara from '../home_para.js';
 import {projectionEP, projectionWP, geoPathEP, geoPathWP} from './projections.js';
 import {colScale} from './partyColors.js';
 import styles from './css-modules/map.module.css';
@@ -13,6 +13,7 @@ export default function ElectMap({ mapData }){
   // custom hook reads in land geoData and constituency data;
   const epTopo = useGeoData().EP;
   const wpTopo = useGeoData().WP;
+  const psTopo = useGeoData().PS;
   const epConstLocs = useData().EP;
   const wpConstLocs = useData().WP;
 
@@ -21,16 +22,35 @@ export default function ElectMap({ mapData }){
 
   const nScenes = 5;
 
-  const mapStyles = {
-    fill: 'lightgrey',
-    fillOpacity: '0.1',
-    stroke: 'darkgrey',
-    strokeWidth: '1px',
-    strokeOpacity: '0.0'
-  };
-
   const [scene, setScene] = useState(0);
 
+  const mapStylesEP = {
+    fill: 'lightgrey',
+    fillOpacity: [2].includes(scene) ? '0.3' : ([0].includes(scene) ? '0.18' : '0.1'),
+    stroke: 'darkgrey',
+    strokeWidth: '1px',
+    strokeOpacity: '0.0',
+    transition: `fill-opacity 200ms ease-in`
+  };
+
+  const mapStylesWP = {
+    fill: 'lightgrey',
+    fillOpacity: [1].includes(scene) ? '0' : ([0].includes(scene) ? '0.18' : '0.1'),
+    stroke: 'darkgrey',
+    strokeWidth: '1px',
+    strokeOpacity: '0.0',
+    transition: `fill-opacity 200ms ease-in`
+  };
+
+  const mapStylesPS = {
+    fill: 'lightgrey',
+    fillOpacity: [1].includes(scene) ? '0.3' : '0',
+    stroke: 'darkgrey',
+    strokeWidth: '1px',
+    strokeOpacity: '0.0',
+    transition: `fill-opacity 200ms ease-in`
+  };
+  
   useEffect(() => {
     d3.select('div.wpContain')
       .select('g.actual-circle-g')
@@ -49,7 +69,7 @@ export default function ElectMap({ mapData }){
     console.log(scene + 1);
   }, [scene]);
 
-  if (!epTopo || !wpTopo || !epConstLocs || !wpConstLocs) {
+  if (!epTopo || !wpTopo || !psTopo || !epConstLocs || !wpConstLocs) {
     return (
       <div className="vizContain">
         <pre>Loading . . .</pre>
@@ -86,20 +106,22 @@ export default function ElectMap({ mapData }){
                 svgWidth = {730}
                 svgHeight = {720}
                 topoData = {wpTopo}
-                mapStyles = {mapStyles}
+                mapStyles = {mapStylesWP}
                 landkey = {'wpLand'}
                 geoProj = {projectionWP}
                 geoPath = {geoPathWP}
                 constLocs = {wpConstLocs}
                 colScale = {colScale}
                 scene = {`scene${scene+1}`}
+                addTopoData = {psTopo}
+                addMapStyles={mapStylesPS}
               />
               <MapComp
                 classNme = {'epContain'}
                 svgWidth = {340}
                 svgHeight = {450}
                 topoData = {epTopo}
-                mapStyles = {mapStyles}
+                mapStyles = {mapStylesEP}
                 landkey = {'epLand'}
                 geoProj = {projectionEP}
                 geoPath = {geoPathEP}

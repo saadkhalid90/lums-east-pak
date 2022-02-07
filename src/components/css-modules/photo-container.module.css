@@ -7,8 +7,8 @@
 .flexed_photo_container {
   display: flex;
   width: 100%;
-  align-items: flex-start;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
 }
 
 .horizontal_scroll_container {
@@ -25,25 +25,23 @@
   display: flex;
   flex-direction: column;
   cursor: pointer;
+  margin: 5px;
 }
 
 .image_container {
-  height: 325px;
   width: 100%;
   overflow: hidden;
 }
 
 .image_animate {
-  width: 105%;
-  height: 105%;
+  width: 100%;
   object-fit: cover;
   object-position: center;
-  transition: transform 1.4s cubic-bezier(0.22, 1, 0.36, 1);
+  transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
 }
 
 .image_animate:hover {
-  transform: scale(1.075) translate3d(-3%, -2%, 0);
-
+  transform: scale(1.02);
 }
 
 .caption_container {

@@ -22,12 +22,24 @@
   width: 35vw;
 }
 
+.thirtyvw {
+  width: 25vw;
+}
+
+.twentyvw {
+  width: 15vw;
+}
+
 .forty {
   width: 39%;
 }
 
 .fortyvw {
   width: 30vw;
+}
+
+.twenty {
+  width: 20%;
 }
 
 .constant_margin {

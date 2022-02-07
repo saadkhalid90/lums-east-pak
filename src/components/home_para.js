@@ -12,7 +12,6 @@ class HomePara extends Component {
       super(props);
       this.paraRef = React.createRef();
       this.state = {currState: 0, alertOpen: false, currentImage: null}
-
   }
 
   handleClose = () => {
@@ -38,7 +37,10 @@ class HomePara extends Component {
   render() {
     return (
       <div ref={this.paraRef} className={styles.container}>
-        <p className={classNames("Libre", styles.heading)}>{this.props.heading}</p>
+        {
+          this.props.heading && <p className={classNames("Libre", styles.heading)}>{this.props.heading}</p>
+        }
+        
         <div className={classNames("Lato", styles.para)} dangerouslySetInnerHTML={{ __html: this.props.para }} />
         <div className={styles.image_container}>
           {this.props.images && this.props.images.length > 0 && this.props.images.map((image, index) =>

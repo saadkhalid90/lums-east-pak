@@ -11,11 +11,12 @@ export default function MapComp({
     topoData,
     mapStyles,
     landkey,
-    geoProj,
     geoPath,
     constLocs,
     colScale,
-    scene
+    scene,
+    addTopoData,
+    addMapStyles
   }){
 
   return (
@@ -25,6 +26,13 @@ export default function MapComp({
           {
             topoData.features.map(feature => (
               <path style={mapStyles} key={landkey} d={geoPath(feature)}></path>
+            ))
+          }
+        </g>
+        <g>
+          {
+            addTopoData && addTopoData.features.map(feature => (
+              <path style={addMapStyles} key={"addLand"} d={geoPath(feature)}></path>
             ))
           }
         </g>
