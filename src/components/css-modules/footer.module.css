@@ -1,9 +1,11 @@
 .container {
-  background: #f1f1f1;
-  background: url('../../resources/footerBG.png');
+  background: url('../../resources/footerBG.png') no-repeat left bottom;
   padding: 85px 70px;
   box-sizing: border-box;
   margin-top: 40px;
+  position: sticky;
+  bottom: 0px;
+  z-index: -10;
 }
 
 .content_container {
@@ -26,7 +28,7 @@
 .footer_heading {
   font-family: 'Playfair Display', serif;
   font-size: 30px;
-  color: #1B489D;
+  color: white;
   margin: 0px;
 }
 
@@ -38,13 +40,13 @@
 
 .footer_sub_heading {
   margin: 0px;
-  color: #222;
+  color: white;
   margin-left: 15px;
 }
 
 .footer_paragraph {
   width: 100%;
-  color: #222;
+  color: white;
   width: max(62%, 400px);
   text-align: center;
   font-size: 14px;

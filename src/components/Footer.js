@@ -1,6 +1,6 @@
 import styles from './css-modules/footer.module.css';
 import classNames from 'classnames';
-import lumsLogo from '../resources/nav/LumsArchiveLogo.png';
+import lumsLogo from '../resources/nav/LumsArchiveLogoInv.png';
 import { Link } from 'react-router-dom';
 import {useEffect, useState } from 'react';
 

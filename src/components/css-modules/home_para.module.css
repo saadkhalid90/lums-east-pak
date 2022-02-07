@@ -6,9 +6,11 @@
 }
 
 .heading {
-  font-size: 24px;
+  font-size: 22px;
   margin: 0px;
   color: #1B489D;
+  font-weight: 500;
+  font-family: 'Playfair Display', serif;
 }
 
 .para {
