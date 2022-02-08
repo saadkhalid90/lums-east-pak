@@ -10,6 +10,10 @@
   width: 54%;
 }
 
+.fifty {
+  width: 49%;
+}
+
 .fiftyFivevw {
   width: 40vw;
 }
@@ -22,8 +26,20 @@
   width: 35vw;
 }
 
+.thirty {
+  width: 29%;
+}
+
 .thirtyvw {
   width: 25vw;
+}
+
+.thirtyfivevw {
+  width: 27vw;
+}
+
+.twentyfivevw {
+  width: 20vw;
 }
 
 .twentyvw {
@@ -36,6 +52,14 @@
 
 .fortyvw {
   width: 30vw;
+}
+
+.twentyseven {
+  width: 27%;
+}
+
+.twentyfive {
+  width: 25%;
 }
 
 .twenty {

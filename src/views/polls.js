@@ -85,7 +85,7 @@ const photoData = [
   {
     title: "Talks to reach a political consensus",
     description:
-      "Multiple Headlines from West Pakistan's English Daily DAwn allude to President Yahya Khan's attempts to hold talks between the political leadership of the People's Party and Awami league. However, these attempts fail to bear fruit",
+      "Multiple Headlines from West Pakistan's English Daily Dawn allude to President Yahya Khan's attempts to hold talks between the political leadership of the People's Party and Awami league. However, these attempts fail to bear fruit",
   },
   {
     title: "Mujib remains unwavering in his demands",
@@ -297,6 +297,17 @@ function Polls() {
                 },
               ]}
             />
+          </div>
+        </div>
+
+        <div className={styles.view_content_wrapper}>
+          <PhotoSwitch photoData={photoData} imgArr={newsImgArr} />
+        </div>
+      </section>
+
+      <section>
+        <div className={styles.view_content_wrapper}>
+          <div className={styles.view_content_container}>
             <p className={styles.view_para}>
               The situation in East Pakistan was tense. There was heightened
               anxiety about the delaying tactics used by Yahya’s negotiating
@@ -313,10 +324,6 @@ function Polls() {
               freedom. (find YouTube video of the address)
             </p>
           </div>
-        </div>
-
-        <div className={styles.view_content_wrapper}>
-          <PhotoSwitch photoData={photoData} imgArr={newsImgArr} />
         </div>
 
         <Footer
