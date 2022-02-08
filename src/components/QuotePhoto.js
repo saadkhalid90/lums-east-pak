@@ -49,7 +49,7 @@ function QuotePhoto({
                   styles.quote, 
                   quoteAlign == 'left' ? styles.quote_left : styles.quote_center,
                   color == 'white' ? styles.quote_white : styles.quote_yellow,
-                  fontSize == "big" ? styles.quote_big : styles.quote_small
+                  fontSize == "big" ? styles.quote_big : (fontSize == "small" ? styles.quote_small : styles.quote_smaller)
                 )}
               >
                 {quoteTxt}

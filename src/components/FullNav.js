@@ -109,6 +109,11 @@ class FullNav extends Component {
               <p className={styles.projectTitle}><span className={styles.underline}>Chapter 3</span></p>
             </div>
           </Link>
+          <Link to="/ch4" style={{textDecoration: 'none', width: 'fit-content', cursor: 'default'}}>
+            <div className={styles.navItem}>
+              <p className={styles.projectTitle}><span className={styles.underline}>Chapter 4</span></p>
+            </div>
+          </Link>
           <p className={styles.browse_proj_heading}>More from LUMS Digital Archive</p>
           <div className={styles.navItem}>
             <p className={styles.projectTitle}><span className={styles.underline}>LUMS Archive</span></p>

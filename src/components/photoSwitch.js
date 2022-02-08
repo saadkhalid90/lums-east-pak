@@ -7,7 +7,7 @@ import styles from './css-modules/photo-switch.module.css';
 
 export default function PhotoSwitch({ photoData , imgArr}){
   
-  const nScenes = 4;
+  const nScenes = imgArr.length;
 
   const [scene, setScene] = useState(0);
 

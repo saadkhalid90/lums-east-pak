@@ -85,7 +85,7 @@ const photoData = [
   {
     title: "Talks to reach a political consensus",
     description:
-      "Multiple Headlines from West Pakistan's English Daily DAwn allude to President Yahya Khan's attempts to hold talks between the political leadership of the People's Party and Awami league. However, these attempts fail to bear fruit",
+      "Multiple Headlines from West Pakistan's English Daily Dawn allude to President Yahya Khan's attempts to hold talks between the political leadership of the People's Party and Awami league. However, these attempts fail to bear fruit",
   },
   {
     title: "Mujib remains unwavering in his demands",
