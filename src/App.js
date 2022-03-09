@@ -12,6 +12,7 @@ import Chapter1 from './views/background.js';
 import Chapter2 from './views/polls.js';
 import Chapter3 from './views/operation.js';
 import Chapter4 from './views/bloodtele.js';
+import Chapter5 from './views/race.js';
 
 function App() {
   return (
@@ -41,6 +42,11 @@ function App() {
           <Route exact path="/ch4"
             element={
               <Chapter4/>
+            }
+          />
+          <Route exact path="/ch5"
+            element={
+              <Chapter5/>
             }
           />
         </Routes>
