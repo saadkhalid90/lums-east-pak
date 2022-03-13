@@ -347,6 +347,20 @@ function Race() {
             </div>
           </div>
         </div>
+<<<<<<< HEAD
+=======
+
+        <Footer
+          projectName="Bangladesh’s Liberation War"
+          projectSubTitle="A visual history"
+          projectDescription="The LUMS Digital Archive is a research repository that aims at collecting, cataloging and preserving rare material (books, pamphlets, newspapers and other items) of
+        historical significance and making them available to researchers. In particular, the archive focuses on events, groups, movements and personalities relating to broader
+        historical, political and cultural trends in South Asia, with an emphasis on preserving the accounts of marginalized and subaltern groups."
+          prevLink="/ch4"
+          nextLink="/"
+          chapterID={5}
+        />
+>>>>>>> 7c562d5cab1670adff7b7b819077c014f2a35281
       </section>
 
       <Footer

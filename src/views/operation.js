@@ -72,6 +72,8 @@ import war6 from "../resources/Chapter3/general/war6.jpeg";
 import war7 from "../resources/Chapter3/general/war7.jpeg";
 import war8 from "../resources/Chapter3/general/war8.jpeg";
 import war9 from "../resources/Chapter3/general/war9.jpeg";
+import warsaw1 from "../resources/Chapter3/general/warsaw1.jpeg";
+import warsaw2 from "../resources/Chapter3/general/warsaw2.jpeg";
 
 import news1 from "../resources/Chapter3/propaganda/news1.jpeg";
 import news2 from "../resources/Chapter3/propaganda/news2.jpeg";
@@ -797,6 +799,18 @@ function Operation() {
                   caption:
                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
                   widthID: "thirty",
+                },
+                {
+                  image: warsaw1,
+                  caption:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                  widthID: "twentyfive",
+                },
+                {
+                  image: warsaw2,
+                  caption:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                  widthID: "twentyfive",
                 },
               ]}
             />
