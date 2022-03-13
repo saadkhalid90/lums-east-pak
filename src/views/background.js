@@ -11,7 +11,10 @@ import chapter1_1 from "../resources/Chapter1/Chapter1_1.png";
 import chapter1_2 from "../resources/Chapter1/Chapter1_2.png";
 import chapter1_3 from "../resources/Chapter1/Chapter1_3.png";
 
-import mural from "../resources/Chapter1/images/Mural.png";
+import eastWestFriends from "../resources/Chapter1/East_West_Friends.jpeg";
+import tagore from "../resources/Chapter1/Tagore.png";
+
+import mural from "../resources/Chapter1/images/Mural.jpg";
 import blm from "../resources/Chapter1/images/blm.jpeg";
 
 import dawn1954 from "../resources/Chapter1/images/Dawn1954elections.png";
@@ -75,6 +78,23 @@ function Background() {
                 had awarded to India. Protesting against this decision, Jinnah
                 described it as forcing a man to live without his lungs.
               </p>
+              <PhotoContainer
+                noScroll
+                imgArr={[
+                  {
+                    image: eastWestFriends,
+                    caption:
+                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                    widthID: "fifty",
+                  },
+                  {
+                    image: tagore,
+                    caption:
+                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                    widthID: "fortyFive",
+                  },
+                ]}
+              />
               <p className={styles.view_para}>
                 Politically, the two wings disagreed on the constitutional
                 future of the country. Despite being the numerical majority, the
@@ -110,17 +130,17 @@ function Background() {
                 noScroll
                 imgArr={[
                   {
-                    image: mural,
-                    caption:
-                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-                    widthID: "fiftyFive",
-                  },
-                  {
                     image: blm,
                     caption:
                       "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
                     widthID: "fortyFive",
                   },
+                  {
+                    image: mural,
+                    caption:
+                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                    widthID: "fifty",
+                  }
                 ]}
               />
 

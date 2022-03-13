@@ -40,10 +40,44 @@ import localnews3 from "../resources/Chapter3/photoStory1/localnews_3.png";
 import localnews4 from "../resources/Chapter3/photoStory1/localnews_4.jpg";
 import localnews5 from "../resources/Chapter3/photoStory1/localnews_5.jpg";
 import localnews6 from "../resources/Chapter3/photoStory1/localnews_6.jpg";
+import AntArt from "../resources/Chapter3/AnthonyArticle.jpg";
 
 import timeRefugees from "../resources/Chapter3/time_refugees.jpg";
 import NYT from "../resources/Chapter3/NYT.jpg";
 import WSJ from "../resources/Chapter3/WSJ.jpg";
+
+import refugees1 from "../resources/Chapter3/refugees1.jpg";
+import refugees2 from "../resources/Chapter3/refugees2.jpg";
+import refugees3 from "../resources/Chapter3/refugees3.jpg";
+import refugees4 from "../resources/Chapter3/refugees4.jpg";
+
+import propPoster1 from "../resources/Chapter3/propaganda/Poster1.jpeg";
+import propPoster2 from "../resources/Chapter3/propaganda/Poster2.jpeg";
+import propPoster3 from "../resources/Chapter3/propaganda/Poster3.jpeg";
+import propPoster4 from "../resources/Chapter3/propaganda/Poster4.jpeg";
+import propPoster5 from "../resources/Chapter3/propaganda/Poster5.jpeg";
+
+import hilalHead from "../resources/Chapter3/propaganda/HilalHeadlines.png";
+import indra1 from "../resources/Chapter3/propaganda/indra1.jpg";
+import indra2 from "../resources/Chapter3/propaganda/indra2.jpg";
+import poem from "../resources/Chapter3/propaganda/poem.jpg";
+
+import war0 from "../resources/Chapter3/general/war0.jpeg";
+import war1 from "../resources/Chapter3/general/war1.jpeg";
+import war2 from "../resources/Chapter3/general/war2.jpeg";
+import war3 from "../resources/Chapter3/general/war3.jpeg";
+import war4 from "../resources/Chapter3/general/war4.jpeg";
+import war5 from "../resources/Chapter3/general/war5.jpeg";
+import war6 from "../resources/Chapter3/general/war6.jpeg";
+import war7 from "../resources/Chapter3/general/war7.jpeg";
+import war8 from "../resources/Chapter3/general/war8.jpeg";
+import war9 from "../resources/Chapter3/general/war9.jpeg";
+
+import news1 from "../resources/Chapter3/propaganda/news1.jpeg";
+import news2 from "../resources/Chapter3/propaganda/news2.jpeg";
+import news3 from "../resources/Chapter3/propaganda/news3.jpeg";
+import news4 from "../resources/Chapter3/propaganda/news4.jpeg";
+import news5 from "../resources/Chapter3/propaganda/news5.jpeg";
 
 const imgArrCh3 = [
   {
@@ -133,6 +167,11 @@ const localNewsArr = [
     width: 420,
     ar: 1.05,
   },
+  {
+    img: AntArt,
+    width: 420,
+    ar: 0.75,
+  }
 ];
 
 const localNewsData = [
@@ -166,6 +205,11 @@ const localNewsData = [
     description:
       "Here a news report publishes his statement saying that he demanded to share power at the center with Awami league as he did ‘not trust Mujib ur Rehman’s aims and intentions’",
   },
+  {
+    title: 'A Pakistan Journalist flees to publish an article titled "Genocide" in the Sunday Times',
+    description:
+      `Given the press censorship in West Pakistan, Karachi based Journalist Anthony Mascarenhas goes into self imposed exile to get his article "Genocode", published in the Sunday Times, Britain. This was the first report that exposed the excesses of the Pakitan army to the world`,
+  }
 ];
 
 function Operation() {
@@ -404,6 +448,19 @@ function Operation() {
             quotationMark={true}
           />
         </div>
+        <div class={styles.video_contain_center}>
+            <div>
+              <iframe
+                width="650"
+                height="365"
+                src="https://www.youtube.com/embed/stkcP5xl1C0"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
       </section>
 
       <section className={styles.content_section}>
@@ -488,7 +545,7 @@ function Operation() {
         </div>
       </section>
       <section className={styles.content_section}>
-      <div className={styles.view_content_wrapper}>
+        <div className={styles.view_content_wrapper}>
           <div className={styles.view_content_container}>
             <SectionHeading heading="Coverage by International Press" />
             <p className={styles.view_para}>
@@ -522,6 +579,227 @@ function Operation() {
                 },
               ]}
             />
+            <SectionHeading heading="Refugee Crisis" />
+            <p className={styles.view_para}>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui
+              dicta minus molestiae vel beatae natus eveniet ratione temporibus
+              aperiam harum alias officiis assumenda officia quibusdam deleniti
+              eos cupiditate dolore doloribus!
+            </p>
+            <PhotoContainer
+              imgArr={[
+                {
+                  image: refugees1,
+                  caption:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                  widthID: "thirty",
+                },
+                {
+                  image: refugees2,
+                  caption:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                  widthID: "thirty",
+                },
+                {
+                  image: refugees3,
+                  caption:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                  widthID: "thirty",
+                },
+                {
+                  image: refugees4,
+                  caption:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                  widthID: "twentyfive",
+                },
+              ]}
+            />
+            <SectionHeading heading="War propaganda in West Pakistan" />
+            <p className={styles.view_para}>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui
+              dicta minus molestiae vel beatae natus eveniet ratione temporibus
+              aperiam harum alias officiis assumenda officia quibusdam deleniti
+              eos cupiditate dolore doloribus!
+            </p>
+            <PhotoContainer
+              imgArr={[
+                {
+                  image: hilalHead,
+                  caption:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                  widthID: "thirty",
+                },
+                {
+                  image: indra2,
+                  caption:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                  widthID: "twentyfive",
+                },
+                {
+                  image: indra1,
+                  caption:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                  widthID: "thirtyfive",
+                },
+                {
+                  image: poem,
+                  caption:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                  widthID: "twentyfive",
+                },
+              ]}
+            />
+            <p className={styles.view_para}>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui
+              dicta minus molestiae vel beatae natus eveniet ratione temporibus
+              aperiam harum alias officiis assumenda officia quibusdam deleniti
+              eos cupiditate dolore doloribus!
+            </p>
+            <PhotoContainer
+              imgArr={[
+                {
+                  image: propPoster5,
+                  caption:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                  widthID: "twenty",
+                },
+                {
+                  image: propPoster1,
+                  caption:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                  widthID: "thirty",
+                },
+                {
+                  image: propPoster2,
+                  caption:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                  widthID: "thirty",
+                },
+                {
+                  image: propPoster3,
+                  caption:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                  widthID: "twenty",
+                },
+                {
+                  image: propPoster4,
+                  caption:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                  widthID: "twenty",
+                },
+              ]}
+            />
+            <p className={styles.view_para}>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui
+              dicta minus molestiae vel beatae natus eveniet ratione temporibus
+              aperiam harum alias officiis assumenda officia quibusdam deleniti
+              eos cupiditate dolore doloribus!
+            </p>
+            <PhotoContainer
+              imgArr={[
+                {
+                  image: news1,
+                  caption:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                  widthID: "twentyfive",
+                },
+                {
+                  image: news2,
+                  caption:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                  widthID: "twentyfive",
+                },
+                {
+                  image: news3,
+                  caption:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                  widthID: "twentyfive",
+                },
+                {
+                  image: news4,
+                  caption:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                  widthID: "twentyfive",
+                },
+                {
+                  image: news5,
+                  caption:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                  widthID: "twentyfive",
+                },
+              ]}
+            />
+            <SectionHeading heading="Archived Photos of the War" />
+            <p className={styles.view_para}>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui
+              dicta minus molestiae vel beatae natus eveniet ratione temporibus
+              aperiam harum alias officiis assumenda officia quibusdam deleniti
+              eos cupiditate dolore doloribus!
+            </p>
+            <PhotoContainer
+              imgArr={[
+                {
+                  image: war0,
+                  caption:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                  widthID: "twentyfive",
+                },
+                {
+                  image: war1,
+                  caption:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                  widthID: "thirty",
+                },
+                {
+                  image: war2,
+                  caption:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                  widthID: "thirty",
+                },
+                {
+                  image: war3,
+                  caption:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                  widthID: "twentyfive",
+                },
+                {
+                  image: war4,
+                  caption:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                  widthID: "twentyfive",
+                },
+                {
+                  image: war5,
+                  caption:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                  widthID: "thirty",
+                },
+                {
+                  image: war6,
+                  caption:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                  widthID: "thirty",
+                },
+                {
+                  image: war7,
+                  caption:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                  widthID: "twenty",
+                },
+                {
+                  image: war8,
+                  caption:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                  widthID: "thirty",
+                },
+                {
+                  image: war9,
+                  caption:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                  widthID: "thirty",
+                },
+              ]}
+            />
           </div>
         </div>
 
@@ -529,7 +807,7 @@ function Operation() {
           projectName="Bangladesh’s Liberation War"
           projectSubTitle="A visual history"
           projectDescription="The LUMS Digital Archive is a research repository that aims at collecting, cataloging and preserving rare material (books, pamphlets, newspapers and other items) of
-        historical significance and making them available to researchers. In particular, the archive focuses on events, groups, movements and personalities relating to broader
+        historical signifiance and making them available to researchers. In particular, the archive focuses on events, groups, movements and personalities relating to broader
         historical, political and cultural trends in South Asia, with an emphasis on preserving the accounts of marginalized and subaltern groups."
           prevLink="/ch2"
           nextLink="/ch3"

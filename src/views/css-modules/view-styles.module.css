@@ -28,3 +28,29 @@
   bottom: 0px;
   z-index: -5;
 }
+
+.video_contain_center {
+  display: flex;
+  justify-content: center;
+}
+
+.video_contain_center div{
+  margin: 5em;
+}
+
+.big_photo_contain {
+  display: flex;
+  justify-content: center;
+}
+
+.big_photo_contain div {
+  width: 70%;
+}
+
+.big_photo_contain div img{
+  width: 100%;
+}
+
+.caption_big_photo {
+  font-size: 0.8rem;
+}

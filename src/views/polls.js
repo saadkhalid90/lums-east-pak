@@ -324,6 +324,19 @@ function Polls() {
               freedom. (find YouTube video of the address)
             </p>
           </div>
+          <div class={styles.video_contain_center}>
+            <div>
+              <iframe
+                width="650"
+                height="365"
+                src="https://www.youtube.com/embed/5-5Xe21kjC4"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
         </div>
 
         <Footer
