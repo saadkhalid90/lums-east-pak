@@ -91,7 +91,7 @@ class FullNav extends Component {
           <p className={styles.browse_proj_heading}>Explore more themes</p>
           <Link to="/" style={{textDecoration: 'none', width: 'fit-content', cursor: 'default'}}>
             <div className={styles.navItem}>
-              <p className={styles.projectTitle}><span className={styles.underline}>About the Project</span></p>
+              <p className={styles.projectTitle}><span className={styles.underline}>Home</span></p>
             </div>
           </Link>
           <Link to="/ch1" style={{textDecoration: 'none', width: 'fit-content', cursor: 'default'}}>

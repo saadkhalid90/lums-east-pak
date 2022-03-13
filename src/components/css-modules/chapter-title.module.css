@@ -6,6 +6,7 @@
 .chapter_title {
   height: 100vh;
   position: relative;
+  z-index: 0;
 }
 
 .chapter_title_content {
@@ -16,6 +17,73 @@
   justify-content: center;
   align-items: center;
 }
+
+.chev_title_and_subtitle {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.title_and_subtitle {
+  display: flex;
+  flex-direction: column;
+}
+
+.chevron {
+  display: flex;
+  font-size: 2em;
+  margin: 0px 30px;
+  position: relative;
+  color: #1B489D;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.chevron:hover {
+  color: #ffffff;
+}
+
+.chevron_explainer {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1rem;
+  color: #1B489D;
+  font-weight: 500;
+  transition: transform 250ms ease-out, opacity 250ms ease-out;
+  z-index: 0;
+  opacity: 0;
+}
+
+.chevron_explainer_prev {
+  transform: translate(80px);
+}
+
+.chevron_explainer_next {
+  transform: translate(-80px);
+}
+
+.active {
+  transform: translate(0px);
+  opacity: 1;
+}
+
+.chevron::before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: #2584c6;
+  border-radius: 3px;
+  transform: scaleX(0);
+  transition: transform 275ms ease-in-out;
+  transform-origin: right;
+  z-index: -1;
+}
+
+.chevron:hover::before {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
 
 .chapter_no {
   font-family: 'Montserrat', sans-serif;

@@ -75,6 +75,7 @@
   height: 100%;
   overflow: hidden;
   position: relative;
+  cursor: pointer;
 }
 
 .navigation_option_image {
