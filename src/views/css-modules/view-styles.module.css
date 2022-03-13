@@ -16,7 +16,7 @@
 }
 
 .view_content_container {
-  width: 55%;
+  width: max(62%, 400px);
 }
 
 .view_para {
