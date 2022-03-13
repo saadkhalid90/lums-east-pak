@@ -24,7 +24,8 @@ function QuotePhoto({
 }){
 
   return (
-    <div className={classNames(styles.quote_container, addedMargin && styles.added_margin_quote)}>
+    <div className={classNames(styles.bg_white, addedMargin && styles.added_margin_quote)}>
+    <div className={styles.quote_container}>
       <div className={styles.content_container}>
         <div className={styles.photo_container}>
           <img src={photo} className={classNames(styles.quote_photo, photoClassName && styles[photoClassName], rotation && styles[rotation])}/>
@@ -86,6 +87,7 @@ function QuotePhoto({
           }
         </div>
       </div>
+    </div>
     </div>
   )
 }

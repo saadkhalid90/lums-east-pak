@@ -54,3 +54,9 @@
 .caption_big_photo {
   font-size: 0.8rem;
 }
+
+.content_section {
+  position: relative;
+  z-index: 1;
+  background: white;
+}

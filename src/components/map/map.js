@@ -92,7 +92,11 @@ export default function ElectMap({ mapData }) {
   } else {
     return (
       <div className={styles.sticky_container_container}>
-        <div className={styles.bg_contain} style={bgStyle}></div>
+        <div className={styles.absolute_sticky}>
+          <div className={styles.relative_stick}>
+            <div className={styles.bg_contain} style={bgStyle}></div>
+          </div>
+        </div>
         <div className={styles.sticky_container}>
           <div className={styles.map_info_container} id="map_paras_container">
             {mapData.length > 0 &&

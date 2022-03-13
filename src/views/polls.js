@@ -170,7 +170,7 @@ function Polls() {
         </div>
       </section>
 
-      <section>
+      <section className={styles.content_section}>
         <div className={styles.view_content_wrapper}>
           <div className={styles.view_content_container}>
             <SectionHeading heading="Bhola cyclone ravages East Pakistan" />
@@ -254,7 +254,7 @@ function Polls() {
         </div>
       </section>
 
-      <section>
+      <section className={styles.content_section}>
         <div className={styles.view_content_wrapper}>
           <ElectMap mapData={mapData} />
         </div>
@@ -305,7 +305,7 @@ function Polls() {
         </div>
       </section>
 
-      <section>
+      <section className={styles.content_section}>
         <div className={styles.view_content_wrapper}>
           <div className={styles.view_content_container}>
             <p className={styles.view_para}>
@@ -331,13 +331,14 @@ function Polls() {
                 height="365"
                 src="https://www.youtube.com/embed/5-5Xe21kjC4"
                 title="YouTube video player"
-                frameborder="0"
+                frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
+                allowFullscreen
               ></iframe>
             </div>
           </div>
         </div>
+        </section>
 
         <Footer
           projectName="Bangladesh’s Liberation War"
@@ -349,7 +350,6 @@ function Polls() {
           nextLink="/ch3"
           chapterID={2}
         />
-      </section>
     </div>
   );
 }
