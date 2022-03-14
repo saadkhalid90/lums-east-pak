@@ -6,11 +6,7 @@
 .chapter_title {
   height: 100vh;
   position: relative;
-<<<<<<< HEAD
   z-index: 1;
-=======
-  z-index: 0;
->>>>>>> 7c562d5cab1670adff7b7b819077c014f2a35281
 }
 
 .chapter_title_content {
