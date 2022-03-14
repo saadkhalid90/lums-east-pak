@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect } from 'react';
 import styles from "./css-modules/view-styles.module.css";
 import Navbar from "../components/Navbar.js";
 import ChapterTitle from "../components/ChapterTitle.js";
@@ -45,6 +45,9 @@ const imgArrCh5 = [
 ];
 
 function Race() {
+  useEffect(() => {
+    window.scrollTo(0,0);
+  }, []);
   return (
     <div className={styles.view_container}>
       <Navbar type="chapter_title" />

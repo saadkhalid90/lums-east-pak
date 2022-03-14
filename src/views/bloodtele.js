@@ -1,13 +1,11 @@
-import { useState } from "react";
+import { useEffect } from 'react';
 import styles from "./css-modules/view-styles.module.css";
 import Navbar from "../components/Navbar.js";
 import ChapterTitle from "../components/ChapterTitle.js";
 import SectionHeading from "../components/SectionHeading.js";
 import PhotoContainer from "../components/PhotoContainer.js";
 import QuotePhoto from "../components/QuotePhoto.js";
-import ElectMap from "../components/map/map.js";
 import Footer from "../components/Footer.js";
-import PhotoSwitch from "../components/photoSwitch.js";
 
 import chapter4_1 from "../resources/Chapter4/Chapter4_1.jpg";
 import chapter4_2 from "../resources/Chapter4/Chapter4_2.jpg";
@@ -42,6 +40,10 @@ const imgArrCh4 = [
 ];
 
 function BloodTele() {
+  useEffect(() => {
+    window.scrollTo(0,0);
+  }, []);
+
   return (
     <div className={styles.view_container}>
       <Navbar type="chapter_title" />
