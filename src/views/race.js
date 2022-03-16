@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect } from 'react';
 import styles from "./css-modules/view-styles.module.css";
 import Navbar from "../components/Navbar.js";
 import ChapterTitle from "../components/ChapterTitle.js";
@@ -45,6 +45,9 @@ const imgArrCh5 = [
 ];
 
 function Race() {
+  useEffect(() => {
+    window.scrollTo(0,0);
+  }, []);
   return (
     <div className={styles.view_container}>
       <Navbar type="chapter_title" />
@@ -347,18 +350,18 @@ function Race() {
             </div>
           </div>
         </div>
-
-        <Footer
-          projectName="Bangladesh’s Liberation War"
-          projectSubTitle="A visual history"
-          projectDescription="The LUMS Digital Archive is a research repository that aims at collecting, cataloging and preserving rare material (books, pamphlets, newspapers and other items) of
-        historical significance and making them available to researchers. In particular, the archive focuses on events, groups, movements and personalities relating to broader
-        historical, political and cultural trends in South Asia, with an emphasis on preserving the accounts of marginalized and subaltern groups."
-          prevLink="/ch4"
-          nextLink="/"
-          chapterID={5}
-        />
       </section>
+
+      <Footer
+        projectName="Bangladesh’s Liberation War"
+        projectSubTitle="A visual history"
+        projectDescription="The LUMS Digital Archive is a research repository that aims at collecting, cataloging and preserving rare material (books, pamphlets, newspapers and other items) of
+      historical significance and making them available to researchers. In particular, the archive focuses on events, groups, movements and personalities relating to broader
+      historical, political and cultural trends in South Asia, with an emphasis on preserving the accounts of marginalized and subaltern groups."
+        prevLink="/ch2"
+        nextLink="/ch3"
+        chapterID={3}
+      />
     </div>
   );
 }

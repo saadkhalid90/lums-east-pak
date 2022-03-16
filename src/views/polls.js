@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect } from 'react';
 import styles from "./css-modules/view-styles.module.css";
 import Navbar from "../components/Navbar.js";
 import ChapterTitle from "../components/ChapterTitle.js";
@@ -100,6 +100,9 @@ const photoData = [
 ];
 
 function Polls() {
+  useEffect(() => {
+    window.scrollTo(0,0);
+  }, []);
   return (
     <div className={styles.view_container}>
       <Navbar type="chapter_title" />
@@ -170,7 +173,7 @@ function Polls() {
         </div>
       </section>
 
-      <section>
+      <section className={styles.content_section}>
         <div className={styles.view_content_wrapper}>
           <div className={styles.view_content_container}>
             <SectionHeading heading="Bhola cyclone ravages East Pakistan" />
@@ -254,7 +257,7 @@ function Polls() {
         </div>
       </section>
 
-      <section>
+      <section className={styles.content_section}>
         <div className={styles.view_content_wrapper}>
           <ElectMap mapData={mapData} />
         </div>
@@ -305,7 +308,7 @@ function Polls() {
         </div>
       </section>
 
-      <section>
+      <section className={styles.content_section}>
         <div className={styles.view_content_wrapper}>
           <div className={styles.view_content_container}>
             <p className={styles.view_para}>
@@ -331,13 +334,14 @@ function Polls() {
                 height="365"
                 src="https://www.youtube.com/embed/5-5Xe21kjC4"
                 title="YouTube video player"
-                frameborder="0"
+                frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
+                allowFullscreen
               ></iframe>
             </div>
           </div>
         </div>
+        </section>
 
         <Footer
           projectName="Bangladesh’s Liberation War"
@@ -349,7 +353,6 @@ function Polls() {
           nextLink="/ch3"
           chapterID={2}
         />
-      </section>
     </div>
   );
 }

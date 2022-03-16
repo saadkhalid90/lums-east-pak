@@ -1,5 +1,5 @@
 import './App.css';
-import ChapterTitle from './components/ChapterTitle.js';
+import preloadImage from './resources/navBG.png';
 
 import {
   BrowserRouter as Router,
@@ -17,6 +17,7 @@ import Chapter5 from './views/race.js';
 function App() {
   return (
     <div className="App">
+      <img src={preloadImage} style={{display: 'none'}}></img>
       <Router>
         <Routes>
           <Route exact path="/"

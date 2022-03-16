@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect } from "react";
 import styles from "./css-modules/view-styles.module.css";
 import Navbar from "../components/Navbar.js";
 import ChapterTitle from "../components/ChapterTitle.js";
@@ -47,6 +47,11 @@ const imgArrCh1 = [
 ];
 
 function Background() {
+
+  useEffect(() => {
+    window.scrollTo(0,0);
+  }, []);
+
   return (
     <div className={styles.view_container}>
       <Navbar type="chapter_title" />
@@ -292,18 +297,18 @@ function Background() {
             </div>
           </div>
         </div>
-
-        <Footer
-          projectName="Bangladesh’s Liberation War"
-          projectSubTitle="A visual history"
-          projectDescription="The LUMS Digital Archive is a research repository that aims at collecting, cataloging and preserving rare material (books, pamphlets, newspapers and other items) of
-        historical significance and making them available to researchers. In particular, the archive focuses on events, groups, movements and personalities relating to broader
-        historical, political and cultural trends in South Asia, with an emphasis on preserving the accounts of marginalized and subaltern groups."
-          prevLink="/"
-          nextLink="/ch2"
-          chapterID={1}
-        />
       </section>
+
+      <Footer
+        projectName="Bangladesh’s Liberation War"
+        projectSubTitle="A visual history"
+        projectDescription="The LUMS Digital Archive is a research repository that aims at collecting, cataloging and preserving rare material (books, pamphlets, newspapers and other items) of
+      historical significance and making them available to researchers. In particular, the archive focuses on events, groups, movements and personalities relating to broader
+      historical, political and cultural trends in South Asia, with an emphasis on preserving the accounts of marginalized and subaltern groups."
+        prevLink="/"
+        nextLink="/ch2"
+        chapterID={1}
+      />
     </div>
   );
 }

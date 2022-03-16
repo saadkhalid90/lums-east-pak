@@ -1,7 +1,6 @@
-import { useState } from 'react';
+import { useEffect } from 'react';
 import styles from './css-modules/view-styles.module.css';
 import Navbar from '../components/Navbar.js';
-import Footer from '../components/Footer.js';
 import Landing from '../components/Landing.js';
 
 import landing_1 from '../resources/Home/Land1.jpg';
@@ -44,6 +43,9 @@ const imgArrCh1 = [
 ];
 
 function Title(){
+  useEffect(() => {
+    window.scrollTo(0,0);
+  }, []);
   return (
     <div className={styles.view_container}>
       <Navbar type="landing"/>

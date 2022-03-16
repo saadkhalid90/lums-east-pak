@@ -1,8 +1,12 @@
+.bg_white {
+  background-color: #fff;
+  padding: 60px 0px;
+}
+
 .quote_container {
   display: flex;
   flex-direction: column;
   position: relative;
-  margin: 50px 0px;
   align-items: center;
   justify-content: center;
   background: #1B489D;
@@ -10,7 +14,7 @@
 }
 
 .added_margin_quote {
-  margin: 100px 0px;
+  padding: 110px 0px;
 }
 
 .content_container {

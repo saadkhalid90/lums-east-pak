@@ -16,7 +16,11 @@ export default function PhotoSwitch({ photoData, imgArr }) {
 
   return (
     <div className={styles.sticky_container_container}>
-      <div className={styles.bg_contain} style={bgStyle}></div>
+      <div className={styles.absolute_sticky}>
+        <div className={styles.relative_stick}>
+          <div className={styles.bg_contain} style={bgStyle}></div>
+        </div>
+      </div>
       <div className={styles.sticky_container}>
         <div className={styles.photo_info_container}>
           {photoData.length > 0 &&
