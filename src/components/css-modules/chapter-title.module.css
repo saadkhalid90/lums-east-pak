@@ -98,7 +98,7 @@
 }
 
 .chapter_no span {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Montserrat', sans-serif;;
     font-size: calc(1.1rem + 0.8vw);
     font-weight: 600;
 }
@@ -149,6 +149,63 @@
 }
 .img2 {
   width: 50%;
+}
+
+.chevron_container {
+  position: relative;
+  bottom: 20px;
+  display: flex;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.chev_text {
+  font-size: 15px;
+  text-transform: uppercase;
+  margin: 0px;
+}
+
+.chevron_icon_container {
+  width: 22px;
+  height: 22px;
+  background-color: #fee500;
+  margin-left: 7px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.scroll_down_icon_arrow {
+  font-size: 26px;
+  animation: chevAnim 2s infinite;
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+@keyframes chevAnim {
+  0%   {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  56%   {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+  77%  {
+    transform: translateY(8px);
+    opacity: 0;
+  }
+  79% {
+    transform: translateY(-8px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+
 }
 
 @media screen and (max-width: 50em) {

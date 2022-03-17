@@ -1,4 +1,5 @@
 import styles from './css-modules/quote-photo.module.css';
+import { useEffect } from 'react';
 import classNames from 'classnames';
 import leftQuote from '../resources/quotes/leftQuote.png';
 import rightQuote from '../resources/quotes/rightQuote.png';

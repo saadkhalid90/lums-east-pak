@@ -23,6 +23,11 @@
   margin: 30px 0px;
 }
 
+.view_para_news {
+  margin: 30px 0px;
+  line-height: 1.35em;
+}
+
 .view_fw_content {
   position: sticky;
   bottom: 0px;
@@ -59,4 +64,16 @@
   position: relative;
   z-index: 1;
   background: white;
+}
+
+.jang {
+  background-color: #B3E5FC;
+}
+
+.jang::before {
+  content: ' ';
+}
+
+.jang::after {
+  content: ' ';
 }

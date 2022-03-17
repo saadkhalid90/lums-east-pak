@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+
 import styles from "./css-modules/view-styles.module.css";
 import Navbar from "../components/Navbar.js";
 import ChapterTitle from "../components/ChapterTitle.js";

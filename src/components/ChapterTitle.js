@@ -3,10 +3,11 @@ import mujeebBG from "../resources/MujeebBG.jpg";
 
 import { IoChevronBack } from "react-icons/io5";
 import { IoChevronForward } from "react-icons/io5";
-import { useState, useEffect } from 'react';
-// import {classNames} from 'classnames';
+import { useState, useEffect } from "react";
 
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
+import { BiChevronDown } from "react-icons/bi";
+import Fade from "@mui/material/Fade";
 
 const titleStyle = {
   background: `linear-gradient(to bottom, #FFFFFFFF 5%, #FFFFFFDE 75%, #FFFFFFF7 100%), url(${mujeebBG}) no-repeat left top`,
@@ -17,10 +18,6 @@ function ChapterTitle({ number, imgArr, title, subtitle, desc }) {
   const [prevActive, setPrevActive] = useState(false);
   const [nextActive, setNextActive] = useState(false);
 
-  // useEffect(() => {
-  //   console.log('prevActive ', prevActive);
-  //   console.log('nextActive ', nextActive);
-  // }, [prevActive, nextActive])
   return (
     <header className={styles.chapter_title} style={titleStyle}>
       <div className={styles.chapter_title_content}>
@@ -37,22 +34,24 @@ function ChapterTitle({ number, imgArr, title, subtitle, desc }) {
           ))}
         </div>
         <div className={styles.chev_title_and_subtitle}>
-          <div className={`${styles.chevron_explainer} ${styles.chevron_explainer_prev} ${prevActive && styles.active}`}>
+          <div
+            className={`${styles.chevron_explainer} ${
+              styles.chevron_explainer_prev
+            } ${prevActive && styles.active}`}
+          >
             {parseInt(number) > 1 ? `Previous Chapter` : `Home page`}
           </div>
           <Link
             to={parseInt(number) > 1 ? `/ch${parseInt(number) - 1}` : `/`}
-            onMouseEnter = {e => setPrevActive(true)}
-            onMouseLeave = {e => setPrevActive(false)}
+            onMouseEnter={(e) => setPrevActive(true)}
+            onMouseLeave={(e) => setPrevActive(false)}
             style={{
               textDecoration: "none",
               width: "fit-content",
               cursor: "default",
             }}
           >
-            <div 
-              className={styles.chevron}
-            >
+            <div className={styles.chevron}>
               <IoChevronBack />
             </div>
           </Link>
@@ -62,25 +61,33 @@ function ChapterTitle({ number, imgArr, title, subtitle, desc }) {
           </div>
           <Link
             to={parseInt(number) < 5 ? `/ch${parseInt(number) + 1}` : `/`}
-            onMouseEnter = {e => setNextActive(true)}
-            onMouseLeave = {e => setNextActive(false)}
+            onMouseEnter={(e) => setNextActive(true)}
+            onMouseLeave={(e) => setNextActive(false)}
             style={{
               textDecoration: "none",
               width: "fit-content",
               cursor: "default",
             }}
           >
-            <div 
-              className={styles.chevron}
-            >
+            <div className={styles.chevron}>
               <IoChevronForward />
             </div>
           </Link>
-          <div className={`${styles.chevron_explainer} ${styles.chevron_explainer_next} ${nextActive && styles.active}`}>
+          <div
+            className={`${styles.chevron_explainer} ${
+              styles.chevron_explainer_next
+            } ${nextActive && styles.active}`}
+          >
             {parseInt(number) < 5 ? `Next Chapter` : `Home page`}
           </div>
         </div>
         <p className={styles.desc}>{desc}</p>
+        <div className={styles.chevron_container}>
+          <p className={styles.chev_text}>Explore</p>
+          <div className={styles.chevron_icon_container}>
+            <BiChevronDown id="md_arrow" className={styles.scroll_down_icon_arrow}/>
+          </div>
+        </div>
       </div>
     </header>
   );
