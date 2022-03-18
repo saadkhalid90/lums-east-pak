@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import styles from './css-modules/navbar.module.css';
 import FullNav from './FullNav';
+import { Link } from 'react-router-dom';
 
 import lumsLogo from '../resources/nav/LumsArchiveLogo.png';
 import hambMenu from '../resources/nav/hamburger.png';
@@ -18,7 +19,9 @@ function Navbar({type}){
       <nav className={`${styles.navbar} ${styles[[type]]}`}>
         {
           type=="chapter_title" ? (
-            <img alt="Lahore University of Management Sciences" className={styles.logo} src={lumsLogo}/>
+            <Link to="/">
+              <img alt="Lahore University of Management Sciences" className={styles.logo} src={lumsLogo}/>
+            </Link>
           ) : (
             <div></div>
           )

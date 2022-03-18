@@ -8,6 +8,7 @@ import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { BiChevronDown } from "react-icons/bi";
 import Fade from "@mui/material/Fade";
+import FadeRR from 'react-reveal/Fade';
 
 const titleStyle = {
   background: `linear-gradient(to bottom, #FFFFFFFF 5%, #FFFFFFDE 75%, #FFFFFFF7 100%), url(${mujeebBG}) no-repeat left top`,
@@ -26,11 +27,12 @@ function ChapterTitle({ number, imgArr, title, subtitle, desc }) {
         </p>
         <div className={styles.img_contain}>
           {imgArr.map((image, imgIdx) => (
-            <img
-              src={image.image}
-              key={`image${imgIdx}`}
-              className={styles[`img${imgIdx + 1}`]}
-            ></img>
+            <FadeRR top distance="40px" delay={imgIdx*400} key={`image${imgIdx}`}>      
+              <img
+                src={image.image}
+                className={styles[`img${imgIdx + 1}`]}
+              ></img>
+            </FadeRR>
           ))}
         </div>
         <div className={styles.chev_title_and_subtitle}>
@@ -87,13 +89,17 @@ function ChapterTitle({ number, imgArr, title, subtitle, desc }) {
           */}
           
         </div>
-        <p className={styles.desc}>{desc}</p>
-        <div className={styles.chevron_container}>
-          <p className={styles.chev_text}>Explore</p>
-          <div className={styles.chevron_icon_container}>
-            <BiChevronDown id="md_arrow" className={styles.scroll_down_icon_arrow}/>
+        <FadeRR bottom distance="20px" delay={100}>      
+          <p className={styles.desc}>{desc}</p>
+        </FadeRR>
+        <FadeRR bottom distance="20px" delay={400}>      
+          <div className={styles.chevron_container}>
+            <p className={styles.chev_text}>Explore</p>
+            <div className={styles.chevron_icon_container}>
+              <BiChevronDown id="md_arrow" className={styles.scroll_down_icon_arrow}/>
+            </div>
           </div>
-        </div>
+        </FadeRR>
       </div>
     </header>
   );
