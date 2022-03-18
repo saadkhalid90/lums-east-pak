@@ -827,7 +827,7 @@ function Operation() {
       historical signifiance and making them available to researchers. In particular, the archive focuses on events, groups, movements and personalities relating to broader
       historical, political and cultural trends in South Asia, with an emphasis on preserving the accounts of marginalized and subaltern groups."
         prevLink="/ch2"
-        nextLink="/ch3"
+        nextLink="/ch4"
         chapterID={3}
       />
     </div>

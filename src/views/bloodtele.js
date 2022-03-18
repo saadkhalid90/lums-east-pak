@@ -333,9 +333,9 @@ function BloodTele() {
         projectDescription="The LUMS Digital Archive is a research repository that aims at collecting, cataloging and preserving rare material (books, pamphlets, newspapers and other items) of
       historical significance and making them available to researchers. In particular, the archive focuses on events, groups, movements and personalities relating to broader
       historical, political and cultural trends in South Asia, with an emphasis on preserving the accounts of marginalized and subaltern groups."
-        prevLink="/ch2"
-        nextLink="/ch3"
-        chapterID={3}
+        prevLink="/ch3"
+        nextLink="/ch5"
+        chapterID={4}
       />
     </div>
   );
