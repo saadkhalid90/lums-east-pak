@@ -36,8 +36,8 @@ function Footer({
       setPrevImage(chapter2);
     }
     else if (chapterID === 4) {
-      setNextImage(chapter3);
-      setPrevImage(chapter5);
+      setNextImage(chapter5);
+      setPrevImage(chapter3);
     }
     else if (chapterID === 5) {
       setNextImage(title);

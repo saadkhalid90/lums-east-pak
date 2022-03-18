@@ -1,7 +1,9 @@
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 import styles from "./css-modules/photo-container.module.css";
 import imageStyles from "./css-modules/image-styles.module.css";
 import classNames from "classnames";
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 import { FiChevronLeft } from "react-icons/fi";
 import { FiChevronRight } from "react-icons/fi";
 
@@ -9,6 +11,12 @@ function PhotoContainer({ noScroll, imgArr }) {
   let [xPos, update_xPos] = useState(0);
   const pictureDivRef = useRef(null);
   const scrollContainerRef = useRef(null);
+
+  useEffect(() => {
+    Aos.init({
+      duration: 450
+    })
+  }, []);
 
   function moveForward() {
     let pictureDivNode = pictureDivRef.current;
@@ -57,6 +65,9 @@ function PhotoContainer({ noScroll, imgArr }) {
           imgArr.length > 0 &&
           imgArr.map((image, index) => (
             <div
+              data-aos="fade-down"
+              data-aos-easing="ease-in-back"
+              data-aos-delay={`${index * 50}`}
               key={index}
               className={classNames(
                 styles.image_parent,
