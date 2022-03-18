@@ -19,6 +19,7 @@ import photoStory3 from "../resources/Chapter3/photoStory/photoStory3.jpg";
 import BhuttoQuote from "../resources/Chapter3/BhuttoQuote.jpg";
 
 import muktiPosters from "../resources/Chapter3/Mukti_Bahini_posters.jpg";
+import muktiPractice from "../resources/Chapter3/Mukti_Practice.jpg";
 import muktiMural from "../resources/Chapter3/MuktiMural.jpg";
 import razakaarId from "../resources/Chapter3/RazakaarId.jpeg";
 
@@ -320,6 +321,12 @@ function Operation() {
                   caption:
                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
                   widthID: "twenty",
+                },
+                {
+                  image: muktiPractice,
+                  caption:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                  widthID: "thirty",
                 },
                 {
                   image: razakaarId,

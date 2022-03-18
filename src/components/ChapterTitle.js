@@ -34,13 +34,16 @@ function ChapterTitle({ number, imgArr, title, subtitle, desc }) {
           ))}
         </div>
         <div className={styles.chev_title_and_subtitle}>
-          <div
+          {/*
+            <div
             className={`${styles.chevron_explainer} ${
               styles.chevron_explainer_prev
             } ${prevActive && styles.active}`}
           >
             {parseInt(number) > 1 ? `Previous Chapter` : `Home page`}
           </div>
+          */}
+          
           <Link
             to={parseInt(number) > 1 ? `/ch${parseInt(number) - 1}` : `/`}
             onMouseEnter={(e) => setPrevActive(true)}
@@ -73,13 +76,16 @@ function ChapterTitle({ number, imgArr, title, subtitle, desc }) {
               <IoChevronForward />
             </div>
           </Link>
-          <div
+          {/*
+            <div
             className={`${styles.chevron_explainer} ${
               styles.chevron_explainer_next
             } ${nextActive && styles.active}`}
           >
             {parseInt(number) < 5 ? `Next Chapter` : `Home page`}
           </div>
+          */}
+          
         </div>
         <p className={styles.desc}>{desc}</p>
         <div className={styles.chevron_container}>
