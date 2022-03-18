@@ -1,7 +1,6 @@
 import './App.css';
 import preloadImage from './resources/navBG.png';
-import { useEffect } from 'react';
-
+import { useEffect, useState } from 'react';
 
 import {
   BrowserRouter as Router,
@@ -38,56 +37,84 @@ import landing_3 from './resources/Home/Land3.jpg';
 import landing_4 from './resources/Home/Land4.jpg';
 import landing_5 from './resources/Home/Land5.jpg';
 
+import { Grid } from  'react-loader-spinner'
+
 function App() {
+
+  const [loaded, setLoaded] = useState(false);
+
   useEffect(() => {
     const imageArr = [chapter1_1, chapter1_2, chapter1_3, chapter4_1, chapter4_2, chapter4_3, chapter5_1, chapter5_2, chapter5_3, chapter3_1, chapter3_2, chapter3_3, chapter2_1, chapter2_2, chapter2_3, landing_1, landing_2, landing_3, landing_4, landing_5];
+    let counter = 0;
     imageArr.forEach((image) => {
-      new Image().src = image
+      if (image) {
+        let downloadingImage = new Image();
+        if (downloadingImage) {
+          downloadingImage.onload = function(){
+            counter++;
+            if (counter === imageArr.length) {
+              setLoaded(true);
+            }
+          };
+          downloadingImage.src = image;
+        }
+      }
     });
+
   }, []);
 
   return (
     <div className="App">
-      <img src={preloadImage} style={{display: 'none'}}></img>
-      <Router>
-        <Routes>
-          <Route exact path="/"
-            element={
-              <Title/>
-            }
-          />
-          <Route exact path="/ch1"
-            element={
-              <Chapter1/>
-            }
-          />
-          <Route exact path="/ch2"
-            element={
-              <Chapter2/>
-            }
-          />
-          <Route exact path="/ch3"
-            element={
-              <Chapter3/>
-            }
-          />
-          <Route exact path="/ch4"
-            element={
-              <Chapter4/>
-            }
-          />
-          <Route exact path="/ch5"
-            element={
-              <Chapter5/>
-            }
-          />
-          <Route exact path="/news"
-            element={
-              <LocalNews/>
-            }
-          />
-        </Routes>
-      </Router>
+      {!loaded ? 
+        <div style={{display: 'flex', alignItems: 'center', justifyContent: 'center', height: '100vh', width: '100%'}}>
+          <Grid color="#666" height={35} width={35} />
+        </div>  
+        :
+        <div>
+          <img src={preloadImage} style={{display: 'none'}}></img>
+          <Router>
+            <Routes>
+              <Route exact path="/"
+                element={
+                  <Title/>
+                }
+              />
+              <Route exact path="/ch1"
+                element={
+                  <Chapter1/>
+                }
+              />
+              <Route exact path="/ch2"
+                element={
+                  <Chapter2/>
+                }
+              />
+              <Route exact path="/ch3"
+                element={
+                  <Chapter3/>
+                }
+              />
+              <Route exact path="/ch4"
+                element={
+                  <Chapter4/>
+                }
+              />
+              <Route exact path="/ch5"
+                element={
+                  <Chapter5/>
+                }
+              />
+              <Route exact path="/news"
+                element={
+                  <LocalNews/>
+                }
+              />
+            </Routes>
+          </Router>
+        </div>
+      }
+
+
     </div>
   );
 }

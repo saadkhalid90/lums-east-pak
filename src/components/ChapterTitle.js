@@ -10,7 +10,6 @@ import { BiChevronDown } from "react-icons/bi";
 import Fade from "@mui/material/Fade";
 import FadeRR from 'react-reveal/Fade';
 
-
 const titleStyle = {
   background: `linear-gradient(to bottom, #FFFFFFFF 5%, #FFFFFFDE 75%, #FFFFFFF7 100%), url(${mujeebBG}) no-repeat left top`,
   backgroundSize: `cover`,
