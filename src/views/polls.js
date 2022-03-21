@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect } from "react";
 import styles from "./css-modules/view-styles.module.css";
 import Navbar from "../components/Navbar.js";
 import ChapterTitle from "../components/ChapterTitle.js";
@@ -80,28 +80,28 @@ const photoData = [
   {
     title: "Bhutto demands transfer of power to two majority parties",
     description:
-      "Speaking to supportes in Nishatar Park, Karachi on March 14, Bhutto demands that power must be transferred to to majority parties in East and West Pakistan, reinforcing the People's party's status as the leading politica force in West Pakistan. This statement however is not received well by the Awami league leadership and is also criticized by ther political parties in West Pakistan",
+      "Speaking to supporters in Nishtar Park, Karachi on March 14, Bhutto demands that power must be transferred to majority parties in East and West Pakistan, reinforcing the People's party's status as the leading political force in West Pakistan. This statement however is not received well by the Awami League leadership and is also criticized by the political parties in West Pakistan",
   },
   {
     title: "Talks to reach a political consensus",
     description:
-      "Multiple Headlines from West Pakistan's English Daily Dawn allude to President Yahya Khan's attempts to hold talks between the political leadership of the People's Party and Awami league. However, these attempts fail to bear fruit",
+      "Multiple Headlines from West Pakistan's English Daily Dawn allude to President Yahya Khan's attempts to hold talks between the political leadership of the People's Party and Awami League. However, these attempts fail to bear fruit",
   },
   {
     title: "Mujib remains unwavering in his demands",
     description:
-      "Amidst the poltical deadlock, Shiekh Mujib contnues to reiterate the message from his iconic March 7 speech about the Bengali's struggle for emancipation and freedom. In this newspaper clipping he is seen speaking to a procession on the occassion of 'Resistance Day'",
+      "Amidst the political deadlock, Sheikh Mujib continues to reiterate the message from his iconic March 7 speech about the Bengali's struggle for emancipation and freedom. In this newspaper clipping, he is seen speaking to a procession on the occasion of 'Resistance Day'",
   },
   {
-    title: "Bhutto question's Mujeeb's demands",
+    title: "Bhutto questions Mujeeb's demands",
     description:
-      "Meanwhile Bhutto and the People's party leadership continue to question the Awami League's demands for autonomy to be 'something bordering sovereignty'",
+      "Meanwhile, Bhutto and the People's party leadership continue to question the Awami League's demands for autonomy to be 'something bordering sovereignty'",
   },
 ];
 
 function Polls() {
   useEffect(() => {
-    window.scrollTo(0,0);
+    window.scrollTo(0, 0);
   }, []);
   return (
     <div className={styles.view_container}>
@@ -109,7 +109,7 @@ function Polls() {
       <ChapterTitle
         number="2"
         imgArr={imgArrCh2}
-        title="National Polls"
+        title="National Elections"
         subtitle="1970"
         desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
       />
@@ -171,6 +171,19 @@ function Polls() {
             quotationMark={true}
           />
         </div>
+        <div class={styles.video_contain_center}>
+          <div>
+            <iframe
+              width="650"
+              height="365"
+              src="https://www.youtube.com/embed/YiUR5pdVQn0"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullscreen
+            ></iframe>
+          </div>
+        </div>
       </section>
 
       <section className={styles.content_section}>
@@ -182,8 +195,7 @@ function Polls() {
               cyclone wreaked havoc in East Pakistan, killing thousands of
               people and displacing millions of others. The indifference of the
               Pakistani military elite towards the devastation of the Bengalis
-              further alienated the people of East Pakistan. (Modern Asian
-              Studies article about Bhola Cyclone)
+              further alienated the people of East Pakistan.
             </p>
             <PhotoContainer
               imgArr={[
@@ -232,12 +244,12 @@ function Polls() {
               election results gave a massive, almost unanimous, decision for
               Sheikh Mujib in East Pakistan. The Awami League grabbed 158 out of
               160 seats. Zulfiqar Ali Bhutto’s Pakistan Peoples’ Party was a
-              clear winner in West Pakistan, winning 82 out of 130(?) seats.
-              None of the West Pakistan parties had been able to win a single
-              seat in East Pakistan. The two winning parties – Awami League and
-              PPP – had not even fielded a candidate in West and East Pakistan.
-              The electoral split that started with the provincial elections of
-              1954 reached political fruition in 1970.
+              clear winner in West Pakistan, winning 82 out of 138 seats. None
+              of the West Pakistan parties had been able to win a single seat in
+              East Pakistan. The two winning parties – Awami League and PPP –
+              had not even fielded a candidate in West and East Pakistan. The
+              electoral split that started with the provincial elections of 1954
+              reached political fruition in 1970.
             </p>
           </div>
         </div>
@@ -275,7 +287,8 @@ function Polls() {
               bastion of power in Pakistan, as Bhutto put it. Hiding behind
               Bhutto’s theatrics, the military junta feigned helplessness. In
               the meanwhile, there was an increase in military buildup in East
-              Pakistan.
+              Pakistan. The Awami League responded by taking to the streets and
+              attacking non-Bengali residents and their businesses.
             </p>
             <PhotoContainer
               noScroll
@@ -341,18 +354,18 @@ function Polls() {
             </div>
           </div>
         </div>
-        </section>
+      </section>
 
-        <Footer
-          projectName="Bangladesh’s Liberation War"
-          projectSubTitle="A visual history"
-          projectDescription="The LUMS Digital Archive is a research repository that aims at collecting, cataloging and preserving rare material (books, pamphlets, newspapers and other items) of
+      <Footer
+        projectName="Bangladesh’s Liberation War"
+        projectSubTitle="A visual history"
+        projectDescription="The LUMS Digital Archive is a research repository that aims at collecting, cataloging and preserving rare material (books, pamphlets, newspapers and other items) of
         historical significance and making them available to researchers. In particular, the archive focuses on events, groups, movements and personalities relating to broader
         historical, political and cultural trends in South Asia, with an emphasis on preserving the accounts of marginalized and subaltern groups."
-          prevLink="/ch1"
-          nextLink="/ch3"
-          chapterID={2}
-        />
+        prevLink="/ch1"
+        nextLink="/ch3"
+        chapterID={2}
+      />
     </div>
   );
 }

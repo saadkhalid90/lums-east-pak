@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect } from "react";
 import styles from "./css-modules/view-styles.module.css";
 import Navbar from "../components/Navbar.js";
 import ChapterTitle from "../components/ChapterTitle.js";
@@ -13,6 +13,7 @@ import chapter4_3 from "../resources/Chapter4/Chapter4_3.jpg";
 
 import blood from "../resources/Chapter4/blood.jpg";
 import bloodTel from "../resources/Chapter4/blood telegram.jpg";
+import bloodTelSupp from "../resources/Chapter4/blood_support.jpg";
 import bloodTelBook from "../resources/Chapter4/blood telegram book.jpg";
 
 import NixKiss from "../resources/Chapter4/NixonKissinger.jpg";
@@ -41,7 +42,7 @@ const imgArrCh4 = [
 
 function BloodTele() {
   useEffect(() => {
-    window.scrollTo(0,0);
+    window.scrollTo(0, 0);
   }, []);
 
   return (
@@ -51,7 +52,7 @@ function BloodTele() {
         number="4"
         imgArr={imgArrCh4}
         title="The Blood Telegram"
-        subtitle="Nixon, Kissinger and Yahya"
+        subtitle="Testimony of a US Diplomat"
         desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat"
       />
 
@@ -97,29 +98,29 @@ function BloodTele() {
                   image: bloodTelBook,
                   caption:
                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-                  widthID: "forty",
+                  widthID: "thirty",
                 },
                 {
                   image: bloodTel,
                   caption:
                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-                  widthID: "forty",
+                  widthID: "thirty",
+                },
+                {
+                  image: bloodTelSupp,
+                  caption:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                  widthID: "thirty",
                 },
               ]}
             />
             <p className={styles.view_para}>
               In 2013, Gary J. Bass, Assistant Professor of Politics and
-              International Relations at Princeton authored The Blood Telegram:
-              Nixon, Kissinger, and a Forgotten Genocide analyzing the American
+              International Relations at Princeton, authored <i>The Blood Telegram:
+              Nixon, Kissinger, and a Forgotten Genocide</i>, analyzing the American
               position on the Bangladesh LIberation war of 1971. There are
               numerous declassified conversations between Nixon, Kissinger, and
-              other stakeholders. This chapter picks out important quotes from
-              both the Telegram itself and the book. In the following quotes,
-              you will witness everything from utilitarianism, to obsession to
-              vested interests- everything barring a concern for human lives.
-              Descriptions under each quote, if present, have been kept to a
-              minimum so that the words and the silences they imply, speak for
-              themselves.
+              other stakeholders.
             </p>
             <SectionHeading heading="Quotes from Blood Telegram" />
           </div>

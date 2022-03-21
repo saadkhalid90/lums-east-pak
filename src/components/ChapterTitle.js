@@ -15,6 +15,8 @@ const titleStyle = {
   backgroundSize: `cover`,
 };
 
+const imgDelay = 250;
+
 function ChapterTitle({ number, imgArr, title, subtitle, desc }) {
   const [prevActive, setPrevActive] = useState(false);
   const [nextActive, setNextActive] = useState(false);
@@ -27,7 +29,7 @@ function ChapterTitle({ number, imgArr, title, subtitle, desc }) {
         </p>
         <div className={styles.img_contain}>
           {imgArr.map((image, imgIdx) => (
-            <FadeRR top distance="40px" delay={imgIdx*400} key={`image${imgIdx}`}>      
+            <FadeRR top distance="40px" delay={imgIdx*imgDelay} key={`image${imgIdx}`}>      
               <img
                 src={image.image}
                 className={styles[`img${imgIdx + 1}`]}

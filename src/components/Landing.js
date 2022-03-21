@@ -17,6 +17,8 @@ const titleStyle1 = {
   background: `none`,
 };
 
+const imgDelay = 150;
+
 function Landing({ imgArr, title, subtitle, desc }) {
   return (
     <header className={styles.chapter_title} style={titleStyle}>
@@ -26,7 +28,7 @@ function Landing({ imgArr, title, subtitle, desc }) {
         </FadeRR>
         <div className={styles.img_contain}>
           {imgArr.map((image, imgIdx) => (
-            <FadeRR bottom distance="40px" delay={imgIdx*400} key={`image${imgIdx}`}>      
+            <FadeRR bottom distance="40px" delay={imgIdx*imgDelay} key={`image${imgIdx}`}>      
               <img
                 src={image.image}
                 key={`image${imgIdx}`}

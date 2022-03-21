@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect } from "react";
 import styles from "./css-modules/view-styles.module.css";
 import Navbar from "../components/Navbar.js";
 import ChapterTitle from "../components/ChapterTitle.js";
@@ -124,7 +124,7 @@ const photoData = [
   {
     title: "Awami League is banned",
     description:
-      "On March 26, 1971, Martial Law is proclaimed by President General Yahya Khan. The Presidents' statement calls Mujib's non obedience movement an act of treason. Reports of political leaders praising the Army's intervention are also seen. Bhutto famous statement 'Pakistan is saved' recorded in a deadline",
+      "The president's statement calls Mujib's non-obedience movement an act of treason. Reports of political leaders praising the Army's intervention are also seen. Bhutto's famous statement 'Pakistan is saved' recorded in a deadline",
   },
   {
     title: "Army in control, Mujib house arrested",
@@ -173,24 +173,24 @@ const localNewsArr = [
     img: AntArt,
     width: 420,
     ar: 0.75,
-  }
+  },
 ];
 
 const localNewsData = [
   {
     title: "News about returning stability after the operation",
     description:
-      "are published in Pakistani Dailies. This issue of Dawn publishes a photo of Indian supporters of Sheikh Mujib ur Rehman demonstrating in front of Pakistani Embassy in New Delhi. A headline also criticizes the false reports published in ‘Anglo-American’ press about the political crisis",
+      "are published in Pakistani Dailies. This issue of Dawn publishes a photo of Indian supporters of Sheikh Mujib ur Rehman demonstrating in front of the Pakistani Embassy in New Delhi. A headline also criticizes the false reports published in ‘Anglo-American’ press about the political crisis",
   },
   {
-    title: "While the coverage of Westen media is criticized, ",
+    title: "While the coverage of Westen media is criticized,",
     description:
-      "international press coverage and statements of global leaders supporting the official narrative are lauded across headlines in various issues",
+      "International press coverage and statements of global leaders supporting the official narrative are lauded across headlines in various issues",
   },
   {
-    title: "Photos showing Martial Law Admistration in control",
+    title: "Photos showing Martial Law Administration in control",
     description:
-      "Presdient in a meeting with his team of Martial Law administrators in President House, Rawalpindi (Top). Martial Law Administrator (East Wing), Lt. Gen Tikka Khan speaking with non-Awami league political leaders from West Pakistan (Bottom). A headline celebrates the success of the military operation with support of the Air Force",
+      "President in a meeting with his team of Martial Law administrators in President House, Rawalpindi (Top). Martial Law Administrator (East Wing), Lt. Gen Tikka Khan speaking with non-Awami league political leaders from West Pakistan (Bottom). A headline celebrates the success of the military operation with support of the Air Force",
   },
   {
     title: "Interference of India",
@@ -198,9 +198,9 @@ const localNewsData = [
       "in Pakistan’s domestic affairs becomes a key theme in English dailies from West Pakistan",
   },
   {
-    title: "Headlines on improved situation in the East Wing",
+    title: "Headlines on the improved situation in the East Wing",
     description:
-      "Continue to be published. This clipping from Dawn shows bustling activity of shoppers in a Dacca market to indicate return of normalcy",
+      "continue to be published. This clipping from Dawn shows the bustling activity of shoppers in a Dacca market to indicate the return to normalcy",
   },
   {
     title: "Bhutto becomes a spokesperson for the Martial Law Administration",
@@ -208,15 +208,15 @@ const localNewsData = [
       "Here a news report publishes his statement saying that he demanded to share power at the center with Awami league as he did ‘not trust Mujib ur Rehman’s aims and intentions’",
   },
   {
-    title: 'A Pakistan Journalist flees to publish an article titled "Genocide" in the Sunday Times',
-    description:
-      `Given the press censorship in West Pakistan, Karachi based Journalist Anthony Mascarenhas goes into self imposed exile to get his article "Genocode", published in the Sunday Times, Britain. This was the first report that exposed the excesses of the Pakitan army to the world`,
-  }
+    title:
+      'A Pakistan Journalist flees to publish an article titled "Genocide" in the Sunday Times',
+    description: `Given the press censorship in West Pakistan, Karachi based Journalist Anthony Mascarenhas goes into self-imposed exile to get his article "Genocide", published in the Sunday Times, Britain. This was the first report that exposed the excesses of the Pakitan army to the world`,
+  },
 ];
 
 function Operation() {
   useEffect(() => {
-    window.scrollTo(0,0);
+    window.scrollTo(0, 0);
   }, []);
   return (
     <div className={styles.view_container}>
@@ -236,11 +236,11 @@ function Operation() {
             <p className={styles.view_para}>
               By the third week of March, the negotiations had reached a
               dead-end. There was a back-and-forth between the negotiating teams
-              led by Awami League’s lawyers and economists and the
+              led by Awami League’s lawyers and economists, and the
               constitutional wizards of the military junta. But as Yahya Khan
-              left Dhaka on the night of 24 March (check), everyone knew that
-              the negotiations had fallen apart. They were never meant to reach
-              an agreement. As accounts provided by Khadim Husain Raja show, the
+              left Dhaka on the night of 24 March, everyone knew that the
+              negotiations had fallen apart. They were never meant to reach an
+              agreement. As accounts provided by Khadim Husain Raja show, the
               Eastern Command had been given the task of planning a military
               operation weeks ago. Given the secrecy and general distrust of
               Bengalis, the planners made sure that no Bengali officers were
@@ -278,22 +278,73 @@ function Operation() {
       <section className={styles.content_section}>
         <div className={styles.view_content_wrapper}>
           <div className={styles.view_content_container}>
-            <SectionHeading heading="Operation searchlight begins" />
+            <SectionHeading heading="Operation Searchlight begins" />
             <p className={styles.view_para}>
               What followed after 25 March 1971 was a bloodbath. The Military
               moved quickly to regain control in major cities and ports by
               taking over key installations like Radio, TV, and government
-              offices. The human toll of ‘establishing the writ’ was
-              innumerable. In all autobiographical accounts penned by military
-              officers taking part in the operation and the weekly situation
-              reports published in Military’s mouthpiece – Hilal – along with
-              major Urdu dailies in West Pakistan, and even English dailies in
-              Dhaka – the success of the operation was described in terms of
-              ‘neutralizing,’ ‘taking control,’ ‘eliminating’ or ‘clearing’ the
-              areas. Such language helped mask the brutality of the operation
-              that targeted civilians along with the band of Bengali separatists
-              – Mukti Bahini.
+              offices. The human toll of ‘establishing the writ’ was innumerable
+              as confirmed by autobiographical accounts penned by various
+              military officers taking part in the operation. The weekly
+              situation reports published in Military’s mouthpiece – Hilal –
+              along with major Urdu dailies in West Pakistan, and even English
+              dailies in Dhaka – described the success of the operation in terms
+              of ‘neutralizing,’ ‘taking control,’ ‘eliminating’ or ‘clearing’
+              the areas. These euphemisms helped mask the brutality of the
+              operation that targeted civilians along with the band of Bengali
+              separatists – Mukti Bahini.
             </p>
+            <div class={styles.video_contain_center}>
+              <div>
+                <iframe
+                  width="650"
+                  height="365"
+                  src="https://www.youtube.com/embed/TLyU7uffO6o"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
+            <p className={styles.view_para}>
+              The military operation marked the end of the political process.
+              The military had refused to accept the almost unanimous electoral
+              verdict in Sheikh Mujib’s demands for maximum political autonomy.
+              From 25 March onwards, the Bengalis viewed the military as an
+              occupying force formally issued a declaration of independence, and
+              started fighting what they thought was a legitimate liberation
+              war.
+            </p>
+            <p className={styles.view_para}>
+              One of the most brutal encounters took place in Dhaka University.
+              M B Naqvi, a Pakistani journalist, shares his account of what he
+              witnessed at the Jaganath Hall - the main residential building for
+              Hindu students at Dhaka University. A partial transcript of
+              military units engaged in the operation at Dhaka University has
+              also survived.
+            </p>
+            <p className={styles.view_para}>
+              Once there was some semblance of ‘normalcy’, the military issued a
+              warning to teachers for their alleged ‘anti-state’ activities. It
+              also sent notices to Awami League’s member elects - most of whom
+              had already crossed the border to enter India - for their alleged
+              atrocities and acts of arson, looting and violence in East
+              Pakistan.
+            </p>
+            <div class={styles.video_contain_center}>
+              <div>
+                <iframe
+                  width="650"
+                  height="365"
+                  src="https://www.youtube.com/embed/J9NcosVnOMo"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
             <SectionHeading heading="Emergence of Paramilitary forces - Mukti Bahini, Al-Badr and Al-Shams" />
             <p className={styles.view_para}>
               The widespread massacre and the fact that the Military had
@@ -302,17 +353,16 @@ function Operation() {
               the Biharis living in East Pakistan and a handful of Bengali
               Islamists, no significant section of the Bengali community
               supported the idea of a united Pakistan anymore. So much so that a
-              substantial chunk of the Bengali military, mainly comprising of
-              units in the East Pakistan Rifles, defected to join the freedom
-              fighters. The entire diplomatic staff of the Pakistani consulate
-              in Calcutta defected to join the government in exile. Mujib was in
-              Montgomery jail (present-day Sahiwal), where he was being tried
-              for treason. (news items about his trial) His associates had
+              substantial chunk of the Bengali military, mainly units in the
+              East Pakistan Rifles, defected to join the freedom fighters. The
+              entire diplomatic staff of the Pakistani consulate in Calcutta
+              defected to join the government in exile. Mujib was in a jail in
+              Punjab, where he was being tried for treason. His associates had
               managed to escape when the operation started and crossed the
               border into India to establish the government in exile. Some of
               the leading figures ended up in London and other major capitals of
               the world to garner support for the cause of the Bangladeshi
-              liberation movement. (news items about government in exile)
+              liberation movement.
             </p>
             <PhotoContainer
               imgArr={[
@@ -348,9 +398,15 @@ function Operation() {
               Al-Badar and Al-Shams. Mainly comprising young Bengalis belonging
               to the Jamat-i-Islami, these volunteers served as a vital source
               in providing logistic support to the Military in identifying
-              critical targets for its operations. (Use Salim Mansoor Khalid’s
-              book for membership cards, oath of allegiance; news items in Hilal
-              about their ‘activities,’ General Niazi’s address to their cadres)
+              critical targets for its operations.
+            </p>
+            <p className={styles.view_para}>
+              The volunteer corps of Al-Badr and Al-Shams were complicit in the
+              war crimes committed during the military operation. Towards the
+              end of the war, as defeat seemed imminent, the Pakistani military
+              and their collaborators killed hundreds of Bengali intellectuals,
+              journalists, and lawyers, with the intention to bleed the country
+              to devastation.
             </p>
           </div>
         </div>
@@ -364,6 +420,19 @@ function Operation() {
               cause was the Concert for Bangladesh, where iconic artists like
               Ravi Shankar and George Harrison performed.
             </p>
+            <div class={styles.video_contain_center}>
+              <div>
+                <iframe
+                  width="650"
+                  height="365"
+                  src="https://www.youtube.com/embed/Tby39qh9Lts"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
             <PhotoContainer
               noScroll
               imgArr={[
@@ -387,6 +456,19 @@ function Operation() {
                 },
               ]}
             />
+            <div class={styles.video_contain_center}>
+              <div>
+                <iframe
+                  width="650"
+                  height="365"
+                  src="https://www.youtube.com/embed/stkcP5xl1C0"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
           </div>
         </div>
         <div className={styles.view_fw_content}>
@@ -459,24 +541,31 @@ function Operation() {
             quotationMark={true}
           />
         </div>
-        <div class={styles.video_contain_center}>
-            <div>
-              <iframe
-                width="650"
-                height="365"
-                src="https://www.youtube.com/embed/stkcP5xl1C0"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-              ></iframe>
-            </div>
-          </div>
       </section>
 
       <section className={styles.content_section}>
         <div className={styles.view_content_wrapper}>
           <div className={styles.view_content_container}>
+            <p className={styles.view_para}>
+              Pakistan tried to sway the international opinion in its favor by
+              producing counter-propaganda material. Here is a short clip from a
+              documentary that the official Pakistani television produced to
+              give a background to the East Pakistan crisis and the rationale
+              for conducting a military operation.
+            </p>
+            <div class={styles.video_contain_center}>
+              <div>
+                <iframe
+                  width="650"
+                  height="365"
+                  src="https://www.youtube.com/embed/AETYaUKT__0"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen
+                ></iframe>
+              </div>
+            </div>
             <SectionHeading heading="Influence of US Foreign Policy" />
             <p className={styles.view_para}>
               However, at the official level, the US government led by Nixon and
@@ -485,10 +574,10 @@ function Operation() {
               significant ally that had helped establish a diplomatic thaw
               between China and the US. The Pakistani Military facilitated this
               exchange at the expense of considerable cost, i.e., open Soviet
-              hostility. Soviets responded by signing a friendship treaty with
-              India, supplying them with a large cache of arms and ammunition,
-              which was eventually used in the decisive battle against Pakistan
-              in November-December 1971. (Use Nixon-Kissinger transcripts)
+              hostility. The Soviets responded by signing a friendship treaty
+              with India, supplying them with a large cache of arms and
+              ammunition, which was eventually used in the decisive battle
+              against Pakistan in November-December 1971.
             </p>
             <PhotoContainer
               imgArr={[
@@ -524,22 +613,16 @@ function Operation() {
               pressure at home and from its diplomatic staff, the US
               administration could only take a mitigated stance rather than open
               support for India. In particular, the US looked at India’s role in
-              the East Pakistan crisis with suspicion. At one point [can’t
-              remember if it was an encounter after ’71 or before that; need to
-              check], Henry Kissinger’s wife asked the Bangladeshi delegation to
-              accept support from India, Pakistan’s arch-rival. Nurul Islam
-              responded that it was for the same logic that the American
-              founding fathers took financial and military support from France
-              in their fight against British tyranny.
+              the East Pakistan crisis with suspicion.
             </p>
             <SectionHeading heading="Coverage by West Pakistani Press" />
             <p className={styles.view_para}>
               Throughout the military operation, the people in West Pakistan
               were largely oblivious of the excesses committed in the name of
               national security. The political parties – especially Bhutto’s PPP
-              – were scared to voice opposition against and found it suitable as
-              it paved the way for Bhutto to assume the role of leadership in
-              the country. He served as the military junta’s spokesperson to the
+              – were scared to voice opposition and found it suitable as it
+              paved the way for Bhutto to assume the role of leadership in the
+              country. He served as the military junta’s spokesperson to the
               international community.
             </p>
             <p className={styles.view_para}>
@@ -561,11 +644,11 @@ function Operation() {
             <SectionHeading heading="Coverage by International Press" />
             <p className={styles.view_para}>
               The international press, however, was critical of Pakistan. There
-              were numerous reports (cite from international press) about the
-              humanitarian crisis emerging from the military operation. In
-              particular, the international community focused on the burgeoning
-              numbers of refugees – close to 10 million – who had assembled at
-              various border crossings between East Bengal and India.
+              were numerous reports about the humanitarian crisis emerging from
+              the military operation. In particular, the international community
+              focused on the burgeoning numbers of refugees – close to 10
+              million – who had assembled at various border crossings between
+              East Bengal and India.
             </p>
             <PhotoContainer
               noScroll

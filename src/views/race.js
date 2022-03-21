@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+import { useEffect } from "react";
 import styles from "./css-modules/view-styles.module.css";
 import Navbar from "../components/Navbar.js";
 import ChapterTitle from "../components/ChapterTitle.js";
@@ -46,7 +46,7 @@ const imgArrCh5 = [
 
 function Race() {
   useEffect(() => {
-    window.scrollTo(0,0);
+    window.scrollTo(0, 0);
   }, []);
   return (
     <div className={styles.view_container}>
@@ -68,24 +68,24 @@ function Race() {
               racial hatred for Bengalis as the other. Pakistan's top generals
               described Bengalis as inferior, effeminate, and treacherous in
               their autobiographical and war histories. As an ultimate mark of
-              racial inferiority and hatred, they told them as 'Hindu-like' in
-              their features, mindset, and worldviews. Therefore, for the West
-              Pakistani Military, the Bengalis were to be reformed and civilized
-              – a project aimed at racial purity that could only have been
-              genocidal in its effect.
+              racial inferiority and hatred, they described them as 'Hindu-like'
+              in their features, mindset, and worldviews. Therefore, for the
+              West Pakistani Military, the Bengalis were to be reformed and
+              civilized – a project aimed at racial purity that could only have
+              been genocidal in its effect.
             </p>
             <p className={styles.view_para}>
               Across several diary entries, Ayub quotes various persons who only
               cement his racism by offering virulent portraits of the Bengalis.
               For instance, Qazi Qadir, a minister in East Pakistan, pronounces
-              that "Bengalis are by nature treacherous and unreliable," 151
-              writer Nirad Chaudhari concludes that "Bengalis, and for that
-              matter, all the Hindus, are not capable of governing themselves
-              nor exercising political power. They are narrow-minded and
-              fractious and suffer from crises of character," 152 and in a 1968
-              Ministry of Information and Broadcasting report on East Pakistan,
-              Joint Secretary Aftab Ahmad deems Bengalis to "psychologically"
-              have "a strong craving for attention."
+              that "Bengalis are by nature treacherous and unreliable," writer
+              Nirad Chaudhari concludes that "Bengalis, and for that matter, all
+              the Hindus, are not capable of governing themselves nor exercising
+              political power. They are narrow-minded and fractious and suffer
+              from crises of character," and in a 1968 Ministry of Information
+              and Broadcasting report on East Pakistan, Joint Secretary Aftab
+              Ahmad deems Bengalis to "psychologically" have "a strong craving
+              for attention."
             </p>
           </div>
         </div>
@@ -102,25 +102,25 @@ function Race() {
                   conform to any rational yardstick" and that it was only with
                   the birth of Pakistan that Bengalis "got the blessing of
                   freedom... Any normal people should have recognised and
-                  rejoiced at this blessing…" 154 but their "minds are totally
-                  shut to reason, and full of suspicion and skepticism.
-                  Geography, history, climate, natural hazards, and racial
-                  traits might well be responsible for this malady."
+                  rejoiced at this blessing…" but their "minds are totally shut
+                  to reason, and full of suspicion and skepticism. Geography,
+                  history, climate, natural hazards, and racial traits might
+                  well be responsible for this malady."
                 </li>
                 <li>
                   In other instances, he mentions that until and unless Bengalis
                   adopt Urdu, "the vehicle in which Muslim thought and
                   philosophy is expressed……If not careful they will have no
                   choice but to drift back to Hinduism and be engulfed by it."
-                  165 Bengali demands for democratic rights and the assertion of
+                  Bengali demands for democratic rights and the assertion of
                   their own culture, literature and heritage is only seen as a
                   dangerous reversion and slide to Hinduism which must be
                   stifled and the Bengalis rescued from.
                 </li>
                 <li>
-                  Ayub's aversion and loathing for this remains unconcealed when
-                  he tells Khawaja Shahabuddin, "We could not think of a worst
-                  combination. Hindus and Bengalis." 166 He later allows his
+                  Ayub's aversion and loathing for this remain unconcealed when
+                  he tells Khawaja Shahabuddin, "We could not think of a worse
+                  combination. Hindus and Bengalis." He later allows his
                   antipathy towards Bengalis and Hindus to merge and morph into
                   the idea that most Bengali beliefs are only barely punctuated
                   by Islam because they are essentially, deeply un-Islamic and
@@ -148,8 +148,8 @@ function Race() {
         <div className={styles.view_content_wrapper}>
           <div className={styles.view_content_container}>
             <p className={styles.view_para}>
-              167 At other points, he also insinuated that the Bengalis maintain
-              an affinity for India.168 The conclusion he attained from this
+              At other points, he also insinuated that the Bengalis maintain an
+              affinity for India. The conclusion he attained from this
               characterization of the Bengalis, which combined his earlier
               racism into a blatant otherization that flagged them as
               relentlessly Hinduism and India-inclined in their "language and
@@ -161,16 +161,16 @@ function Race() {
             <p className={styles.view_para}>
               The thinly veiled contempt and blanket condemnation of Bengali
               culture is exemplified in Brigadier Asif Haroon's book which
-              employs old tropes such as the "emotional Bengali" 185 and the
-              malicious Hindu bania186 to elucidate 'Hinduization' and its
+              employs old tropes such as the "emotional Bengali" and the
+              malicious Hindu <i>bania</i> to elucidate 'Hinduization' and its
               permeation in Bengali arts, clothes, drama, dance, TV, music,
               literature, and even the ritual practice of Islam among Bengali
-              Muslims too.187 Major General Hakeem Arshad Qureshi, who had
+              Muslims too. Major General Hakeem Arshad Qureshi, who had
               commanded the 26th battalion of the Frontier Force Regiment in
               Saidpur in East Pakistan and was part of the 90,000 prisoners of
               war taken by India at the end of the war, also seconds Haroon that
               "Bengali Muslims were set up for a cultural onslaught by Bengali
-              writers, mostly Hindus." 188 While villainous characterization of
+              writers, mostly Hindus." While villainous characterization of
               Hindus, Hinduism and Hindu culture in East Pakistan are manifest,
               it is equally notable that even Bengali Muslims are incriminated
               in the sweeping charge of 'Hinduization' which displaces their
@@ -184,24 +184,8 @@ function Race() {
             addedMargin
             photo={eastPakEndgame}
             photoClassName={"ch2Q_6points"}
-            quoteTxt={`Brigadier Siddiqi admits that Operation Searchlight and the army's
-            activities in East Pakistan were "not just temporary missions of
-            pacification but one of conversion and transformation of the
-            Bengalis into true Muslims and Pakistanis" 233 and that the top
-            leadership of the Pakistani Military, including General Niazi and
-            General Rahim were "hell-bent on cleansing the Bengali race and
-            culture." 234 The otherization of the Bengalis as "Hindus" and
-            "traitors" had been rendered complete to the extent that even
-            among ordinary West Pakistanis a deep indifference to the Bengalis
-            was palpable. There was an "absence of any brotherly feelings for
-            the East Pakistanis. They might as well have belonged to Biafra or
-            South Africa for all that one heard or saw. No consideration for
-            human suffering seemed to exist at all." 235 The Hamoodur Rahman
-            Commission recorded Rao Farman Ali's testimony that Tikka Khan had
-            told the troops "What have I been hearing about shortage of
-            rations? Are not there any cows and goats in this country? This is
-            enemy territory. Get what you want. This is what we used to do in
-            Burma."
+            quoteTxt={`
+              Brigadier Siddiqi admits that Operation Searchlight and the army's activities in East Pakistan were "not just temporary missions of pacification but one of conversion and transformation of the Bengalis into true Muslims and Pakistanis" and that the top leadership of the Pakistani Military, including General Niazi and General Rahim were "hell-bent on cleansing the Bengali race and culture." - The otherization of the Bengalis as "Hindus" and "traitors" had been rendered complete to the extent that even among ordinary West Pakistanis a deep indifference to the Bengalis was palpable. There was an "absence of any brotherly feelings for the East Pakistanis. They might as well have belonged to Biafra or South Africa for all that one heard or saw. No consideration for human suffering seemed to exist at all." The Hamoodur Rahman Commission recorded Rao Farman Ali's testimony that Tikka Khan had told the troops "What have I been hearing about shortage of rations? Are not there any cows and goats in this country? This is enemy territory. Get what you want. This is what we used to do in Burma."
               `}
             quoteAlign="left"
             color="white"
@@ -219,26 +203,16 @@ function Race() {
           <div className={styles.view_content_container}>
             <SectionHeading heading="Rape as a Military Weapon" />
             <p className={styles.view_para}>
-              One of the pivotal conceptualizations which emerged from the
-              conflict in Rwanda and Bosnia in the 1990s was that sexual
-              violence was a weapon of war.195 Jonathan Gottschall enumerates
-              four theoretical explanations for wartime rape: the feminist
-              theory; the cultural pathology theory; the strategic rape theory;
-              and the biosocial theory.196 Out of these, my focus is on the
-              Strategic Rape Theory which represents wholesale rape as "just
-              another ordinance like bombs, bullets, or propaganda that a
-              military can use to accomplish its strategic objectives; rape is a
-              tactic executed by soldiers in the service of larger strategic
-              objectives. While supporters of this position do not always claim
-              that military planners explicitly instruct soldiers to rape, the
-              implication is clear: Wartime rape is a coherent, coordinated,
-              logical, and brutally effective means of prosecuting warfare." 197
-              Given the sheer scale of the sexual violence committed by the
-              Pakistan Army during 1971, the strategic rape theory is
-              significant since it rules out both sexual desire and dislocates
-              the necessity of an explicit military command as causal factors,
-              centering military objectives and the consequences of rape
-              instead.
+              The Hamoodur Rahman Commission registered the ill-repute of
+              General Niazi in what were vaguely termed "sex matters" and
+              referenced the testimony of a witness for it who stated, "The
+              troops used to say that when the Commander (Lt. Gen. Niazi) was
+              himself a raper, how could they be stopped. Gen. Niazi enjoyed the
+              same reputation at Sialkot and Lahore." Given this reputation,
+              Niazi's exchange with Raja reads as an expectation of sexual
+              license, access and liberty which could be taken with Bengali
+              women by Pakistani military officers during the opportune time of
+              turmoil.
             </p>
             <PhotoContainer
               noScroll
@@ -263,22 +237,11 @@ function Race() {
                 },
               ]}
             />
-            <p className={styles.view_para}>
-              The Hamoodur Rahman Commission registered the ill-repute of
-              General Niazi in what were vaguely termed "sex matters" and
-              referenced the testimony of a witness for it who stated, "The
-              troops used to say that when the Commander (Lt. Gen. Niazi) was
-              himself a raper, how could they be stopped. Gen. Niazi enjoyed the
-              same reputation at Sialkot and Lahore." 249 Given this reputation,
-              Niazi's exchange with Raja reads as an expectation of sexual
-              license, access and liberty which could be taken with Bengali
-              women by Pakistani military officers during the opportune time of
-              turmoil.
-            </p>
+
             <p className={styles.view_para}>
               Niazi, and many other military leaders and officers, viewed and
-              explained sexual violence by Pakistani soldiers as a "natural" 252
-              outcome of the "sexual needs of a soldier" 253 which the army had
+              explained sexual violence by Pakistani soldiers as a "natural"
+              outcome of the "sexual needs of a soldier" which the army had
               usually dealt with by way of its liberal leave policy but which
               had to be suspended in 1971 due to the distance between the two
               wings and the growing tumult that also exacerbated the situation
@@ -293,8 +256,8 @@ function Race() {
             addedMargin
             photo={niazi1}
             photoClassName={"ch2Q_6points"}
-            quoteTxt={`He is said to have "openly encouraged the jawans in their unsoldierly, inhuman, and carnal indulgences. 'What is your last night's score, Shera (Tiger)?' he would ask. The score referred to the number of women the soldier might
-              have molested." Niazi is also reported to have argued brazenly in justification of rape cases reported to him, infamously remarking "You cannot expect a man to live, fight, and die in East Pakistan and go to Jhelum for sex, would you?" 250 It was with this attitude and orientation, facetious at best and disgracefully frightful at worst, with which Niazi approached and directed Pakistan's military action against the Bengalis. In fact, in front of the Hamoodur Rahman Commission, he admitted that "there were a few cases of rape, but asserted that the guilty persons were duly punished" and that "these things do happen when troops are spread over."
+            quoteTxt={`
+              He (Niazi) is said to have "openly encouraged the jawans in their unsoldierly, inhuman, and carnal indulgences. 'What is your last night's score, Shera (Tiger)?' he would ask. The score referred to the number of women the soldier might have molested." Niazi is also reported to have argued brazenly in justification of rape cases reported to him, infamously remarking "You cannot expect a man to live, fight, and die in East Pakistan and go to Jhelum for sex, would you?" 250 It was with this attitude and orientation, facetious at best and disgracefully frightful at worst, with which Niazi approached and directed Pakistan's military action against the Bengalis. In fact, in front of the Hamoodur Rahman Commission, he admitted that "there were a few cases of rape, but asserted that the guilty persons were duly punished" and that "these things do happen when troops are spread over."
               `}
             quoteAlign="left"
             color="white"
