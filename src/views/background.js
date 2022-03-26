@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 
 import styles from "./css-modules/view-styles.module.css";
 import Navbar from "../components/Navbar.js";
@@ -29,6 +29,8 @@ import fatimaJPos from "../resources/Chapter1/images/FatimaJinnahPoster.png";
 
 import quote from "../resources/Chapter1/images/quote1.png";
 
+import Overlay from '../components/Overlay';
+
 const imgArrCh1 = [
   {
     image: chapter1_1,
@@ -51,9 +53,22 @@ const imgArrCh1 = [
 ];
 
 function Background() {
+
+  const [overlayClosed, setOverlayClosed] = useState(false);
+  const [displayedOverlay, setDisplayedOverlayState] = useState(false);
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+
+  function closeOverlay(){
+    setDisplayedOverlayState(['',0]);
+  }
+
+  function setDisplayedOverlay(oId, slideIndex){
+    setDisplayedOverlayState([oId,slideIndex]);
+  }
 
   return (
     <div className={styles.view_container}>
@@ -89,6 +104,8 @@ function Background() {
               </p>
               <PhotoContainer
                 noScroll
+                setDisplayedOverlay={setDisplayedOverlay}
+                overlayID={'4'}
                 imgArr={[
                   {
                     image: eastWestFriends,
@@ -143,6 +160,8 @@ function Background() {
               </p>
 
               <PhotoContainer
+                setDisplayedOverlay={setDisplayedOverlay}
+                overlayID={'3'}
                 imgArr={[
                   {
                     image: blm,
@@ -224,6 +243,8 @@ function Background() {
 
               <PhotoContainer
                 noScroll
+                setDisplayedOverlay={setDisplayedOverlay}
+                overlayID={'2'}
                 imgArr={[
                   {
                     image: dawn1954,
@@ -300,12 +321,14 @@ function Background() {
               </div>
               <PhotoContainer
                 noScroll
+                setDisplayedOverlay={setDisplayedOverlay}
+                overlayID={'1'}
                 imgArr={[
                   {
                     image: fatimaJMuj,
                     caption:
                       "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-                    widthID: "fortyFive",
+                    widthID: "fortyFive",                    
                   },
                   {
                     image: fatimaJPos,
@@ -355,6 +378,113 @@ function Background() {
         nextLink="/ch2"
         chapterID={1}
       />
+
+      <Overlay
+          oId="1"
+          displayedOverlay={displayedOverlay}
+          closeOverlay={closeOverlay}
+          setDisplayedOverlay={setDisplayedOverlay}
+          slides={
+            [
+              {
+                source: '',
+                description: 'abcd',
+                title: 'def',
+                render : ()=> <img alt={''} className={''} src={fatimaJMuj}></img>
+              },
+              {
+                source: '',
+                description: 'abcd',
+                title: 'def',
+                render : ()=> <img alt={''} className={''} src={fatimaJPos}></img>
+              }
+            ]
+          }
+        />
+        <Overlay
+          oId="2"
+          displayedOverlay={displayedOverlay}
+          closeOverlay={closeOverlay}
+          setDisplayedOverlay={setDisplayedOverlay}
+          slides={
+            [
+              {
+                source: '',
+                description: 'abcd',
+                title: 'def',
+                render : ()=> <img alt={''} className={''} src={dawn1954}></img>
+              },
+              {
+                source: '',
+                description: 'abcd',
+                title: 'def',
+                render : ()=> <img alt={''} className={''} src={cabinet1954}></img>
+              }
+            ]
+          }
+        />
+        <Overlay
+          oId="3"
+          displayedOverlay={displayedOverlay}
+          closeOverlay={closeOverlay}
+          setDisplayedOverlay={setDisplayedOverlay}
+          slides={
+            [
+              {
+                source: '',
+                description: 'abcd',
+                title: 'def',
+                render : ()=> <img alt={''} className={''} src={blm}></img>
+              },
+              {
+                source: '',
+                description: 'abcd',
+                title: 'def',
+                render : ()=> <img alt={''} className={''} src={blmWomen}></img>
+              },
+              {
+                source: '',
+                description: 'abcd',
+                title: 'def',
+                render : ()=> <img alt={''} className={''} src={bhashaniSM}></img>
+              },
+              {
+                source: '',
+                description: 'abcd',
+                title: 'def',
+                render : ()=> <img alt={''} className={''} src={SM}></img>
+              },
+              {
+                source: '',
+                description: 'abcd',
+                title: 'def',
+                render : ()=> <img alt={''} className={''} src={mural}></img>
+              }
+            ]
+          }
+        />
+        <Overlay
+          oId="4"
+          displayedOverlay={displayedOverlay}
+          closeOverlay={closeOverlay}
+          setDisplayedOverlay={setDisplayedOverlay}
+          slides={
+            [
+              {
+                source: '',
+                description: 'abcd',
+                title: 'def',
+                render : ()=> <img alt={''} className={''} src={eastWestFriends}></img>
+              },
+              {
+                source: '',
+                description: 'abcd',
+                title: 'defg',
+                render : ()=> <img alt={''} className={''} src={tagore}></img>
+              }
+            ]
+          }
+        />
     </div>
   );
 }

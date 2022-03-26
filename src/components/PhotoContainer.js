@@ -7,7 +7,7 @@ import 'aos/dist/aos.css';
 import { FiChevronLeft } from "react-icons/fi";
 import { FiChevronRight } from "react-icons/fi";
 
-function PhotoContainer({ noScroll, imgArr }) {
+function PhotoContainer({ noScroll, imgArr, setDisplayedOverlay, overlayID }) {
   let [xPos, update_xPos] = useState(0);
   const pictureDivRef = useRef(null);
   const scrollContainerRef = useRef(null);
@@ -77,7 +77,7 @@ function PhotoContainer({ noScroll, imgArr }) {
                 !noScroll && imageStyles.constant_margin
               )}
             >
-              <div className={styles.image_container}>
+              <div className={styles.image_container} onClick={() => setDisplayedOverlay(overlayID, index)}>
                 <img src={image.image} className={styles.image_animate}></img>
               </div>
             </div>
