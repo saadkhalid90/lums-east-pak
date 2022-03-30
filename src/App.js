@@ -9,12 +9,11 @@ import {
 } from "react-router-dom";
 
 import Title from './views/title.js';
-import Chapter1 from './views/background.js';
-import Chapter2 from './views/polls.js';
-import Chapter3 from './views/operation.js';
-import Chapter4 from './views/bloodtele.js';
-import Chapter5 from './views/race.js';
-import LocalNews from './views/localNews.js';
+import Chapter1 from './views/Chapter1.js';
+import Chapter2 from './views/Chapter2.js';
+import Chapter3 from './views/Chapter3.js';
+import Chapter4 from './views/Chapter4.js';
+import Appendix from './views/Appendix.js';
 
 import chapter1_1 from "./resources/Chapter1/Chapter1_1.png";
 import chapter1_2 from "./resources/Chapter1/Chapter1_2.png";
@@ -99,14 +98,9 @@ function App() {
                   <Chapter4/>
                 }
               />
-              <Route exact path="/ch5"
+              <Route exact path="/appendix"
                 element={
-                  <Chapter5/>
-                }
-              />
-              <Route exact path="/news"
-                element={
-                  <LocalNews/>
+                  <Appendix/>
                 }
               />
             </Routes>

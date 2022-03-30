@@ -1,6 +1,6 @@
 .container {
   background: url('../../resources/footerBG.png') no-repeat left bottom;
-  padding: 85px 70px;
+  padding: 70px 55px;
   box-sizing: border-box;
   margin-top: 40px;
   position: sticky;
@@ -85,7 +85,14 @@
   margin-top: -5%;
   object-fit: cover;
   object-position: center;
+  transition: transform 0.3s ease-in;
 }
+
+.imageScale {
+  transform: scale(1.05);
+}
+
+
 
 .navigation_title {
   position: absolute;
@@ -100,6 +107,7 @@
 }
 
 .navigation_button_title {
+  position: relative;
   color: #1B489D;
   border: 1px solid #1B489D;
   padding: 5px 10px;
@@ -107,7 +115,33 @@
   box-shadow: 6px 0px 27px -15px rgba(0,0,0,0.51);
   -webkit-box-shadow: 6px 0px 27px -15px rgba(0,0,0,0.51);
   -moz-box-shadow: 6px 0px 27px -15px rgba(0,0,0,0.51);
+  transition: color 0.1s ease-in;
+  z-index: 0;
 }
+
+.navigation_button_title::after {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #1B489D;
+  z-index: -1;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.2s ease-in;
+}
+
+.hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.hover{
+  color: white;
+}
+
 
 .chapter_text {
   text-transform: uppercase;

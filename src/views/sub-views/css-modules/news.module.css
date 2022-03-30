@@ -24,8 +24,8 @@
 }
 
 .view_para_news {
-  margin: 30px 0px;
-  line-height: 1.35em;
+  margin: 30px 0px 40px 0px;
+  line-height: 1.45em;
 }
 
 .view_fw_content {
@@ -67,8 +67,13 @@
 }
 
 .jang {
-  background-color: #D7EDF7;
-  border-radius: 3px;
+  font-weight: 700;
+  color: #424242;
+}
+
+.nwakt {
+  font-weight: 700;
+  color: #1a489d
 }
 
 .jang::before {
@@ -76,5 +81,13 @@
 }
 
 .jang::after {
+  content: ' ';
+}
+
+.nwakt::before {
+  content: ' ';
+}
+
+.nwakt::after {
   content: ' ';
 }

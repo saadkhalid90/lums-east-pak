@@ -96,27 +96,27 @@ class FullNav extends Component {
           </Link>
           <Link to="/ch1" style={{textDecoration: 'none', width: 'fit-content', cursor: 'default'}}>
             <div className={styles.navItem}>
-              <p className={styles.projectTitle}><span className={styles.underline}>Chapter 1</span></p>
+              <p className={styles.projectTitle}><span className={styles.underline}>Background</span></p>
             </div>
           </Link>
           <Link to="/ch2" style={{textDecoration: 'none', width: 'fit-content', cursor: 'default'}}>
             <div className={styles.navItem}>
-              <p className={styles.projectTitle}><span className={styles.underline}>Chapter 2</span></p>
+              <p className={styles.projectTitle}><span className={styles.underline}>National Elections</span></p>
             </div>
           </Link>
           <Link to="/ch3" style={{textDecoration: 'none', width: 'fit-content', cursor: 'default'}}>
             <div className={styles.navItem}>
-              <p className={styles.projectTitle}><span className={styles.underline}>Chapter 3</span></p>
+              <p className={styles.projectTitle}><span className={styles.underline}>Military Operation</span></p>
             </div>
           </Link>
           <Link to="/ch4" style={{textDecoration: 'none', width: 'fit-content', cursor: 'default'}}>
             <div className={styles.navItem}>
-              <p className={styles.projectTitle}><span className={styles.underline}>Chapter 4</span></p>
+              <p className={styles.projectTitle}><span className={styles.underline}>After the Surrender</span></p>
             </div>
           </Link>
-          <Link to="/ch5" style={{textDecoration: 'none', width: 'fit-content', cursor: 'default'}}>
+          <Link to="/appendix" style={{textDecoration: 'none', width: 'fit-content', cursor: 'default'}}>
             <div className={styles.navItem}>
-              <p className={styles.projectTitle}><span className={styles.underline}>Chapter 5</span></p>
+              <p className={styles.projectTitle}><span className={styles.underline}>Appendix</span></p>
             </div>
           </Link>
           <p className={styles.browse_proj_heading}>More from LUMS Digital Archive</p>
