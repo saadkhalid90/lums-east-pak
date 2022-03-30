@@ -31,7 +31,9 @@
 .image_container {
   width: 100%;
   overflow: hidden;
+  position: relative;
 }
+
 
 .image_animate {
   width: 100%;
@@ -41,7 +43,7 @@
 }
 
 .image_animate:hover {
-  transform: scale(1.02);
+  transform: scale(1.04);
 }
 
 .caption_container {
