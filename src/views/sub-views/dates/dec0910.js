@@ -39,6 +39,7 @@ function Dec0910() {
         </p>
         <p className={styles.view_para}>
           <a
+            className={styles.clickLink}
             href="https://www.thedailystar.net/news/bangladesh/news/pakistan-accepts-truce-call-un-2913121"
             target="_blank"
           >
@@ -59,6 +60,7 @@ function Dec0910() {
         </p>
         <p className={styles.view_para}>
           <a
+            className={styles.clickLink}
             href="https://www.thedailystar.net/news/bangladesh/news/mitro-bahini-closing-dhaka-2914011"
             target="_blank"
           >

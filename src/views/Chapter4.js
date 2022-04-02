@@ -265,6 +265,7 @@ function AfterTheWar() {
             />
             <p className={styles.view_para}>
               <a
+                className={styles.clickLink}
                 href="https://www.theguardian.com/global-development/gallery/2014/aug/11/stranded-pakistanis-camps-bangladesh-bihari-in-pictures"
                 target="_blank"
               >

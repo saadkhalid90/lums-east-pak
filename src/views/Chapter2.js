@@ -129,8 +129,22 @@ function Polls() {
               points as part of his party’s manifesto for the elections and the
               blueprint for the country’s future constitution.
             </p>
+            <div class={styles.video_contain_center}>
+              <div>
+                <iframe
+                  width="650"
+                  height="365"
+                  src="https://www.youtube.com/embed/YiUR5pdVQn0"
+                  title="YouTube video player"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullscreen
+                ></iframe>
+              </div>
+            </div>
           </div>
         </div>
+
         <div className={styles.view_fw_content}>
           <QuotePhoto
             quote
@@ -170,19 +184,6 @@ function Polls() {
             quoterText={"Sheikh Mujib's six points"}
             quotationMark={true}
           />
-        </div>
-        <div class={styles.video_contain_center}>
-          <div>
-            <iframe
-              width="650"
-              height="365"
-              src="https://www.youtube.com/embed/YiUR5pdVQn0"
-              title="YouTube video player"
-              frameBorder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowFullscreen
-            ></iframe>
-          </div>
         </div>
       </section>
 

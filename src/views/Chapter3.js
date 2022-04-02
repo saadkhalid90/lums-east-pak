@@ -20,11 +20,18 @@ import chapter3_1 from "../resources/Chapter3/Chapter3_1.jpg";
 import chapter3_2 from "../resources/Chapter3/Chapter3_2.jpg";
 import chapter3_3 from "../resources/Chapter3/Chapter3_3.jpg";
 
+import transcript from "../resources/Chapter3/documents/Transcript.pdf";
+
 import photoStory1 from "../resources/Chapter3/photoStory1/photoStory1.jpg";
 import photoStory2 from "../resources/Chapter3/photoStory1/photoStory2.jpg";
 import photoStory3 from "../resources/Chapter3/photoStory1/photoStory3.jpg";
 
 import BhuttoQuote from "../resources/Chapter3/others/BhuttoQuote.jpg";
+import Martyrs from "../resources/Chapter3/others/Martyrs.jpg";
+
+import lootedChests from "../resources/Chapter3/others/looted_chests.jpg";
+import muktiRailway from "../resources/Chapter3/others/Mukti_ damage_railways.jpg";
+import noticeMNA from "../resources/Chapter3/others/notices_Awami League_MNAs.jpg";
 
 import blood from "../resources/Chapter3/blood telegram/blood.jpg";
 import bloodTel from "../resources/Chapter3/blood telegram/blood telegram.jpg";
@@ -35,6 +42,8 @@ import muktiPosters from "../resources/Chapter3/others/Mukti_Bahini_posters.jpg"
 import muktiPractice from "../resources/Chapter3/others/Mukti_Practice.jpg";
 import muktiMural from "../resources/Chapter3/others/MuktiMural.jpg";
 import razakaarId from "../resources/Chapter3/others/RazakaarId.jpeg";
+import razakaarOrd from "../resources/Chapter3/others/RazOrd.png";
+import intellectuals from "../resources/Chapter3/others/intellectuals_bodies.jpg";
 
 import solid1 from "../resources/Chapter3/others/solid1.jpg";
 import solid2 from "../resources/Chapter3/others/solid2.jpg";
@@ -74,6 +83,16 @@ import hilalHead from "../resources/Chapter3/propaganda/HilalHeadlines.png";
 import indra1 from "../resources/Chapter3/propaganda/indra1.jpg";
 import indra2 from "../resources/Chapter3/propaganda/indra2.jpg";
 import poem from "../resources/Chapter3/propaganda/poem.jpg";
+
+import bengalPaper1 from "../resources/Chapter3/photoStory3/bengalPaper1.jpg";
+import bengalPaper2 from "../resources/Chapter3/photoStory3/bengalPaper2.jpg";
+import bengalPaper3 from "../resources/Chapter3/photoStory3/bengalPaper3.jpg";
+import bengalPaper4 from "../resources/Chapter3/photoStory3/bengalPaper4.jpg";
+import bengalPaper5 from "../resources/Chapter3/photoStory3/bengalPaper5.jpg";
+import bengalPaper6 from "../resources/Chapter3/photoStory3/bengalPaper6.jpg";
+import bengalPaper7 from "../resources/Chapter3/photoStory3/bengalPaper7.jpg";
+import bengalPaper8 from "../resources/Chapter3/photoStory3/bengalPaper8.jpg";
+import bengalPaper9 from "../resources/Chapter3/photoStory3/bengalPaper9.jpg";
 
 import war0 from "../resources/Chapter3/general/war0.jpeg";
 import war1 from "../resources/Chapter3/general/war1.jpeg";
@@ -249,7 +268,7 @@ function Operation() {
         number="3"
         imgArr={imgArrCh3}
         title="Military Operation"
-        subtitle="March 25, 1971 - Dec 16, 1971"
+        subtitle="March 25 - Dec 16, 1971"
         desc="Delay in the transfer of power and failed negotiations lead to a political deadlock. The military orchestrates an all-out offensive in the East Wing taking complete control of the region"
       />
 
@@ -344,10 +363,39 @@ function Operation() {
               One of the most brutal encounters took place in Dhaka University.
               M B Naqvi, a Pakistani journalist, shares his account of what he
               witnessed at the Jaganath Hall - the main residential building for
-              Hindu students at Dhaka University. A partial transcript of
-              military units engaged in the operation at Dhaka University has
+              Hindu students at Dhaka University. A partial{" "}
+              <a
+                className={styles.clickLink}
+                href={transcript}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                transcript
+              </a>{" "}
+              of military units engaged in the operation at Dhaka University has
               also survived.
             </p>
+          </div>
+        </div>
+        <div className={styles.view_fw_content}>
+          <QuotePhoto
+            quote
+            addedMargin
+            photo={Martyrs}
+            photoClassName={"ch2Q_6points"}
+            quoteTxt="My original conception was that the Pakistan army had indiscriminately shot and killed God knows how many students in those halls that night. I went there 43 days after the event and the places had been washed. The vertical part of the staircases carried tell-tale spots and discolourings, showing that the dead bodies had been dragged down with blood still oozing out of them. There were even a few bits of human bodies — hair, fingers, ears, noses, etc — sticking to the vertical spaces, while the horizontal steps had been cleared, though they all had darks spots of blood still visible"
+            quoteAlign="center"
+            color="white"
+            fontSize="small"
+            rotation="rotate2"
+            quoterText={"M.B.Naqvi | Excerpt from an article published in 2006"}
+            quotationMark={true}
+          />
+        </div>
+      </section>
+      <section className={styles.content_section}>
+        <div className={styles.view_content_wrapper}>
+          <div className={styles.view_content_container}>
             <p className={styles.view_para}>
               Once there was some semblance of ‘normalcy’, the military issued a
               warning to teachers for their alleged ‘anti-state’ activities. It
@@ -356,6 +404,29 @@ function Operation() {
               atrocities and acts of arson, looting and violence in East
               Pakistan.
             </p>
+            <PhotoContainer
+              noScroll
+              imgArr={[
+                {
+                  image: lootedChests,
+                  caption:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                  widthID: "twentyfive",
+                },
+                {
+                  image: muktiRailway,
+                  caption:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                  widthID: "thirty",
+                },
+                {
+                  image: noticeMNA,
+                  caption:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                  widthID: "thirty",
+                },
+              ]}
+            />
             <div class={styles.video_contain_center}>
               <div>
                 <iframe
@@ -400,14 +471,14 @@ function Operation() {
       <section className={styles.content_section}>
         <div className={styles.view_content_wrapper}>
           <div className={styles.view_content_container}>
-          <PhotoContainer
+            <PhotoContainer
               noScroll
               imgArr={[
                 {
                   image: bloodTelBook,
                   caption:
                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-                  widthID: "thirty",
+                  widthID: "twentyfive",
                 },
                 {
                   image: bloodTel,
@@ -425,11 +496,13 @@ function Operation() {
             />
             <p className={styles.view_para}>
               In 2013, Gary J. Bass, Assistant Professor of Politics and
-              International Relations at Princeton, authored <i>The Blood Telegram:
-              Nixon, Kissinger, and a Forgotten Genocide</i>, analyzing the American
-              position on the Bangladesh LIberation war of 1971. There are
-              numerous declassified conversations between Nixon, Kissinger, and
-              other stakeholders.
+              International Relations at Princeton, authored{" "}
+              <i>
+                The Blood Telegram: Nixon, Kissinger, and a Forgotten Genocide
+              </i>
+              , analyzing the American position on the Bangladesh LIberation war
+              of 1971. There are numerous declassified conversations between
+              Nixon, Kissinger, and other stakeholders.
             </p>
           </div>
         </div>
@@ -457,6 +530,7 @@ function Operation() {
               liberation movement.
             </p>
             <PhotoContainer
+              disclaimer={true}
               imgArr={[
                 {
                   image: muktiPosters,
@@ -477,10 +551,22 @@ function Operation() {
                   widthID: "twentyfive",
                 },
                 {
+                  image: razakaarOrd,
+                  caption:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                  widthID: "twentyfive",
+                },
+                {
                   image: muktiMural,
                   caption:
                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
                   widthID: "thirtyfive",
+                },
+                {
+                  image: intellectuals,
+                  caption:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                  widthID: "twentyfive",
                 },
               ]}
             />
@@ -915,6 +1001,77 @@ function Operation() {
                 },
               ]}
             />
+            <p className={styles.view_para}>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui
+              dicta minus molestiae vel beatae natus eveniet ratione temporibus
+              aperiam harum alias officiis assumenda officia quibusdam deleniti
+              eos cupiditate dolore doloribus!
+            </p>
+            <PhotoContainer
+              imgArr={[
+                {
+                  image: bengalPaper1,
+                  caption:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                  widthID: "thirty",
+                },
+                {
+                  image: bengalPaper2,
+                  caption:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                  widthID: "thirty",
+                },
+                {
+                  image: bengalPaper3,
+                  caption:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                  widthID: "twenty",
+                },
+                {
+                  image: bengalPaper4,
+                  caption:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                  widthID: "twentyfive",
+                },
+                {
+                  image: bengalPaper5,
+                  caption:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                  widthID: "twenty",
+                },
+                {
+                  image: bengalPaper6,
+                  caption:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                  widthID: "twenty",
+                },
+                {
+                  image: bengalPaper7,
+                  caption:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                  widthID: "twentyfive",
+                },
+                {
+                  image: bengalPaper8,
+                  caption:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                  widthID: "twentyfive",
+                },
+                {
+                  image: bengalPaper9,
+                  caption:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                  widthID: "twenty",
+                }
+              ]}
+            />
+          </div>
+        </div>  
+      </section>
+
+      <section className={styles.content_section}>
+        <div className={styles.view_content_wrapper}>
+          <div className={styles.view_content_container}>
             <SectionHeading heading="Archived Photos of the War" />
             <p className={styles.view_para}>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui

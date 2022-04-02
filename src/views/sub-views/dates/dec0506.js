@@ -26,6 +26,7 @@ function Dec0506() {
         </p>
         <p className={styles.view_para}>
           <a
+            className={styles.clickLink}
             href="https://www.thedailystar.net/news/bangladesh/news/russia-vetoes-troop-pullback-proposal-2909746"
             target="_blank"
           >
@@ -44,6 +45,7 @@ function Dec0506() {
         </p>
         <p className={styles.view_para}>
           <a
+            className={styles.clickLink}
             href="https://www.thedailystar.net/news/bangladesh/news/india-recognises-bangladesh-2910421"
             target="_blank"
           >

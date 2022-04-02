@@ -1,3 +1,6 @@
+import { style } from "@mui/system";
+import styles from "./css-modules/photo-comp.module.css";
+
 export default function photoComp({ imgArr, scene }) {
   return (
     <>
@@ -5,6 +8,7 @@ export default function photoComp({ imgArr, scene }) {
         <img
           src={img.img}
           key={`photoStoryImage${imgIdx}`}
+          className={styles.scroll_image}
           style={{
             position: "absolute",
             top: `calc(50% - ${Math.round(img.width / img.ar / 2)}px)`,
@@ -18,7 +22,7 @@ export default function photoComp({ imgArr, scene }) {
                 : `scale(1)`,
             zIndex: scene === imgIdx ? `10` : `${imgIdx}`,
             opacity: (scene + 1) % 4 === imgIdx ? 0.5 : 1,
-            transition: `opacity 200ms ease 100ms, transform 500ms ease-out`,
+            // transition: `opacity 200ms ease 100ms, transform 500ms ease-out`,
           }}
         />
       ))}

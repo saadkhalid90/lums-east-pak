@@ -80,3 +80,9 @@
   background: #1B489D;
   color: #F4FF72;
 }
+
+.image_disclaimer {
+  font-size: 0.8rem;
+  color: red;
+  margin-bottom: 10px;
+}

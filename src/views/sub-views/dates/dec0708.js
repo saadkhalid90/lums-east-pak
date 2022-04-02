@@ -22,6 +22,7 @@ function Dec0708() {
         </p>
         <p className={styles.view_para}>
           <a
+            className={styles.clickLink}
             href="https://www.thedailystar.net/news/bangladesh/news/general-assembly-holds-emergency-debate-2911241"
             target="_blank"
           >
@@ -45,6 +46,7 @@ function Dec0708() {
         </p>
         <p className={styles.view_para}>
           <a
+            className={styles.clickLink}
             href="https://www.thedailystar.net/news/bangladesh/news/india-derides-un-proposal-ceasefire-2912216"
             target="_blank"
           >

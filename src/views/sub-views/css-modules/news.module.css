@@ -1,3 +1,9 @@
+.clickLink {
+  text-decoration: none;
+  font-weight: bold;
+  color: #1a489d;
+}
+
 .view_container {
   position: relative;
 }
@@ -17,6 +23,7 @@
 
 .view_content_container {
   width: max(62%, 400px);
+  transform: translate3d(0,0,0);
 }
 
 .view_para {

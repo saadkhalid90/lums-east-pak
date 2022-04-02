@@ -17,6 +17,7 @@ function Dec0304() {
         </p>
         <p className={styles.view_para}>
           <a
+            className={styles.clickLink}
             href="https://www.thedailystar.net/news/bangladesh/news/today-the-war-bangladesh-has-become-war-india-indira-2908451"
             target="_blank"
           >
@@ -52,6 +53,7 @@ function Dec0304() {
         </p>
         <p className={styles.view_para}>
           <a
+            className={styles.clickLink}
             href="https://www.thedailystar.net/news/bangladesh/news/my-aim-make-pakistan-armed-forces-surrender-lt-gen-aurora-2909081"
             target="_blank"
           >

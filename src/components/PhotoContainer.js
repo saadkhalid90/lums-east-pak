@@ -7,7 +7,7 @@ import 'aos/dist/aos.css';
 import { FiChevronLeft } from "react-icons/fi";
 import { FiChevronRight } from "react-icons/fi";
 
-function PhotoContainer({ noScroll, imgArr, setDisplayedOverlay, overlayID }) {
+function PhotoContainer({ noScroll, imgArr, setDisplayedOverlay, overlayID , disclaimer = false}) {
   let [xPos, update_xPos] = useState(0);
   const pictureDivRef = useRef(null);
   const scrollContainerRef = useRef(null);
@@ -48,6 +48,7 @@ function PhotoContainer({ noScroll, imgArr, setDisplayedOverlay, overlayID }) {
 
   return (
     <div ref={pictureDivRef} className={styles.photo_container}>
+      {disclaimer && <div className={styles.image_disclaimer}>Viewer discretion advised: A few images contain graphic content</div>}
       <div
         ref={scrollContainerRef}
         className={
@@ -80,8 +81,10 @@ function PhotoContainer({ noScroll, imgArr, setDisplayedOverlay, overlayID }) {
               <div className={styles.image_container} onClick={() => setDisplayedOverlay(overlayID, index)}>
                 <img src={image.image} className={styles.image_animate}></img>
               </div>
+              
             </div>
           ))}
+          
       </div>
 
       {!noScroll && (

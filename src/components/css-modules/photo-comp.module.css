@@ -1,0 +1,3 @@
+.scroll_image {
+  transition: transform 500ms ease-out, -webkit-transform 500ms ease-out;
+}
