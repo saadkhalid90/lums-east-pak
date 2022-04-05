@@ -14,7 +14,7 @@
 }
 
 .archive_logo {
-  width: max(22%, 250px);
+  width: 22%;
   margin-bottom: 35px;
 }
 
@@ -42,7 +42,7 @@
 
 .title {
   color: #1B489D;
-  font-size: calc(1.8rem + 1.5vw);
+  font-size: 2.7rem;
   font-family: 'Playfair Display', serif;
   font-weight: normal;
   margin-bottom: 10px;
@@ -62,7 +62,7 @@
   font-family: 'Roboto', sans-serif;
   font-size: calc(0.8rem + 0.2vw);
   font-weight: 400;
-  width: max(62%, 400px);
+  width: 62%;
   text-align: center;
 }
 
@@ -115,6 +115,20 @@
 }
 
 
+@media screen and (max-width: 60em) {
+  .desc {
+    width: 80%;
+  }
+  .archive_logo {
+    width: 35%;
+  }
+  .title {
+    font-size: 2.2rem;
+  }
+  .chapter_title {
+    background-position: center;
+  }
+}
 
 @media screen and (max-width: 50em) {
 
@@ -123,7 +137,7 @@
     margin: 0px 5vw;
   }
   .img_contain img{
-    width: 30%
+    width: 35%
   }
   .img3 {
     display: none;
@@ -139,4 +153,18 @@
     margin: 40px 0px 20px 0px;
   }
 
+}
+
+@media screen and (max-width: 40em) {
+  .desc {
+    width: 85%;
+  }
+  .archive_logo {
+    width: 50%;
+  }
+  .title {
+    font-size: 1.8rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
 }

@@ -18,6 +18,7 @@
   right: 0px;
   background: url('../../resources/navBG.png');
   background-size: cover;
+  background-position: center;
 }
 
 .onlineSoon {
@@ -96,7 +97,7 @@
   right: 40px;
   cursor: pointer;
   color: #fff;
-  font-weight: 700;
+  font-weight: 500;
   font-size: 12px;
   font-family: 'Roboto', sans-serif;
   display: -webkit-box;
@@ -105,6 +106,20 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.lums_archive_logo_contain {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+  cursor: pointer;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.lums_archive_logo {
+  width: 220px;
 }
 
 .plotreeLogo {
@@ -136,11 +151,6 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-
-.disclaimer {
-  margin: 0px;
-  font-family: 'Roboto', sans-serif;
 }
 
 .lums_logo {
@@ -186,166 +196,77 @@
           transform: scale(1.1);
 }
 
-@media only screen and (max-width: 1024px) {
-  .mobileChaptersContainer {
-    position: relative;
-    z-index: 1;
+@media screen and (max-width: 60em){
+  .navContainer {
+    background-position: center;
   }
-  .browse_proj_heading {
-    margin-left: 40px;
-    margin-top: 15px;
+  
+  .lums_archive_logo {
+    width: 200px;
   }
-  .onlineSoon {
-    font-size: 18px;
-  }
-  .lums_logo {
-    width: 60px;
-    top: 20px;
-    left: 40px;
-  }
+
   .closeIcon {
-    top: 20px;
+    width: 33px;
+    height: 33px;
   }
-  .disclaimer_container {
-    left: 40px;
-    width: 55%;
-  }
-  .navItem {
-    width: -webkit-max-content;
-    width: -moz-max-content;
-    width: max-content;
-    padding: 5px 40px;
-  }
+
   .projectTitle {
-    font-size: 18px;
+    font-size: 22px;
+    margin: 3px 0px;
   }
-  .mobileChapterNavsContain {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+
+  .browse_proj_heading {
+    margin-left: 80px;
   }
-  .mobileChapterNavsContain > .navItem {
-    width: 33%;
-    padding: 0px 40px;
+
+  .navItem {
+    margin: 10px 80px;
   }
 }
 
-@media only screen and (max-width: 740px) {
-  .mobileChapterNavsContain > .navItem {
-    width: 50%;
-    padding: 0px 40px;
+@media screen and (max-width: 40em){
+  .lums_archive_logo {
+    width: 180px;
   }
-  .designed_by {
-    bottom: 15px;
-  }
-  .disclaimer_container {
-    width: 75%;
-    bottom: 15px;
-  }
-}
 
-@media only screen and (max-width: 610px) {
-  .disclaimer_container, .lums_logo {
-    left: 20px;
-  }
   .closeIcon {
-    right: 20px;
+    width: 30px;
+    height: 30px;
+  }
+
+  .projectTitle {
+    font-size: 20px;
+    margin: 3px 0px;
+  }
+
+  .designed_by {
+    font-size: 10px;
+  }
+
+  .plotreeLogo {
+    width: 25px;
+  }
+
+  .browse_proj_heading {
+    margin-left: 50px;
+  }
+
+  .navItem {
+    margin: 10px 50px;
+  }
+}
+
+@media screen and (max-width: 300px){
+  .browse_proj_heading {
+    margin-left: 30px;
   }
   .navItem {
-    padding: 5px 20px;
-  }
-  .browse_proj_heading {
-    margin-left: 20px;
-    margin-top: 25px;
-  }
-  .mobileChapterNavsContain > .navItem {
-    width: 50%;
-    padding: 0px 20px;
+    margin: 5px 30px;
   }
   .projectTitle {
     font-size: 16px;
   }
-  .designed_by {
-    right: 20px;
-    bottom: 15px;
-  }
-  .disclaimer_container {
-    width: 75%;
-    bottom: 15px;
-  }
-  .disclaimer {
-    font-size: 12px;
-  }
-  .designed_by > i {
-    display: none;
-  }
-  .lums_logo {
-    width: 50px;
-  }
-  .designed_by {
-    bottom: 15px;
-  }
-  .disclaimer_container {
-    bottom: 15px;
-  }
-}
-
-@media only screen and (max-width: 420px) and (max-height: 675px) {
-  .projectTitle {
-    font-size: 14px;
-  }
-  .navItem {
-    padding: 0px 20px;
-  }
-  .mobileChapterNavsContain > .navItem {
-    width: 100%;
-  }
-  .browse_proj_heading {
-    margin-bottom: 10px;
-    font-size: 14px;
-    margin-top: 15px;
-  }
-  .disclaimer_container {
-    width: 80%;
-  }
-  .disclaimer {
-    font-size: 11px;
-  }
-}
-
-@media only screen and (max-width: 420px) and (min-height: 675px) {
-  .browse_proj_heading {
-    margin-top: 20px;
-  }
-  .mobileChapterNavsContain > .navItem {
-    width: 100%;
-  }
-}
-
-@media only screen and (max-width: 420px) and (max-height: 600px) {
-  .browse_proj_heading {
-    font-size: 12px;
-  }
-  .projectTitle {
-    font-size: 12px;
-  }
-}
-
-@media only screen and (min-width: 1024px) and (max-height: 675px) {
-  .browse_proj_heading {
-    font-size: 15px;
-  }
-  .projectTitle {
-    font-size: 26px;
-    margin: 3px 0px;
-  }
-  .project_nav_options_container {
-    margin-bottom: -13px;
-  }
-  .closeIcon {
-    width: 30px;
-    height: 30px;
+  .lums_archive_logo {
+    width: 120px;
   }
 }

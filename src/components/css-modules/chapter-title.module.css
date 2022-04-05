@@ -86,7 +86,7 @@
   font-weight: 500;
   text-transform: uppercase;
   letter-spacing: .2rem;
-  font-size: calc(1rem + 0.8vw);
+  font-size: 1.7rem;
   color: #1B489D;
   border: 1px solid #1B489D;
   padding: 8px 8px;
@@ -94,8 +94,6 @@
 }
 
 .chapter_no span {
-    font-family: 'Montserrat', sans-serif;;
-    font-size: calc(1.1rem + 0.8vw);
     font-weight: 600;
 }
 
@@ -113,7 +111,7 @@
 
 .title {
   color: #1B489D;
-  font-size: calc(1.8rem + 1.5vw);
+  font-size: 2.7rem;
   font-family: 'Playfair Display', serif;
   font-weight: normal;
   margin-bottom: 10px;
@@ -133,7 +131,7 @@
   font-family: 'Roboto', sans-serif;
   font-size: calc(0.8rem + 0.2vw);
   font-weight: 400;
-  width: max(62%, 400px);
+  width: 62%;
   text-align: center;
 }
 
@@ -204,27 +202,45 @@
 
 }
 
-@media screen and (max-width: 50em) {
 
-  .img_contain {
-    flex-wrap: wrap;
-    margin: 0px 30vw;
+@media screen and (max-width: 60em) {
+  .desc {
+    width: 80%;
   }
-  .img1 {
-    width: calc(50% - 10px);
-    order:2
+  .title {
+    font-size: 2.2rem;
   }
-  .img3 {
-    width: calc(50% - 10px);
-    order:3
+  .chev_text {
+    font-size: 14px;
   }
-  .img2 {
-    width: 100%;
-    order:1
+  .chapter_no {
+    font-size: 1.3rem;
   }
+}
 
+@media screen and (max-width: 45em) {
   .chapter_no {
     margin: 40px 0px 20px 0px;
   }
+  .chev_text {
+    font-size: 13px;
+  }
+  .chapter_no {
+    font-size: 1.1rem;
+  }
+}
 
+@media screen and (max-width: 40em) {
+  .desc {
+    width: 85%;
+  }
+  .title {
+    font-size: 1.8rem;
+  }
+  .chev_text {
+    font-size: 12px;
+  }
+  .chapter_no {
+    font-size: 1rem;
+  }
 }

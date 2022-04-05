@@ -20,11 +20,33 @@
 }
 
 .logo {
-  width: calc(200px + 5vw);
+  width: 250px;
   cursor: pointer;
 }
 
 .menu {
   width: calc(20px + 0.7vw);
   cursor: pointer;
+}
+
+@media screen and (max-width: 60em){
+  .navbar {
+    width: calc(100% - 80px);
+    margin: 25px 40px;
+  }
+  .logo {
+    width: 200px;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 40em){
+  .navbar {
+    width: calc(100% - 80px);
+    margin: 25px 40px;
+  }
+  .logo {
+    width: 150px;
+    cursor: pointer;
+  }
 }
