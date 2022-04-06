@@ -111,13 +111,13 @@ function Background() {
                     image: eastWestFriends,
                     caption:
                       "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-                    widthID: "fortyFive",
+                    widthID: "fortyfive",
                   },
                   {
                     image: tagore,
                     caption:
                       "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-                    widthID: "fortyFive",
+                    widthID: "fortyfive",
                   },
                 ]}
               />
@@ -167,31 +167,31 @@ function Background() {
                     image: blm,
                     caption:
                       "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-                    widthID: "forty",
+                    widthID: "thirty",
                   },
                   {
                     image: blmWomen,
                     caption:
                       "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-                    widthID: "fortyFive",
+                    widthID: "thirtyfive",
                   },
                   {
                     image: bhashaniSM,
                     caption:
                       "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-                    widthID: "thirty",
+                    widthID: "twentyfive",
                   },
                   {
                     image: SM,
                     caption:
                       "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-                    widthID: "thirty",
+                    widthID: "twentyfive",
                   },
                   {
                     image: mural,
                     caption:
                       "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-                    widthID: "fifty",
+                    widthID: "thirtyfive",
                   },
                 ]}
               />
@@ -256,7 +256,7 @@ function Background() {
                     image: cabinet1954,
                     caption:
                       "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-                    widthID: "fortyFive",
+                    widthID: "fortyfive",
                   },
                 ]}
               />
@@ -307,10 +307,8 @@ function Background() {
             </p>
             <div className={styles.view_section}>
               <div class={styles.video_contain_center}>
-                <div>
+                <div class={styles.video_contain}>
                   <iframe
-                    width="650"
-                    height="365"
                     src="https://www.youtube.com/embed/fvmA1UKcMV4"
                     title="YouTube video player"
                     frameBorder="0"
@@ -328,7 +326,7 @@ function Background() {
                     image: fatimaJMuj,
                     caption:
                       "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-                    widthID: "fortyFive",                    
+                    widthID: "fortyfive",                    
                   },
                   {
                     image: fatimaJPos,
@@ -352,7 +350,7 @@ function Background() {
               </p>
             </div>
             <div class={styles.video_contain_center}>
-              <div>
+              <div class={styles.video_contain}>
                 <iframe
                   width="650"
                   height="365"

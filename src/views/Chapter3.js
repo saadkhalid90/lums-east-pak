@@ -338,10 +338,8 @@ function Operation() {
               separatists – Mukti Bahini.
             </p>
             <div class={styles.video_contain_center}>
-              <div>
+              <div class={styles.video_contain}>
                 <iframe
-                  width="650"
-                  height="365"
                   src="https://www.youtube.com/embed/TLyU7uffO6o"
                   title="YouTube video player"
                   frameborder="0"
@@ -428,10 +426,8 @@ function Operation() {
               ]}
             />
             <div class={styles.video_contain_center}>
-              <div>
+              <div class={styles.video_contain}>
                 <iframe
-                  width="650"
-                  height="365"
                   src="https://www.youtube.com/embed/J9NcosVnOMo"
                   title="YouTube video player"
                   frameborder="0"
@@ -599,10 +595,8 @@ function Operation() {
               Ravi Shankar and George Harrison performed.
             </p>
             <div class={styles.video_contain_center}>
-              <div>
+              <div class={styles.video_contain}>
                 <iframe
-                  width="650"
-                  height="365"
                   src="https://www.youtube.com/embed/Tby39qh9Lts"
                   title="YouTube video player"
                   frameborder="0"
@@ -635,10 +629,8 @@ function Operation() {
               ]}
             />
             <div class={styles.video_contain_center}>
-              <div>
+              <div class={styles.video_contain}>
                 <iframe
-                  width="650"
-                  height="365"
                   src="https://www.youtube.com/embed/stkcP5xl1C0"
                   title="YouTube video player"
                   frameborder="0"
@@ -732,10 +724,8 @@ function Operation() {
               for conducting a military operation.
             </p>
             <div class={styles.video_contain_center}>
-              <div>
+              <div class={styles.video_contain}>
                 <iframe
-                  width="650"
-                  height="365"
                   src="https://www.youtube.com/embed/AETYaUKT__0"
                   title="YouTube video player"
                   frameborder="0"

@@ -1,7 +1,7 @@
 import { style } from "@mui/system";
 import styles from "./css-modules/photo-comp.module.css";
 
-export default function photoComp({ imgArr, scene }) {
+export default function photoComp({ imgArr, scene, scaleMultiplier = 1 }) {
   return (
     <>
       {imgArr.map((img, imgIdx) => (
@@ -11,8 +11,8 @@ export default function photoComp({ imgArr, scene }) {
           className={styles.scroll_image}
           style={{
             position: "absolute",
-            top: `calc(50% - ${Math.round(img.width / img.ar / 2)}px)`,
-            width: `${img.width}px`,
+            top: `calc(50% - ${Math.round((img.width * scaleMultiplier) / img.ar / 2)}px)`,
+            width: `${img.width * scaleMultiplier}px`,
             filter: scene === imgIdx ? "blur(0px)" : "blur(10px)",
             transform:
               scene === imgIdx

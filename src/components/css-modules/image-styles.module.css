@@ -6,7 +6,7 @@
   width: 45vw;
 }
 
-.fiftyFive {
+.fiftyfive {
   width: 54%;
 }
 
@@ -14,15 +14,15 @@
   width: 49%;
 }
 
-.fiftyFivevw {
+.fiftyfivevw {
   width: 40vw;
 }
 
-.fortyFive {
+.fortyfive {
   width: 44%;
 }
 
-.fortyFivevw {
+.fortyfivevw {
   width: 35vw;
 }
 
@@ -72,4 +72,86 @@
 
 .constant_margin {
   margin-right: 25px;
+}
+
+@media screen and (max-width: 60em) {
+  
+  .sixtyvw {
+    width: calc(45vw * 1.1);
+  }
+
+  
+  .fiftyfivevw {
+    width: calc(40vw * 1.1);
+  }
+  
+  .fortyfivevw {
+    width: calc(35vw * 1.1);
+  }
+  
+  .thirtyvw {
+    width: calc(25vw * 1.1);
+  }
+  
+  .thirtyfivevw {
+    width: calc(27vw * 1.1);
+  }
+  
+  .twentyfivevw {
+    width: calc(20vw * 1.1);
+  }
+  
+  .twentyvw {
+    width: calc(15vw * 1.1);
+  }
+  
+  .fortyvw {
+    width: calc(30vw * 1.1);
+  }
+  
+  .constant_margin {
+    margin-right: 10px;
+  }
+  
+}
+
+@media screen and (max-width: 60em) {
+  
+  .sixtyvw {
+    width: calc(45vw * 1.5);
+  }
+
+  
+  .fiftyfivevw {
+    width: calc(40vw * 1.5);
+  }
+  
+  .fortyfivevw {
+    width: calc(35vw * 1.5);
+  }
+  
+  .thirtyvw {
+    width: calc(25vw * 1.5);
+  }
+  
+  .thirtyfivevw {
+    width: calc(27vw * 1.5);
+  }
+  
+  .twentyfivevw {
+    width: calc(20vw * 1.5);
+  }
+  
+  .twentyvw {
+    width: calc(15vw * 1.5);
+  }
+  
+  .fortyvw {
+    width: calc(30vw * 1.5);
+  }
+  
+  .constant_margin {
+    margin-right: 5px;
+  }
+  
 }

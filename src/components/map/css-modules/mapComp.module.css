@@ -1,6 +1,6 @@
 .actual_circle_g circle {
-  transition: r ease 750ms, fill ease 750ms, stroke-width ease 750ms; 
-  -webkit-transition: r ease 750ms, fill ease 750ms, stroke-width ease 750ms; 
-  -moz-transition: r ease 750ms, fill ease 750ms, stroke-width ease 750ms; 
-  -o-transition: r ease 750ms, fill ease 750ms, stroke-width ease 750ms; 
+  transition: r ease 750ms, fill ease 750ms;
+  -webkit-transition: r ease 750ms, fill ease 750ms;
+  -moz-transition: r ease 750ms, fill ease 750ms;
+  -o-transition: r ease 750ms, fill ease 750ms;
 }

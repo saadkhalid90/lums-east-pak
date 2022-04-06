@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import MediaQuery from "react-responsive";
 import styles from "./css-modules/view-styles.module.css";
 import Navbar from "../components/Navbar.js";
 import ChapterTitle from "../components/ChapterTitle.js";
@@ -130,10 +131,8 @@ function Polls() {
               blueprint for the country’s future constitution.
             </p>
             <div class={styles.video_contain_center}>
-              <div>
+              <div class={styles.video_contain}>
                 <iframe
-                  width="650"
-                  height="365"
                   src="https://www.youtube.com/embed/YiUR5pdVQn0"
                   title="YouTube video player"
                   frameBorder="0"
@@ -298,7 +297,7 @@ function Polls() {
                   image: transfer1,
                   caption:
                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-                  widthID: "fortyFive",
+                  widthID: "fortyfive",
                 },
                 {
                   image: transfer3,
@@ -310,7 +309,7 @@ function Polls() {
                   image: transfer2,
                   caption:
                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-                  widthID: "fortyFive",
+                  widthID: "fortyfive",
                 },
               ]}
             />
@@ -318,7 +317,41 @@ function Polls() {
         </div>
 
         <div className={styles.view_content_wrapper}>
-          <PhotoSwitch photoData={photoData} imgArr={newsImgArr} />
+          <MediaQuery minWidth={1280}>
+            <PhotoSwitch
+              photoData={photoData}
+              imgArr={newsImgArr}
+              scaleMultiplier={1}
+            />
+          </MediaQuery>
+          <MediaQuery maxWidth={1280} minWidth={960}>
+            <PhotoSwitch
+              photoData={photoData}
+              imgArr={newsImgArr}
+              scaleMultiplier={0.9}
+            />
+          </MediaQuery>
+          <MediaQuery maxWidth={960} minWidth={640}>
+            <PhotoSwitch
+              photoData={photoData}
+              imgArr={newsImgArr}
+              scaleMultiplier={0.75}
+            />
+          </MediaQuery>
+          <MediaQuery maxWidth={640} minWidth={480}>
+            <PhotoSwitch
+              photoData={photoData}
+              imgArr={newsImgArr}
+              scaleMultiplier={0.5}
+            />
+          </MediaQuery>
+          <MediaQuery maxWidth={480}>
+            <PhotoSwitch
+              photoData={photoData}
+              imgArr={newsImgArr}
+              scaleMultiplier={0.4}
+            />
+          </MediaQuery>
         </div>
       </section>
 
@@ -342,10 +375,8 @@ function Polls() {
             </p>
           </div>
           <div class={styles.video_contain_center}>
-            <div>
+            <div class={styles.video_contain}>
               <iframe
-                width="650"
-                height="365"
                 src="https://www.youtube.com/embed/5-5Xe21kjC4"
                 title="YouTube video player"
                 frameBorder="0"

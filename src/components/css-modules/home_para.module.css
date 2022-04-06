@@ -17,7 +17,7 @@
   font-size: 14px;
   line-height: 18px;
   margin: 0px;
-  margin-top: 15px;
+  margin-top: 1rem;
   color: #000;
 }
 
@@ -70,61 +70,20 @@
   border-radius: 10px;
 }
 
-@media only screen and (max-width: 800px) {
-  .container {
-    background: rgba(22, 62, 70, 0.95);
+@media only screen and (max-width: 60em){
+  .heading {
+    font-size: 18px;
+  }
+  .para {
+    font-size: 0.9rem;
   }
 }
 
-@media only screen and (min-width: 1200px) and (max-height: 630px) {
+@media only screen and (max-width: 40em){
   .heading {
-    font-size: 21px;
+    font-size: 15px;
   }
-
   .para {
-    font-size: 12px;
-    line-height: 16px;
-  }
-  .image {
-    max-height: 140px;
-  }
-
-  .modal_heading {
-    font-size: 20px;
-  }
-
-  .close_icon {
-    font-size: 20px;
-  }
-
-  .modal_image {
-    height: 340px;
-  }
-}
-
-@media only screen and (min-width: 2350px) {
-  .heading {
-    font-size: 48px;
-  }
-
-  .para {
-    font-size: 26px;
-    line-height: 30px;
-  }
-  .image {
-    max-height: 250px;
-  }
-
-  .modal_heading {
-    font-size: 28px;
-  }
-
-  .close_icon {
-    font-size: 30px;
-  }
-
-  .modal_image {
-    width: 540px;
-    height: unset;
+    font-size: 0.8rem;
   }
 }

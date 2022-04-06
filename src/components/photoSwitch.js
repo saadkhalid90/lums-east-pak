@@ -8,8 +8,7 @@ const bgStyle = {
   background: `linear-gradient(to bottom, #FFFFFFFF 5%, #FFFFFFDE 75%, #FFFFFFF7 100%), url(${mujeebBG}) no-repeat left top`,
   backgroundSize: `cover`,
 };
-
-export default function PhotoSwitch({ photoData, imgArr }) {
+export default function PhotoSwitch({ photoData, imgArr, scaleMultiplier = 1 }) {
   const nScenes = imgArr.length;
 
   const [scene, setScene] = useState(0);
@@ -45,7 +44,7 @@ export default function PhotoSwitch({ photoData, imgArr }) {
                 alignItems: "center",
               }}
             >
-              <PhotoComp imgArr={imgArr} scene={scene} />
+              <PhotoComp imgArr={imgArr} scene={scene} scaleMultiplier={scaleMultiplier}/>
             </div>
           </div>
         </div>

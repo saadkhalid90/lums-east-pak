@@ -135,10 +135,8 @@ function AfterTheWar() {
             />
           </div>
           <div class={styles.video_contain_center}>
-            <div>
+            <div class={styles.video_contain}>
               <iframe
-                width="650"
-                height="365"
                 src="https://www.youtube.com/embed/fowobGg-nwY"
                 title="YouTube video player"
                 frameborder="0"
@@ -148,10 +146,8 @@ function AfterTheWar() {
             </div>
           </div>
           <div class={styles.video_contain_center}>
-            <div>
+            <div class={styles.video_contain}>
               <iframe
-                width="650"
-                height="365"
                 src="https://www.youtube.com/embed/DgI3fjtTLds"
                 title="YouTube video player"
                 frameborder="0"
@@ -284,10 +280,8 @@ function AfterTheWar() {
               Bahinis.
             </p>
             <div class={styles.video_contain_center}>
-              <div>
+              <div class={styles.video_contain}>
                 <iframe
-                  width="650"
-                  height="365"
                   src="https://www.youtube.com/embed/Wquha5rZuBo"
                   title="YouTube video player"
                   frameborder="0"

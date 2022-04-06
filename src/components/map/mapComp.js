@@ -48,8 +48,8 @@ export default function MapComp({
                   cy= {constit.y}
                   style={{
                     stroke: '#00796B',
-                    strokeWidth: (scene === "scene1") ? '2px' : '0px',
-                    fill: colScale(constit[[scene]]),
+                    strokeWidth: (scene === "scene1") ? '0px' : '0px',
+                    fill: (scene === "scene1") ? "#00796B" : colScale(constit[[scene]]),
                     fillOpacity: '1'}}/>)
                   })
           }

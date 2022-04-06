@@ -23,6 +23,10 @@
   position: relative;
 }
 
+.quotation_mark {
+  width: 30px;
+}
+
 .photo_container {
   position: absolute;
   width: 30%;
@@ -110,4 +114,78 @@
 
 .rotate3 {
   transform: rotate(-3deg);
+}
+
+@media screen and (max-width: 80em){
+  .content_container {
+    width: 70%;
+  }
+  .quote_big {
+    font-size: 18px;
+  }
+  .quote_small {
+    font-size: 15px;
+  }
+  .photo_container {
+    width: 28%;
+  }
+  .quote_content_container {
+    padding-left: 30%;
+  }
+}
+
+@media screen and (max-width: 60em){
+  .content_container {
+    width: 75%;
+  }
+  .quote_big {
+    font-size: 15px;
+  }
+  .quote_small {
+    font-size: 13px;
+  }
+  .photo_container {
+    width: 25%;
+  }
+  .quote_content_container {
+    padding-left: 27%;
+  }
+
+  .quotation_mark {
+    width: 25px;
+  }
+}
+
+@media screen and (max-width: 40em){
+  .content_container {
+    width: 85%;
+  }
+  .quote_big {
+    font-size: 14px;
+  }
+  .quote_small {
+    font-size: 11px;
+  }
+  .photo_container {
+    display: none;  
+  }
+  .quote_content_container {
+    padding-left: 0%;
+  }
+
+  .quotation_mark {
+    width: 20px;
+  }
+}
+
+@media screen and (max-width: 30em){
+  .content_container {
+    width: 90%;
+  }
+  .quote_big {
+    font-size: 12px;
+  }
+  .quote_small {
+    font-size: 10px;
+  }
 }

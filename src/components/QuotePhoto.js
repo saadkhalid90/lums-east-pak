@@ -38,8 +38,8 @@ function QuotePhoto({
                 quotationMark &&
                 <img
                   src={leftQuote}
+                  className={styles.quotation_mark}
                   style={{
-                    width: '30px',
                     'position': 'absolute',
                     'top': '-30px',
                     'left': '0px'
@@ -60,8 +60,8 @@ function QuotePhoto({
                 quotationMark &&
                 <img
                   src={rightQuote}
+                  className={styles.quotation_mark}
                   style={{
-                    width: '30px',
                     'position': 'absolute',
                     'bottom': '-30px',
                     'right': '0px'
