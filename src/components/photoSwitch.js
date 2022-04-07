@@ -34,17 +34,19 @@ export default function PhotoSwitch({ photoData, imgArr, scaleMultiplier = 1 }) 
               </div>
             ))}
         </div>
-        <div className={styles.photo_sticky_container}>
-          <div className={styles.photoContainer}>
-            <div
-              className="vizContain"
-              style={{
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-              }}
-            >
-              <PhotoComp imgArr={imgArr} scene={scene} scaleMultiplier={scaleMultiplier}/>
+        <div className={styles.photo_sticky_rel_cont}>
+          <div className={styles.photo_sticky_container}>
+            <div className={styles.photoContainer}>
+              <div
+                className="vizContain"
+                style={{
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                }}
+              >
+                <PhotoComp imgArr={imgArr} scene={scene} scaleMultiplier={scaleMultiplier}/>
+              </div>
             </div>
           </div>
         </div>

@@ -111,46 +111,49 @@ export default function ElectMap({ mapData }) {
                 </div>
               ))}
           </div>
-          <div className={styles.map_sticky_container}>
-            <div className={styles.mapContainer}>
-              <div
-                className="vizContain"
-                style={{
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "center",
-                  position: "relative",
-                  left: "-8%",
-                }}
-              >
-                <MapComp
-                  classNme={"wpContain"}
-                  svgWidth={730}
-                  svgHeight={720}
-                  topoData={wpTopo}
-                  mapStyles={mapStylesWP}
-                  landkey={"wpLand"}
-                  geoProj={projectionWP}
-                  geoPath={geoPathWP}
-                  constLocs={wpConstLocs}
-                  colScale={colScale}
-                  scene={`scene${scene + 1}`}
-                  addTopoData={psTopo}
-                  addMapStyles={mapStylesPS}
-                />
-                <MapComp
-                  classNme={"epContain"}
-                  svgWidth={340}
-                  svgHeight={450}
-                  topoData={epTopo}
-                  mapStyles={mapStylesEP}
-                  landkey={"epLand"}
-                  geoProj={projectionEP}
-                  geoPath={geoPathEP}
-                  constLocs={epConstLocs}
-                  colScale={colScale}
-                  scene={`scene${scene + 1}`}
-                />
+          <div className={styles.map_sticky_relative_parent}>
+            <div className={styles.map_sticky_container}>
+              <div className={styles.mapContainer}>
+                <div
+                  className="vizContain"
+                  style={{
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    position: "relative",
+                    width: "100%",
+                    height: "100%"
+                  }}
+                >
+                  <MapComp
+                    classNme={"wpContain"}
+                    svgWidth={730}
+                    svgHeight={720}
+                    topoData={wpTopo}
+                    mapStyles={mapStylesWP}
+                    landkey={"wpLand"}
+                    geoProj={projectionWP}
+                    geoPath={geoPathWP}
+                    constLocs={wpConstLocs}
+                    colScale={colScale}
+                    scene={`scene${scene + 1}`}
+                    addTopoData={psTopo}
+                    addMapStyles={mapStylesPS}
+                  />
+                  <MapComp
+                    classNme={"epContain"}
+                    svgWidth={340}
+                    svgHeight={450}
+                    topoData={epTopo}
+                    mapStyles={mapStylesEP}
+                    landkey={"epLand"}
+                    geoProj={projectionEP}
+                    geoPath={geoPathEP}
+                    constLocs={epConstLocs}
+                    colScale={colScale}
+                    scene={`scene${scene + 1}`}
+                  />
+                </div>
               </div>
             </div>
           </div>

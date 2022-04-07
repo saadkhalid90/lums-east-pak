@@ -16,12 +16,13 @@ export default function MapComp({
     colScale,
     scene,
     addTopoData,
-    addMapStyles
+    addMapStyles,
+    style
   }){
 
   return (
-    <div className={classNme}>
-      <svg width={svgWidth} height={svgHeight}>
+    <div className={classNme} style={style}>
+      <svg width="100%" overflow="visible" preserveAspectRatio="xMinYMin meet" viewBox={`0 0 ${svgWidth} ${svgHeight}`}>
         <g>
           {
             topoData.features.map(feature => (
