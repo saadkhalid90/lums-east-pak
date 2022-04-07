@@ -76,12 +76,12 @@ function August() {
             with the elected members of the Awami League in order to make PPP a
             national party. It was reported on 13 August that Indian agents had
             martyred Maulana Mustafa Madni, a prominent religious leader. They
-            had also destroy one refugees bus, killing 2 people.] [J: As an
-            attempt to destroy a railway bridge near Dhaka was foiled, 25 agents
-            were killed in Khulna. In the name of victory celebrations, the
-            Awami League repeated the violence of Karbala. On 18 Aug it was
-            reported that in clashes with the Razakaars, 60 Indian agents had
-            been killed. At the same time, 12.5 crore rupees were designated for
+            had also destroy one refugees bus, killing 2 people. As an attempt
+            to destroy a railway bridge near Dhaka was foiled, 25 agents were
+            killed in Khulna. In the name of victory celebrations, the Awami
+            League repeated the violence of Karbala. On 18 Aug it was reported
+            that in clashes with the Razakaars, 60 Indian agents had been
+            killed. At the same time, 12.5 crore rupees were designated for
             development in E Pak, while demands were also made for the inclusion
             of the people of E Pak in governmental projects. Tikka Khan orders
             all elected members to report to the martial law administration in

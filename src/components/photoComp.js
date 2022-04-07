@@ -22,7 +22,6 @@ export default function photoComp({ imgArr, scene, scaleMultiplier = 1 }) {
                 : `scale(1)`,
             zIndex: scene === imgIdx ? `10` : `${imgIdx}`,
             opacity: (scene + 1) % 4 === imgIdx ? 0.5 : 1,
-            // transition: `opacity 200ms ease 100ms, transform 500ms ease-out`,
           }}
         />
       ))}

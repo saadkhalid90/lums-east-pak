@@ -36,7 +36,7 @@ function July() {
             some members of the British Parliamentary Delegation in E Pak who
             had said that they wouldn’t recommend the refugees going back to E
             Pak. Debates about whether aid should continue to be given to
-            Pakistan take place in the US elected houses] [J: On 5 July it is
+            Pakistan take place in the US elected houses. On 5 July it is
             reported that Pakistan leaves the Commonwealth because of its
             anti-Pakistan propaganda. Pak continues to condemn propaganda
             against it in the international media; there is an unholy alliance
@@ -70,7 +70,7 @@ function July() {
           and violent clashes on the borders, which inevitably curtailed the
           return the DPs.
         </p>
-        <SectionHeading heading="Reports of Indian Aggression & the condition in E Pakistan" />
+        <SectionHeading heading="Reports of Indian Aggression and the condition in E Pakistan" />
         <p className={styles.view_para_news}>
           <span className={styles.jang}>
             As the reports of the process of arming Indian soldiers being sped

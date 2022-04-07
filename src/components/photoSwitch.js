@@ -16,7 +16,7 @@ export default function PhotoSwitch({ photoData, imgArr, scaleMultiplier = 1 }) 
   return (
     <div className={styles.sticky_container_container}>
       <div className={styles.absolute_sticky}>
-        <div className={styles.relative_stick}>
+        <div className={styles.relative_sticky}>
           <div className={styles.bg_contain} style={bgStyle}></div>
         </div>
       </div>
