@@ -126,7 +126,7 @@ class FullNav extends Component {
           className={styles.project_nav_options_container}
         >
           <p className={styles.browse_proj_heading}>Browse Chapters</p>
-          <Link
+          {this.props.location.pathname !== '/' && <Link
             to="/"
             style={{
               textDecoration: "none",
@@ -139,8 +139,8 @@ class FullNav extends Component {
                 <span className={styles.underline}>Home</span>
               </p>
             </div>
-          </Link>
-          <Link
+          </Link>}
+          {this.props.location.pathname !== '/ch1' &&<Link
             to="/ch1"
             style={{
               textDecoration: "none",
@@ -153,8 +153,8 @@ class FullNav extends Component {
                 <span className={styles.underline}>Background</span>
               </p>
             </div>
-          </Link>
-          <Link
+          </Link>}
+          {this.props.location.pathname !== '/ch2' &&<Link
             to="/ch2"
             style={{
               textDecoration: "none",
@@ -167,8 +167,8 @@ class FullNav extends Component {
                 <span className={styles.underline}>National Elections</span>
               </p>
             </div>
-          </Link>
-          <Link
+          </Link>}
+          {this.props.location.pathname !== '/ch3' && <Link
             to="/ch3"
             style={{
               textDecoration: "none",
@@ -181,8 +181,8 @@ class FullNav extends Component {
                 <span className={styles.underline}>Military Operation</span>
               </p>
             </div>
-          </Link>
-          <Link
+          </Link>}
+          {this.props.location.pathname !== '/ch4' && <Link
             to="/ch4"
             style={{
               textDecoration: "none",
@@ -195,8 +195,8 @@ class FullNav extends Component {
                 <span className={styles.underline}>After the Surrender</span>
               </p>
             </div>
-          </Link>
-          <Link
+          </Link>}
+          {this.props.location.pathname !== '/appendix' && <Link
             to="/appendix"
             style={{
               textDecoration: "none",
@@ -209,7 +209,7 @@ class FullNav extends Component {
                 <span className={styles.underline}>Appendix</span>
               </p>
             </div>
-          </Link>
+          </Link>}
         </div>
         <div ref={this.delayedFade}>
           <div className={styles.lums_archive_logo_contain} onClick={() => this.plotree()}>
