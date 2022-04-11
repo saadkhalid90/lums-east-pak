@@ -1,6 +1,6 @@
 .bg_white {
   background-color: #fff;
-  padding: 60px 0px;
+  padding: 50px 0px;
 }
 
 .quote_container {
@@ -47,6 +47,7 @@
 
 .quote {
   font-family: 'Playfair Display', serif;
+  margin: 15px 0px;
 }
 
 .quote_center {
@@ -117,6 +118,10 @@
 }
 
 @media screen and (max-width: 80em){
+  .bg_white {
+    padding: 40px 0px;
+  }
+
   .content_container {
     width: 70%;
   }
@@ -135,6 +140,9 @@
 }
 
 @media screen and (max-width: 60em){
+  .bg_white {
+    padding: 30px 0px;
+  }
   .content_container {
     width: 75%;
   }
@@ -161,6 +169,10 @@
 }
 
 @media screen and (max-width: 40em){
+  .bg_white {
+    padding: 25px 0px;
+  }
+
   .content_container {
     width: 85%;
   }
@@ -186,6 +198,10 @@
 }
 
 @media screen and (max-width: 30em){
+  .bg_white {
+    padding: 20px 0px;
+  }
+
   .content_container {
     width: 90%;
   }

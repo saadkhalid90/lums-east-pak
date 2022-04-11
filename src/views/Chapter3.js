@@ -350,14 +350,14 @@ function Operation() {
               operation that targeted civilians along with the band of Bengali
               separatists – Mukti Bahini.
             </p>
-            <div class={styles.video_contain_center}>
-              <div class={styles.video_contain}>
+            <div className={styles.video_contain_center}>
+              <div className={styles.video_contain}>
                 <iframe
                   src="https://www.youtube.com/embed/TLyU7uffO6o"
                   title="YouTube video player"
-                  frameborder="0"
+                  frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen
+                  allowFullScreen
                 ></iframe>
                 <p className={styles.video_caption}>
                   Major Khaled Musharrof, a commander of the Mukti Bahini leads
@@ -444,14 +444,14 @@ function Operation() {
                 },
               ]}
             />
-            <div class={styles.video_contain_center}>
-              <div class={styles.video_contain}>
+            <div className={styles.video_contain_center}>
+              <div className={styles.video_contain}>
                 <iframe
                   src="https://www.youtube.com/embed/J9NcosVnOMo"
                   title="YouTube video player"
-                  frameborder="0"
+                  frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen
+                  allowFullScreen
                 ></iframe>
                 <p className={styles.video_caption}>
                   Major Zia, a commander of the Mukti Bahini declares
@@ -621,14 +621,14 @@ function Operation() {
               cause was the Concert for Bangladesh, where iconic artists like
               Ravi Shankar and George Harrison performed.
             </p>
-            <div class={styles.video_contain_center}>
-              <div class={styles.video_contain}>
+            <div className={styles.video_contain_center}>
+              <div className={styles.video_contain}>
                 <iframe
                   src="https://www.youtube.com/embed/Tby39qh9Lts"
                   title="YouTube video player"
-                  frameborder="0"
+                  frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen
+                  allowFullScreen
                 ></iframe>
                 <p className={styles.video_caption}>
                   George Harrison organized the ‘Concert for Bangladesh’ where
@@ -662,14 +662,14 @@ function Operation() {
                 },
               ]}
             />
-            <div class={styles.video_contain_center}>
-              <div class={styles.video_contain}>
+            <div className={styles.video_contain_center}>
+              <div className={styles.video_contain}>
                 <iframe
                   src="https://www.youtube.com/embed/stkcP5xl1C0"
                   title="YouTube video player"
-                  frameborder="0"
+                  frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen
+                  allowFullScreen
                 ></iframe>
                 <p className={styles.video_caption}>
                   Famous American singer, Joan Baez performs ‘Song of
@@ -686,7 +686,7 @@ function Operation() {
             photo={joanDylan}
             photoClassName={"ch2Q_6points"}
             quoteTxt={
-              <p>
+              <div>
                 <p>
                   Bangladesh Bangladesh, Bangladesh Bangladesh
                   <br />
@@ -739,7 +739,7 @@ function Operation() {
                   <br />
                   Which say to sacrifice a people for a land
                 </p>
-              </p>
+              </div>
             }
             quoteAlign="left"
             color="white"
@@ -761,14 +761,14 @@ function Operation() {
               give a background to the East Pakistan crisis and the rationale
               for conducting a military operation.
             </p>
-            <div class={styles.video_contain_center}>
-              <div class={styles.video_contain}>
+            <div className={styles.video_contain_center}>
+              <div className={styles.video_contain}>
                 <iframe
                   src="https://www.youtube.com/embed/AETYaUKT__0"
                   title="YouTube video player"
-                  frameborder="0"
+                  frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen
+                  allowFullScreen
                 ></iframe>
                 <p className={styles.video_caption}>
                   A propaganda film aimed to sway global opinion on the
@@ -1282,29 +1282,60 @@ function Operation() {
         setDisplayedOverlay={setDisplayedOverlay}
         slides={[
           {
-            source: "",
-            description: "abcd",
-            title: "def",
+            source: "Bangladesh Documents",
+            description: (
+              <span>
+                A government document listing looted items by the{" "}
+                <i>Mukti Bahini</i>
+              </span>
+            ),
+            title: "",
             width: "55",
             render: () => (
-              <img alt={""} className={""} src={lootedChests}></img>
+              <img
+                alt={
+                  "A government document listing looted items by the Mukti Bahini"
+                }
+                className={""}
+                src={lootedChests}
+              ></img>
             ),
           },
           {
-            source: "",
-            description: "abcd",
-            title: "def",
+            source: "Bangladesh Documents",
+            description: (
+              <span>
+                Government documents report damage caused by the{" "}
+                <i>Mukti Bahini</i> to the railway lines
+              </span>
+            ),
+            title: "",
             width: "40",
             render: () => (
-              <img alt={""} className={""} src={muktiRailway}></img>
+              <img
+                alt={
+                  "Government documents report damage caused by the Mukti Bahini to the railway lines"
+                }
+                className={""}
+                src={muktiRailway}
+              ></img>
             ),
           },
           {
-            source: "",
-            description: "abcd",
-            title: "def",
+            source: "Bangladesh Documents",
+            description:
+              "Martial Law government's notice to Awami league's parliamentarians",
+            title: "",
             width: "45",
-            render: () => <img alt={""} className={""} src={noticeMNA}></img>,
+            render: () => (
+              <img
+                alt={
+                  "Martial Law government's notice to Awami league parliamentarians"
+                }
+                className={""}
+                src={noticeMNA}
+              ></img>
+            ),
           },
         ]}
       />
@@ -1315,28 +1346,51 @@ function Operation() {
         setDisplayedOverlay={setDisplayedOverlay}
         slides={[
           {
-            source: "",
-            description: "abcd",
-            title: "def",
+            source: "Amazon",
+            description:
+              "2013 book by American journalist and academic Gary J. Bass about The Blood telegram",
+            title: "",
             width: "40",
             render: () => (
-              <img alt={""} className={""} src={bloodTelBook}></img>
+              <img
+                alt={
+                  "2013 book by American journalist and academic Gary J. Bass about The Blood telegram"
+                }
+                className={""}
+                src={bloodTelBook}
+              ></img>
             ),
           },
           {
-            source: "",
-            description: "abcd",
-            title: "def",
-            width: "45",
-            render: () => <img alt={""} className={""} src={bloodTel}></img>,
-          },
-          {
-            source: "",
-            description: "abcd",
-            title: "def",
+            source: "Wikimedia Commons",
+            description:
+              "Archived copy of the telegram by Archer Blood, US High Commissioner in Dhaka, notifying the US State department of the excesses committed by Pakistan army",
+            title: "",
             width: "45",
             render: () => (
-              <img alt={""} className={""} src={bloodTelSupp}></img>
+              <img
+                alt={
+                  "Archived copy of the telegram by Archer Blood, US High Commissioner in Dhaka, notifying the US State department of the excesses committed by Pakistan army"
+                }
+                className={""}
+                src={bloodTel}
+              ></img>
+            ),
+          },
+          {
+            source: "Flickr",
+            description:
+              "Telegram sent by US foreign officers (South Asia region) in supporting the views expressed in the Blood Telegram",
+            title: "",
+            width: "45",
+            render: () => (
+              <img
+                alt={
+                  "Telegram sent by US foreign officers (South Asia region) in supporting the views expressed in the Blood Telegram"
+                }
+                className={""}
+                src={bloodTelSupp}
+              ></img>
             ),
           },
         ]}
@@ -1348,51 +1402,95 @@ function Operation() {
         setDisplayedOverlay={setDisplayedOverlay}
         slides={[
           {
-            source: "",
-            description: "abcd",
-            title: "def",
+            source: "Wikimedia Commons",
+            description: (
+              <span>
+                A <i>Mukti Bahini</i> Poster
+              </span>
+            ),
+            title: "",
             width: "40",
             render: () => (
               <img alt={""} className={""} src={muktiPosters}></img>
             ),
           },
           {
-            source: "",
-            description: "abcd",
-            title: "def",
+            source: "Flickr",
+            description: (
+              <span>
+                <i>Mukti Bahini</i> fighters training
+              </span>
+            ),
+            title: "",
             width: "70",
             render: () => (
-              <img alt={""} className={""} src={muktiPractice}></img>
+              <img
+                alt={"Mukti Bahini fighters training"}
+                className={""}
+                src={muktiPractice}
+              ></img>
+            ),
+          },
+          {
+            source: "Bangladesh Tribune",
+            description:
+              "ID cards of a Razakaar (member of the Pakistani government’s paramilitary force)",
+            title: "",
+            width: "55",
+            render: () => (
+              <img
+                alt={
+                  "ID cards of a Razakaar (member of the Pakistani government’s paramilitary force)"
+                }
+                className={""}
+                src={razakaarId}
+              ></img>
+            ),
+          },
+          {
+            source: "docstrangelove",
+            description:
+              "Headline about the East Pakistan Razakaar Ordinance promulgated by Tikka Khan",
+            title: "",
+            width: "55",
+            render: () => (
+              <img
+                alt={
+                  "Headline about the East Pakistan Razakaar Ordinance promulgated by Tikka Khan "
+                }
+                className={""}
+                src={razakaarOrd}
+              ></img>
             ),
           },
           {
             source: "",
-            description: "abcd",
-            title: "def",
-            width: "55",
-            render: () => <img alt={""} className={""} src={razakaarId}></img>,
-          },
-          {
-            source: "",
-            description: "abcd",
-            title: "def",
-            width: "55",
-            render: () => <img alt={""} className={""} src={razakaarOrd}></img>,
-          },
-          {
-            source: "",
-            description: "abcd",
-            title: "def",
+            description: (
+              <span>
+                A mural celebrating <i>Mukti Bahini</i>
+              </span>
+            ),
+            title: "",
             width: "75",
-            render: () => <img alt={""} className={""} src={muktiMural}></img>,
+            render: () => (
+              <img
+                alt={"A mural celebrating Mukti Bahini "}
+                className={""}
+                src={muktiMural}
+              ></img>
+            ),
           },
           {
-            source: "",
-            description: "abcd",
-            title: "def",
+            source: "Flickr",
+            description: "Bodies of Bengali Intellectuals dumped in the river",
+            title: "",
             width: "50",
             render: () => (
-              <img alt={""} className={""} src={intellectuals}></img>
+              <img
+                alt={"Bodies of Bengali Intellectuals dumped in the river"}
+                className={""}
+                src={intellectuals}
+              ></img>
             ),
           },
         ]}
@@ -1404,25 +1502,49 @@ function Operation() {
         setDisplayedOverlay={setDisplayedOverlay}
         slides={[
           {
-            source: "",
-            description: "abcd",
-            title: "def",
+            source: "Amazon",
+            description: `Famous American singer ‘Joan Baez’  wrote "The Song of Bangladesh" based on the army’s crackdown on unarmed sleeping Bengali students`,
+            title: "",
             width: "40",
-            render: () => <img alt={""} className={""} src={solid1}></img>,
+            render: () => (
+              <img
+                alt={`Famous American singer ‘Joan Baez’  wrote "The Song of Bangladesh" based on the army’s crackdown on unarmed sleeping Bengali students`}
+                className={""}
+                src={solid1}
+              ></img>
+            ),
           },
           {
-            source: "",
-            description: "abcd",
-            title: "def",
+            source: "Pinterest",
+            description:
+              "George Harrison along with many other eminent musicians played a series of concerts at the Madison Square Garden (New York) in solidarity of the Bangladeshi cause",
+            title: "",
             width: "35",
-            render: () => <img alt={""} className={""} src={solid2}></img>,
+            render: () => (
+              <img
+                alt={
+                  "George Harrison along with many other eminent musicians played a series of concerts at the Madison Square Garden (New York) in solidarity of the Bangladeshi cause"
+                }
+                className={""}
+                src={solid2}
+              ></img>
+            ),
           },
           {
-            source: "",
-            description: "abcd",
-            title: "def",
+            source: "Wikimedia Commons",
+            description:
+              "George Harrison along with many other eminent musicians played a series of concerts at the Madison Square Garden (New York) in solidarity of the Bangladeshi cause",
+            title: "",
             width: "40",
-            render: () => <img alt={""} className={""} src={solid3}></img>,
+            render: () => (
+              <img
+                alt={
+                  "George Harrison along with many other eminent musicians played a series of concerts at the Madison Square Garden (New York) in solidarity of the Bangladeshi cause"
+                }
+                className={""}
+                src={solid3}
+              ></img>
+            ),
           },
         ]}
       />
@@ -1433,32 +1555,68 @@ function Operation() {
         setDisplayedOverlay={setDisplayedOverlay}
         slides={[
           {
-            source: "",
-            description: "abcd",
-            title: "def",
+            source: "TIME Magazine Online Archives",
+            description:
+              "Peking for Peace: a caricature on the cover of Time magazine suggests President Nixon and Henry Kissinger’s keenness to establish diplomatic ties with China",
+            title: "",
             width: "40",
-            render: () => <img alt={""} className={""} src={timePeking}></img>,
+            render: () => (
+              <img
+                alt={
+                  "Peking for Peace: a caricature on the cover of Time magazine suggests President Nixon and Henry Kissinger’s keenness to establish diplomatic ties with China"
+                }
+                className={""}
+                src={timePeking}
+              ></img>
+            ),
           },
           {
-            source: "",
-            description: "abcd",
-            title: "def",
+            source: "The Atlantic",
+            description:
+              "US Secretary of State Henry Kissinger talks with Presdent Yahya Khan",
+            title: "",
             width: "65",
-            render: () => <img alt={""} className={""} src={yahKiss}></img>,
+            render: () => (
+              <img
+                alt={
+                  "US Secretary of State Henry Kissinger talks with Presdent Yahya Khan"
+                }
+                className={""}
+                src={yahKiss}
+              ></img>
+            ),
           },
           {
-            source: "",
-            description: "abcd",
-            title: "def",
+            source: "George Washington University Archives",
+            description:
+              "A handwritten letter by Presedent Nixon thanking President Yahya for his support in improving ties between the US and China (1)",
+            title: "",
             width: "40",
-            render: () => <img alt={""} className={""} src={nixon1}></img>,
+            render: () => (
+              <img
+                alt={
+                  "A handwritten letter by Presedent Nixon thanking President Yahya for his support in improving ties between the US and China (1)"
+                }
+                className={""}
+                src={nixon1}
+              ></img>
+            ),
           },
           {
-            source: "",
-            description: "abcd",
-            title: "def",
+            source: "George Washington University Archives",
+            description:
+              "A handwritten letter by Presedent Nixon thanking President Yahya for his support in improving ties between the US and China (2)",
+            title: "",
             width: "40",
-            render: () => <img alt={""} className={""} src={nixon2}></img>,
+            render: () => (
+              <img
+                alt={
+                  "A handwritten letter by Presedent Nixon thanking President Yahya for his support in improving ties between the US and China (2)"
+                }
+                className={""}
+                src={nixon2}
+              ></img>
+            ),
           },
         ]}
       />
@@ -1469,27 +1627,69 @@ function Operation() {
         setDisplayedOverlay={setDisplayedOverlay}
         slides={[
           {
-            source: "",
-            description: "abcd",
-            title: "def",
+            source: "TIME Magazine Online Archives",
+            description: "Cover of the Time Magazine (August 2, 1971)",
+            title: "",
             width: "35",
             render: () => (
-              <img alt={""} className={""} src={timeRefugees}></img>
+              <img
+                alt={"Cover of the Time Magazine (August 2, 1971)"}
+                className={""}
+                src={timeRefugees}
+              ></img>
             ),
           },
           {
             source: "",
-            description: "abcd",
-            title: "def",
+            description: (
+              <span>
+                <a
+                  className={styles.rerouteLink}
+                  href="http://www.docstrangelove.com/uploads/1971/foreign/19710329_nyt_sticks_and_spears_against_tanks.pdf"
+                  target="_blank"
+                >
+                  Sticks and Spears against Tanks
+                </a>{" "}
+                by Sydney H. Schanberg published in the New York Times
+              </span>
+            ),
+            title: "",
             width: "35",
-            render: () => <img alt={""} className={""} src={NYT}></img>,
+            render: () => (
+              <img
+                alt={
+                  "Sticks and Spears against Tanks by Sydney H. Schanberg published in the New York Times"
+                }
+                className={""}
+                src={NYT}
+              ></img>
+            ),
           },
           {
             source: "",
-            description: "abcd",
-            title: "def",
+            description: (
+              <span>
+                <a
+                  className={styles.rerouteLink}
+                  href="http://www.docstrangelove.com/uploads/1971/foreign/19710723_wsj_a_nation_divided.pdf"
+                  target="_blank"
+                >
+                  A Nation Divided
+                </a>{" "}
+                by Peter R. Kan published in the Wall Street Journal
+              </span>
+            ),
+            title: "",
             width: "35",
-            render: () => <img alt={""} className={""} src={WSJ}></img>,
+            render: () => (
+              <img
+                alt={
+                  "A Nation Divided by Peter R. Kan published in the Wall Street Journal"
+                }
+                className={""}
+                src={WSJ}
+              ></img>
+            ),
           },
         ]}
       />
@@ -1500,32 +1700,56 @@ function Operation() {
         setDisplayedOverlay={setDisplayedOverlay}
         slides={[
           {
-            source: "",
-            description: "abcd",
-            title: "def",
+            source: "AFP",
+            description: "Refugees from East Pakistan",
+            title: "",
             width: "75",
-            render: () => <img alt={""} className={""} src={refugees1}></img>,
+            render: () => (
+              <img
+                alt={"Refugees from East Pakistan"}
+                className={""}
+                src={refugees1}
+              ></img>
+            ),
           },
           {
-            source: "",
-            description: "abcd",
-            title: "def",
+            source: "Photograph by Raghu Rai",
+            description: "Refugees from East Pakistan",
+            title: "",
             width: "75",
-            render: () => <img alt={""} className={""} src={refugees2}></img>,
+            render: () => (
+              <img
+                alt={"Refugees from East Pakistan"}
+                className={""}
+                src={refugees2}
+              ></img>
+            ),
           },
           {
-            source: "",
-            description: "abcd",
-            title: "def",
+            source: "The Guardian",
+            description: "Refugees from East Pakistan",
+            title: "",
             width: "75",
-            render: () => <img alt={""} className={""} src={refugees3}></img>,
+            render: () => (
+              <img
+                alt={"Refugees from East Pakistan"}
+                className={""}
+                src={refugees3}
+              ></img>
+            ),
           },
           {
-            source: "",
-            description: "abcd",
-            title: "def",
+            source: "DW",
+            description: "Refugees from East Pakistan",
+            title: "",
             width: "65",
-            render: () => <img alt={""} className={""} src={refugees4}></img>,
+            render: () => (
+              <img
+                alt={"Refugees from East Pakistan"}
+                className={""}
+                src={refugees4}
+              ></img>
+            ),
           },
         ]}
       />
@@ -1536,32 +1760,68 @@ function Operation() {
         setDisplayedOverlay={setDisplayedOverlay}
         slides={[
           {
-            source: "",
-            description: "abcd",
-            title: "def",
+            source: "Hilal Archives",
+            description:
+              "Propaganda Headlines in the Pakistani Military’s magazine ‘Hilal’",
+            title: "",
             width: "65",
-            render: () => <img alt={""} className={""} src={hilalHead}></img>,
+            render: () => (
+              <img
+                alt={
+                  "Propaganda Headlines in the Pakistani Military’s magazine ‘Hilal’"
+                }
+                className={""}
+                src={hilalHead}
+              ></img>
+            ),
           },
           {
-            source: "",
-            description: "abcd",
-            title: "def",
+            source: "Hilal Archives",
+            description:
+              "Cartoon published in Pakistani miltary’s magazine ‘Hilal’",
+            title: "",
             width: "60",
-            render: () => <img alt={""} className={""} src={indra2}></img>,
+            render: () => (
+              <img
+                alt={
+                  "Cartoon published in Pakistani miltary’s magazine ‘Hilal’"
+                }
+                className={""}
+                src={indra2}
+              ></img>
+            ),
           },
           {
-            source: "",
-            description: "abcd",
-            title: "def",
+            source: "Hilal Archives",
+            description:
+              "Cartoon published in Pakistani miltary’s magazine ‘Hilal’",
+            title: "",
             width: "75",
-            render: () => <img alt={""} className={""} src={indra1}></img>,
+            render: () => (
+              <img
+                alt={
+                  "Cartoon published in Pakistani miltary’s magazine ‘Hilal’"
+                }
+                className={""}
+                src={indra1}
+              ></img>
+            ),
           },
           {
-            source: "",
-            description: "abcd",
-            title: "def",
+            source: "Hilal",
+            description:
+              "A poem titled ‘Crush India’ published in Pakistani miltary’s magazine ‘Hilal’",
+            title: "",
             width: "45",
-            render: () => <img alt={""} className={""} src={poem}></img>,
+            render: () => (
+              <img
+                alt={
+                  "A poem titled ‘Crush India’ published in Pakistani miltary’s magazine ‘Hilal’"
+                }
+                className={""}
+                src={poem}
+              ></img>
+            ),
           },
         ]}
       />
@@ -1572,39 +1832,69 @@ function Operation() {
         setDisplayedOverlay={setDisplayedOverlay}
         slides={[
           {
-            source: "",
-            description: "abcd",
-            title: "def",
+            source: "DAWN",
+            description: "Advertisements published in DAWN in December 1971",
+            title: "",
             width: "35",
-            render: () => <img alt={""} className={""} src={propPoster5}></img>,
+            render: () => (
+              <img
+                alt={"Advertisements published in DAWN in December 1971"}
+                className={""}
+                src={propPoster5}
+              ></img>
+            ),
           },
           {
-            source: "",
-            description: "abcd",
-            title: "def",
+            source: "DAWN",
+            description: "Advertisements published in DAWN in December 1971",
+            title: "",
             width: "70",
-            render: () => <img alt={""} className={""} src={propPoster1}></img>,
+            render: () => (
+              <img
+                alt={"Advertisements published in DAWN in December 1971"}
+                className={""}
+                src={propPoster1}
+              ></img>
+            ),
           },
           {
-            source: "",
-            description: "abcd",
-            title: "def",
+            source: "DAWN",
+            description: "Advertisements published in DAWN in December 1971",
+            title: "",
             width: "70",
-            render: () => <img alt={""} className={""} src={propPoster2}></img>,
+            render: () => (
+              <img
+                alt={"Advertisements published in DAWN in December 1971"}
+                className={""}
+                src={propPoster2}
+              ></img>
+            ),
           },
           {
-            source: "",
-            description: "abcd",
-            title: "def",
+            source: "DAWN",
+            description: "Advertisements published in DAWN in December 1971",
+            title: "",
             width: "40",
-            render: () => <img alt={""} className={""} src={propPoster3}></img>,
+            render: () => (
+              <img
+                alt={"Advertisements published in DAWN in December 1971"}
+                className={""}
+                src={propPoster3}
+              ></img>
+            ),
           },
           {
-            source: "",
-            description: "abcd",
-            title: "def",
+            source: "DAWN",
+            description: "Advertisements published in DAWN in December 1971",
+            title: "",
             width: "40",
-            render: () => <img alt={""} className={""} src={propPoster4}></img>,
+            render: () => (
+              <img
+                alt={"Advertisements published in DAWN in December 1971"}
+                className={""}
+                src={propPoster4}
+              ></img>
+            ),
           },
         ]}
       />
@@ -1615,39 +1905,49 @@ function Operation() {
         setDisplayedOverlay={setDisplayedOverlay}
         slides={[
           {
-            source: "",
-            description: "abcd",
-            title: "def",
+            source: "DAWN",
+            description: "Headlines from Dawn",
+            title: "",
             width: "40",
-            render: () => <img alt={""} className={""} src={news1}></img>,
+            render: () => (
+              <img alt={"Headlines from Dawn"} className={""} src={news1}></img>
+            ),
           },
           {
-            source: "",
-            description: "abcd",
-            title: "def",
+            source: "DAWN",
+            description: "Headlines from Dawn",
+            title: "",
             width: "40",
-            render: () => <img alt={""} className={""} src={news2}></img>,
+            render: () => (
+              <img alt={"Headlines from Dawn"} className={""} src={news2}></img>
+            ),
           },
           {
-            source: "",
-            description: "abcd",
-            title: "def",
+            source: "DAWN",
+            description: "Headlines from Dawn",
+            title: "",
             width: "40",
-            render: () => <img alt={""} className={""} src={news3}></img>,
+            render: () => (
+              <img alt={"Headlines from Dawn"} className={""} src={news3}></img>
+            ),
           },
           {
-            source: "",
-            description: "abcd",
-            title: "def",
+            source: "DAWN",
+            description: "Headlines from Dawn",
+            title: "",
             width: "40",
-            render: () => <img alt={""} className={""} src={news4}></img>,
+            render: () => (
+              <img alt={"Headlines from Dawn"} className={""} src={news4}></img>
+            ),
           },
           {
-            source: "",
-            description: "abcd",
-            title: "def",
+            source: "DAWN",
+            description: "Headlines from Dawn",
+            title: "",
             width: "40",
-            render: () => <img alt={""} className={""} src={news5}></img>,
+            render: () => (
+              <img alt={"Headlines from Dawn"} className={""} src={news5}></img>
+            ),
           },
         ]}
       />
@@ -1658,159 +1958,303 @@ function Operation() {
         setDisplayedOverlay={setDisplayedOverlay}
         slides={[
           {
-            source: "",
-            description: "abcd",
-            title: "def",
+            source: "Ali Usman Qasmi's collection",
+            description: "Proclamation of Emergency",
+            title: "",
             width: "70",
-            render: () => <img alt={""} className={""} src={bengalPaper1}></img>,
+            render: () => (
+              <img
+                alt={"Proclamation of Emergency"}
+                className={""}
+                src={bengalPaper1}
+              ></img>
+            ),
           },
           {
-            source: "",
-            description: "abcd",
-            title: "def",
+            source: "Ali Usman Qasmi's collection",
+            description:
+              "The news of the victory of Pakistani forces over India and occupation of its areas were repeated on almost daily basis till December 16",
+            title: "",
             width: "65",
-            render: () => <img alt={""} className={""} src={bengalPaper2}></img>,
+            render: () => (
+              <img
+                alt={
+                  "The news of the victory of Pakistani forces over India and occupation of its areas were repeated on almost daily basis till December 16"
+                }
+                className={""}
+                src={bengalPaper2}
+              ></img>
+            ),
           },
           {
-            source: "",
-            description: "abcd",
-            title: "def",
+            source: "Ali Usman Qasmi's collection",
+            description:
+              "In order to give a semblance of the situation under control while the war was ravaging major parts of East Pakistan, Morning News published a feature on the popularity of miniskirts",
+            title: "",
             width: "35",
-            render: () => <img alt={""} className={""} src={bengalPaper3}></img>,
+            render: () => (
+              <img
+                alt={
+                  "In order to give a semblance of the situation under control while the war was ravaging major parts of East Pakistan, Morning News published a feature on the popularity of miniskirts"
+                }
+                className={""}
+                src={bengalPaper3}
+              ></img>
+            ),
           },
           {
-            source: "",
-            description: "abcd",
-            title: "def",
+            source: "Ali Usman Qasmi's collection",
+            description:
+              "Headline of Morning News on December 11, 1971 when the war was at its peak on both fronts",
+            title: "",
             width: "60",
-            render: () => <img alt={""} className={""} src={bengalPaper4}></img>,
+            render: () => (
+              <img
+                alt={
+                  "Headline of Morning News on December 11, 1971 when the war was at its peak on both fronts"
+                }
+                className={""}
+                src={bengalPaper4}
+              ></img>
+            ),
           },
           {
-            source: "",
-            description: "abcd",
-            title: "def",
+            source: "Ali Usman Qasmi's collection",
+            description:
+              "Recruitment ads were still being printed as war had broken out on the Eastern Front with the overwhelming number of Bengalis opposed to the Pakistani military",
+            title: "",
             width: "40",
-            render: () => <img alt={""} className={""} src={bengalPaper5}></img>,
+            render: () => (
+              <img
+                alt={
+                  "Recruitment ads were still being printed as war had broken out on the Eastern Front with the overwhelming number of Bengalis opposed to the Pakistani military"
+                }
+                className={""}
+                src={bengalPaper5}
+              ></img>
+            ),
           },
           {
-            source: "",
-            description: "abcd",
-            title: "def",
+            source: "Ali Usman Qasmi's collection",
+            description:
+              "Making people believe in the myth of Pakistani military's victory over India during the war of 1965 and expecting a repetition of the same in 1971",
+            title: "",
             width: "40",
-            render: () => <img alt={""} className={""} src={bengalPaper6}></img>,
+            render: () => (
+              <img
+                alt={
+                  "Making people believe in the myth of Pakistani military's victory over India during the war of 1965 and expecting a repetition of the same in 1971"
+                }
+                className={""}
+                src={bengalPaper6}
+              ></img>
+            ),
           },
           {
-            source: "",
-            description: "abcd",
-            title: "def",
+            source: "Ali Usman Qasmi's collection",
+            description:
+              "Headline of Pakistan Observer just three days before surrender",
+            title: "",
             width: "75",
-            render: () => <img alt={""} className={""} src={bengalPaper7}></img>,
+            render: () => (
+              <img
+                alt={
+                  "Headline of Pakistan Observer just three days before surrender"
+                }
+                className={""}
+                src={bengalPaper7}
+              ></img>
+            ),
           },
           {
-            source: "",
-            description: "abcd",
-            title: "def",
+            source: "Ali Usman Qasmi's collection",
+            description:
+              "Pakistan Observer becomes Observer as East Pakistan becomes Bangladesh",
+            title: "",
             width: "45",
-            render: () => <img alt={""} className={""} src={bengalPaper8}></img>,
+            render: () => (
+              <img
+                alt={
+                  "Pakistan Observer becomes Observer as East Pakistan becomes Bangladesh"
+                }
+                className={""}
+                src={bengalPaper8}
+              ></img>
+            ),
           },
           {
-            source: "",
-            description: "abcd",
-            title: "def",
+            source: "Ali Usman Qasmi's collection",
+            description:
+              "An ad published in Morning News on December 27, 1971 in which the name Pakistan has been crossed out",
+            title: "",
             width: "40",
-            render: () => <img alt={""} className={""} src={bengalPaper9}></img>,
+            render: () => (
+              <img
+                alt={
+                  "An ad published in Morning News on December 27, 1971 in which the name Pakistan has been crossed out"
+                }
+                className={""}
+                src={bengalPaper9}
+              ></img>
+            ),
           },
         ]}
       />
-            <Overlay
+      <Overlay
         oId="12"
         displayedOverlay={displayedOverlay}
         closeOverlay={closeOverlay}
         setDisplayedOverlay={setDisplayedOverlay}
         slides={[
           {
-            source: "",
-            description: "abcd",
-            title: "def",
+            source: "Wajahat Masood's personal collection",
+            description:
+              "General Niazi discusses military strategy with senior officers",
+            title: "",
             width: "60",
-            render: () => <img alt={""} className={""} src={war0}></img>,
+            render: () => (
+              <img
+                alt={
+                  "General Niazi discusses military strategy with senior officers"
+                }
+                className={""}
+                src={war0}
+              ></img>
+            ),
           },
           {
-            source: "",
-            description: "abcd",
-            title: "def",
+            source: "Wajahat Masood's personal collection",
+            description:
+              "General Niazi and General Arora (along with troops) before the signing of the official surrender ",
+            title: "",
             width: "65",
-            render: () => <img alt={""} className={""} src={war1}></img>,
+            render: () => (
+              <img
+                alt={
+                  "General Niazi and General Arora (along with troops) before the signing of the official surrender "
+                }
+                className={""}
+                src={war1}
+              ></img>
+            ),
           },
           {
-            source: "",
-            description: "abcd",
-            title: "def",
+            source: "Wajahat Masood's personal collection",
+            description:
+              "General Niazi along with injured troops on a militart plane",
+            title: "",
             width: "65",
-            render: () => <img alt={""} className={""} src={war2}></img>,
+            render: () => (
+              <img
+                alt={
+                  "General Niazi along with injured troops on a militart plane"
+                }
+                className={""}
+                src={war2}
+              ></img>
+            ),
           },
           {
-            source: "",
-            description: "abcd",
-            title: "def",
+            source: "Wajahat Masood's personal collection",
+            description:
+              "Genaral Niazi along with senior military men from the indian army during the surrender ceremony",
+            title: "",
             width: "70",
-            render: () => <img alt={""} className={""} src={war3}></img>,
+            render: () => (
+              <img
+                alt={
+                  "Genaral Niazi along with senior military men from the indian army during the surrender ceremony"
+                }
+                className={""}
+                src={war3}
+              ></img>
+            ),
           },
           {
-            source: "",
-            description: "abcd",
-            title: "def",
+            source: "Wajahat Masood's personal collection",
+            description: "General Niazi passes on instruction to a troop",
+            title: "",
             width: "70",
-            render: () => <img alt={""} className={""} src={war4}></img>,
+            render: () => (
+              <img
+                alt={"General Niazi passes on instruction to a troop"}
+                className={""}
+                src={war4}
+              ></img>
+            ),
           },
           {
-            source: "",
-            description: "abcd",
-            title: "def",
+            source: "Wajahat Masood's personal collection",
+            description: "General Niazi addressing troops",
+            title: "",
             width: "65",
-            render: () => <img alt={""} className={""} src={war5}></img>,
+            render: () => (
+              <img
+                alt={"General Niazi addressing troops"}
+                className={""}
+                src={war5}
+              ></img>
+            ),
           },
           {
-            source: "",
-            description: "abcd",
-            title: "def",
+            source: "Wajahat Masood's personal collection",
+            description: "",
+            title: "",
             width: "75",
             render: () => <img alt={""} className={""} src={war6}></img>,
           },
           {
-            source: "",
-            description: "abcd",
-            title: "def",
+            source: "Wajahat Masood's personal collection",
+            description: "",
+            title: "",
             width: "35",
             render: () => <img alt={""} className={""} src={war7}></img>,
           },
           {
-            source: "",
-            description: "abcd",
-            title: "def",
+            source: "Wajahat Masood's personal collection",
+            description: "",
+            title: "",
             width: "60",
             render: () => <img alt={""} className={""} src={war8}></img>,
           },
           {
-            source: "",
-            description: "abcd",
-            title: "def",
+            source: "Wajahat Masood's personal collection",
+            description: "",
+            title: "",
             width: "60",
             render: () => <img alt={""} className={""} src={war9}></img>,
           },
           {
-            source: "",
-            description: "abcd",
-            title: "def",
+            source: "Flickr",
+            description:
+              "Pakistan’s ambassador to Poland, Bashir ul Alam defects on December 22, 1971",
+            title: "",
             width: "40",
-            render: () => <img alt={""} className={""} src={warsaw1}></img>,
+            render: () => (
+              <img
+                alt={
+                  "Pakistan’s ambassador to Poland, Bashir ul Alam defects on December 22, 1971"
+                }
+                className={""}
+                src={warsaw1}
+              ></img>
+            ),
           },
           {
-            source: "",
-            description: "abcd",
-            title: "def",
+            source: "Flickr",
+            description:
+              "News on the defection of a Pakistani diplomat in Poland as he declared his loyalty to Bangladesh",
+            title: "",
             width: "40",
-            render: () => <img alt={""} className={""} src={warsaw2}></img>,
+            render: () => (
+              <img
+                alt={
+                  "News on the defection of a Pakistani diplomat in Poland as he declared his loyalty to Bangladesh"
+                }
+                className={""}
+                src={warsaw2}
+              ></img>
+            ),
           },
         ]}
       />

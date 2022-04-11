@@ -3,6 +3,7 @@
   position: relative;
   z-index: 1;
   transform: translate3d(0,0,0);
+  overflow-x: hidden;
 }
 
 .chapter_title_content {
@@ -18,6 +19,21 @@
   display: flex;
   flex-direction: row;
   align-items: center;
+  animation: fade_up 0.8s ease-out 0.2s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes fade_up {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  } 
+  
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
 
 .title_and_subtitle {
@@ -91,6 +107,20 @@
   border: 1px solid #1B489D;
   padding: 8px 8px;
   margin: 16px 0px 65px 0px;
+  opacity: 0;
+  animation: fade_down 0.6s ease-out 0.2s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fade_down {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
 }
 
 .chapter_no span {
@@ -133,16 +163,40 @@
   font-weight: 400;
   width: 62%;
   text-align: center;
+  opacity: 0;
+  animation: fade_up 0.8s ease-out 0.3s;
+  animation-fill-mode: forwards;
 }
 
 .img1 {
   width: 20%;
+  animation: title_photo 0.6s ease-out 1;
+  animation-fill-mode: forwards;
+  opacity: 0;
 }
 .img3 {
   width: 20%;
+  animation: title_photo 0.6s 0.4s ease-out 1;
+  animation-fill-mode: forwards;
+  opacity: 0;
 }
 .img2 {
   width: 50%;
+  animation: title_photo 0.6s 0.2s ease-out 1;
+  animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@keyframes title_photo {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
 }
 
 .chevron_container {
@@ -151,6 +205,9 @@
   display: flex;
   align-items: center;
   margin-top: 30px;
+  opacity: 0;
+  animation: fade_up 0.8s ease-out 0.4s;
+  animation-fill-mode: forwards;
 }
 
 .chev_text {

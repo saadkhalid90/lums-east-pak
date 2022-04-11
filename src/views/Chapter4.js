@@ -149,14 +149,14 @@ function AfterTheWar() {
               ]}
             />
           </div>
-          <div class={styles.video_contain_center}>
-            <div class={styles.video_contain}>
+          <div className={styles.video_contain_center}>
+            <div className={styles.video_contain}>
               <iframe
                 src="https://www.youtube.com/embed/fowobGg-nwY"
                 title="YouTube video player"
-                frameborder="0"
+                frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
+                allowFullScreen
               ></iframe>
               <p className={styles.video_caption}>
                 Zulfiqar Ali Bhutto welcomes Sheikh Mujib Ur Rahman to Lahore
@@ -164,14 +164,14 @@ function AfterTheWar() {
               </p>
             </div>
           </div>
-          <div class={styles.video_contain_center}>
-            <div class={styles.video_contain}>
+          <div className={styles.video_contain_center}>
+            <div className={styles.video_contain}>
               <iframe
                 src="https://www.youtube.com/embed/DgI3fjtTLds"
                 title="YouTube video player"
-                frameborder="0"
+                frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
+                allowFullScreen
               ></iframe>
               <p className={styles.video_caption}>
                 Following the official recognition of Bangladesh by Pakistan,
@@ -306,14 +306,14 @@ function AfterTheWar() {
               acknowledgment of the violence committed against them by Mukti
               Bahinis.
             </p>
-            <div class={styles.video_contain_center}>
-              <div class={styles.video_contain}>
+            <div className={styles.video_contain_center}>
+              <div className={styles.video_contain}>
                 <iframe
                   src="https://www.youtube.com/embed/Wquha5rZuBo"
                   title="YouTube video player"
-                  frameborder="0"
+                  frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen
+                  allowFullScreen
                 ></iframe>
                 <p className={styles.video_caption}>
                   So-called ‘Biharis’ (Urdu speaking communities) are confined
@@ -466,39 +466,78 @@ function AfterTheWar() {
         setDisplayedOverlay={setDisplayedOverlay}
         slides={[
           {
-            source: "",
-            description: "abcd",
-            title: "def",
+            source: "Flickr",
+            description:
+              "Yasir Arafat, Sheikh Mujib, Zulfiqar Bhutto and Muammar Gaddafi at the Organization of Islamic Countries (OIC) Conference at Lahore in 1974. The occasion was used as a diplomatic opportunity by Pakistan to recognize Bangladesh as an independent republic",
+            title: "",
             width: "70",
-            render: () => <img alt={""} className={""} src={mujbhutt1}></img>,
+            render: () => (
+              <img
+                alt={
+                  "Yasir Arafat, Sheikh Mujib, Zulfiqar Bhutto and Muammar Gaddafi at the Organization of Islamic Countries (OIC) Conference at Lahore in 1974. The occasion was used as a diplomatic opportunity by Pakistan to recognize Bangladesh as an independent republic"
+                }
+                className={""}
+                src={mujbhutt1}
+              ></img>
+            ),
           },
           {
-            source: "",
-            description: "abcd",
+            source: "Flickr",
+            description:
+              "Bhutto and Mujib share a light moment at the OIC Conference at Lahore in 1974",
             title: "def",
             width: "40",
-            render: () => <img alt={""} className={""} src={mujbhutt5}></img>,
+            render: () => (
+              <img
+                alt={
+                  "Bhutto and Mujib share a light moment at the OIC Conference at Lahore in 1974"
+                }
+                className={""}
+                src={mujbhutt5}
+              ></img>
+            ),
           },
           {
-            source: "",
-            description: "abcd",
+            source: "Flickr",
+            description:
+              "Bhutto and Mujib share a light moment at the OIC Conference at Lahore in 1974",
             title: "def",
             width: "55",
-            render: () => <img alt={""} className={""} src={mujbhutt4}></img>,
+            render: () => (
+              <img
+                alt={
+                  "Bhutto and Mujib share a light moment at the OIC Conference at Lahore in 1974"
+                }
+                className={""}
+                src={mujbhutt4}
+              ></img>
+            ),
           },
           {
-            source: "",
-            description: "abcd",
+            source: "Flickr",
+            description: "Bhutto and Mujib immersed in dialogue",
             title: "def",
             width: "65",
-            render: () => <img alt={""} className={""} src={mujbhutt3}></img>,
+            render: () => (
+              <img
+                alt={"Bhutto and Mujib immersed in dialogue"}
+                className={""}
+                src={mujbhutt3}
+              ></img>
+            ),
           },
           {
-            source: "",
-            description: "abcd",
-            title: "def",
+            source: "Flickr",
+            description: "Bhutto and Mujib at the Islamic Summit",
+            title: "",
             width: "40",
-            render: () => <img alt={""} className={""} src={mujbhutt2}></img>,
+            render: () => (
+              <img
+                alt={"Bhutto and Mujib at the Islamic Summit"}
+                className={""}
+                src={mujbhutt2}
+              ></img>
+            ),
           },
         ]}
       />
@@ -510,17 +549,29 @@ function AfterTheWar() {
         slides={[
           {
             source: "",
-            description: "abcd",
-            title: "def",
+            description: "An act redefining the territories of Pakistan",
+            title: "",
             width: "45",
-            render: () => <img alt={""} className={""} src={firstAmend1}></img>,
+            render: () => (
+              <img
+                alt={"An act redefining the territories of Pakistan"}
+                className={""}
+                src={firstAmend1}
+              ></img>
+            ),
           },
           {
             source: "",
-            description: "abcd",
-            title: "def",
+            description: "An act redefining citizenship of Pakistan",
+            title: "",
             width: "70",
-            render: () => <img alt={""} className={""} src={revokeCit}></img>,
+            render: () => (
+              <img
+                alt={"An act redefining citizenship of Pakistan"}
+                className={""}
+                src={revokeCit}
+              ></img>
+            ),
           },
         ]}
       />
@@ -531,18 +582,30 @@ function AfterTheWar() {
         setDisplayedOverlay={setDisplayedOverlay}
         slides={[
           {
-            source: "",
-            description: "abcd",
-            title: "def",
+            source: "Researchgate",
+            description: "View of the Geneva Camp (March 1972)",
+            title: "",
             width: "65",
-            render: () => <img alt={""} className={""} src={geneva1}></img>,
+            render: () => (
+              <img
+                alt={"View of the Geneva Camp (March 1972)"}
+                className={""}
+                src={geneva1}
+              ></img>
+            ),
           },
           {
-            source: "",
-            description: "abcd",
-            title: "def",
+            source: "The Guardian",
+            description: "Present day view of the Geneva Camp",
+            title: "",
             width: "70",
-            render: () => <img alt={""} className={""} src={geneva2}></img>,
+            render: () => (
+              <img
+                alt={"Present day view of the Geneva Camp"}
+                className={""}
+                src={geneva2}
+              ></img>
+            ),
           },
         ]}
       />
@@ -553,18 +616,33 @@ function AfterTheWar() {
         setDisplayedOverlay={setDisplayedOverlay}
         slides={[
           {
-            source: "",
-            description: "abcd",
-            title: "def",
+            source: "Wikimedia Commons",
+            description:
+              "Justice Hamoodur Rahman handing over judicial reports to Zulfiqar Ali Bhutto",
+            title: "",
             width: "65",
-            render: () => <img alt={""} className={""} src={hamood}></img>,
+            render: () => (
+              <img
+                alt={
+                  "Justice Hamoodur Rahman handing over judicial reports to Zulfiqar Ali Bhutto"
+                }
+                className={""}
+                src={hamood}
+              ></img>
+            ),
           },
           {
-            source: "",
-            description: "abcd",
-            title: "def",
+            source: "Vanguard Publishing",
+            description: "Title page of the Hamoodur Rahman Commission Report",
+            title: "",
             width: "40",
-            render: () => <img alt={""} className={""} src={hamoodRpt}></img>,
+            render: () => (
+              <img
+                alt={"Title page of the Hamoodur Rahman Commission Report"}
+                className={""}
+                src={hamoodRpt}
+              ></img>
+            ),
           },
         ]}
       />
@@ -575,25 +653,76 @@ function AfterTheWar() {
         setDisplayedOverlay={setDisplayedOverlay}
         slides={[
           {
-            source: "",
-            description: "abcd",
-            title: "def",
+            source: "IMDB",
+            description: (
+              <span>
+                Theatrical Poster for{" "}
+                <a
+                  className={styles.rerouteLink}
+                  href="https://www.youtube.com/watch?v=QoxV9ByZT6E"
+                  target="_blank"
+                >
+                  Khwab Toot Jatay Hain
+                </a>
+              </span>
+            ),
+            title: "",
             width: "40",
-            render: () => <img alt={""} className={""} src={film1}></img>,
+            render: () => (
+              <img
+                alt={"Theatrical Poster for Khwab Toot Jatay Hain"}
+                className={""}
+                src={film1}
+              ></img>
+            ),
           },
           {
-            source: "",
-            description: "abcd",
-            title: "def",
+            source: "IMDB",
+            description: (
+              <span>
+                Theatrical Poster for{" "}
+                <a
+                  className={styles.rerouteLink}
+                  href="https://www.youtube.com/watch?v=PLt8blFzIZ4&ab_channel=HARPALGEO"
+                  target="_blank"
+                >
+                  Jo Bichar Gaye
+                </a>
+              </span>
+            ),
+            title: "",
             width: "40",
-            render: () => <img alt={""} className={""} src={film2}></img>,
+            render: () => (
+              <img
+                alt={"Theatrical Poster for Jo Bichar Gaye"}
+                className={""}
+                src={film2}
+              ></img>
+            ),
           },
           {
-            source: "",
-            description: "abcd",
-            title: "def",
+            source: "IMDB",
+            description: (
+              <span>
+                Theatrical Poster for{" "}
+                <a
+                  className={styles.rerouteLink}
+                  href="https://www.youtube.com/watch?v=hIprxEg5AQg&ab_channel=KHELKHELMEIN"
+                  target="_blank"
+                >
+                  Khel Khel Mein
+                </a>
+              </span>
+            ),
+            title: "Theatrical Poster for Khel Khel Mein",
             width: "40",
-            render: () => <img alt={""} className={""} src={film3}></img>,
+            render: () => (
+              <img
+                alt={"Theatrical Poster for Khel Khel Mein"}
+                className={""}
+                src={film3}
+              ></img>
+            ),
           },
         ]}
       />

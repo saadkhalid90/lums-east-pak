@@ -87,13 +87,13 @@
   z-index: -1;
   transform: scaleX(0);
   transform-origin: right;
-  transition: transform 175ms ease-in;
+  transition: transform 250ms ease-in;
 }
 
 .start_story p{
   z-index: 2;
   margin: 0px;
-  transition: color 100ms ease-in-out;
+  transition: color 150ms ease-in-out;
 }
 
 .start_story:hover::before {

@@ -46,7 +46,7 @@ function QuotePhoto({
                   }}
                 />
               }
-              <p
+              <div
                 className={classNames(
                   styles.quote,
                   quoteAlign == 'left' ? styles.quote_left : styles.quote_center,
@@ -55,7 +55,7 @@ function QuotePhoto({
                 )}
               >
                 {quoteTxt}
-              </p>
+              </div>
               {
                 quotationMark &&
                 <img

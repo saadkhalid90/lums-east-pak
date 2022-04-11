@@ -35,9 +35,9 @@ function Dec1516() {
             <iframe
               src="https://www.youtube.com/embed/ZHkCVIn6ujM"
               title="YouTube video player"
-              frameborder="0"
+              frameBorder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
+              allowFullScreen
             ></iframe>
             <p className={styles.video_caption}>
               Bhutto walks out of the Security Council on December 15, 1971

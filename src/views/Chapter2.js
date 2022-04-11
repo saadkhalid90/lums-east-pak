@@ -23,6 +23,11 @@ import bhola2 from "../resources/Chapter2/images/Bhola_Yahya.jpg";
 import bhola3 from "../resources/Chapter2/images/BholaArt.jpeg";
 import bhola4 from "../resources/Chapter2/images/BholaArt2.jpeg";
 
+import election1 from "../resources/Chapter2/images/elections/electionsStamp.jpg";
+import election2 from "../resources/Chapter2/images/elections/electionCoverage.jpg";
+import election3 from "../resources/Chapter2/images/elections/Mujib1970.jpg";
+import election4 from "../resources/Chapter2/images/elections/Bhutto1970.jpg";
+
 import transfer1 from "../resources/Chapter2/photoStory2/power_transfer1.jpg";
 import transfer2 from "../resources/Chapter2/photoStory2/power_transfer2.jpg";
 import transfer3 from "../resources/Chapter2/photoStory2/power_transfer3.jpg";
@@ -143,14 +148,14 @@ function Polls() {
               points as part of his party’s manifesto for the elections and the
               blueprint for the country’s future constitution.
             </p>
-            <div class={styles.video_contain_center}>
-              <div class={styles.video_contain}>
+            <div className={styles.video_contain_center}>
+              <div className={styles.video_contain}>
                 <iframe
                   src="https://www.youtube.com/embed/YiUR5pdVQn0"
                   title="YouTube video player"
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullscreen
+                  allowFullScreen
                 ></iframe>
                 <p className={styles.video_caption}>
                   Sheikh Mujib shares Awami League's Election Manifesto on Radio
@@ -278,7 +283,7 @@ function Polls() {
             addedMargin
             photo={mujib_sixP}
             photoClassName={"ch2Q_6points"}
-            quoteTxt="The election results gave a massive, almost unanimous, decision for Sheikh Mujib in East Pakistan. The Awami League grabbed 158 out of 160 seats. Zulfiqar Ali Bhutto’s Pakistan Peoples’ Party was a clear winner in West Pakistan, winning 82 out of 130(?) seats."
+            quoteTxt="The election results gave a massive, almost unanimous, decision for Sheikh Mujib in East Pakistan. The Awami League grabbed 158 out of 160 seats. Zulfiqar Ali Bhutto’s Pakistan Peoples’ Party was a clear winner in West Pakistan, winning 82 out of 138 seats."
             quoteAlign="center"
             color="white"
             fontSize="big"
@@ -294,6 +299,36 @@ function Polls() {
         </div>
         <div className={styles.view_content_wrapper}>
           <div className={styles.view_content_container}>
+            <PhotoContainer
+              setDisplayedOverlay={setDisplayedOverlay}
+              overlayID={"3"}
+              imgArr={[
+                {
+                  image: election2,
+                  caption:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                  widthID: "thirty",
+                },
+                {
+                  image: election3,
+                  caption:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                  widthID: "thirty",
+                },
+                {
+                  image: election4,
+                  caption:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                  widthID: "thirtyfive",
+                },
+                {
+                  image: election1,
+                  caption:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                  widthID: "twenty",
+                },
+              ]}
+            />
             <SectionHeading heading="The Military Junta delays transfer of power" />
             <p className={styles.view_para}>
               What followed was a frantic attempt on the part of the military
@@ -361,14 +396,14 @@ function Polls() {
               freedom. (find YouTube video of the address)
             </p>
           </div>
-          <div class={styles.video_contain_center}>
-            <div class={styles.video_contain}>
+          <div className={styles.video_contain_center}>
+            <div className={styles.video_contain}>
               <iframe
                 src="https://www.youtube.com/embed/5-5Xe21kjC4"
                 title="YouTube video player"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullscreen
+                allowFullScreen
               ></iframe>
               <p className={styles.video_caption}>
                 Sheikh Mujib’s iconic speech at Ramna Racecourse, Dhaka on March
@@ -396,32 +431,68 @@ function Polls() {
         setDisplayedOverlay={setDisplayedOverlay}
         slides={[
           {
-            source: "",
-            description: "abcd",
-            title: "def",
-            width:"70",
-            render: () => <img alt={""} className={""} src={bhola1}></img>,
+            source: "weather.com",
+            description:
+              "Aerial view of the destruction caused by the Bhola cyclone",
+            title: "",
+            width: "70",
+            render: () => (
+              <img
+                alt={
+                  "Aerial view of the destruction caused by the Bhola cyclone"
+                }
+                className={""}
+                src={bhola1}
+              ></img>
+            ),
           },
           {
-            source: "",
-            description: "abcd",
-            title: "def",
-            width:"70",
-            render: () => <img alt={""} className={""} src={bhola2}></img>,
+            source: "Wikimedia Commons",
+            description:
+              "President General Yahya Khan surveys the cyclone-affected areas with close aides",
+            title: "",
+            width: "70",
+            render: () => (
+              <img
+                alt={
+                  "President General Yahya Khan surveys the cyclone-affected areas with close aides"
+                }
+                className={""}
+                src={bhola2}
+              ></img>
+            ),
           },
           {
-            source: "",
-            description: "abcd",
-            title: "def",
-            width:"45",
-            render: () => <img alt={""} className={""} src={bhola3}></img>,
+            source: "DAWN",
+            description:
+              "A painter depicts the plight of the flood-affected people (Published in DAWN)",
+            title: "",
+            width: "45",
+            render: () => (
+              <img
+                alt={
+                  "A painter depicts the plight of the flood-affected people (Published in DAWN)"
+                }
+                className={""}
+                src={bhola3}
+              ></img>
+            ),
           },
           {
-            source: "",
-            description: "abcd",
-            title: "def",
-            width:"45",
-            render: () => <img alt={""} className={""} src={bhola4}></img>,
+            source: "DAWN",
+            description:
+              "A painter depicts the plight of the flood-affected people (Published in DAWN)",
+            title: "",
+            width: "45",
+            render: () => (
+              <img
+                alt={
+                  "A painter depicts the plight of the flood-affected people (Published in DAWN)"
+                }
+                className={""}
+                src={bhola4}
+              ></img>
+            ),
           },
         ]}
       />
@@ -432,26 +503,114 @@ function Polls() {
         setDisplayedOverlay={setDisplayedOverlay}
         slides={[
           {
-            source: "",
-            description: "abcd",
-            title: "def",
-            width:"70",
-            render: () => <img alt={""} className={""} src={transfer1}></img>,
+            source: "DAWN",
+            description: "Headlines on the delay in transfer of power",
+            title: "",
+            width: "70",
+            render: () => (
+              <img
+                alt={"Headlines on the delay in transfer of power"}
+                className={""}
+                src={transfer1}
+              ></img>
+            ),
           },
           {
-            source: "",
-            description: "abcd",
-            title: "def",
-            width:"22",
-            render: () => <img alt={""} className={""} src={transfer3}></img>,
+            source: "DAWN",
+            description: "Headlines on the delay in transfer of power",
+            title: "",
+            width: "22",
+            render: () => (
+              <img
+                alt={"Headlines on the delay in transfer of power"}
+                className={""}
+                src={transfer3}
+              ></img>
+            ),
           },
           {
-            source: "",
-            description: "abcd",
+            source: "DAWN",
+            description: "Headlines on the delay in transfer of power",
+            title: "",
+            width: "65",
+            render: () => (
+              <img
+                alt={"Headlines on the delay in transfer of power"}
+                className={""}
+                src={transfer2}
+              ></img>
+            ),
+          },
+        ]}
+      />
+      <Overlay
+        oId="3"
+        displayedOverlay={displayedOverlay}
+        closeOverlay={closeOverlay}
+        setDisplayedOverlay={setDisplayedOverlay}
+        slides={[
+          {
+            source: "Wikimedia Commons",
+            description:
+              "Television coverage of the 1970 elections in East Pakistan",
             title: "def",
-            width:"65",
-            render: () => <img alt={""} className={""} src={transfer2}></img>,
-          }
+            width: "70",
+            render: () => (
+              <img
+                alt={
+                  "Television coverage of the 1970 elections in East Pakistan"
+                }
+                className={""}
+                src={election2}
+              ></img>
+            ),
+          },
+          {
+            source: "DAWN",
+            description:
+              "Sheikh Mujib on the campaign trail. Mujib’ Awami League bagged 160 out of 162 seats in East Pakistan",
+            title: "",
+            width: "70",
+            render: () => (
+              <img
+                alt={
+                  "Sheikh Mujib on the campaign trail. Mujib’ Awami League bagged 160 out of 162 seats in East Pakistan"
+                }
+                className={""}
+                src={election3}
+              ></img>
+            ),
+          },
+          {
+            source: "The Friday Times",
+            description:
+              "Zulfiqar Ali Bhutto ran a successful socialist campaign in West Pakistan",
+            title: "",
+            width: "75",
+            render: () => (
+              <img
+                alt={
+                  "Zulfiqar Ali Bhutto ran a successful socialist campaign in West Pakistan"
+                }
+                className={""}
+                src={election4}
+              ></img>
+            ),
+          },
+          {
+            source: "istampgallery.com",
+            description:
+              "Pakistani postage stamp commemmorating the 1970 election",
+            title: "def",
+            width: "30",
+            render: () => (
+              <img
+                alt={"Pakistani postage stamp commemmorating the 1970 election"}
+                className={""}
+                src={election1}
+              ></img>
+            ),
+          },
         ]}
       />
     </div>

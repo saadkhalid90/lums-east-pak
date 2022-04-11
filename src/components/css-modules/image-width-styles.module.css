@@ -62,3 +62,143 @@
   width: 22%;
   margin: 0 39%;
 }
+
+@media screen and (max-width: 60em){
+  .overLay80 {
+    width: 98%;
+    margin: 0 1%;
+  }
+  
+  .overLay75 {
+    width: 95%;
+    margin: 0 2.5%;
+  }
+  
+  .overLay70 {
+    width: 90%;
+    margin: 0 5%;
+  }
+  
+  .overLay65 {
+    width: 80%;
+    margin: 0 10%;
+  }
+  
+  .overLay60 {
+    width: 75%;
+    margin: 0 12.5%;
+  }
+  
+  .overLay55 {
+    width: 70%;
+    margin: 0 15%;
+  }
+  
+  .overLay50 {
+    width: 65%;
+    margin: 0 17.5%;
+  }
+  
+  .overLay45 {
+    width: 60%;
+    margin: 0 20%;
+  }
+  
+  .overLay40 {
+    width: 55%;
+    margin: 0 22.5%;
+  }
+  
+  .overLay35 {
+    width: 50%;
+    margin: 0 25%;
+  }
+  
+  .overLay30 {
+    width: 45%;
+    margin: 0 27.5%;
+  }
+  
+  .overLay25 {
+    width: 40%;
+    margin: 0 30%;
+  }
+  
+  .overLay22 {
+    width: 35%;
+    margin: 0 32.5%;
+  }
+
+}
+
+@media screen and (max-width: 40em){
+  .overLay80 {
+    width: 100%;
+    margin: 0 0%;
+  }
+
+  .overLay75 {
+    width: 98%;
+    margin: 0 1%;
+  }
+  
+  .overLay70 {
+    width: 95%;
+    margin: 0 2.5%;
+  }
+  
+  .overLay65 {
+    width: 90%;
+    margin: 0 5%;
+  }
+  
+  .overLay60 {
+    width: 80%;
+    margin: 0 10%;
+  }
+  
+  .overLay55 {
+    width: 75%;
+    margin: 0 12.5%;
+  }
+  
+  .overLay50 {
+    width: 70%;
+    margin: 0 15%;
+  }
+  
+  .overLay45 {
+    width: 65%;
+    margin: 0 17.5%;
+  }
+  
+  .overLay40 {
+    width: 60%;
+    margin: 0 20%;
+  }
+  
+  .overLay35 {
+    width: 55%;
+    margin: 0 22.5%;
+  }
+  
+  .overLay30 {
+    width: 50%;
+    margin: 0 25%;
+  }
+  
+  .overLay25 {
+    width: 45%;
+    margin: 0 27.5%;
+  }
+  
+  .overLay22 {
+    width: 40%;
+    margin: 0 30%;
+  }
+  
+  .overLay22 {
+    width: 35%;
+    margin: 0 32.5%;
+  }
+}

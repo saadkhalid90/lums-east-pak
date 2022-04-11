@@ -19,6 +19,7 @@ import tagore from "../resources/Chapter1/images/Tagore.jpg";
 import mural from "../resources/Chapter1/images/Mural.jpg";
 import blm from "../resources/Chapter1/images/blm.jpeg";
 import blmWomen from "../resources/Chapter1/images/blm_women.jpeg";
+import heroines from "../resources/Chapter1/images/heroines.jpg";
 import bhashaniSM from "../resources/Chapter1/images/bhashani_shahidminar.jpeg";
 import SM from "../resources/Chapter1/images/shahidminar.jpeg";
 
@@ -81,118 +82,120 @@ function Background() {
       <section className={styles.content_section}>
         <div className={styles.view_content_wrapper}>
           <div className={styles.view_content_container}>
-            <div className={styles.view_section}>
-              <SectionHeading heading="Political Differences emerge between the east and the west wings of a newborn state" />
-              <p className={styles.view_para}>
-                The emergence of Pakistan in 1947 created an anomaly of a
-                geographically fractured state. The two wings of the country –
-                the majority Bengali population of East Bengal/East Pakistan and
-                the multiethnic provincial units, tribal areas, and formerly
-                princely states comprising West Pakistan – were divided by a
-                1200-miles stretch of Indian territory.
-              </p>
-              <p className={styles.view_para}>
-                Economically, East Bengal was a rural hinterland, which had
-                suffered immensely because of losing connection with Calcutta's
-                commercial and intellectual hub, At the time of the Partition,
-                the British government had awarded Calcutta to India. Protesting
-                against this decision, Jinnah described it as forcing a man to
-                live without his lungs.
-              </p>
-              <PhotoContainer
-                noScroll
-                setDisplayedOverlay={setDisplayedOverlay}
-                overlayID={"4"}
-                imgArr={[
-                  {
-                    image: eastWestFriends,
-                    caption:
-                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-                    widthID: "fortyfive",
-                  },
-                  {
-                    image: tagore,
-                    caption:
-                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-                    widthID: "fortyfive",
-                  },
-                ]}
-              />
-              <p className={styles.view_para}>
-                Politically, the two wings disagreed on the constitutional
-                future of the country. Despite being the numerical majority, the
-                East Bengalis felt marginalized and excluded. Due to Pakistan's
-                failure to develop a viable democratic structure, the political
-                power was wielded by the military and bureaucracy mainly
-                recruited from Punjab and the North-Indian Muslim migrant elite.
-                In a democratic setting, Bengali numerical superiority would
-                have diluted the disproportionate power held by Punjab and North
-                Indian Muslim elite. The political elite was reluctant to give
-                up this power.
-              </p>
-              <p className={styles.view_para}>
-                What resulted was a prolonged deadlock on the making of a
-                constitution. It was in 1956 that a constitution was finally
-                adopted. Much of the Bengali opposition rejected it.
-              </p>
-            </div>
-            <div className={styles.view_section}>
-              <SectionHeading heading="Identity Politics and the Bengali Language Movement" />
-              <p className={styles.view_para}>
-                Other than political disagreements about representation, the
-                Bengali leadership was generally campaigning for a more
-                inclusive and egalitarian form of national identity. They
-                opposed the attempts of the state to impose a homogenized
-                Islam-based majoritarian ethos. As part of this statist project,
-                Urdu was projected as the only national language, much to the
-                chagrin of Bengali leaders who, for a good reason, saw it as
-                discriminatory against the Bengali majority. What exacerbated
-                this tension was the government's police action against
-                protestors marching for the imposition of Bengali language in
-                February 1952 which resulted in the death of many students. In
-                the following years, various Bengali political parties, leaders
-                and organizations commemorated the event by holding marches.
-                They also built a monument to pay tribute to what they described
-                as the martyrs of the Bengali language.
-              </p>
+            <SectionHeading heading="Political Differences emerge between the east and the west wings of a newborn state" />
+            <p className={styles.view_para}>
+              The emergence of Pakistan in 1947 created an anomaly of a
+              geographically fractured state. The two wings of the country – the
+              majority Bengali population of East Bengal/East Pakistan and the
+              multiethnic provincial units, tribal areas, and formerly princely
+              states comprising West Pakistan – were divided by a 1200-miles
+              stretch of Indian territory.
+            </p>
+            <p className={styles.view_para}>
+              Economically, East Bengal was a rural hinterland, which had
+              suffered immensely because of losing connection with Calcutta's
+              commercial and intellectual hub, At the time of the Partition, the
+              British government had awarded Calcutta to India. Protesting
+              against this decision, Jinnah described it as forcing a man to
+              live without his lungs.
+            </p>
+            <PhotoContainer
+              noScroll
+              setDisplayedOverlay={setDisplayedOverlay}
+              overlayID={"4"}
+              imgArr={[
+                {
+                  image: eastWestFriends,
+                  caption:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                  widthID: "fortyfive",
+                },
+                {
+                  image: tagore,
+                  caption:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                  widthID: "fortyfive",
+                },
+              ]}
+            />
+            <p className={styles.view_para}>
+              Politically, the two wings disagreed on the constitutional future
+              of the country. Despite being the numerical majority, the East
+              Bengalis felt marginalized and excluded. Due to Pakistan's failure
+              to develop a viable democratic structure, the political power was
+              wielded by the military and bureaucracy mainly recruited from
+              Punjab and the North-Indian Muslim migrant elite. In a democratic
+              setting, Bengali numerical superiority would have diluted the
+              disproportionate power held by Punjab and North Indian Muslim
+              elite. The political elite was reluctant to give up this power.
+            </p>
+            <p className={styles.view_para}>
+              What resulted was a prolonged deadlock on the making of a
+              constitution. It was in 1956 that a constitution was finally
+              adopted. Much of the Bengali opposition rejected it.
+            </p>
 
-              <PhotoContainer
-                setDisplayedOverlay={setDisplayedOverlay}
-                overlayID={"3"}
-                imgArr={[
-                  {
-                    image: blm,
-                    caption:
-                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-                    widthID: "thirty",
-                  },
-                  {
-                    image: blmWomen,
-                    caption:
-                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-                    widthID: "thirtyfive",
-                  },
-                  {
-                    image: bhashaniSM,
-                    caption:
-                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-                    widthID: "twentyfive",
-                  },
-                  {
-                    image: SM,
-                    caption:
-                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-                    widthID: "twentyfive",
-                  },
-                  {
-                    image: mural,
-                    caption:
-                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-                    widthID: "thirtyfive",
-                  },
-                ]}
-              />
-            </div>
+            <SectionHeading heading="Identity Politics and the Bengali Language Movement" />
+            <p className={styles.view_para}>
+              Other than political disagreements about representation, the
+              Bengali leadership was generally campaigning for a more inclusive
+              and egalitarian form of national identity. They opposed the
+              attempts of the state to impose a homogenized Islam-based
+              majoritarian ethos. As part of this statist project, Urdu was
+              projected as the only national language, much to the chagrin of
+              Bengali leaders who, for a good reason, saw it as discriminatory
+              against the Bengali majority. What exacerbated this tension was
+              the government's police action against protestors marching for the
+              imposition of Bengali language in February 1952 which resulted in
+              the death of many students. In the following years, various
+              Bengali political parties, leaders and organizations commemorated
+              the event by holding marches. They also built a monument to pay
+              tribute to what they described as the martyrs of the Bengali
+              language.
+            </p>
+
+            <PhotoContainer
+              setDisplayedOverlay={setDisplayedOverlay}
+              overlayID={"3"}
+              imgArr={[
+                {
+                  image: blm,
+                  caption:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                  widthID: "thirty",
+                },
+                {
+                  image: blmWomen,
+                  caption:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                  widthID: "thirtyfive",
+                },
+                {
+                  image: heroines,
+                  caption:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                  widthID: "thirtyfive",
+                },
+                {
+                  image: bhashaniSM,
+                  caption:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                  widthID: "twentyfive",
+                },
+                {
+                  image: SM,
+                  caption:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                  widthID: "twentyfive",
+                },
+                {
+                  image: mural,
+                  caption:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                  widthID: "thirtyfive",
+                },
+              ]}
+            />
           </div>
         </div>
 
@@ -215,51 +218,47 @@ function Background() {
       <section className={styles.content_section}>
         <div className={styles.view_content_wrapper}>
           <div className={styles.view_content_container}>
-            <div className={styles.view_section}>
-              <SectionHeading heading="East Pakistanis choose the United Front Coalition over the Muslim league in 1954 provincial elections" />
-              <p className={styles.view_para}>
-                As a result of this disillusionment with the Pakistan project
-                soon after independence and the trajectory that the state had
-                taken, the Bengali voters routed the ruling Muslim League out of
-                power in the first provincial elections held in 1954. The United
-                Front - a conglomerate of Bengali opposition parties - secured
-                more than 300 seats compared to less than a dozen won by the
-                Muslim League. Such a dramatic reversal of electoral fortunes in
-                just seven years after independence effectively sealed the
-                prospects of an all-Pakistan-based polity.
-              </p>
-              <p className={styles.view_para}>
-                To their credit, Bengali leadership, led by H. S. Suharawardy –
-                and supported by his young lieutenant – Sheikh Mujib-ur-Rehman –
-                put up spirited opposition in the assembly debates between
-                1954-56. They warned against the excessive rhetoric of an
-                Islamic state as a ruse to push a statist agenda of
-                homogenization, denial of equal citizenship to non-Muslims, and
-                diluting of Bengali political power.
-              </p>
+            <SectionHeading heading="East Pakistanis choose the United Front Coalition over the Muslim league in 1954 provincial elections" />
+            <p className={styles.view_para}>
+              As a result of this disillusionment with the Pakistan project soon
+              after independence and the trajectory that the state had taken,
+              the Bengali voters routed the ruling Muslim League out of power in
+              the first provincial elections held in 1954. The United Front - a
+              conglomerate of Bengali opposition parties - secured more than 300
+              seats compared to less than a dozen won by the Muslim League. Such
+              a dramatic reversal of electoral fortunes in just seven years
+              after independence effectively sealed the prospects of an
+              all-Pakistan-based polity.
+            </p>
+            <p className={styles.view_para}>
+              To their credit, Bengali leadership, led by H. S. Suharawardy –
+              and supported by his young lieutenant – Sheikh Mujib-ur-Rehman –
+              put up spirited opposition in the assembly debates between
+              1954-56. They warned against the excessive rhetoric of an Islamic
+              state as a ruse to push a statist agenda of homogenization, denial
+              of equal citizenship to non-Muslims, and diluting of Bengali
+              political power.
+            </p>
 
-              <PhotoContainer
-                noScroll
-                setDisplayedOverlay={setDisplayedOverlay}
-                overlayID={"2"}
-                imgArr={[
-                  {
-                    image: dawn1954,
-                    caption:
-                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-                    widthID: "fifty",
-                  },
-                  {
-                    image: cabinet1954,
-                    caption:
-                      "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-                    widthID: "fortyfive",
-                  },
-                ]}
-              />
-            </div>
-
-            <div className={styles.view_section}></div>
+            <PhotoContainer
+              noScroll
+              setDisplayedOverlay={setDisplayedOverlay}
+              overlayID={"2"}
+              imgArr={[
+                {
+                  image: dawn1954,
+                  caption:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                  widthID: "fifty",
+                },
+                {
+                  image: cabinet1954,
+                  caption:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                  widthID: "fortyfive",
+                },
+              ]}
+            />
             <SectionHeading heading="Martial Law and the Rise of Sheikh Mujib ur Rehman" />
             <p className={styles.view_para}>
               This active phase of political opposition came to an end with the
@@ -303,14 +302,14 @@ function Background() {
               democratic change for an inclusive federal polity.
             </p>
             <div className={styles.view_section}>
-              <div class={styles.video_contain_center}>
-                <div class={styles.video_contain}>
+              <div className={styles.video_contain_center}>
+                <div className={styles.video_contain}>
                   <iframe
                     src="https://www.youtube.com/embed/fvmA1UKcMV4"
                     title="YouTube video player"
                     frameBorder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowFullscreen
+                    allowFullScreen
                   ></iframe>
                   <p className={styles.video_caption}>
                     Fatima Jinnah campaigning for the 1965 presidential
@@ -351,8 +350,8 @@ function Background() {
                 of serious nature.
               </p>
             </div>
-            <div class={styles.video_contain_center}>
-              <div class={styles.video_contain}>
+            <div className={styles.video_contain_center}>
+              <div className={styles.video_contain}>
                 <iframe
                   width="650"
                   height="365"
@@ -360,7 +359,7 @@ function Background() {
                   title="YouTube video player"
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullscreen
+                  allowFullScreen
                 ></iframe>
                 <p className={styles.video_caption}>
                   Sheikh Mujib’s interview after his release from prison (in the
@@ -390,18 +389,36 @@ function Background() {
         setDisplayedOverlay={setDisplayedOverlay}
         slides={[
           {
-            source: "",
-            description: "abcd",
-            title: "def",
-            width:"55",
-            render: () => <img alt={""} className={""} src={fatimaJMuj}></img>,
+            source: "Flickr",
+            description:
+              "Fatima Jinnah campaigning in East Pakistan for the 1965 Presidential Election. Sheikh Mujib can also be seen in the background",
+            title: "",
+            width: "55",
+            render: () => (
+              <img
+                alt={
+                  "Fatima Jinnah campaigning in East Pakistan. Sheikh Mujib can also be seen in the background"
+                }
+                className={""}
+                src={fatimaJMuj}
+              ></img>
+            ),
           },
           {
             source: "",
-            description: "abcd",
-            title: "def",
-            width:"65",
-            render: () => <img alt={""} className={""} src={fatimaJPos}></img>,
+            description:
+              "Fatima Jinnah’s campaign poster reads ‘The flowers won’t be able to put out this lamp’. ‘Flower’ was the electoral symbol for Ayub Khan whereas ‘lamp’ represented Fatima Jinnah",
+            title: "",
+            width: "65",
+            render: () => (
+              <img
+                alt={
+                  "Fatima Jinnah’s campaign poster reads ‘The flowers won’t be able to put out this lamp’. ‘Flower’ was the electoral symbol for Ayub Khan whereas ‘lamp’ represented Fatima Jinnah"
+                }
+                className={""}
+                src={fatimaJPos}
+              ></img>
+            ),
           },
         ]}
       />
@@ -412,18 +429,36 @@ function Background() {
         setDisplayedOverlay={setDisplayedOverlay}
         slides={[
           {
-            source: "",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
+            source: "DAWN",
+            description:
+              "Dawn’s headline on the United Front’s victory over the Muslim League in 1954 elections (18 March 1954)",
             title: "def",
             width: "70",
-            render: () => <img alt={""} className={""} src={dawn1954}></img>,
+            render: () => (
+              <img
+                alt={
+                  "Dawn’s headline on the United Front’s victory over the Muslim League in 1954 elections (18 March 1954)"
+                }
+                className={""}
+                src={dawn1954}
+              ></img>
+            ),
           },
           {
-            source: "",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
+            source: "Wikimedia Commons",
+            description:
+              "East Bengal’s cabinet formed by the United Front. Sheikh Mujib Ur Rahman can be seen standing in the front row",
             title: "def",
             width: "75",
-            render: () => <img alt={""} className={""} src={cabinet1954}></img>,
+            render: () => (
+              <img
+                alt={
+                  "East Bengal’s cabinet formed by the United Front. Sheikh Mujib Ur Rahman can be seen standing in the front row"
+                }
+                className={""}
+                src={cabinet1954}
+              ></img>
+            ),
           },
         ]}
       />
@@ -434,39 +469,109 @@ function Background() {
         setDisplayedOverlay={setDisplayedOverlay}
         slides={[
           {
-            source: "",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
-            title: "def",
+            source: "Wikimedia Commons",
+            description:
+              "A Bengali Langauge Movement Procession, held on 21 February 1952",
+            title: "",
             width: "65",
-            render: () => <img alt={""} className={""} src={blm}></img>,
+            render: () => (
+              <img
+                alt={
+                  "A Bengali Langauge Movement Procession was held on 21 February 1952"
+                }
+                className={""}
+                src={blm}
+              ></img>
+            ),
           },
           {
-            source: "",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
-            title: "def",
+            source: "Flickr",
+            description:
+              "Women students march in support of the Bengali Language movement in 1952",
+            title: "",
             width: "70",
-            render: () => <img alt={""} className={""} src={blmWomen}></img>,
+            render: () => (
+              <img
+                alt={
+                  "Women students march in support of the Bengali Language movement in 1952"
+                }
+                className={""}
+                src={blmWomen}
+              ></img>
+            ),
           },
           {
-            source: "",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
-            title: "def",
+            source: "Observer BD",
+            description:
+              "A Women’s sit-in during the Bengali Language movement in 1952",
+            title: "",
+            width: "70",
+            render: () => (
+              <img
+                alt={
+                  "A Women’s sit-in during the Bengali Language movement in 1952"
+                }
+                className={""}
+                src={heroines}
+              ></img>
+            ),
+          },
+          {
+            source: "Flickr",
+            description: (
+              <span>
+                Maulana Abdul Hamid Khan Bhashani, a popular Bengali politician
+                after the foundation stone laying program for{" "}
+                <i>Shahid Minar</i> (Martyrs' monument)
+              </span>
+            ),
+            title: "",
             width: "50",
-            render: () => <img alt={""} className={""} src={bhashaniSM}></img>,
+            render: () => (
+              <img
+                alt={
+                  "Maulana Abdul Hamid Khan Bhashani, a popular Bengali politician after the foundation stone laying program for Shahid Minar (Martyrs' monument)"
+                }
+                className={""}
+                src={bhashaniSM}
+              ></img>
+            ),
           },
           {
-            source: "",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
-            title: "def",
+            source: "Flickr",
+            description: (
+              <span>
+                Crowd gathers at the foundation laying ceremony for the{" "}
+                <i>Shahid Minar</i> (Martyrs' monument)
+              </span>
+            ),
+            title: "",
             width: "55",
-            render: () => <img alt={""} className={""} src={SM}></img>,
+            render: () => (
+              <img
+                alt={
+                  "Crowd gathers at the foundation laying ceremony for the Shahid Minar (Martyrs' monument)"
+                }
+                className={""}
+                src={SM}
+              ></img>
+            ),
           },
           {
-            source: "",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
+            source: "Art and Culture, Bangladesh",
+            description:
+              "A street mural in Dhaka commemorating the Language Movement of 1952",
             title: "def",
             width: "70",
-            render: () => <img alt={""} className={""} src={mural}></img>,
+            render: () => (
+              <img
+                alt={
+                  "A street mural in Dhaka commemorating the Language Movement of 1952"
+                }
+                className={""}
+                src={mural}
+              ></img>
+            ),
           },
         ]}
       />
@@ -478,19 +583,29 @@ function Background() {
         slides={[
           {
             source: "",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
-            title: "def",
-            width:"70",
+            description: `A caricature from a newspaper reads “The recent Governor’s Conference has brought the two wings of the country closer still”`,
+            title: "",
+            width: "70",
             render: () => (
-              <img alt={""} className={""} src={eastWestFriends}></img>
+              <img
+                alt={`A caricature from a newspaper reads “The recent Governor’s Conference has brought the two wings of the country closer still”`}
+                className={""}
+                src={eastWestFriends}
+              ></img>
             ),
           },
           {
             source: "",
-            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
-            title: "defg",
-            width:"65",
-            render: () => <img alt={""} className={""} src={tagore}></img>,
+            description: `Official government documents show the state’s concern for ‘increase in Pro-Tagore activities in East Pakistan’`,
+            title: "",
+            width: "65",
+            render: () => (
+              <img
+                alt={`Official government documents show the state’s concern for ‘increase in Pro-Tagore activities in East Pakistan’`}
+                className={""}
+                src={tagore}
+              ></img>
+            ),
           },
         ]}
       />
