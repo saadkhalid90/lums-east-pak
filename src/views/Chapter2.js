@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 import MediaQuery from "react-responsive";
 import styles from "./css-modules/view-styles.module.css";
 import Navbar from "../components/Navbar.js";
@@ -8,7 +8,8 @@ import PhotoContainer from "../components/PhotoContainer.js";
 import QuotePhoto from "../components/QuotePhoto.js";
 import ElectMap from "../components/map/map.js";
 import Footer from "../components/Footer.js";
-import PhotoSwitch from "../components/photoSwitch.js";
+import ResponsivePhotoSwitch from "../components/responsivePhotoSwitch.js";
+import Overlay from "../components/Overlay";
 
 import chapter2_1 from "../resources/Chapter2/Chapter2_1.jpg";
 import chapter2_2 from "../resources/Chapter2/Chapter2_2.jpg";
@@ -101,9 +102,21 @@ const photoData = [
 ];
 
 function Polls() {
+  const [overlayClosed, setOverlayClosed] = useState(false);
+  const [displayedOverlay, setDisplayedOverlayState] = useState(false);
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  function closeOverlay() {
+    setDisplayedOverlayState(["", 0]);
+  }
+
+  function setDisplayedOverlay(oId, slideIndex) {
+    setDisplayedOverlayState([oId, slideIndex]);
+  }
+
   return (
     <div className={styles.view_container}>
       <Navbar type="chapter_title" />
@@ -139,6 +152,10 @@ function Polls() {
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullscreen
                 ></iframe>
+                <p className={styles.video_caption}>
+                  Sheikh Mujib shares Awami League's Election Manifesto on Radio
+                  Pakistan
+                </p>
               </div>
             </div>
           </div>
@@ -198,9 +215,17 @@ function Polls() {
               further alienated the people of East Pakistan.
             </p>
             <PhotoContainer
+              setDisplayedOverlay={setDisplayedOverlay}
+              overlayID={"1"}
               imgArr={[
                 {
                   image: bhola1,
+                  caption:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                  widthID: "thirty",
+                },
+                {
+                  image: bhola2,
                   caption:
                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
                   widthID: "thirty",
@@ -210,12 +235,6 @@ function Polls() {
                   caption:
                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
                   widthID: "twenty",
-                },
-                {
-                  image: bhola2,
-                  caption:
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-                  widthID: "thirty",
                 },
                 {
                   image: bhola4,
@@ -291,6 +310,8 @@ function Polls() {
               attacking non-Bengali residents and their businesses.
             </p>
             <PhotoContainer
+              setDisplayedOverlay={setDisplayedOverlay}
+              overlayID={"2"}
               noScroll
               imgArr={[
                 {
@@ -317,41 +338,7 @@ function Polls() {
         </div>
 
         <div className={styles.view_content_wrapper}>
-          <MediaQuery minWidth={1280}>
-            <PhotoSwitch
-              photoData={photoData}
-              imgArr={newsImgArr}
-              scaleMultiplier={1}
-            />
-          </MediaQuery>
-          <MediaQuery maxWidth={1280} minWidth={960}>
-            <PhotoSwitch
-              photoData={photoData}
-              imgArr={newsImgArr}
-              scaleMultiplier={0.9}
-            />
-          </MediaQuery>
-          <MediaQuery maxWidth={960} minWidth={640}>
-            <PhotoSwitch
-              photoData={photoData}
-              imgArr={newsImgArr}
-              scaleMultiplier={0.75}
-            />
-          </MediaQuery>
-          <MediaQuery maxWidth={640} minWidth={480}>
-            <PhotoSwitch
-              photoData={photoData}
-              imgArr={newsImgArr}
-              scaleMultiplier={0.5}
-            />
-          </MediaQuery>
-          <MediaQuery maxWidth={480}>
-            <PhotoSwitch
-              photoData={photoData}
-              imgArr={newsImgArr}
-              scaleMultiplier={0.4}
-            />
-          </MediaQuery>
+          <ResponsivePhotoSwitch photoData={photoData} imgArr={newsImgArr} />
         </div>
       </section>
 
@@ -383,6 +370,10 @@ function Polls() {
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullscreen
               ></iframe>
+              <p className={styles.video_caption}>
+                Sheikh Mujib’s iconic speech at Ramna Racecourse, Dhaka on March
+                7, 1971
+              </p>
             </div>
           </div>
         </div>
@@ -397,6 +388,71 @@ function Polls() {
         prevLink="/ch1"
         nextLink="/ch3"
         chapterID={2}
+      />
+      <Overlay
+        oId="1"
+        displayedOverlay={displayedOverlay}
+        closeOverlay={closeOverlay}
+        setDisplayedOverlay={setDisplayedOverlay}
+        slides={[
+          {
+            source: "",
+            description: "abcd",
+            title: "def",
+            width:"70",
+            render: () => <img alt={""} className={""} src={bhola1}></img>,
+          },
+          {
+            source: "",
+            description: "abcd",
+            title: "def",
+            width:"70",
+            render: () => <img alt={""} className={""} src={bhola2}></img>,
+          },
+          {
+            source: "",
+            description: "abcd",
+            title: "def",
+            width:"45",
+            render: () => <img alt={""} className={""} src={bhola3}></img>,
+          },
+          {
+            source: "",
+            description: "abcd",
+            title: "def",
+            width:"45",
+            render: () => <img alt={""} className={""} src={bhola4}></img>,
+          },
+        ]}
+      />
+      <Overlay
+        oId="2"
+        displayedOverlay={displayedOverlay}
+        closeOverlay={closeOverlay}
+        setDisplayedOverlay={setDisplayedOverlay}
+        slides={[
+          {
+            source: "",
+            description: "abcd",
+            title: "def",
+            width:"70",
+            render: () => <img alt={""} className={""} src={transfer1}></img>,
+          },
+          {
+            source: "",
+            description: "abcd",
+            title: "def",
+            width:"22",
+            render: () => <img alt={""} className={""} src={transfer3}></img>,
+          },
+          {
+            source: "",
+            description: "abcd",
+            title: "def",
+            width:"65",
+            render: () => <img alt={""} className={""} src={transfer2}></img>,
+          }
+        ]}
       />
     </div>
   );

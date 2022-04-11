@@ -243,6 +243,10 @@
   }
 }
 
+.appendix_link {
+  font-weight: bold;
+}
+
 @media screen and (max-width: 40em) {
   .container {
     padding: 20px 15px;

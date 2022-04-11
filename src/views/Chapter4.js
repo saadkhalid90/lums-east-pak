@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 import styles from "./css-modules/view-styles.module.css";
 import Navbar from "../components/Navbar.js";
 import ChapterTitle from "../components/ChapterTitle.js";
@@ -6,6 +6,7 @@ import SectionHeading from "../components/SectionHeading.js";
 import PhotoContainer from "../components/PhotoContainer.js";
 import QuotePhoto from "../components/QuotePhoto.js";
 import Footer from "../components/Footer.js";
+import Overlay from "../components/Overlay";
 
 import chapter4_1 from "../resources/Chapter4/Chapter4_1.jpg";
 import chapter4_2 from "../resources/Chapter4/Chapter4_2.jpg";
@@ -55,9 +56,21 @@ const imgArrCh4 = [
 ];
 
 function AfterTheWar() {
+  const [overlayClosed, setOverlayClosed] = useState(false);
+  const [displayedOverlay, setDisplayedOverlayState] = useState(false);
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  function closeOverlay() {
+    setDisplayedOverlayState(["", 0]);
+  }
+
+  function setDisplayedOverlay(oId, slideIndex) {
+    setDisplayedOverlayState([oId, slideIndex]);
+  }
+
   return (
     <div className={styles.view_container}>
       <Navbar type="chapter_title" />
@@ -100,6 +113,8 @@ function AfterTheWar() {
           </div>
           <div className={styles.view_content_container}>
             <PhotoContainer
+              setDisplayedOverlay={setDisplayedOverlay}
+              overlayID={"1"}
               imgArr={[
                 {
                   image: mujbhutt1,
@@ -143,6 +158,10 @@ function AfterTheWar() {
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen
               ></iframe>
+              <p className={styles.video_caption}>
+                Zulfiqar Ali Bhutto welcomes Sheikh Mujib Ur Rahman to Lahore
+                for the International Islamic Conference
+              </p>
             </div>
           </div>
           <div class={styles.video_contain_center}>
@@ -154,6 +173,10 @@ function AfterTheWar() {
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen
               ></iframe>
+              <p className={styles.video_caption}>
+                Following the official recognition of Bangladesh by Pakistan,
+                Bhutto visited Dhaka a few months after the Islamic Conference
+              </p>
             </div>
           </div>
         </div>
@@ -198,6 +221,8 @@ function AfterTheWar() {
               majority population of Bengalis in united Pakistan.
             </p>
             <PhotoContainer
+              setDisplayedOverlay={setDisplayedOverlay}
+              overlayID={"2"}
               noScroll
               imgArr={[
                 {
@@ -243,6 +268,8 @@ function AfterTheWar() {
               them from refugees to citizens.
             </p>
             <PhotoContainer
+              setDisplayedOverlay={setDisplayedOverlay}
+              overlayID={"3"}
               noScroll
               imgArr={[
                 {
@@ -288,6 +315,11 @@ function AfterTheWar() {
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowfullscreen
                 ></iframe>
+                <p className={styles.video_caption}>
+                  So-called ‘Biharis’ (Urdu speaking communities) are confined
+                  to refugee camps and are still fighting for recognition in
+                  Bangladesh
+                </p>
               </div>
             </div>
           </div>
@@ -351,6 +383,8 @@ function AfterTheWar() {
               recommendations.
             </p>
             <PhotoContainer
+              setDisplayedOverlay={setDisplayedOverlay}
+              overlayID={"4"}
               noScroll
               imgArr={[
                 {
@@ -388,6 +422,8 @@ function AfterTheWar() {
               exonerated the military of any wrongdoing.
             </p>
             <PhotoContainer
+              setDisplayedOverlay={setDisplayedOverlay}
+              overlayID={"5"}
               noScroll
               imgArr={[
                 {
@@ -422,6 +458,144 @@ function AfterTheWar() {
         prevLink="/ch4"
         nextLink="/"
         chapterID={4}
+      />
+      <Overlay
+        oId="1"
+        displayedOverlay={displayedOverlay}
+        closeOverlay={closeOverlay}
+        setDisplayedOverlay={setDisplayedOverlay}
+        slides={[
+          {
+            source: "",
+            description: "abcd",
+            title: "def",
+            width: "70",
+            render: () => <img alt={""} className={""} src={mujbhutt1}></img>,
+          },
+          {
+            source: "",
+            description: "abcd",
+            title: "def",
+            width: "40",
+            render: () => <img alt={""} className={""} src={mujbhutt5}></img>,
+          },
+          {
+            source: "",
+            description: "abcd",
+            title: "def",
+            width: "55",
+            render: () => <img alt={""} className={""} src={mujbhutt4}></img>,
+          },
+          {
+            source: "",
+            description: "abcd",
+            title: "def",
+            width: "65",
+            render: () => <img alt={""} className={""} src={mujbhutt3}></img>,
+          },
+          {
+            source: "",
+            description: "abcd",
+            title: "def",
+            width: "40",
+            render: () => <img alt={""} className={""} src={mujbhutt2}></img>,
+          },
+        ]}
+      />
+      <Overlay
+        oId="2"
+        displayedOverlay={displayedOverlay}
+        closeOverlay={closeOverlay}
+        setDisplayedOverlay={setDisplayedOverlay}
+        slides={[
+          {
+            source: "",
+            description: "abcd",
+            title: "def",
+            width: "45",
+            render: () => <img alt={""} className={""} src={firstAmend1}></img>,
+          },
+          {
+            source: "",
+            description: "abcd",
+            title: "def",
+            width: "70",
+            render: () => <img alt={""} className={""} src={revokeCit}></img>,
+          },
+        ]}
+      />
+      <Overlay
+        oId="3"
+        displayedOverlay={displayedOverlay}
+        closeOverlay={closeOverlay}
+        setDisplayedOverlay={setDisplayedOverlay}
+        slides={[
+          {
+            source: "",
+            description: "abcd",
+            title: "def",
+            width: "65",
+            render: () => <img alt={""} className={""} src={geneva1}></img>,
+          },
+          {
+            source: "",
+            description: "abcd",
+            title: "def",
+            width: "70",
+            render: () => <img alt={""} className={""} src={geneva2}></img>,
+          },
+        ]}
+      />
+      <Overlay
+        oId="4"
+        displayedOverlay={displayedOverlay}
+        closeOverlay={closeOverlay}
+        setDisplayedOverlay={setDisplayedOverlay}
+        slides={[
+          {
+            source: "",
+            description: "abcd",
+            title: "def",
+            width: "65",
+            render: () => <img alt={""} className={""} src={hamood}></img>,
+          },
+          {
+            source: "",
+            description: "abcd",
+            title: "def",
+            width: "40",
+            render: () => <img alt={""} className={""} src={hamoodRpt}></img>,
+          },
+        ]}
+      />
+      <Overlay
+        oId="5"
+        displayedOverlay={displayedOverlay}
+        closeOverlay={closeOverlay}
+        setDisplayedOverlay={setDisplayedOverlay}
+        slides={[
+          {
+            source: "",
+            description: "abcd",
+            title: "def",
+            width: "40",
+            render: () => <img alt={""} className={""} src={film1}></img>,
+          },
+          {
+            source: "",
+            description: "abcd",
+            title: "def",
+            width: "40",
+            render: () => <img alt={""} className={""} src={film2}></img>,
+          },
+          {
+            source: "",
+            description: "abcd",
+            title: "def",
+            width: "40",
+            render: () => <img alt={""} className={""} src={film3}></img>,
+          },
+        ]}
       />
     </div>
   );

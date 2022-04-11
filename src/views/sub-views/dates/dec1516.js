@@ -31,20 +31,22 @@ function Dec1516() {
           take your Security Council; here you are. I am going."
         </p>
         <div class={styles.video_contain_center}>
-            <div>
-              <iframe
-                width="650"
-                height="365"
-                src="https://www.youtube.com/embed/ZHkCVIn6ujM"
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen
-              ></iframe>
-            </div>
+          <div class={styles.video_contain}>
+            <iframe
+              src="https://www.youtube.com/embed/ZHkCVIn6ujM"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+            <p className={styles.video_caption}>
+              Bhutto walks out of the Security Council on December 15, 1971
+            </p>
           </div>
+        </div>
         <p className={styles.view_para}>
           <a
+            className={styles.clickLink}
             href="https://www.thedailystar.net/news/bangladesh/news/bhutto-walks-out-tears-2917766"
             target="_blank"
           >
@@ -74,6 +76,7 @@ function Dec1516() {
         </p>
         <p className={styles.view_para}>
           <a
+            className={styles.clickLink}
             href="https://www.thedailystar.net/news/bangladesh/news/bangladesh-wins-freedom-2918491"
             target="_blank"
           >

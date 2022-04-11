@@ -42,6 +42,7 @@ function Dec1314() {
         </p>
         <p className={styles.view_para}>
           <a
+            className={styles.clickLink}
             href="https://www.thedailystar.net/news/bangladesh/news/third-soviet-veto-bars-truce-plan-2916016"
             target="_blank"
           >
@@ -70,6 +71,7 @@ function Dec1314() {
         </p>
         <p className={styles.view_para}>
           <a
+            className={styles.clickLink}
             href="https://www.thedailystar.net/news/bangladesh/news/malik-cabinet-resigns-en-masse-2916836"
             target="_blank"
           >

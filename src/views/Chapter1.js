@@ -7,6 +7,7 @@ import SectionHeading from "../components/SectionHeading.js";
 import PhotoContainer from "../components/PhotoContainer.js";
 import QuotePhoto from "../components/QuotePhoto.js";
 import Footer from "../components/Footer.js";
+import Overlay from "../components/Overlay";
 
 import chapter1_1 from "../resources/Chapter1/Chapter1_1.png";
 import chapter1_2 from "../resources/Chapter1/Chapter1_2.png";
@@ -28,8 +29,6 @@ import fatimaJMuj from "../resources/Chapter1/images/FatimaJinnahMujeeb.png";
 import fatimaJPos from "../resources/Chapter1/images/FatimaJinnahPoster.png";
 
 import quote from "../resources/Chapter1/images/quote1.png";
-
-import Overlay from '../components/Overlay';
 
 const imgArrCh1 = [
   {
@@ -53,7 +52,6 @@ const imgArrCh1 = [
 ];
 
 function Background() {
-
   const [overlayClosed, setOverlayClosed] = useState(false);
   const [displayedOverlay, setDisplayedOverlayState] = useState(false);
 
@@ -61,13 +59,12 @@ function Background() {
     window.scrollTo(0, 0);
   }, []);
 
-
-  function closeOverlay(){
-    setDisplayedOverlayState(['',0]);
+  function closeOverlay() {
+    setDisplayedOverlayState(["", 0]);
   }
 
-  function setDisplayedOverlay(oId, slideIndex){
-    setDisplayedOverlayState([oId,slideIndex]);
+  function setDisplayedOverlay(oId, slideIndex) {
+    setDisplayedOverlayState([oId, slideIndex]);
   }
 
   return (
@@ -105,7 +102,7 @@ function Background() {
               <PhotoContainer
                 noScroll
                 setDisplayedOverlay={setDisplayedOverlay}
-                overlayID={'4'}
+                overlayID={"4"}
                 imgArr={[
                   {
                     image: eastWestFriends,
@@ -161,7 +158,7 @@ function Background() {
 
               <PhotoContainer
                 setDisplayedOverlay={setDisplayedOverlay}
-                overlayID={'3'}
+                overlayID={"3"}
                 imgArr={[
                   {
                     image: blm,
@@ -244,7 +241,7 @@ function Background() {
               <PhotoContainer
                 noScroll
                 setDisplayedOverlay={setDisplayedOverlay}
-                overlayID={'2'}
+                overlayID={"2"}
                 imgArr={[
                   {
                     image: dawn1954,
@@ -315,18 +312,23 @@ function Background() {
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                     allowFullscreen
                   ></iframe>
+                  <p className={styles.video_caption}>
+                    Fatima Jinnah campaigning for the 1965 presidential
+                    elections in East Pakistan. Sheikh Mujib can be spotted
+                    alongside Ms Jinnah on the campaign trail
+                  </p>
                 </div>
               </div>
               <PhotoContainer
                 noScroll
                 setDisplayedOverlay={setDisplayedOverlay}
-                overlayID={'1'}
+                overlayID={"1"}
                 imgArr={[
                   {
                     image: fatimaJMuj,
                     caption:
                       "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-                    widthID: "fortyfive",                    
+                    widthID: "fortyfive",
                   },
                   {
                     image: fatimaJPos,
@@ -360,6 +362,10 @@ function Background() {
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullscreen
                 ></iframe>
+                <p className={styles.video_caption}>
+                  Sheikh Mujib’s interview after his release from prison (in the
+                  Agartala Conspiracy case)
+                </p>
               </div>
             </div>
           </div>
@@ -378,111 +384,116 @@ function Background() {
       />
 
       <Overlay
-          oId="1"
-          displayedOverlay={displayedOverlay}
-          closeOverlay={closeOverlay}
-          setDisplayedOverlay={setDisplayedOverlay}
-          slides={
-            [
-              {
-                source: '',
-                description: 'abcd',
-                title: 'def',
-                render : ()=> <img alt={''} className={''} src={fatimaJMuj}></img>
-              },
-              {
-                source: '',
-                description: 'abcd',
-                title: 'def',
-                render : ()=> <img alt={''} className={''} src={fatimaJPos}></img>
-              }
-            ]
-          }
-        />
-        <Overlay
-          oId="2"
-          displayedOverlay={displayedOverlay}
-          closeOverlay={closeOverlay}
-          setDisplayedOverlay={setDisplayedOverlay}
-          slides={
-            [
-              {
-                source: '',
-                description: 'abcd',
-                title: 'def',
-                render : ()=> <img alt={''} className={''} src={dawn1954}></img>
-              },
-              {
-                source: '',
-                description: 'abcd',
-                title: 'def',
-                render : ()=> <img alt={''} className={''} src={cabinet1954}></img>
-              }
-            ]
-          }
-        />
-        <Overlay
-          oId="3"
-          displayedOverlay={displayedOverlay}
-          closeOverlay={closeOverlay}
-          setDisplayedOverlay={setDisplayedOverlay}
-          slides={
-            [
-              {
-                source: '',
-                description: 'abcd',
-                title: 'def',
-                render : ()=> <img alt={''} className={''} src={blm}></img>
-              },
-              {
-                source: '',
-                description: 'abcd',
-                title: 'def',
-                render : ()=> <img alt={''} className={''} src={blmWomen}></img>
-              },
-              {
-                source: '',
-                description: 'abcd',
-                title: 'def',
-                render : ()=> <img alt={''} className={''} src={bhashaniSM}></img>
-              },
-              {
-                source: '',
-                description: 'abcd',
-                title: 'def',
-                render : ()=> <img alt={''} className={''} src={SM}></img>
-              },
-              {
-                source: '',
-                description: 'abcd',
-                title: 'def',
-                render : ()=> <img alt={''} className={''} src={mural}></img>
-              }
-            ]
-          }
-        />
-        <Overlay
-          oId="4"
-          displayedOverlay={displayedOverlay}
-          closeOverlay={closeOverlay}
-          setDisplayedOverlay={setDisplayedOverlay}
-          slides={
-            [
-              {
-                source: '',
-                description: 'abcd',
-                title: 'def',
-                render : ()=> <img alt={''} className={''} src={eastWestFriends}></img>
-              },
-              {
-                source: '',
-                description: 'abcd',
-                title: 'defg',
-                render : ()=> <img alt={''} className={''} src={tagore}></img>
-              }
-            ]
-          }
-        />
+        oId="1"
+        displayedOverlay={displayedOverlay}
+        closeOverlay={closeOverlay}
+        setDisplayedOverlay={setDisplayedOverlay}
+        slides={[
+          {
+            source: "",
+            description: "abcd",
+            title: "def",
+            width:"55",
+            render: () => <img alt={""} className={""} src={fatimaJMuj}></img>,
+          },
+          {
+            source: "",
+            description: "abcd",
+            title: "def",
+            width:"65",
+            render: () => <img alt={""} className={""} src={fatimaJPos}></img>,
+          },
+        ]}
+      />
+      <Overlay
+        oId="2"
+        displayedOverlay={displayedOverlay}
+        closeOverlay={closeOverlay}
+        setDisplayedOverlay={setDisplayedOverlay}
+        slides={[
+          {
+            source: "",
+            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
+            title: "def",
+            width: "70",
+            render: () => <img alt={""} className={""} src={dawn1954}></img>,
+          },
+          {
+            source: "",
+            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
+            title: "def",
+            width: "75",
+            render: () => <img alt={""} className={""} src={cabinet1954}></img>,
+          },
+        ]}
+      />
+      <Overlay
+        oId="3"
+        displayedOverlay={displayedOverlay}
+        closeOverlay={closeOverlay}
+        setDisplayedOverlay={setDisplayedOverlay}
+        slides={[
+          {
+            source: "",
+            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
+            title: "def",
+            width: "65",
+            render: () => <img alt={""} className={""} src={blm}></img>,
+          },
+          {
+            source: "",
+            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
+            title: "def",
+            width: "70",
+            render: () => <img alt={""} className={""} src={blmWomen}></img>,
+          },
+          {
+            source: "",
+            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
+            title: "def",
+            width: "50",
+            render: () => <img alt={""} className={""} src={bhashaniSM}></img>,
+          },
+          {
+            source: "",
+            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
+            title: "def",
+            width: "55",
+            render: () => <img alt={""} className={""} src={SM}></img>,
+          },
+          {
+            source: "",
+            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
+            title: "def",
+            width: "70",
+            render: () => <img alt={""} className={""} src={mural}></img>,
+          },
+        ]}
+      />
+      <Overlay
+        oId="4"
+        displayedOverlay={displayedOverlay}
+        closeOverlay={closeOverlay}
+        setDisplayedOverlay={setDisplayedOverlay}
+        slides={[
+          {
+            source: "",
+            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
+            title: "def",
+            width:"70",
+            render: () => (
+              <img alt={""} className={""} src={eastWestFriends}></img>
+            ),
+          },
+          {
+            source: "",
+            description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt",
+            title: "defg",
+            width:"65",
+            render: () => <img alt={""} className={""} src={tagore}></img>,
+          },
+        ]}
+      />
     </div>
   );
 }

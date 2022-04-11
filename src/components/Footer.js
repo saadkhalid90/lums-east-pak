@@ -3,7 +3,6 @@ import lumsLogo from "../resources/nav/LumsArchiveLogoInv.png";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 
-import chapter5 from "../resources/Chapter5/Chapter5_2.jpg";
 import chapter4 from "../resources/Chapter4/Chapter4_2.jpg";
 import chapter3 from "../resources/Chapter3/Chapter3_2.jpg";
 import chapter2 from "../resources/Chapter2/Chapter2_2.jpg";
@@ -91,7 +90,7 @@ function Footer({ chapterID, nextLink, prevLink, projectDescription }) {
             alt="Lahore University of Management Sciences"
           />
         </div>
-        <p className={styles.footer_paragraph}>To explore events as covered by West Pakistani Press, go to <Link to="/Appendix" style={{color:'white', cursor: 'pointer'}}>
+        <p className={styles.footer_paragraph}>To explore events as covered by West Pakistani Press, go to <Link className={styles.appendix_link} to="/Appendix" style={{color:'white', cursor: 'pointer'}}>
             <span>Appendix</span>
           </Link></p>
         <p className={styles.footer_paragraph}>{projectDescription}</p>

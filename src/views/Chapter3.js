@@ -6,7 +6,8 @@ import SectionHeading from "../components/SectionHeading.js";
 import PhotoContainer from "../components/PhotoContainer.js";
 import QuotePhoto from "../components/QuotePhoto.js";
 import Footer from "../components/Footer.js";
-import PhotoSwitch from "../components/photoSwitch.js";
+import ResponsivePhotoSwitch from "../components/responsivePhotoSwitch.js";
+import Overlay from "../components/Overlay";
 
 import Dec0304 from "./sub-views/dates/dec0304.js";
 import Dec0506 from "./sub-views/dates/dec0506.js";
@@ -258,9 +259,21 @@ const datesArr = [
 
 function Operation() {
   const [month, setMonth] = useState("Dec 03 - 04");
+  const [overlayClosed, setOverlayClosed] = useState(false);
+  const [displayedOverlay, setDisplayedOverlayState] = useState(false);
+
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  function closeOverlay() {
+    setDisplayedOverlayState(["", 0]);
+  }
+
+  function setDisplayedOverlay(oId, slideIndex) {
+    setDisplayedOverlayState([oId, slideIndex]);
+  }
+
   return (
     <div className={styles.view_container}>
       <Navbar type="chapter_title" />
@@ -297,7 +310,7 @@ function Operation() {
           </div>
         </div>
         <div className={styles.view_content_wrapper}>
-          <PhotoSwitch photoData={photoData} imgArr={newsImgArr} />
+          <ResponsivePhotoSwitch photoData={photoData} imgArr={newsImgArr} />
         </div>
         <div className={styles.view_fw_content}>
           <QuotePhoto
@@ -346,6 +359,10 @@ function Operation() {
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowfullscreen
                 ></iframe>
+                <p className={styles.video_caption}>
+                  Major Khaled Musharrof, a commander of the Mukti Bahini leads
+                  the fighters in taking oath
+                </p>
               </div>
             </div>
             <p className={styles.view_para}>
@@ -403,6 +420,8 @@ function Operation() {
               Pakistan.
             </p>
             <PhotoContainer
+              setDisplayedOverlay={setDisplayedOverlay}
+              overlayID={"1"}
               noScroll
               imgArr={[
                 {
@@ -434,6 +453,10 @@ function Operation() {
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowfullscreen
                 ></iframe>
+                <p className={styles.video_caption}>
+                  Major Zia, a commander of the Mukti Bahini declares
+                  independence
+                </p>
               </div>
             </div>
             <SectionHeading heading="Blood Telegram" />
@@ -468,6 +491,8 @@ function Operation() {
         <div className={styles.view_content_wrapper}>
           <div className={styles.view_content_container}>
             <PhotoContainer
+              setDisplayedOverlay={setDisplayedOverlay}
+              overlayID={"2"}
               noScroll
               imgArr={[
                 {
@@ -526,6 +551,8 @@ function Operation() {
               liberation movement.
             </p>
             <PhotoContainer
+              setDisplayedOverlay={setDisplayedOverlay}
+              overlayID={"3"}
               disclaimer={true}
               imgArr={[
                 {
@@ -603,9 +630,16 @@ function Operation() {
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowfullscreen
                 ></iframe>
+                <p className={styles.video_caption}>
+                  George Harrison organized the ‘Concert for Bangladesh’ where
+                  iconic musicians including Ravi Shankar, Bob Dylan, Eric
+                  Clapton and Ringo Starr performed
+                </p>
               </div>
             </div>
             <PhotoContainer
+              setDisplayedOverlay={setDisplayedOverlay}
+              overlayID={"4"}
               noScroll
               imgArr={[
                 {
@@ -637,6 +671,10 @@ function Operation() {
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowfullscreen
                 ></iframe>
+                <p className={styles.video_caption}>
+                  Famous American singer, Joan Baez performs ‘Song of
+                  Bangladesh’
+                </p>
               </div>
             </div>
           </div>
@@ -732,6 +770,10 @@ function Operation() {
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowfullscreen
                 ></iframe>
+                <p className={styles.video_caption}>
+                  A propaganda film aimed to sway global opinion on the
+                  Bangladeshi struggle
+                </p>
               </div>
             </div>
             <SectionHeading heading="Influence of US Foreign Policy" />
@@ -748,6 +790,8 @@ function Operation() {
               against Pakistan in November-December 1971.
             </p>
             <PhotoContainer
+              setDisplayedOverlay={setDisplayedOverlay}
+              overlayID={"5"}
               imgArr={[
                 {
                   image: timePeking,
@@ -803,7 +847,10 @@ function Operation() {
           </div>
         </div>
         <div className={styles.view_content_wrapper}>
-          <PhotoSwitch photoData={localNewsData} imgArr={localNewsArr} />
+          <ResponsivePhotoSwitch
+            photoData={localNewsData}
+            imgArr={localNewsArr}
+          />
         </div>
       </section>
       <section className={styles.content_section}>
@@ -819,6 +866,8 @@ function Operation() {
               East Bengal and India.
             </p>
             <PhotoContainer
+              setDisplayedOverlay={setDisplayedOverlay}
+              overlayID={"6"}
               noScroll
               imgArr={[
                 {
@@ -849,6 +898,8 @@ function Operation() {
               eos cupiditate dolore doloribus!
             </p>
             <PhotoContainer
+              setDisplayedOverlay={setDisplayedOverlay}
+              overlayID={"7"}
               imgArr={[
                 {
                   image: refugees1,
@@ -884,6 +935,8 @@ function Operation() {
               eos cupiditate dolore doloribus!
             </p>
             <PhotoContainer
+              setDisplayedOverlay={setDisplayedOverlay}
+              overlayID={"8"}
               imgArr={[
                 {
                   image: hilalHead,
@@ -918,6 +971,8 @@ function Operation() {
               eos cupiditate dolore doloribus!
             </p>
             <PhotoContainer
+              setDisplayedOverlay={setDisplayedOverlay}
+              overlayID={"9"}
               imgArr={[
                 {
                   image: propPoster5,
@@ -958,6 +1013,8 @@ function Operation() {
               eos cupiditate dolore doloribus!
             </p>
             <PhotoContainer
+              setDisplayedOverlay={setDisplayedOverlay}
+              overlayID={"10"}
               imgArr={[
                 {
                   image: news1,
@@ -998,6 +1055,8 @@ function Operation() {
               eos cupiditate dolore doloribus!
             </p>
             <PhotoContainer
+              setDisplayedOverlay={setDisplayedOverlay}
+              overlayID={"11"}
               imgArr={[
                 {
                   image: bengalPaper1,
@@ -1052,11 +1111,11 @@ function Operation() {
                   caption:
                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
                   widthID: "twenty",
-                }
+                },
               ]}
             />
           </div>
-        </div>  
+        </div>
       </section>
 
       <section className={styles.content_section}>
@@ -1070,6 +1129,8 @@ function Operation() {
               eos cupiditate dolore doloribus!
             </p>
             <PhotoContainer
+              setDisplayedOverlay={setDisplayedOverlay}
+              overlayID={"12"}
               imgArr={[
                 {
                   image: war0,
@@ -1153,10 +1214,12 @@ function Operation() {
         <div className={styles.view_content_wrapper}>
           <div className={styles.view_content_container}>
             <SectionHeading heading="Timeline of events during the war" />
-            The material on the timeline of events during the war (December 03,
-            1971 - December 16, 1971) has been taken from Bangladeshi
-            journalist, Shamsuddoza Sajen’s compilation for the Daily{" "}
-            <i>Star</i>
+            <p className={styles.view_para}>
+              The material on the timeline of events during the war (December
+              03, 1971 - December 16, 1971) has been taken from Bangladeshi
+              journalist, Shamsuddoza Sajen’s compilation for the Daily{" "}
+              <i>Star</i>
+            </p>
           </div>
           <div className={`${styles.selectPrompt} ${styles.margin2}`}>
             Select Dates
@@ -1211,6 +1274,545 @@ function Operation() {
         prevLink="/ch2"
         nextLink="/ch4"
         chapterID={3}
+      />
+      <Overlay
+        oId="1"
+        displayedOverlay={displayedOverlay}
+        closeOverlay={closeOverlay}
+        setDisplayedOverlay={setDisplayedOverlay}
+        slides={[
+          {
+            source: "",
+            description: "abcd",
+            title: "def",
+            width: "55",
+            render: () => (
+              <img alt={""} className={""} src={lootedChests}></img>
+            ),
+          },
+          {
+            source: "",
+            description: "abcd",
+            title: "def",
+            width: "40",
+            render: () => (
+              <img alt={""} className={""} src={muktiRailway}></img>
+            ),
+          },
+          {
+            source: "",
+            description: "abcd",
+            title: "def",
+            width: "45",
+            render: () => <img alt={""} className={""} src={noticeMNA}></img>,
+          },
+        ]}
+      />
+      <Overlay
+        oId="2"
+        displayedOverlay={displayedOverlay}
+        closeOverlay={closeOverlay}
+        setDisplayedOverlay={setDisplayedOverlay}
+        slides={[
+          {
+            source: "",
+            description: "abcd",
+            title: "def",
+            width: "40",
+            render: () => (
+              <img alt={""} className={""} src={bloodTelBook}></img>
+            ),
+          },
+          {
+            source: "",
+            description: "abcd",
+            title: "def",
+            width: "45",
+            render: () => <img alt={""} className={""} src={bloodTel}></img>,
+          },
+          {
+            source: "",
+            description: "abcd",
+            title: "def",
+            width: "45",
+            render: () => (
+              <img alt={""} className={""} src={bloodTelSupp}></img>
+            ),
+          },
+        ]}
+      />
+      <Overlay
+        oId="3"
+        displayedOverlay={displayedOverlay}
+        closeOverlay={closeOverlay}
+        setDisplayedOverlay={setDisplayedOverlay}
+        slides={[
+          {
+            source: "",
+            description: "abcd",
+            title: "def",
+            width: "40",
+            render: () => (
+              <img alt={""} className={""} src={muktiPosters}></img>
+            ),
+          },
+          {
+            source: "",
+            description: "abcd",
+            title: "def",
+            width: "70",
+            render: () => (
+              <img alt={""} className={""} src={muktiPractice}></img>
+            ),
+          },
+          {
+            source: "",
+            description: "abcd",
+            title: "def",
+            width: "55",
+            render: () => <img alt={""} className={""} src={razakaarId}></img>,
+          },
+          {
+            source: "",
+            description: "abcd",
+            title: "def",
+            width: "55",
+            render: () => <img alt={""} className={""} src={razakaarOrd}></img>,
+          },
+          {
+            source: "",
+            description: "abcd",
+            title: "def",
+            width: "75",
+            render: () => <img alt={""} className={""} src={muktiMural}></img>,
+          },
+          {
+            source: "",
+            description: "abcd",
+            title: "def",
+            width: "50",
+            render: () => (
+              <img alt={""} className={""} src={intellectuals}></img>
+            ),
+          },
+        ]}
+      />
+      <Overlay
+        oId="4"
+        displayedOverlay={displayedOverlay}
+        closeOverlay={closeOverlay}
+        setDisplayedOverlay={setDisplayedOverlay}
+        slides={[
+          {
+            source: "",
+            description: "abcd",
+            title: "def",
+            width: "40",
+            render: () => <img alt={""} className={""} src={solid1}></img>,
+          },
+          {
+            source: "",
+            description: "abcd",
+            title: "def",
+            width: "35",
+            render: () => <img alt={""} className={""} src={solid2}></img>,
+          },
+          {
+            source: "",
+            description: "abcd",
+            title: "def",
+            width: "40",
+            render: () => <img alt={""} className={""} src={solid3}></img>,
+          },
+        ]}
+      />
+      <Overlay
+        oId="5"
+        displayedOverlay={displayedOverlay}
+        closeOverlay={closeOverlay}
+        setDisplayedOverlay={setDisplayedOverlay}
+        slides={[
+          {
+            source: "",
+            description: "abcd",
+            title: "def",
+            width: "40",
+            render: () => <img alt={""} className={""} src={timePeking}></img>,
+          },
+          {
+            source: "",
+            description: "abcd",
+            title: "def",
+            width: "65",
+            render: () => <img alt={""} className={""} src={yahKiss}></img>,
+          },
+          {
+            source: "",
+            description: "abcd",
+            title: "def",
+            width: "40",
+            render: () => <img alt={""} className={""} src={nixon1}></img>,
+          },
+          {
+            source: "",
+            description: "abcd",
+            title: "def",
+            width: "40",
+            render: () => <img alt={""} className={""} src={nixon2}></img>,
+          },
+        ]}
+      />
+      <Overlay
+        oId="6"
+        displayedOverlay={displayedOverlay}
+        closeOverlay={closeOverlay}
+        setDisplayedOverlay={setDisplayedOverlay}
+        slides={[
+          {
+            source: "",
+            description: "abcd",
+            title: "def",
+            width: "35",
+            render: () => (
+              <img alt={""} className={""} src={timeRefugees}></img>
+            ),
+          },
+          {
+            source: "",
+            description: "abcd",
+            title: "def",
+            width: "35",
+            render: () => <img alt={""} className={""} src={NYT}></img>,
+          },
+          {
+            source: "",
+            description: "abcd",
+            title: "def",
+            width: "35",
+            render: () => <img alt={""} className={""} src={WSJ}></img>,
+          },
+        ]}
+      />
+      <Overlay
+        oId="7"
+        displayedOverlay={displayedOverlay}
+        closeOverlay={closeOverlay}
+        setDisplayedOverlay={setDisplayedOverlay}
+        slides={[
+          {
+            source: "",
+            description: "abcd",
+            title: "def",
+            width: "75",
+            render: () => <img alt={""} className={""} src={refugees1}></img>,
+          },
+          {
+            source: "",
+            description: "abcd",
+            title: "def",
+            width: "75",
+            render: () => <img alt={""} className={""} src={refugees2}></img>,
+          },
+          {
+            source: "",
+            description: "abcd",
+            title: "def",
+            width: "75",
+            render: () => <img alt={""} className={""} src={refugees3}></img>,
+          },
+          {
+            source: "",
+            description: "abcd",
+            title: "def",
+            width: "65",
+            render: () => <img alt={""} className={""} src={refugees4}></img>,
+          },
+        ]}
+      />
+      <Overlay
+        oId="8"
+        displayedOverlay={displayedOverlay}
+        closeOverlay={closeOverlay}
+        setDisplayedOverlay={setDisplayedOverlay}
+        slides={[
+          {
+            source: "",
+            description: "abcd",
+            title: "def",
+            width: "65",
+            render: () => <img alt={""} className={""} src={hilalHead}></img>,
+          },
+          {
+            source: "",
+            description: "abcd",
+            title: "def",
+            width: "60",
+            render: () => <img alt={""} className={""} src={indra2}></img>,
+          },
+          {
+            source: "",
+            description: "abcd",
+            title: "def",
+            width: "75",
+            render: () => <img alt={""} className={""} src={indra1}></img>,
+          },
+          {
+            source: "",
+            description: "abcd",
+            title: "def",
+            width: "45",
+            render: () => <img alt={""} className={""} src={poem}></img>,
+          },
+        ]}
+      />
+      <Overlay
+        oId="9"
+        displayedOverlay={displayedOverlay}
+        closeOverlay={closeOverlay}
+        setDisplayedOverlay={setDisplayedOverlay}
+        slides={[
+          {
+            source: "",
+            description: "abcd",
+            title: "def",
+            width: "35",
+            render: () => <img alt={""} className={""} src={propPoster5}></img>,
+          },
+          {
+            source: "",
+            description: "abcd",
+            title: "def",
+            width: "70",
+            render: () => <img alt={""} className={""} src={propPoster1}></img>,
+          },
+          {
+            source: "",
+            description: "abcd",
+            title: "def",
+            width: "70",
+            render: () => <img alt={""} className={""} src={propPoster2}></img>,
+          },
+          {
+            source: "",
+            description: "abcd",
+            title: "def",
+            width: "40",
+            render: () => <img alt={""} className={""} src={propPoster3}></img>,
+          },
+          {
+            source: "",
+            description: "abcd",
+            title: "def",
+            width: "40",
+            render: () => <img alt={""} className={""} src={propPoster4}></img>,
+          },
+        ]}
+      />
+      <Overlay
+        oId="10"
+        displayedOverlay={displayedOverlay}
+        closeOverlay={closeOverlay}
+        setDisplayedOverlay={setDisplayedOverlay}
+        slides={[
+          {
+            source: "",
+            description: "abcd",
+            title: "def",
+            width: "40",
+            render: () => <img alt={""} className={""} src={news1}></img>,
+          },
+          {
+            source: "",
+            description: "abcd",
+            title: "def",
+            width: "40",
+            render: () => <img alt={""} className={""} src={news2}></img>,
+          },
+          {
+            source: "",
+            description: "abcd",
+            title: "def",
+            width: "40",
+            render: () => <img alt={""} className={""} src={news3}></img>,
+          },
+          {
+            source: "",
+            description: "abcd",
+            title: "def",
+            width: "40",
+            render: () => <img alt={""} className={""} src={news4}></img>,
+          },
+          {
+            source: "",
+            description: "abcd",
+            title: "def",
+            width: "40",
+            render: () => <img alt={""} className={""} src={news5}></img>,
+          },
+        ]}
+      />
+      <Overlay
+        oId="11"
+        displayedOverlay={displayedOverlay}
+        closeOverlay={closeOverlay}
+        setDisplayedOverlay={setDisplayedOverlay}
+        slides={[
+          {
+            source: "",
+            description: "abcd",
+            title: "def",
+            width: "70",
+            render: () => <img alt={""} className={""} src={bengalPaper1}></img>,
+          },
+          {
+            source: "",
+            description: "abcd",
+            title: "def",
+            width: "65",
+            render: () => <img alt={""} className={""} src={bengalPaper2}></img>,
+          },
+          {
+            source: "",
+            description: "abcd",
+            title: "def",
+            width: "35",
+            render: () => <img alt={""} className={""} src={bengalPaper3}></img>,
+          },
+          {
+            source: "",
+            description: "abcd",
+            title: "def",
+            width: "60",
+            render: () => <img alt={""} className={""} src={bengalPaper4}></img>,
+          },
+          {
+            source: "",
+            description: "abcd",
+            title: "def",
+            width: "40",
+            render: () => <img alt={""} className={""} src={bengalPaper5}></img>,
+          },
+          {
+            source: "",
+            description: "abcd",
+            title: "def",
+            width: "40",
+            render: () => <img alt={""} className={""} src={bengalPaper6}></img>,
+          },
+          {
+            source: "",
+            description: "abcd",
+            title: "def",
+            width: "75",
+            render: () => <img alt={""} className={""} src={bengalPaper7}></img>,
+          },
+          {
+            source: "",
+            description: "abcd",
+            title: "def",
+            width: "45",
+            render: () => <img alt={""} className={""} src={bengalPaper8}></img>,
+          },
+          {
+            source: "",
+            description: "abcd",
+            title: "def",
+            width: "40",
+            render: () => <img alt={""} className={""} src={bengalPaper9}></img>,
+          },
+        ]}
+      />
+            <Overlay
+        oId="12"
+        displayedOverlay={displayedOverlay}
+        closeOverlay={closeOverlay}
+        setDisplayedOverlay={setDisplayedOverlay}
+        slides={[
+          {
+            source: "",
+            description: "abcd",
+            title: "def",
+            width: "60",
+            render: () => <img alt={""} className={""} src={war0}></img>,
+          },
+          {
+            source: "",
+            description: "abcd",
+            title: "def",
+            width: "65",
+            render: () => <img alt={""} className={""} src={war1}></img>,
+          },
+          {
+            source: "",
+            description: "abcd",
+            title: "def",
+            width: "65",
+            render: () => <img alt={""} className={""} src={war2}></img>,
+          },
+          {
+            source: "",
+            description: "abcd",
+            title: "def",
+            width: "70",
+            render: () => <img alt={""} className={""} src={war3}></img>,
+          },
+          {
+            source: "",
+            description: "abcd",
+            title: "def",
+            width: "70",
+            render: () => <img alt={""} className={""} src={war4}></img>,
+          },
+          {
+            source: "",
+            description: "abcd",
+            title: "def",
+            width: "65",
+            render: () => <img alt={""} className={""} src={war5}></img>,
+          },
+          {
+            source: "",
+            description: "abcd",
+            title: "def",
+            width: "75",
+            render: () => <img alt={""} className={""} src={war6}></img>,
+          },
+          {
+            source: "",
+            description: "abcd",
+            title: "def",
+            width: "35",
+            render: () => <img alt={""} className={""} src={war7}></img>,
+          },
+          {
+            source: "",
+            description: "abcd",
+            title: "def",
+            width: "60",
+            render: () => <img alt={""} className={""} src={war8}></img>,
+          },
+          {
+            source: "",
+            description: "abcd",
+            title: "def",
+            width: "60",
+            render: () => <img alt={""} className={""} src={war9}></img>,
+          },
+          {
+            source: "",
+            description: "abcd",
+            title: "def",
+            width: "40",
+            render: () => <img alt={""} className={""} src={warsaw1}></img>,
+          },
+          {
+            source: "",
+            description: "abcd",
+            title: "def",
+            width: "40",
+            render: () => <img alt={""} className={""} src={warsaw2}></img>,
+          },
+        ]}
       />
     </div>
   );

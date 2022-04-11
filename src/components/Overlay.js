@@ -108,7 +108,7 @@ function Overlay(props){
             {props.slides.length > 1 && <div className={classNames(styles.prevSlideChev)} onClick={(e) => decreaseIndex(e)}><MdChevronLeft/></div>}
             {props.slides.length > 1 && <div className={classNames(styles.nextSlideChev)} onClick={(e) => increaseIndex(e)}><MdChevronRight/></div>}
             <OverlaySlideshow>
-                <OverlaySlide overlayOpen={props.overlayOpen} imageCredit={currSlidesProps.imageCredit} overlayType={props.overlayType} description={currSlidesProps.description} title={currSlidesProps.title} imageDesc={currSlidesProps.imageDesc} source={currSlidesProps.source} originalLink={currSlidesProps.originalLink} render={currSlidesProps.render}>
+                <OverlaySlide overlayOpen={props.overlayOpen} imageCredit={currSlidesProps.imageCredit} overlayType={props.overlayType} description={currSlidesProps.description} title={currSlidesProps.title} imageDesc={currSlidesProps.imageDesc} source={currSlidesProps.source} originalLink={currSlidesProps.originalLink} render={currSlidesProps.render} width={currSlidesProps.width}>
                 </OverlaySlide>
             </OverlaySlideshow>
         </div>

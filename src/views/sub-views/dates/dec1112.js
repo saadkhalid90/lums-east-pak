@@ -24,6 +24,7 @@ function Dec1112() {
         </p>
         <p className={styles.view_para}>
           <a
+            className={styles.clickLink}
             href="https://www.thedailystar.net/news/bangladesh/news/pakistan-general-sends-sos-un-2914571"
             target="_blank"
           >
@@ -49,6 +50,7 @@ function Dec1112() {
         </p>
         <p className={styles.view_para}>
           <a
+            className={styles.clickLink}
             href="https://www.thedailystar.net/news/bangladesh/news/india-russia-discuss-bangladesh-war-2915166"
             target="_blank"
           >
