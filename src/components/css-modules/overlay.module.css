@@ -158,11 +158,6 @@
   font-family: 'Roboto', sans-serif;
 }
 
-.rerouteLink {
-  font-weight: bold;
-  color: white;
-}
-
 @media screen and (max-width: 60em){
   .nextSlideChev {
     right: 7%;

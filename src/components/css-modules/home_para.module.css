@@ -70,6 +70,100 @@
   border-radius: 10px;
 }
 
+.partyLegend {
+  margin-top: 20px; 
+  font-size: 0.9rem;
+}
+
+.partyColor {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.partyBox {
+  width: 15px;
+  height: 12px;
+  margin-right: 5px;
+  border-radius: 2px;
+}
+
+.AL {
+  background-color: #02674B;
+}
+
+.PPP {
+  background-color: #9C27B0;
+}
+
+.ML {
+  background-color: #81C784;
+}
+
+.In {
+  background-color: #CDDC39;
+}
+
+.Ot {
+  background-color: #039BE5;
+}
+
+.radLegend {
+  margin-top: 20px; 
+}
+
+.radComp {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 5px;
+}
+
+.radBox {
+  border-radius: 50%;
+  border: 1.5px solid black;
+  margin-right: 5px;
+}
+
+.minRad {
+  width: 7px;
+  height: 7px;
+}
+
+.medRad1 {
+  width: 9px;
+  height: 9px;
+}
+
+.medRad2 {
+  width: 12px;
+  height: 12px;
+}
+
+.maxRad {
+  width: 14px;
+  height: 14px;
+}
+
+.voteMargPerc {
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: #1B489D;
+  margin-right: 5px;
+}
+
+.voteMargHead {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: #1B489D;
+}
+
+@media only screen and (max-width: 80em){
+  .radLegend {
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 60em){
   .heading {
     font-size: 18px;
@@ -88,5 +182,17 @@
   }
   .para {
     font-size: 0.8rem;
+  }
+
+  .partyLegend {
+    margin-top: 10px; 
+    font-size: 0.8rem;
+  }
+  
+  .partyBox {
+    width: 12px;
+    height: 10px;
+    margin-right: 5px;
+    border-radius: 2px;
   }
 }

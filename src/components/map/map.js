@@ -105,6 +105,9 @@ export default function ElectMap({ mapData }) {
                   <HomePara
                     heading={data.title}
                     para={data.description}
+                    legend={data.legend}
+                    partialLegend={data.partialLegend}
+                    marginLegend={data.marginLegend}
                     changeLoc={setScene}
                     index={index}
                   />

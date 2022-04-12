@@ -1114,13 +1114,6 @@ function Operation() {
                 },
               ]}
             />
-          </div>
-        </div>
-      </section>
-
-      <section className={styles.content_section}>
-        <div className={styles.view_content_wrapper}>
-          <div className={styles.view_content_container}>
             <SectionHeading heading="Archived Photos of the War" />
             <p className={styles.view_para}>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui

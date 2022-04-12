@@ -568,13 +568,13 @@ function Polls() {
           {
             source: "DAWN",
             description:
-              "Sheikh Mujib on the campaign trail. Mujib’ Awami League bagged 160 out of 162 seats in East Pakistan",
+              "Sheikh Mujib on the campaign trail. Mujib’s Awami League bagged 160 out of 162 seats in East Pakistan",
             title: "",
             width: "70",
             render: () => (
               <img
                 alt={
-                  "Sheikh Mujib on the campaign trail. Mujib’ Awami League bagged 160 out of 162 seats in East Pakistan"
+                  "Sheikh Mujib on the campaign trail. Mujib’s Awami League bagged 160 out of 162 seats in East Pakistan"
                 }
                 className={""}
                 src={election3}

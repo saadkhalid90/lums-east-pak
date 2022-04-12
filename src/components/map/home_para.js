@@ -1,11 +1,6 @@
 import React, { Component } from 'react';
 import styles from './css-modules/home_para.module.css';
 import classNames from 'classnames';
-import { AiOutlineClose } from 'react-icons/ai'
-import Dialog from '@mui/material/Dialog';
-import DialogContent from '@mui/material/DialogContent';
-import DialogContentText from '@mui/material/DialogContentText';
-import DialogTitle from '@mui/material/DialogTitle';
 
 class HomePara extends Component {
   constructor(props){
@@ -34,6 +29,17 @@ class HomePara extends Component {
       <div ref={this.paraRef} className={styles.container}>
         <p className={classNames("Libre", styles.heading)}>{this.props.heading}</p>
         <div className={classNames("Lato", styles.para)}>{this.props.para}</div>
+        {
+          this.props.legend && <div className={styles.partyLegend}>
+            <ul>
+              <li>Awami League</li>
+              <li>Pakistan Peoples Party</li>
+              <li>Factions of Muslim League</li>
+              <li>Independent</li>
+              <li>Others</li>
+            </ul>
+          </div>
+        }
       </div>
     )
   }
