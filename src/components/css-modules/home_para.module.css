@@ -176,6 +176,29 @@
   }
 }
 
+@media screen and (min-width: 900px) and (max-height: 600px) {
+  .heading {
+    font-size: 15px;
+  }
+  .para {
+    font-size: 0.8rem;
+  }
+  .container {
+    background: rgb(240,240,240,0.8);
+  }
+  .partyLegend {
+    margin-top: 10px; 
+    font-size: 0.8rem;
+  }
+  
+  .partyBox {
+    width: 12px;
+    height: 10px;
+    margin-right: 5px;
+    border-radius: 2px;
+  }
+}
+
 @media only screen and (max-width: 40em){
   .heading {
     font-size: 15px;

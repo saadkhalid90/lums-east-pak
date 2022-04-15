@@ -9,7 +9,7 @@
   position: relative;
   align-items: center;
   justify-content: center;
-  background: #1B489D;
+  background: #1b489d;
   padding: 40px 0px;
 }
 
@@ -46,7 +46,7 @@
 }
 
 .quote {
-  font-family: 'Playfair Display', serif;
+  font-family: "Playfair Display", serif;
   margin: 15px 0px;
 }
 
@@ -59,11 +59,11 @@
 }
 
 .quote_white {
-  color: #FFFFFF
+  color: #ffffff;
 }
 
 .quote_yellow {
-  color: #F4FF72
+  color: #f4ff72;
 }
 
 .quote_big {
@@ -117,7 +117,7 @@
   transform: rotate(-3deg);
 }
 
-@media screen and (max-width: 80em){
+@media screen and (max-width: 80em) {
   .bg_white {
     padding: 40px 0px;
   }
@@ -139,7 +139,7 @@
   }
 }
 
-@media screen and (max-width: 60em){
+@media screen and (max-width: 60em) {
   .bg_white {
     padding: 30px 0px;
   }
@@ -151,6 +151,40 @@
   }
   .quote_small {
     font-size: 13px;
+  }
+
+  .quote_smaller {
+    font-size: 13px;
+  }
+
+  .photo_container {
+    width: 25%;
+  }
+  .quote_content_container {
+    padding-left: 27%;
+  }
+
+  .quotation_mark {
+    width: 25px;
+  }
+
+  .quoter {
+    font-size: 11px;
+  }
+}
+
+@media screen and (min-width: 900px) and (max-height: 600px) {
+  .bg_white {
+    padding: 30px 0px;
+  }
+  .content_container {
+    width: 75%;
+  }
+  .quote_big {
+    font-size: 15px;
+  }
+  .quote_smaller {
+    font-size: 10px;
   }
   .photo_container {
     width: 25%;
@@ -168,7 +202,7 @@
   }
 }
 
-@media screen and (max-width: 40em){
+@media screen and (max-width: 40em) {
   .bg_white {
     padding: 25px 0px;
   }
@@ -183,7 +217,7 @@
     font-size: 10px;
   }
   .photo_container {
-    display: none;  
+    display: none;
   }
   .quote_content_container {
     padding-left: 0%;
@@ -197,7 +231,7 @@
   }
 }
 
-@media screen and (max-width: 30em){
+@media screen and (max-width: 30em) {
   .bg_white {
     padding: 20px 0px;
   }

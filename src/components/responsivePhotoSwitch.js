@@ -14,28 +14,37 @@ export default function ResponsivePhotoSwitch({
           imgArr={imgArr}
         />
       </MediaQuery>
-      <MediaQuery maxWidth={1280} minWidth={960}>
-        <PhotoSwitch
-          photoData={photoData}
-          imgArr={imgArr}
-          scaleMultiplier={0.9}
-        />
-      </MediaQuery>
-      <MediaQuery maxWidth={960} minWidth={640}>
+      <MediaQuery maxWidth={1279} minWidth={960}>
+        <MediaQuery maxHeight={599}>
+          <PhotoSwitch
+            photoData={photoData}
+            imgArr={imgArr}
+            scaleMultiplier={0.65}
+          />
+        </MediaQuery>
+        <MediaQuery minHeight={600}>
+          <PhotoSwitch
+            photoData={photoData}
+            imgArr={imgArr}
+            scaleMultiplier={0.9}
+          />
+        </MediaQuery>
+      </MediaQuery>      
+      <MediaQuery maxWidth={959} minWidth={640}>
         <PhotoSwitch
           photoData={photoData}
           imgArr={imgArr}
           scaleMultiplier={0.75}
         />
       </MediaQuery>
-      <MediaQuery maxWidth={640} minWidth={480}>
+      <MediaQuery maxWidth={639} minWidth={480}>
         <PhotoSwitch
           photoData={photoData}
           imgArr={imgArr}
           scaleMultiplier={0.5}
         />
       </MediaQuery>
-      <MediaQuery maxWidth={480}>
+      <MediaQuery maxWidth={479}>
         <PhotoSwitch
           photoData={photoData}
           imgArr={imgArr}

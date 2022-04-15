@@ -224,6 +224,25 @@
   }
 }
 
+@media screen and (min-width: 900px) and (max-height: 600px) {
+  .projectTitle {
+    font-size: 18px;
+    margin: 2px 0px;
+  }
+
+  .browse_proj_heading {
+    font-size: 13px;
+  }
+
+  .designed_by {
+    font-size: 9px;
+  }
+
+  .plotreeLogo {
+    width: 20px;
+  }
+}
+
 @media screen and (max-width: 40em){
   .lums_archive_logo {
     width: 180px;

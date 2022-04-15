@@ -275,15 +275,45 @@
   }
 }
 
+@media screen and (min-width: 900px) and (max-height: 600px) {
+  .chapter_no {
+    font-size: 1rem;
+    margin: 10px 0px 20px 0px;
+  }
+  .img_contain {
+    margin: 0px 225px;
+  }
+  .title {
+    margin-top: 15px;
+    font-size: 1.8rem;
+  }
+  .subtitle {
+    font-size: 1rem;
+    margin: 3px 0 8px 0px;
+  }
+  .desc {
+    font-size: 0.8rem;
+    margin-top: 5px;
+  }
+  .chev_text {
+    font-size: 12px;
+  }
+  .chevron_icon_container {
+    width: 16px;
+    height: 16px;
+  }
+  .chevron_container {
+    margin-top: 20px;
+  }
+}
+
 @media screen and (max-width: 45em) {
   .chapter_no {
     margin: 40px 0px 20px 0px;
+    font-size: 1.1rem;
   }
   .chev_text {
     font-size: 13px;
-  }
-  .chapter_no {
-    font-size: 1.1rem;
   }
 }
 

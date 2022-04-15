@@ -91,6 +91,24 @@ function LocalNews() {
 
       <section className={styles.content_section}>
         <div className={styles.view_content_wrapper}>
+          <h3 className={styles.legend_header}>Text Style Legend</h3>
+          <p className={styles.legend_subheader}>
+            To separate newspaper sources
+          </p>
+          <div className={styles.newspaper_logo_contain}>
+            <div className={styles.one_paper_contain}>
+              <img src={dawn_logo}></img>
+              <span className={styles.dawn_text}>Dawn</span>
+            </div>
+            <div className={styles.one_paper_contain}>
+              <img src={jang_logo}></img>
+              <span className={styles.jang_text}>Jang</span>
+            </div>
+            <div className={styles.one_paper_contain}>
+              <img src={nwaqt_logo}></img>
+              <span className={styles.nwaqt_text}>Nawai Waqk</span>
+            </div>
+          </div>
           <div className={styles.selectPrompt}>Select Month</div>
           <ul className={styles.monthNav}>
             {monthArr.map((monthName, idx) => (
@@ -111,24 +129,7 @@ function LocalNews() {
               </li>
             ))}
           </ul>
-          <h3 className={styles.legend_header}>Text Style Legend</h3>
-          <p className={styles.legend_subheader}>
-            To separate newspaper sources
-          </p>
-          <div className={styles.newspaper_logo_contain}>
-            <div className={styles.one_paper_contain}>
-              <img src={dawn_logo}></img>
-              <span className={styles.dawn_text}>Dawn</span>
-            </div>
-            <div className={styles.one_paper_contain}>
-              <img src={jang_logo}></img>
-              <span className={styles.jang_text}>Jang</span>
-            </div>
-            <div className={styles.one_paper_contain}>
-              <img src={nwaqt_logo}></img>
-              <span className={styles.nwaqt_text}>Nawai Waqk</span>
-            </div>
-          </div>
+
           <div className={styles.currMonthContain}>
             <div key={month} className={styles.currMonthFade}></div>
             <h2 className={styles.currMonth}>

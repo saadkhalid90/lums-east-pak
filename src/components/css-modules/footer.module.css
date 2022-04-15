@@ -214,6 +214,10 @@
   font-weight: 600;
 }
 
+.appendix_link {
+  font-weight: bold;
+}
+
 @media screen and (max-width: 60em) {
   .container {
     padding: 50px 30px;
@@ -243,8 +247,30 @@
   }
 }
 
-.appendix_link {
-  font-weight: bold;
+@media screen and (min-width: 900px) and (max-height: 600px) {
+  .container {
+    padding: 30px 15px;
+  }
+  .navigation_container {
+    margin: 20px 0px;
+  }
+  .nav_half {
+    width: 47%;
+    height: 150px;
+  }
+  .chapter_text {
+    font-size: 15px;
+  }
+  .footer_logo {
+    width: 250px;
+    margin: 10px 0px;
+  }
+  .footer_paragraph {
+    width: 75%;  
+    font-size: 12px;
+    line-height: 16px;
+  }
+  
 }
 
 @media screen and (max-width: 40em) {
