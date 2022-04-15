@@ -1,5 +1,5 @@
 .chapter_title {
-  height: 100vh;
+  height: min(100vh, 1000px);
   position: relative;
   z-index: 1;
   transform: translate3d(0,0,0);
