@@ -22,22 +22,11 @@ import chapter3_2 from "../resources/Chapter3/Chapter3_2.jpg";
 import chapter3_3 from "../resources/Chapter3/Chapter3_3.jpg";
 
 import transcript from "../resources/Chapter3/documents/Transcript.pdf";
-
-import photoStory1 from "../resources/Chapter3/photoStory1/photoStory1.jpg";
-import photoStory2 from "../resources/Chapter3/photoStory1/photoStory2.jpg";
-import photoStory3 from "../resources/Chapter3/photoStory1/photoStory3.jpg";
-
-import BhuttoQuote from "../resources/Chapter3/others/BhuttoQuote.jpg";
 import Martyrs from "../resources/Chapter3/others/Martyrs.jpg";
 
 import lootedChests from "../resources/Chapter3/others/looted_chests.jpg";
 import muktiRailway from "../resources/Chapter3/others/Mukti_ damage_railways.jpg";
 import noticeMNA from "../resources/Chapter3/others/notices_Awami League_MNAs.jpg";
-
-import blood from "../resources/Chapter3/blood telegram/blood.jpg";
-import bloodTel from "../resources/Chapter3/blood telegram/blood telegram.jpg";
-import bloodTelSupp from "../resources/Chapter3/blood telegram/blood_support.jpg";
-import bloodTelBook from "../resources/Chapter3/blood telegram/blood telegram book.jpg";
 
 import muktiPosters from "../resources/Chapter3/others/Mukti_Bahini_posters.jpg";
 import muktiPractice from "../resources/Chapter3/others/Mukti_Practice.jpg";
@@ -46,28 +35,13 @@ import razakaarId from "../resources/Chapter3/others/RazakaarId.jpeg";
 import razakaarOrd from "../resources/Chapter3/others/RazOrd.png";
 import intellectuals from "../resources/Chapter3/others/intellectuals_bodies.jpg";
 
-import solid1 from "../resources/Chapter3/others/solid1.jpg";
-import solid2 from "../resources/Chapter3/others/solid2.jpg";
-import solid3 from "../resources/Chapter3/others/solid3.jpg";
-
-import joanDylan from "../resources/Chapter3/others/JoanDylan.jpg";
-
-import timePeking from "../resources/Chapter3/others/pekingforpeace.jpg";
-import yahKiss from "../resources/Chapter3/others/yahyaKissinger.jpg";
-import nixon1 from "../resources/Chapter3/others/Nixon1.jpg";
-import nixon2 from "../resources/Chapter3/others/Nixon2.jpg";
-
-import localnews1 from "../resources/Chapter3/photoStory2/localnews_1.jpg";
-import localnews2 from "../resources/Chapter3/photoStory2/localnews_2.png";
-import localnews3 from "../resources/Chapter3/photoStory2/localnews_3.png";
-import localnews4 from "../resources/Chapter3/photoStory2/localnews_4.jpg";
-import localnews5 from "../resources/Chapter3/photoStory2/localnews_5.jpg";
-import localnews6 from "../resources/Chapter3/photoStory2/localnews_6.jpg";
+import localnews1 from "../resources/Chapter3/photoStory1/localnews_1.jpg";
+import localnews2 from "../resources/Chapter3/photoStory1/localnews_2.png";
+import localnews3 from "../resources/Chapter3/photoStory1/localnews_3.png";
+import localnews4 from "../resources/Chapter3/photoStory1/localnews_4.jpg";
+import localnews5 from "../resources/Chapter3/photoStory1/localnews_5.jpg";
+import localnews6 from "../resources/Chapter3/photoStory1/localnews_6.jpg";
 import AntArt from "../resources/Chapter3/others/AnthonyArticle.jpg";
-
-import timeRefugees from "../resources/Chapter3/others/time_refugees.jpg";
-import NYT from "../resources/Chapter3/others/NYT.jpg";
-import WSJ from "../resources/Chapter3/others/WSJ.jpg";
 
 import refugees1 from "../resources/Chapter3/others/refugees1.jpg";
 import refugees2 from "../resources/Chapter3/others/refugees2.jpg";
@@ -85,15 +59,15 @@ import indra1 from "../resources/Chapter3/propaganda/indra1.jpg";
 import indra2 from "../resources/Chapter3/propaganda/indra2.jpg";
 import poem from "../resources/Chapter3/propaganda/poem.jpg";
 
-import bengalPaper1 from "../resources/Chapter3/photoStory3/bengalPaper1.jpg";
-import bengalPaper2 from "../resources/Chapter3/photoStory3/bengalPaper2.jpg";
-import bengalPaper3 from "../resources/Chapter3/photoStory3/bengalPaper3.jpg";
-import bengalPaper4 from "../resources/Chapter3/photoStory3/bengalPaper4.jpg";
-import bengalPaper5 from "../resources/Chapter3/photoStory3/bengalPaper5.jpg";
-import bengalPaper6 from "../resources/Chapter3/photoStory3/bengalPaper6.jpg";
-import bengalPaper7 from "../resources/Chapter3/photoStory3/bengalPaper7.jpg";
-import bengalPaper8 from "../resources/Chapter3/photoStory3/bengalPaper8.jpg";
-import bengalPaper9 from "../resources/Chapter3/photoStory3/bengalPaper9.jpg";
+import bengalPaper1 from "../resources/Chapter3/photoStory2/bengalPaper1.jpg";
+import bengalPaper2 from "../resources/Chapter3/photoStory2/bengalPaper2.jpg";
+import bengalPaper3 from "../resources/Chapter3/photoStory2/bengalPaper3.jpg";
+import bengalPaper4 from "../resources/Chapter3/photoStory2/bengalPaper4.jpg";
+import bengalPaper5 from "../resources/Chapter3/photoStory2/bengalPaper5.jpg";
+import bengalPaper6 from "../resources/Chapter3/photoStory2/bengalPaper6.jpg";
+import bengalPaper7 from "../resources/Chapter3/photoStory2/bengalPaper7.jpg";
+import bengalPaper8 from "../resources/Chapter3/photoStory2/bengalPaper8.jpg";
+import bengalPaper9 from "../resources/Chapter3/photoStory2/bengalPaper9.jpg";
 
 import war0 from "../resources/Chapter3/general/war0.jpeg";
 import war1 from "../resources/Chapter3/general/war1.jpeg";
@@ -132,42 +106,6 @@ const imgArrCh3 = [
     style: {
       width: "25%",
     },
-  },
-];
-
-const newsImgArr = [
-  {
-    img: photoStory1,
-    width: 560,
-    ar: 1.17,
-  },
-  {
-    img: photoStory2,
-    width: 420,
-    ar: 0.716,
-  },
-  {
-    img: photoStory3,
-    width: 320,
-    ar: 0.634,
-  },
-];
-
-const photoData = [
-  {
-    title: "Awami League is banned",
-    description:
-      "The president's statement calls Mujib's non-obedience movement an act of treason. Reports of political leaders praising the Army's intervention are also seen. Bhutto's famous statement 'Pakistan is saved' recorded in a deadline",
-  },
-  {
-    title: "Army in control, Mujib house arrested",
-    description:
-      "states the Martial Law Administrators official statement published in Dawn, March 28, 1971. Bhutto's criticism of Mujib's aims to form an 'independent fascist and racist regime in East Pakistan' is reported in the news report to the left",
-  },
-  {
-    title: "Awami Leagues' funds frozen",
-    description:
-      "A detailed martial law order banning all financial activity of the political party is reported in Dawn, March 29, 1971",
   },
 ];
 
@@ -284,52 +222,6 @@ function Operation() {
         subtitle="March 25 - Dec 16, 1971"
         desc="Delay in the transfer of power and failed negotiations lead to a political deadlock. The military orchestrates an all-out offensive in the East Wing taking complete control of the region"
       />
-
-      <section className={styles.content_section}>
-        <div className={styles.view_content_wrapper}>
-          <div className={styles.view_content_container}>
-            <SectionHeading heading="As the negotiations to transfer power fall apart, Awami League is outlawed" />
-            <p className={styles.view_para}>
-              By the third week of March, the negotiations had reached a
-              dead-end. There was a back-and-forth between the negotiating teams
-              led by Awami League’s lawyers and economists, and the
-              constitutional wizards of the military junta. But as Yahya Khan
-              left Dhaka on the night of 24 March, everyone knew that the
-              negotiations had fallen apart. They were never meant to reach an
-              agreement. As accounts provided by Khadim Husain Raja show, the
-              Eastern Command had been given the task of planning a military
-              operation weeks ago. Given the secrecy and general distrust of
-              Bengalis, the planners made sure that no Bengali officers were
-              involved in these consultations.
-            </p>
-            <p className={styles.view_para}>
-              The Operational Searchlight started on the midnight of 24-25
-              March. West Pakistani newspapers flashed celebratory headlines,
-              saluting Yahya Khan for doing the right thing and saving Pakistan.
-            </p>
-          </div>
-        </div>
-        <div className={styles.view_content_wrapper}>
-          <ResponsivePhotoSwitch photoData={photoData} imgArr={newsImgArr} />
-        </div>
-        <div className={styles.view_fw_content}>
-          <QuotePhoto
-            quote
-            addedMargin
-            photo={BhuttoQuote}
-            photoClassName={"ch2Q_6points"}
-            quoteTxt="By the grace of Almighty God, Pakistan has at last been saved"
-            quoteAlign="center"
-            color="white"
-            fontSize="big"
-            rotation="rotate2"
-            quoterText={
-              "Zulfiqar Ali Bhutto | On his return to Karachi from Dacca - 25 March 1971"
-            }
-            quotationMark={true}
-          />
-        </div>
-      </section>
 
       <section className={styles.content_section}>
         <div className={styles.view_content_wrapper}>
@@ -459,72 +351,6 @@ function Operation() {
                 </p>
               </div>
             </div>
-            <SectionHeading heading="Blood Telegram" />
-            <p className={styles.view_para}>
-              Silences are often weapons of oppression. And if one document
-              could provide quintessential testimony to this statement, it would
-              be the Blood Telegram. Sent to Washington DC by the then American
-              Consul General to Dhaka, Archer Blood, the telegram carries
-              imminent warnings and indications of an undergoing genocide in
-              East Pakistan. The response from DC was abysmal or as Blood
-              writes:
-            </p>
-          </div>
-        </div>
-        <div className={styles.view_fw_content}>
-          <QuotePhoto
-            quote
-            addedMargin
-            photo={blood}
-            photoClassName={"ch2Q_6points"}
-            quoteTxt="Our government has failed to denounce the suppression of democracy. Our government has failed to denounce atrocities…… Our government has evidenced what many will consider moral bankruptcy"
-            quoteAlign="center"
-            color="white"
-            fontSize="big"
-            rotation="rotate2"
-            quoterText={"Archer Blood | American Consul General to Dhaka 1971"}
-            quotationMark={true}
-          />
-        </div>
-      </section>
-      <section className={styles.content_section}>
-        <div className={styles.view_content_wrapper}>
-          <div className={styles.view_content_container}>
-            <PhotoContainer
-              setDisplayedOverlay={setDisplayedOverlay}
-              overlayID={"2"}
-              noScroll
-              imgArr={[
-                {
-                  image: bloodTelBook,
-                  caption:
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-                  widthID: "twentyfive",
-                },
-                {
-                  image: bloodTel,
-                  caption:
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-                  widthID: "thirty",
-                },
-                {
-                  image: bloodTelSupp,
-                  caption:
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-                  widthID: "thirty",
-                },
-              ]}
-            />
-            <p className={styles.view_para}>
-              In 2013, Gary J. Bass, Assistant Professor of Politics and
-              International Relations at Princeton, authored{" "}
-              <i>
-                The Blood Telegram: Nixon, Kissinger, and a Forgotten Genocide
-              </i>
-              , analyzing the American position on the Bangladesh LIberation war
-              of 1971. There are numerous declassified conversations between
-              Nixon, Kissinger, and other stakeholders.
-            </p>
           </div>
         </div>
       </section>
@@ -615,218 +441,6 @@ function Operation() {
       <section className={styles.content_section}>
         <div className={styles.view_content_wrapper}>
           <div className={styles.view_content_container}>
-            <SectionHeading heading="International Solidarity for the Bangladeshi Struggle" />
-            <p className={styles.view_para}>
-              One such aspect of international solidarity for the Bangladeshi
-              cause was the Concert for Bangladesh, where iconic artists like
-              Ravi Shankar and George Harrison performed.
-            </p>
-            <div className={styles.video_contain_center}>
-              <div className={styles.video_contain}>
-                <iframe
-                  src="https://www.youtube.com/embed/Tby39qh9Lts"
-                  title="YouTube video player"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                ></iframe>
-                <p className={styles.video_caption}>
-                  George Harrison organized the ‘Concert for Bangladesh’ where
-                  iconic musicians including Ravi Shankar, Bob Dylan, Eric
-                  Clapton and Ringo Starr performed
-                </p>
-              </div>
-            </div>
-            <PhotoContainer
-              setDisplayedOverlay={setDisplayedOverlay}
-              overlayID={"4"}
-              noScroll
-              imgArr={[
-                {
-                  image: solid1,
-                  caption:
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-                  widthID: "thirty",
-                },
-                {
-                  image: solid2,
-                  caption:
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-                  widthID: "thirty",
-                },
-                {
-                  image: solid3,
-                  caption:
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-                  widthID: "thirty",
-                },
-              ]}
-            />
-            <div className={styles.video_contain_center}>
-              <div className={styles.video_contain}>
-                <iframe
-                  src="https://www.youtube.com/embed/stkcP5xl1C0"
-                  title="YouTube video player"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                ></iframe>
-                <p className={styles.video_caption}>
-                  Famous American singer, Joan Baez performs ‘Song of
-                  Bangladesh’
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div className={styles.view_fw_content}>
-          <QuotePhoto
-            quote
-            addedMargin
-            photo={joanDylan}
-            photoClassName={"ch2Q_6points"}
-            quoteTxt={
-              <div>
-                <p>
-                  Bangladesh Bangladesh, Bangladesh Bangladesh
-                  <br />
-                  When the sun sinks in the west, Die a million people of the
-                  Bangladesh
-                  <br />
-                  The story of Bangladesh, Is an ancient one again made fresh
-                  <br />
-                  By blind men who carry out commands
-                  <br />
-                  Which flow out of the laws upon which nation stands
-                  <br />
-                  Which say to sacrifice a people for a land
-                </p>
-
-                <p>
-                  Once again we stand aside, And watch the families crucified
-                  <br />
-                  See a teenage mother's vacant eyes, As she watches her feeble
-                  baby try
-                  <br />
-                  To fight the monsoon rains and the cholera flies
-                  <br />
-                  And the students at the university, Asleep at night quite
-                  peacefully
-                  <br />
-                  The soldiers came and shot them in their beds,
-                  <br />
-                  And terror took the dorm awakening shrieks of dread
-                  <br />
-                  And silent frozen forms and pillows drenched in red
-                </p>
-
-                <p>
-                  Did you read about the army officer's plea, For donor's blood
-                  it was given willingly
-                  <br />
-                  By boys who took the needles in their veins,
-                  <br />
-                  And from their bodies every drop of blood was drained
-                  <br />
-                  No time to comprehend and there was little pain
-                  <br />
-                  And so the story of Bangladesh, Is an ancient one again made
-                  fresh
-                  <br />
-                  By all who carry out commands,
-                  <br />
-                  Which flow out of the laws upon which nations stand
-                  <br />
-                  Which say to sacrifice a people for a land
-                </p>
-              </div>
-            }
-            quoteAlign="left"
-            color="white"
-            fontSize="smaller"
-            rotation="rotate2"
-            quoterText={"Joan Baez | Lyrics to the 'Song for Bangladesh'"}
-            quotationMark={true}
-          />
-        </div>
-      </section>
-
-      <section className={styles.content_section}>
-        <div className={styles.view_content_wrapper}>
-          <div className={styles.view_content_container}>
-            <p className={styles.view_para}>
-              Pakistan tried to sway the international opinion in its favor by
-              producing counter-propaganda material. Here is a short clip from a
-              documentary that the official Pakistani television produced to
-              give a background to the East Pakistan crisis and the rationale
-              for conducting a military operation.
-            </p>
-            <div className={styles.video_contain_center}>
-              <div className={styles.video_contain}>
-                <iframe
-                  src="https://www.youtube.com/embed/AETYaUKT__0"
-                  title="YouTube video player"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                ></iframe>
-                <p className={styles.video_caption}>
-                  A propaganda film aimed to sway global opinion on the
-                  Bangladeshi struggle
-                </p>
-              </div>
-            </div>
-            <SectionHeading heading="Influence of US Foreign Policy" />
-            <p className={styles.view_para}>
-              However, at the official level, the US government led by Nixon and
-              his infamous national security advisor, Henry Kissinger, were
-              miffed at these developments. They viewed Pakistan as a
-              significant ally that had helped establish a diplomatic thaw
-              between China and the US. The Pakistani Military facilitated this
-              exchange at the expense of considerable cost, i.e., open Soviet
-              hostility. The Soviets responded by signing a friendship treaty
-              with India, supplying them with a large cache of arms and
-              ammunition, which was eventually used in the decisive battle
-              against Pakistan in November-December 1971.
-            </p>
-            <PhotoContainer
-              setDisplayedOverlay={setDisplayedOverlay}
-              overlayID={"5"}
-              imgArr={[
-                {
-                  image: timePeking,
-                  caption:
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-                  widthID: "twenty",
-                },
-                {
-                  image: yahKiss,
-                  caption:
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-                  widthID: "thirty",
-                },
-                {
-                  image: nixon1,
-                  caption:
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-                  widthID: "twenty",
-                },
-                {
-                  image: nixon2,
-                  caption:
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-                  widthID: "twenty",
-                },
-              ]}
-            />
-            <p className={styles.view_para}>
-              Though Nixon and Kissinger held a soft spot for Pakistan, they
-              realized the impossibility of Pakistan’s task. At best, despite
-              pressure at home and from its diplomatic staff, the US
-              administration could only take a mitigated stance rather than open
-              support for India. In particular, the US looked at India’s role in
-              the East Pakistan crisis with suspicion.
-            </p>
             <SectionHeading heading="Coverage by West Pakistani Press" />
             <p className={styles.view_para}>
               Throughout the military operation, the people in West Pakistan
@@ -856,40 +470,6 @@ function Operation() {
       <section className={styles.content_section}>
         <div className={styles.view_content_wrapper}>
           <div className={styles.view_content_container}>
-            <SectionHeading heading="Coverage by International Press" />
-            <p className={styles.view_para}>
-              The international press, however, was critical of Pakistan. There
-              were numerous reports about the humanitarian crisis emerging from
-              the military operation. In particular, the international community
-              focused on the burgeoning numbers of refugees – close to 10
-              million – who had assembled at various border crossings between
-              East Bengal and India.
-            </p>
-            <PhotoContainer
-              setDisplayedOverlay={setDisplayedOverlay}
-              overlayID={"6"}
-              noScroll
-              imgArr={[
-                {
-                  image: timeRefugees,
-                  caption:
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-                  widthID: "thirty",
-                },
-                {
-                  image: NYT,
-                  caption:
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-                  widthID: "thirty",
-                },
-                {
-                  image: WSJ,
-                  caption:
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-                  widthID: "thirty",
-                },
-              ]}
-            />
             <SectionHeading heading="Refugee Crisis" />
             <p className={styles.view_para}>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui
@@ -1333,62 +913,6 @@ function Operation() {
         ]}
       />
       <Overlay
-        oId="2"
-        displayedOverlay={displayedOverlay}
-        closeOverlay={closeOverlay}
-        setDisplayedOverlay={setDisplayedOverlay}
-        slides={[
-          {
-            source: "Amazon",
-            description:
-              "2013 book by American journalist and academic Gary J. Bass about The Blood telegram",
-            title: "",
-            width: "40",
-            render: () => (
-              <img
-                alt={
-                  "2013 book by American journalist and academic Gary J. Bass about The Blood telegram"
-                }
-                className={""}
-                src={bloodTelBook}
-              ></img>
-            ),
-          },
-          {
-            source: "Wikimedia Commons",
-            description:
-              "Archived copy of the telegram by Archer Blood, US High Commissioner in Dhaka, notifying the US State department of the excesses committed by Pakistan army",
-            title: "",
-            width: "45",
-            render: () => (
-              <img
-                alt={
-                  "Archived copy of the telegram by Archer Blood, US High Commissioner in Dhaka, notifying the US State department of the excesses committed by Pakistan army"
-                }
-                className={""}
-                src={bloodTel}
-              ></img>
-            ),
-          },
-          {
-            source: "Flickr",
-            description:
-              "Telegram sent by US foreign officers (South Asia region) in supporting the views expressed in the Blood Telegram",
-            title: "",
-            width: "45",
-            render: () => (
-              <img
-                alt={
-                  "Telegram sent by US foreign officers (South Asia region) in supporting the views expressed in the Blood Telegram"
-                }
-                className={""}
-                src={bloodTelSupp}
-              ></img>
-            ),
-          },
-        ]}
-      />
-      <Overlay
         oId="3"
         displayedOverlay={displayedOverlay}
         closeOverlay={closeOverlay}
@@ -1483,204 +1007,6 @@ function Operation() {
                 alt={"Bodies of Bengali Intellectuals dumped in the river"}
                 className={""}
                 src={intellectuals}
-              ></img>
-            ),
-          },
-        ]}
-      />
-      <Overlay
-        oId="4"
-        displayedOverlay={displayedOverlay}
-        closeOverlay={closeOverlay}
-        setDisplayedOverlay={setDisplayedOverlay}
-        slides={[
-          {
-            source: "Amazon",
-            description: `Famous American singer ‘Joan Baez’  wrote "The Song of Bangladesh" based on the army’s crackdown on unarmed sleeping Bengali students`,
-            title: "",
-            width: "40",
-            render: () => (
-              <img
-                alt={`Famous American singer ‘Joan Baez’  wrote "The Song of Bangladesh" based on the army’s crackdown on unarmed sleeping Bengali students`}
-                className={""}
-                src={solid1}
-              ></img>
-            ),
-          },
-          {
-            source: "Pinterest",
-            description:
-              "George Harrison along with many other eminent musicians played a series of concerts at the Madison Square Garden (New York) in solidarity of the Bangladeshi cause",
-            title: "",
-            width: "35",
-            render: () => (
-              <img
-                alt={
-                  "George Harrison along with many other eminent musicians played a series of concerts at the Madison Square Garden (New York) in solidarity of the Bangladeshi cause"
-                }
-                className={""}
-                src={solid2}
-              ></img>
-            ),
-          },
-          {
-            source: "Wikimedia Commons",
-            description:
-              "George Harrison along with many other eminent musicians played a series of concerts at the Madison Square Garden (New York) in solidarity of the Bangladeshi cause",
-            title: "",
-            width: "40",
-            render: () => (
-              <img
-                alt={
-                  "George Harrison along with many other eminent musicians played a series of concerts at the Madison Square Garden (New York) in solidarity of the Bangladeshi cause"
-                }
-                className={""}
-                src={solid3}
-              ></img>
-            ),
-          },
-        ]}
-      />
-      <Overlay
-        oId="5"
-        displayedOverlay={displayedOverlay}
-        closeOverlay={closeOverlay}
-        setDisplayedOverlay={setDisplayedOverlay}
-        slides={[
-          {
-            source: "TIME Magazine Online Archives",
-            description:
-              "Peking for Peace: a caricature on the cover of Time magazine suggests President Nixon and Henry Kissinger’s keenness to establish diplomatic ties with China",
-            title: "",
-            width: "40",
-            render: () => (
-              <img
-                alt={
-                  "Peking for Peace: a caricature on the cover of Time magazine suggests President Nixon and Henry Kissinger’s keenness to establish diplomatic ties with China"
-                }
-                className={""}
-                src={timePeking}
-              ></img>
-            ),
-          },
-          {
-            source: "The Atlantic",
-            description:
-              "US Secretary of State Henry Kissinger talks with Presdent Yahya Khan",
-            title: "",
-            width: "65",
-            render: () => (
-              <img
-                alt={
-                  "US Secretary of State Henry Kissinger talks with Presdent Yahya Khan"
-                }
-                className={""}
-                src={yahKiss}
-              ></img>
-            ),
-          },
-          {
-            source: "George Washington University Archives",
-            description:
-              "A handwritten letter by Presedent Nixon thanking President Yahya for his support in improving ties between the US and China (1)",
-            title: "",
-            width: "40",
-            render: () => (
-              <img
-                alt={
-                  "A handwritten letter by Presedent Nixon thanking President Yahya for his support in improving ties between the US and China (1)"
-                }
-                className={""}
-                src={nixon1}
-              ></img>
-            ),
-          },
-          {
-            source: "George Washington University Archives",
-            description:
-              "A handwritten letter by Presedent Nixon thanking President Yahya for his support in improving ties between the US and China (2)",
-            title: "",
-            width: "40",
-            render: () => (
-              <img
-                alt={
-                  "A handwritten letter by Presedent Nixon thanking President Yahya for his support in improving ties between the US and China (2)"
-                }
-                className={""}
-                src={nixon2}
-              ></img>
-            ),
-          },
-        ]}
-      />
-      <Overlay
-        oId="6"
-        displayedOverlay={displayedOverlay}
-        closeOverlay={closeOverlay}
-        setDisplayedOverlay={setDisplayedOverlay}
-        slides={[
-          {
-            source: "TIME Magazine Online Archives",
-            description: "Cover of the Time Magazine (August 2, 1971)",
-            title: "",
-            width: "35",
-            render: () => (
-              <img
-                alt={"Cover of the Time Magazine (August 2, 1971)"}
-                className={""}
-                src={timeRefugees}
-              ></img>
-            ),
-          },
-          {
-            source: "",
-            description: (
-              <span>
-                <a
-                  className={styles.rerouteLink}
-                  href="http://www.docstrangelove.com/uploads/1971/foreign/19710329_nyt_sticks_and_spears_against_tanks.pdf"
-                  target="_blank"
-                >
-                  Sticks and Spears against Tanks
-                </a>{" "}
-                by Sydney H. Schanberg published in the New York Times
-              </span>
-            ),
-            title: "",
-            width: "35",
-            render: () => (
-              <img
-                alt={
-                  "Sticks and Spears against Tanks by Sydney H. Schanberg published in the New York Times"
-                }
-                className={""}
-                src={NYT}
-              ></img>
-            ),
-          },
-          {
-            source: "",
-            description: (
-              <span>
-                <a
-                  className={styles.rerouteLink}
-                  href="http://www.docstrangelove.com/uploads/1971/foreign/19710723_wsj_a_nation_divided.pdf"
-                  target="_blank"
-                >
-                  A Nation Divided
-                </a>{" "}
-                by Peter R. Kan published in the Wall Street Journal
-              </span>
-            ),
-            title: "",
-            width: "35",
-            render: () => (
-              <img
-                alt={
-                  "A Nation Divided by Peter R. Kan published in the Wall Street Journal"
-                }
-                className={""}
-                src={WSJ}
               ></img>
             ),
           },
@@ -2134,13 +1460,13 @@ function Operation() {
           {
             source: "Wajahat Masood's personal collection",
             description:
-              "General Niazi along with injured troops on a militart plane",
+              "General Niazi along with injured troops on a military plane",
             title: "",
             width: "65",
             render: () => (
               <img
                 alt={
-                  "General Niazi along with injured troops on a militart plane"
+                  "General Niazi along with injured troops on a military plane"
                 }
                 className={""}
                 src={war2}
@@ -2150,13 +1476,13 @@ function Operation() {
           {
             source: "Wajahat Masood's personal collection",
             description:
-              "Genaral Niazi along with senior military men from the indian army during the surrender ceremony",
+              "Genaral Niazi",
             title: "",
             width: "70",
             render: () => (
               <img
                 alt={
-                  "Genaral Niazi along with senior military men from the indian army during the surrender ceremony"
+                  "Genaral Niazi"
                 }
                 className={""}
                 src={war3}
@@ -2165,12 +1491,12 @@ function Operation() {
           },
           {
             source: "Wajahat Masood's personal collection",
-            description: "General Niazi passes on instruction to a troop",
+            description: "Genaral Niazi along with senior military men from the Indian Army during the surrender ceremony",
             title: "",
             width: "70",
             render: () => (
               <img
-                alt={"General Niazi passes on instruction to a troop"}
+                alt={"Genaral Niazi along with senior military men from the Indian Army during the surrender ceremony"}
                 className={""}
                 src={war4}
               ></img>
@@ -2178,12 +1504,12 @@ function Operation() {
           },
           {
             source: "Wajahat Masood's personal collection",
-            description: "General Niazi addressing troops",
+            description: "General Niazi passes on instruction to a troop",
             title: "",
             width: "65",
             render: () => (
               <img
-                alt={"General Niazi addressing troops"}
+                alt={"General Niazi passes on instruction to a troop"}
                 className={""}
                 src={war5}
               ></img>
@@ -2191,10 +1517,10 @@ function Operation() {
           },
           {
             source: "Wajahat Masood's personal collection",
-            description: "",
+            description: "General Niazi addressing troops",
             title: "",
             width: "75",
-            render: () => <img alt={""} className={""} src={war6}></img>,
+            render: () => <img alt={"General Niazi addressing troops"} className={""} src={war6}></img>,
           },
           {
             source: "Wajahat Masood's personal collection",

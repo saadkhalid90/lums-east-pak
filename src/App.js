@@ -13,6 +13,7 @@ import Chapter1 from './views/Chapter1.js';
 import Chapter2 from './views/Chapter2.js';
 import Chapter3 from './views/Chapter3.js';
 import Chapter4 from './views/Chapter4.js';
+import Chapter5 from './views/Chapter5.js';
 import Appendix from './views/Appendix.js';
 
 import chapter1_1 from "./resources/Chapter1/Chapter1_1.png";
@@ -96,6 +97,11 @@ function App() {
               <Route exact path="/ch4"
                 element={
                   <Chapter4/>
+                }
+              />
+              <Route exact path="/ch5"
+                element={
+                  <Chapter5/>
                 }
               />
               <Route exact path="/appendix"

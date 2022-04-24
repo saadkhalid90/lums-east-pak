@@ -12,27 +12,25 @@ import chapter4_1 from "../resources/Chapter4/Chapter4_1.jpg";
 import chapter4_2 from "../resources/Chapter4/Chapter4_2.jpg";
 import chapter4_3 from "../resources/Chapter4/Chapter4_3.jpg";
 
-import BhuttoQuote from "../resources/Chapter3/others/BhuttoQuote.jpg";
+import blood from "../resources/Chapter4/blood telegram/blood.jpg";
+import bloodTel from "../resources/Chapter4/blood telegram/blood telegram.jpg";
+import bloodTelSupp from "../resources/Chapter4/blood telegram/blood_support.jpg";
+import bloodTelBook from "../resources/Chapter4/blood telegram/blood telegram book.jpg";
 
-import mujbhutt1 from "../resources/Chapter4/mujeebBhutto1.jpg";
-import mujbhutt2 from "../resources/Chapter4/mujeebBhutto2.jpg";
-import mujbhutt3 from "../resources/Chapter4/mujeebBhutto3.jpg";
-import mujbhutt4 from "../resources/Chapter4/mujeebBhutto4.jpg";
-import mujbhutt5 from "../resources/Chapter4/mujeebBhutto5.jpg";
+import solid1 from "../resources/Chapter4/solid/solid1.jpg";
+import solid2 from "../resources/Chapter4/solid/solid2.jpg";
+import solid3 from "../resources/Chapter4/solid/solid3.jpg";
 
-import firstAmend1 from "../resources/Chapter4/first-amend/FirstAmend1.jpg";
-import revokeCit from "../resources/Chapter4/first-amend/revokeCit.jpg";
+import joanDylan from "../resources/Chapter4/solid/JoanDylan.jpg";
 
-import geneva1 from "../resources/Chapter4/geneva-camp/geneva1.jpg";
-import geneva2 from "../resources/Chapter4/geneva-camp/geneva2.jpg";
+import timePeking from "../resources/Chapter4/US/pekingforpeace.jpg";
+import yahKiss from "../resources/Chapter4/US/yahyaKissinger.jpg";
+import nixon1 from "../resources/Chapter4/US/Nixon1.jpg";
+import nixon2 from "../resources/Chapter4/US/Nixon2.jpg";
 
-import azmatBook from "../resources/Chapter4/Azmat.jpg";
-import hamood from "../resources/Chapter4/hamoodurrehman.jpg";
-import hamoodRpt from "../resources/Chapter4/HamoodReport.jpg";
-
-import film1 from "../resources/Chapter4/films/film1.jpg";
-import film2 from "../resources/Chapter4/films/film2.jpg";
-import film3 from "../resources/Chapter4/films/film3.jpg";
+import timeRefugees from "../resources/Chapter4/int_press/time_refugees.jpg";
+import NYT from "../resources/Chapter4/int_press/NYT.jpg";
+import WSJ from "../resources/Chapter4/int_press/WSJ.jpg";
 
 const imgArrCh4 = [
   {
@@ -77,136 +75,38 @@ function AfterTheWar() {
       <ChapterTitle
         number="4"
         imgArr={imgArrCh4}
-        title="After the Surrender"
-        subtitle="1972 - 1974"
-        desc="Zulfiqar Ali Bhutto uses diplomatic channels to recognize the new state of Bangladesh. Pakistan revises its citizenship law in 1974. Urdu speaking East Pakistanis become refugees in Bangladesh"
+        title="Interantional Dimension"
+        subtitle="1971"
+        desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation"
       />
 
       <section className={styles.content_section}>
         <div className={styles.view_content_wrapper}>
           <div className={styles.view_content_container}>
+            <SectionHeading heading="Blood Telegram" />
             <p className={styles.view_para}>
-              After the war and military surrender, the Pakistani state was
-              confronted with existential crises and several unresolved issues.
-              The biggest challenge was to get the prisoners of war released and
-              ensure the safety of 'stranded Pakistanis' in former East
-              Pakistan.
+              Silences are often weapons of oppression. And if one document
+              could provide quintessential testimony to this statement, it would
+              be the Blood Telegram. Sent to Washington DC by the then American
+              Consul General to Dhaka, Archer Blood, the telegram carries
+              imminent warnings and indications of an undergoing genocide in
+              East Pakistan. The response from DC was abysmal or as Blood
+              writes:
             </p>
-            <SectionHeading heading="Pakistan's Recognition of Bangladesh" />
-            <p className={styles.view_para}>
-              Pakistan did not recognize the state of Bangladesh till 1974.
-              Throughout the intervening years, the Pakistani Government
-              remained in contact with the Bangladeshi Government through the
-              intermediary of friendly countries. One of the outstanding issues
-              was Sheikh Mujib's insistence on trying about 200 Pakistani
-              officers for war crimes. Pakistan insisted that all PoWs must
-              return and that the Pakistani Government should be responsible for
-              taking any action that might be necessary.
-            </p>
-            <p className={styles.view_para}>
-              Pakistan's formal recognition of Bangladesh in February 1974 at
-              the occasion of the second session of the Organization of Islamic
-              Countries (OIC) in Lahore (add picture) was followed by a
-              constitutional amendment to redefine Pakistan's sovereign
-              boundaries.
-            </p>
-          </div>
-          <div className={styles.view_content_container}>
-            <PhotoContainer
-              setDisplayedOverlay={setDisplayedOverlay}
-              overlayID={"1"}
-              imgArr={[
-                {
-                  image: mujbhutt1,
-                  caption:
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-                  widthID: "thirty",
-                },
-                {
-                  image: mujbhutt5,
-                  caption:
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-                  widthID: "twenty",
-                },
-                {
-                  image: mujbhutt4,
-                  caption:
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-                  widthID: "twentyfive",
-                },
-                {
-                  image: mujbhutt3,
-                  caption:
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-                  widthID: "twentyfive",
-                },
-                {
-                  image: mujbhutt2,
-                  caption:
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-                  widthID: "twenty",
-                },
-              ]}
-            />
-          </div>
-          <div className={styles.video_contain_center}>
-            <div className={styles.video_contain}>
-              <iframe
-                src="https://www.youtube.com/embed/fowobGg-nwY"
-                title="YouTube video player"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
-              <p className={styles.video_caption}>
-                Zulfiqar Ali Bhutto welcomes Sheikh Mujib Ur Rahman to Lahore
-                for the International Islamic Conference
-              </p>
-            </div>
-          </div>
-          <div className={styles.video_contain_center}>
-            <div className={styles.video_contain}>
-              <iframe
-                src="https://www.youtube.com/embed/DgI3fjtTLds"
-                title="YouTube video player"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-              ></iframe>
-              <p className={styles.video_caption}>
-                Following the official recognition of Bangladesh by Pakistan,
-                Bhutto visited Dhaka a few months after the Islamic Conference
-              </p>
-            </div>
           </div>
         </div>
         <div className={styles.view_fw_content}>
           <QuotePhoto
             quote
             addedMargin
-            photo={BhuttoQuote}
+            photo={blood}
             photoClassName={"ch2Q_6points"}
-            quoteTxt={
-              <p>
-                ...a country was dismembered, a unity was sundered and a
-                yearning gap was opened between you and us. In a sense, it may
-                now be too late to cry over what has happened already. But it is
-                never too late to repent and say tauba from the bottom of our
-                heart. As I have said earlier, the people of Pakistan respect
-                your decision. They and the Government of Pakistan of Pakistan
-                recognize the sovereignty and independence of Bangladesh. More
-                than that, we wish you rapid progress and prosperity. We extend
-                to you all our goodwill and are prepared to cooperate with you
-                to the extent that you desire...
-              </p>
-            }
-            quoteAlign="left"
+            quoteTxt="Our government has failed to denounce the suppression of democracy. Our government has failed to denounce atrocities…… Our government has evidenced what many will consider moral bankruptcy"
+            quoteAlign="center"
             color="white"
-            fontSize="small"
+            fontSize="big"
             rotation="rotate2"
-            quoterText={
-              "Zulfiqar Ali Bhutto - Excerpt from a Speech on his visit to Bangladesh in 1974"
-            }
+            quoterText={"Archer Blood | American Consul General to Dhaka 1971"}
             quotationMark={true}
           />
         </div>
@@ -214,111 +114,106 @@ function AfterTheWar() {
       <section className={styles.content_section}>
         <div className={styles.view_content_wrapper}>
           <div className={styles.view_content_container}>
-            <p className={styles.view_para}>
-              To effectively implement the division that had taken place,
-              Pakistan amended its citizenship laws in 1978. It was meant to
-              formally renounce the citizenship of what was erstwhile the
-              majority population of Bengalis in united Pakistan.
-            </p>
             <PhotoContainer
               setDisplayedOverlay={setDisplayedOverlay}
               overlayID={"2"}
               noScroll
               imgArr={[
                 {
-                  image: firstAmend1,
+                  image: bloodTelBook,
                   caption:
                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-                  widthID: "thirtyfive",
+                  widthID: "twentyfive",
                 },
                 {
-                  image: revokeCit,
+                  image: bloodTel,
                   caption:
                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-                  widthID: "thirtyfive",
+                  widthID: "thirty",
+                },
+                {
+                  image: bloodTelSupp,
+                  caption:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                  widthID: "thirty",
                 },
               ]}
             />
+            <p className={styles.view_para}>
+              In 2013, Gary J. Bass, Assistant Professor of Politics and
+              International Relations at Princeton, authored{" "}
+              <i>
+                The Blood Telegram: Nixon, Kissinger, and a Forgotten Genocide
+              </i>
+              , analyzing the American position on the Bangladesh LIberation war
+              of 1971. There are numerous declassified conversations between
+              Nixon, Kissinger, and other stakeholders.
+            </p>
           </div>
         </div>
       </section>
       <section className={styles.content_section}>
         <div className={styles.view_content_wrapper}>
           <div className={styles.view_content_container}>
-            <SectionHeading heading="Repatriation of Urdu speaking 'Biharis'" />
+            <SectionHeading heading="International Solidarity for the Bangladeshi Struggle" />
             <p className={styles.view_para}>
-              Despite numerous diplomatic initiatives by international
-              organizations and mutual agreements between Pakistan and
-              Bangladesh, little has been achieved on the repatriation of
-              Urdu-speaking communities, collectively clubbed together as
-              'Biharis,' living in Bangladesh. Targeted for their pro-Pakistan
-              stance, the Bangladeshi Government dumped them in refugee camps
-              and refused to accept them as its citizens.
-            </p>
-            <p className={styles.view_para}>
-              The so-called Geneva Camp in Dhaka is home to one of the largest
-              refugee populations in the world. Only a few thousand families –
-              mostly affluent or with strong family connections – were able to
-              get out of Bangladesh. The rest remained in these camps as
-              stateless subjects. It was only in the early 2000s that the
-              Bangladeshi Supreme Court recognized the citizenship status of
-              those born in Bangladesh after 1971. But the formal completion of
-              the citizenship status of Urdu-speaking refugees is far from
-              complete. It will take sustained efforts over decades to transform
-              them from refugees to citizens.
-            </p>
-            <PhotoContainer
-              setDisplayedOverlay={setDisplayedOverlay}
-              overlayID={"3"}
-              noScroll
-              imgArr={[
-                {
-                  image: geneva1,
-                  caption:
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-                  widthID: "forty",
-                },
-                {
-                  image: geneva2,
-                  caption:
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-                  widthID: "forty",
-                },
-              ]}
-            />
-            <p className={styles.view_para}>
-              <a
-                className={styles.clickLink}
-                href="https://www.theguardian.com/global-development/gallery/2014/aug/11/stranded-pakistanis-camps-bangladesh-bihari-in-pictures"
-                target="_blank"
-              >
-                A photo essay published by Guardian on the life of so called{" "}
-                <i>'Bihari'</i> refugees in Geneva camp
-              </a>
-            </p>
-            <p className={styles.view_para}>
-              There was no such place as a home for the Biharis who were able to
-              return to what was left of Pakistan. Azmat Ashraf's autobiography
-              gives a haunting account of those who survived the Bihari massacre
-              in East Pakistan and their quest for a homeland, which eventually
-              took him and some of his childhood friends to Canada. They still
-              wait for justice from the Bangladeshi Government and an
-              acknowledgment of the violence committed against them by Mukti
-              Bahinis.
+              One such aspect of international solidarity for the Bangladeshi
+              cause was the Concert for Bangladesh, where iconic artists like
+              Ravi Shankar and George Harrison performed.
             </p>
             <div className={styles.video_contain_center}>
               <div className={styles.video_contain}>
                 <iframe
-                  src="https://www.youtube.com/embed/Wquha5rZuBo"
+                  src="https://www.youtube.com/embed/Tby39qh9Lts"
                   title="YouTube video player"
                   frameBorder="0"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                   allowFullScreen
                 ></iframe>
                 <p className={styles.video_caption}>
-                  So-called ‘Biharis’ (Urdu speaking communities) are confined
-                  to refugee camps and are still fighting for recognition in
-                  Bangladesh
+                  George Harrison organized the ‘Concert for Bangladesh’ where
+                  iconic musicians including Ravi Shankar, Bob Dylan, Eric
+                  Clapton and Ringo Starr performed
+                </p>
+              </div>
+            </div>
+            <PhotoContainer
+              setDisplayedOverlay={setDisplayedOverlay}
+              overlayID={"4"}
+              noScroll
+              imgArr={[
+                {
+                  image: solid1,
+                  caption:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                  widthID: "thirty",
+                },
+                {
+                  image: solid2,
+                  caption:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                  widthID: "thirty",
+                },
+                {
+                  image: solid3,
+                  caption:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                  widthID: "thirty",
+                },
+              ]}
+            />
+            <div className={styles.video_contain_center}>
+              <div className={styles.video_contain}>
+                <iframe
+                  src="https://www.youtube.com/embed/stkcP5xl1C0"
+                  title="YouTube video player"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
+                <p className={styles.video_caption}>
+                  Famous American singer, Joan Baez performs ‘Song of
+                  Bangladesh’
                 </p>
               </div>
             </div>
@@ -328,31 +223,69 @@ function AfterTheWar() {
           <QuotePhoto
             quote
             addedMargin
-            photo={azmatBook}
+            photo={joanDylan}
             photoClassName={"ch2Q_6points"}
             quoteTxt={
-              <p>
-                The attackers were so organized and meticulous that it seemed as
-                if they had the census survey in their hands. Wherever their
-                tally did not match the dead, they would come back to look for
-                more. For nearly two weeks, the Biharis remained sitting ducks
-                in their own homes or hiding here and there, exhausted, hungry,
-                or wounded. No one was prepared to own even those poor folks who
-                had totally assimilated in the society, spoke the language,
-                married into Bengali families, and had Bengali children. The
-                Haiders, the Shobratis, and the Ashrafs were all to be dealt
-                with. In towns like Thakurgaon and Dinajpur, the carnage was so
-                extensive that no one was spared, not even women and children,
-                newborns, the old, or the infirm.
-              </p>
+              <div>
+                <p>
+                  Bangladesh Bangladesh, Bangladesh Bangladesh
+                  <br />
+                  When the sun sinks in the west, Die a million people of the
+                  Bangladesh
+                  <br />
+                  The story of Bangladesh, Is an ancient one again made fresh
+                  <br />
+                  By blind men who carry out commands
+                  <br />
+                  Which flow out of the laws upon which nation stands
+                  <br />
+                  Which say to sacrifice a people for a land
+                </p>
+
+                <p>
+                  Once again we stand aside, And watch the families crucified
+                  <br />
+                  See a teenage mother's vacant eyes, As she watches her feeble
+                  baby try
+                  <br />
+                  To fight the monsoon rains and the cholera flies
+                  <br />
+                  And the students at the university, Asleep at night quite
+                  peacefully
+                  <br />
+                  The soldiers came and shot them in their beds,
+                  <br />
+                  And terror took the dorm awakening shrieks of dread
+                  <br />
+                  And silent frozen forms and pillows drenched in red
+                </p>
+
+                <p>
+                  Did you read about the army officer's plea, For donor's blood
+                  it was given willingly
+                  <br />
+                  By boys who took the needles in their veins,
+                  <br />
+                  And from their bodies every drop of blood was drained
+                  <br />
+                  No time to comprehend and there was little pain
+                  <br />
+                  And so the story of Bangladesh, Is an ancient one again made
+                  fresh
+                  <br />
+                  By all who carry out commands,
+                  <br />
+                  Which flow out of the laws upon which nations stand
+                  <br />
+                  Which say to sacrifice a people for a land
+                </p>
+              </div>
             }
             quoteAlign="left"
             color="white"
-            fontSize="small"
+            fontSize="smaller"
             rotation="rotate2"
-            quoterText={
-              "Azmat Ashraf - Refugee: Unsettled as I roam - My endless search for a home"
-            }
+            quoterText={"Joan Baez | Lyrics to the 'Song for Bangladesh'"}
             quotationMark={true}
           />
         </div>
@@ -360,89 +293,110 @@ function AfterTheWar() {
       <section className={styles.content_section}>
         <div className={styles.view_content_wrapper}>
           <div className={styles.view_content_container}>
-            <SectionHeading heading="Hammoodur Rehman Commission" />
             <p className={styles.view_para}>
-              To probe the reasons for Pakistan's breakup and poor military
-              performance during the war, the Pakistani Government set up a
-              commission of inquiry headed by Justice Hammoodur Rehman – the
-              Chief Justice of the Pakistani Supreme Court. The inquiry
-              commission held marathon sessions to collect testimonies from
-              hundreds of officers who had served during the war or were
-              responsible for running the administration leading up to the
-              outbreak of violence in March 1971.
+              Pakistan tried to sway the international opinion in its favor by
+              producing counter-propaganda material. Here is a short clip from a
+              documentary that the official Pakistani television produced to
+              give a background to the East Pakistan crisis and the rationale
+              for conducting a military operation.
             </p>
+            <div className={styles.video_contain_center}>
+              <div className={styles.video_contain}>
+                <iframe
+                  src="https://www.youtube.com/embed/AETYaUKT__0"
+                  title="YouTube video player"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
+                <p className={styles.video_caption}>
+                  A propaganda film aimed to sway global opinion on the
+                  Bangladeshi struggle
+                </p>
+              </div>
+            </div>
+            <SectionHeading heading="Influence of US Foreign Policy" />
             <p className={styles.view_para}>
-              Once India repatriated the PoWs, the Commission was reconvened to
-              record the testimonies of more officers. The final report,
-              however, was not made public. In the early 2000s, an Indian
-              website published an unverified copy of the report online. It
-              prompted the Pakistani Government to issue an official version
-              with some parts of the report redacted. We still do not have
-              access to the transcripts of daily proceedings or possible
-              court-martial trials that might have taken place per the report's
-              recommendations.
-            </p>
-            <PhotoContainer
-              setDisplayedOverlay={setDisplayedOverlay}
-              overlayID={"4"}
-              noScroll
-              imgArr={[
-                {
-                  image: hamood,
-                  caption:
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-                  widthID: "fifty",
-                },
-                {
-                  image: hamoodRpt,
-                  caption:
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-                  widthID: "thirty",
-                },
-              ]}
-            />
-            <SectionHeading heading="Pakistan's stance today" />
-            <p className={styles.view_para}>
-              The official Pakistani policy has been to 'bury the past' and move
-              forward by 'regretting' what happened in 1971. It falls short of a
-              formal apology or an explicit recognition of the military's crimes
-              during the war.
-            </p>
-            <p className={styles.view_para}>
-              In school textbooks and popular media, Pakistan continues to deny
-              any wrongdoing. The usual practice is to put the entire blame on
-              India's support to Mukti Bahinis and its long-term plan to
-              destabilize and dismember Pakistan.
-            </p>
-            <p className={styles.view_para}>
-              The Pakistani military mounted a PR offensive in the fiftieth year
-              of Bangladesh's independence. Its media wing – the Inter-Services
-              Public Relations (ISPR), sponsored several films, documentaries,
-              and TV serials to paddle a narrative about the 1971 war that
-              exonerated the military of any wrongdoing.
+              However, at the official level, the US government led by Nixon and
+              his infamous national security advisor, Henry Kissinger, were
+              miffed at these developments. They viewed Pakistan as a
+              significant ally that had helped establish a diplomatic thaw
+              between China and the US. The Pakistani Military facilitated this
+              exchange at the expense of considerable cost, i.e., open Soviet
+              hostility. The Soviets responded by signing a friendship treaty
+              with India, supplying them with a large cache of arms and
+              ammunition, which was eventually used in the decisive battle
+              against Pakistan in November-December 1971.
             </p>
             <PhotoContainer
               setDisplayedOverlay={setDisplayedOverlay}
               overlayID={"5"}
+              imgArr={[
+                {
+                  image: timePeking,
+                  caption:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                  widthID: "twenty",
+                },
+                {
+                  image: yahKiss,
+                  caption:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                  widthID: "thirty",
+                },
+                {
+                  image: nixon1,
+                  caption:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                  widthID: "twenty",
+                },
+                {
+                  image: nixon2,
+                  caption:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                  widthID: "twenty",
+                },
+              ]}
+            />
+            <p className={styles.view_para}>
+              Though Nixon and Kissinger held a soft spot for Pakistan, they
+              realized the impossibility of Pakistan’s task. At best, despite
+              pressure at home and from its diplomatic staff, the US
+              administration could only take a mitigated stance rather than open
+              support for India. In particular, the US looked at India’s role in
+              the East Pakistan crisis with suspicion.
+            </p>
+            <SectionHeading heading="Coverage by International Press" />
+            <p className={styles.view_para}>
+              The international press, however, was critical of Pakistan. There
+              were numerous reports about the humanitarian crisis emerging from
+              the military operation. In particular, the international community
+              focused on the burgeoning numbers of refugees – close to 10
+              million – who had assembled at various border crossings between
+              East Bengal and India.
+            </p>
+            <PhotoContainer
+              setDisplayedOverlay={setDisplayedOverlay}
+              overlayID={"6"}
               noScroll
               imgArr={[
                 {
-                  image: film1,
+                  image: timeRefugees,
                   caption:
                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-                  widthID: "twentyfive",
+                  widthID: "thirty",
                 },
                 {
-                  image: film2,
+                  image: NYT,
                   caption:
                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-                  widthID: "twentyfive",
+                  widthID: "thirty",
                 },
                 {
-                  image: film3,
+                  image: WSJ,
                   caption:
                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-                  widthID: "twentyfive",
+                  widthID: "thirty",
                 },
               ]}
             />
@@ -455,91 +409,9 @@ function AfterTheWar() {
         projectDescription="The LUMS Digital Archive is a research repository that aims at collecting, cataloging and preserving rare material (books, pamphlets, newspapers and other items) of
       historical significance and making them available to researchers. In particular, the archive focuses on events, groups, movements and personalities relating to broader
       historical, political and cultural trends in South Asia, with an emphasis on preserving the accounts of marginalized and subaltern groups."
-        prevLink="/ch4"
-        nextLink="/"
+        prevLink="/ch3"
+        nextLink="/ch5"
         chapterID={4}
-      />
-      <Overlay
-        oId="1"
-        displayedOverlay={displayedOverlay}
-        closeOverlay={closeOverlay}
-        setDisplayedOverlay={setDisplayedOverlay}
-        slides={[
-          {
-            source: "Flickr",
-            description:
-              "Yasir Arafat, Sheikh Mujib, Zulfiqar Bhutto and Muammar Gaddafi at the Organization of Islamic Countries (OIC) Conference at Lahore in 1974. The occasion was used as a diplomatic opportunity by Pakistan to recognize Bangladesh as an independent republic",
-            title: "",
-            width: "70",
-            render: () => (
-              <img
-                alt={
-                  "Yasir Arafat, Sheikh Mujib, Zulfiqar Bhutto and Muammar Gaddafi at the Organization of Islamic Countries (OIC) Conference at Lahore in 1974. The occasion was used as a diplomatic opportunity by Pakistan to recognize Bangladesh as an independent republic"
-                }
-                className={""}
-                src={mujbhutt1}
-              ></img>
-            ),
-          },
-          {
-            source: "Flickr",
-            description:
-              "Bhutto and Mujib share a light moment at the OIC Conference at Lahore in 1974",
-            title: "def",
-            width: "40",
-            render: () => (
-              <img
-                alt={
-                  "Bhutto and Mujib share a light moment at the OIC Conference at Lahore in 1974"
-                }
-                className={""}
-                src={mujbhutt5}
-              ></img>
-            ),
-          },
-          {
-            source: "Flickr",
-            description:
-              "Bhutto and Mujib share a light moment at the OIC Conference at Lahore in 1974",
-            title: "def",
-            width: "55",
-            render: () => (
-              <img
-                alt={
-                  "Bhutto and Mujib share a light moment at the OIC Conference at Lahore in 1974"
-                }
-                className={""}
-                src={mujbhutt4}
-              ></img>
-            ),
-          },
-          {
-            source: "Flickr",
-            description: "Bhutto and Mujib immersed in dialogue",
-            title: "def",
-            width: "65",
-            render: () => (
-              <img
-                alt={"Bhutto and Mujib immersed in dialogue"}
-                className={""}
-                src={mujbhutt3}
-              ></img>
-            ),
-          },
-          {
-            source: "Flickr",
-            description: "Bhutto and Mujib at the Islamic Summit",
-            title: "",
-            width: "40",
-            render: () => (
-              <img
-                alt={"Bhutto and Mujib at the Islamic Summit"}
-                className={""}
-                src={mujbhutt2}
-              ></img>
-            ),
-          },
-        ]}
       />
       <Overlay
         oId="2"
@@ -548,62 +420,50 @@ function AfterTheWar() {
         setDisplayedOverlay={setDisplayedOverlay}
         slides={[
           {
-            source: "",
-            description: "An act redefining the territories of Pakistan",
+            source: "Amazon",
+            description:
+              "2013 book by American journalist and academic Gary J. Bass about The Blood telegram",
+            title: "",
+            width: "40",
+            render: () => (
+              <img
+                alt={
+                  "2013 book by American journalist and academic Gary J. Bass about The Blood telegram"
+                }
+                className={""}
+                src={bloodTelBook}
+              ></img>
+            ),
+          },
+          {
+            source: "Wikimedia Commons",
+            description:
+              "Archived copy of the telegram by Archer Blood, US High Commissioner in Dhaka, notifying the US State department of the excesses committed by Pakistan army",
             title: "",
             width: "45",
             render: () => (
               <img
-                alt={"An act redefining the territories of Pakistan"}
+                alt={
+                  "Archived copy of the telegram by Archer Blood, US High Commissioner in Dhaka, notifying the US State department of the excesses committed by Pakistan army"
+                }
                 className={""}
-                src={firstAmend1}
+                src={bloodTel}
               ></img>
             ),
           },
           {
-            source: "",
-            description: "An act redefining citizenship of Pakistan",
+            source: "Flickr",
+            description:
+              "Telegram sent by US foreign officers (South Asia region), supporting the views expressed in the Blood Telegram",
             title: "",
-            width: "70",
+            width: "45",
             render: () => (
               <img
-                alt={"An act redefining citizenship of Pakistan"}
+                alt={
+                  "Telegram sent by US foreign officers (South Asia region), supporting the views expressed in the Blood Telegram"
+                }
                 className={""}
-                src={revokeCit}
-              ></img>
-            ),
-          },
-        ]}
-      />
-      <Overlay
-        oId="3"
-        displayedOverlay={displayedOverlay}
-        closeOverlay={closeOverlay}
-        setDisplayedOverlay={setDisplayedOverlay}
-        slides={[
-          {
-            source: "Researchgate",
-            description: "View of the Geneva Camp (March 1972)",
-            title: "",
-            width: "65",
-            render: () => (
-              <img
-                alt={"View of the Geneva Camp (March 1972)"}
-                className={""}
-                src={geneva1}
-              ></img>
-            ),
-          },
-          {
-            source: "The Guardian",
-            description: "Present day view of the Geneva Camp",
-            title: "",
-            width: "70",
-            render: () => (
-              <img
-                alt={"Present day view of the Geneva Camp"}
-                className={""}
-                src={geneva2}
+                src={bloodTelSupp}
               ></img>
             ),
           },
@@ -616,31 +476,47 @@ function AfterTheWar() {
         setDisplayedOverlay={setDisplayedOverlay}
         slides={[
           {
-            source: "Wikimedia Commons",
-            description:
-              "Justice Hamoodur Rahman handing over judicial reports to Zulfiqar Ali Bhutto",
-            title: "",
-            width: "65",
-            render: () => (
-              <img
-                alt={
-                  "Justice Hamoodur Rahman handing over judicial reports to Zulfiqar Ali Bhutto"
-                }
-                className={""}
-                src={hamood}
-              ></img>
-            ),
-          },
-          {
-            source: "Vanguard Publishing",
-            description: "Title page of the Hamoodur Rahman Commission Report",
+            source: "Amazon",
+            description: `Famous American singer ‘Joan Baez’  wrote "The Song of Bangladesh" based on the army’s crackdown on unarmed sleeping Bengali students`,
             title: "",
             width: "40",
             render: () => (
               <img
-                alt={"Title page of the Hamoodur Rahman Commission Report"}
+                alt={`Famous American singer ‘Joan Baez’  wrote "The Song of Bangladesh" based on the army’s crackdown on unarmed sleeping Bengali students`}
                 className={""}
-                src={hamoodRpt}
+                src={solid1}
+              ></img>
+            ),
+          },
+          {
+            source: "Pinterest",
+            description:
+              "George Harrison along with many other eminent musicians played a series of concerts at the Madison Square Garden (New York) in solidarity with the Bangladeshi cause",
+            title: "",
+            width: "35",
+            render: () => (
+              <img
+                alt={
+                  "George Harrison along with many other eminent musicians played a series of concerts at the Madison Square Garden (New York) in solidarity with the Bangladeshi cause"
+                }
+                className={""}
+                src={solid2}
+              ></img>
+            ),
+          },
+          {
+            source: "Wikimedia Commons",
+            description:
+              "George Harrison along with many other eminent musicians played a series of concerts at the Madison Square Garden (New York) in solidarity with the Bangladeshi cause",
+            title: "",
+            width: "40",
+            render: () => (
+              <img
+                alt={
+                  "George Harrison along with many other eminent musicians played a series of concerts at the Madison Square Garden (New York) in solidarity with the Bangladeshi cause"
+                }
+                className={""}
+                src={solid3}
               ></img>
             ),
           },
@@ -653,74 +529,139 @@ function AfterTheWar() {
         setDisplayedOverlay={setDisplayedOverlay}
         slides={[
           {
-            source: "IMDB",
-            description: (
-              <span>
-                Theatrical Poster for{" "}
-                <a
-                  className={styles.rerouteLink}
-                  href="https://www.youtube.com/watch?v=QoxV9ByZT6E"
-                  target="_blank"
-                >
-                  Khwab Toot Jatay Hain
-                </a>
-              </span>
-            ),
+            source: "TIME Magazine Online Archives",
+            description:
+              "Peking for Peace: a caricature on the cover of Time magazine suggests President Nixon and Henry Kissinger’s keenness to establish diplomatic ties with China",
             title: "",
             width: "40",
             render: () => (
               <img
-                alt={"Theatrical Poster for Khwab Toot Jatay Hain"}
+                alt={
+                  "Peking for Peace: a caricature on the cover of Time magazine suggests President Nixon and Henry Kissinger’s keenness to establish diplomatic ties with China"
+                }
                 className={""}
-                src={film1}
+                src={timePeking}
               ></img>
             ),
           },
           {
-            source: "IMDB",
-            description: (
-              <span>
-                Theatrical Poster for{" "}
-                <a
-                  className={styles.rerouteLink}
-                  href="https://www.youtube.com/watch?v=PLt8blFzIZ4&ab_channel=HARPALGEO"
-                  target="_blank"
-                >
-                  Jo Bichar Gaye
-                </a>
-              </span>
+            source: "The Atlantic",
+            description:
+              "US Secretary of State Henry Kissinger talks with President Yahya Khan",
+            title: "",
+            width: "65",
+            render: () => (
+              <img
+                alt={
+                  "US Secretary of State Henry Kissinger talks with President Yahya Khan"
+                }
+                className={""}
+                src={yahKiss}
+              ></img>
             ),
+          },
+          {
+            source: "George Washington University Archives",
+            description:
+              "A handwritten letter by President Nixon thanking President Yahya for his support in improving ties between the US and China (1)",
             title: "",
             width: "40",
             render: () => (
               <img
-                alt={"Theatrical Poster for Jo Bichar Gaye"}
+                alt={
+                  "A handwritten letter by President Nixon thanking President Yahya for his support in improving ties between the US and China (1)"
+                }
                 className={""}
-                src={film2}
+                src={nixon1}
               ></img>
             ),
           },
           {
-            source: "IMDB",
-            description: (
-              <span>
-                Theatrical Poster for{" "}
-                <a
-                  className={styles.rerouteLink}
-                  href="https://www.youtube.com/watch?v=hIprxEg5AQg&ab_channel=KHELKHELMEIN"
-                  target="_blank"
-                >
-                  Khel Khel Mein
-                </a>
-              </span>
-            ),
-            title: "Theatrical Poster for Khel Khel Mein",
+            source: "George Washington University Archives",
+            description:
+              "A handwritten letter by President Nixon thanking President Yahya for his support in improving ties between the US and China (2)",
+            title: "",
             width: "40",
             render: () => (
               <img
-                alt={"Theatrical Poster for Khel Khel Mein"}
+                alt={
+                  "A handwritten letter by President Nixon thanking President Yahya for his support in improving ties between the US and China (2)"
+                }
                 className={""}
-                src={film3}
+                src={nixon2}
+              ></img>
+            ),
+          },
+        ]}
+      />
+      <Overlay
+        oId="6"
+        displayedOverlay={displayedOverlay}
+        closeOverlay={closeOverlay}
+        setDisplayedOverlay={setDisplayedOverlay}
+        slides={[
+          {
+            source: "TIME Magazine Online Archives",
+            description: "Cover of the Time Magazine (August 2, 1971)",
+            title: "",
+            width: "35",
+            render: () => (
+              <img
+                alt={"Cover of the Time Magazine (August 2, 1971)"}
+                className={""}
+                src={timeRefugees}
+              ></img>
+            ),
+          },
+          {
+            source: "",
+            description: (
+              <span>
+                <a
+                  className={styles.rerouteLink}
+                  href="http://www.docstrangelove.com/uploads/1971/foreign/19710329_nyt_sticks_and_spears_against_tanks.pdf"
+                  target="_blank"
+                >
+                  Sticks and Spears against Tanks
+                </a>{" "}
+                by Sydney H. Schanberg published in the New York Times
+              </span>
+            ),
+            title: "",
+            width: "35",
+            render: () => (
+              <img
+                alt={
+                  "Sticks and Spears against Tanks by Sydney H. Schanberg published in the New York Times"
+                }
+                className={""}
+                src={NYT}
+              ></img>
+            ),
+          },
+          {
+            source: "",
+            description: (
+              <span>
+                <a
+                  className={styles.rerouteLink}
+                  href="http://www.docstrangelove.com/uploads/1971/foreign/19710723_wsj_a_nation_divided.pdf"
+                  target="_blank"
+                >
+                  A Nation Divided
+                </a>{" "}
+                by Peter R. Kan published in the Wall Street Journal
+              </span>
+            ),
+            title: "",
+            width: "35",
+            render: () => (
+              <img
+                alt={
+                  "A Nation Divided by Peter R. Kan published in the Wall Street Journal"
+                }
+                className={""}
+                src={WSJ}
               ></img>
             ),
           },

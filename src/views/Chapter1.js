@@ -397,7 +397,7 @@ function Background() {
             render: () => (
               <img
                 alt={
-                  "Fatima Jinnah campaigning in East Pakistan. Sheikh Mujib can also be seen in the background"
+                  "Fatima Jinnah campaigning in East Pakistan for the 1965 Presidential Election. Sheikh Mujib can also be seen in the background"
                 }
                 className={""}
                 src={fatimaJMuj}

@@ -37,6 +37,12 @@ import photoStory2 from "../resources/Chapter2/photoStory1/photoStory2.jpg";
 import photoStory3 from "../resources/Chapter2/photoStory1/photoStory3.jpg";
 import photoStory4 from "../resources/Chapter2/photoStory1/photoStory4.jpg";
 
+import photoStory1_ from "../resources/Chapter2/photoStory3/photoStory1.jpg";
+import photoStory2_ from "../resources/Chapter2/photoStory3/photoStory2.jpg";
+import photoStory3_ from "../resources/Chapter2/photoStory3/photoStory3.jpg";
+
+import BhuttoQuote from "../resources/Chapter2/images/BhuttoQuote.jpg";
+
 import mapData from "./election-scene-data/scene-data.js";
 
 const imgArrCh2 = [
@@ -103,6 +109,42 @@ const photoData = [
     title: "Bhutto questions Mujeeb's demands",
     description:
       "Meanwhile, Bhutto and the People's party leadership continue to question the Awami League's demands for autonomy to be 'something bordering sovereignty'",
+  },
+];
+
+const newsImgArr_ = [
+  {
+    img: photoStory1_,
+    width: 560,
+    ar: 1.17,
+  },
+  {
+    img: photoStory2_,
+    width: 420,
+    ar: 0.716,
+  },
+  {
+    img: photoStory3_,
+    width: 320,
+    ar: 0.634,
+  },
+];
+
+const photoData_ = [
+  {
+    title: "Awami League is banned",
+    description:
+      "The president's statement calls Mujib's non-obedience movement an act of treason. Reports of political leaders praising the Army's intervention are also seen. Bhutto's famous statement 'Pakistan is saved' recorded in a deadline",
+  },
+  {
+    title: "Army in control, Mujib house arrested",
+    description:
+      "states the Martial Law Administrators official statement published in Dawn, March 28, 1971. Bhutto's criticism of Mujib's aims to form an 'independent fascist and racist regime in East Pakistan' is reported in the news report to the left",
+  },
+  {
+    title: "Awami Leagues' funds frozen",
+    description:
+      "A detailed martial law order banning all financial activity of the political party is reported in Dawn, March 29, 1971",
   },
 ];
 
@@ -411,6 +453,48 @@ function Polls() {
               </p>
             </div>
           </div>
+          <div className={styles.view_content_container}>
+            <SectionHeading heading="As the negotiations to transfer power fall apart, Awami League is outlawed" />
+            <p className={styles.view_para}>
+              By the third week of March, the negotiations had reached a
+              dead-end. There was a back-and-forth between the negotiating teams
+              led by Awami League’s lawyers and economists, and the
+              constitutional wizards of the military junta. But as Yahya Khan
+              left Dhaka on the night of 24 March, everyone knew that the
+              negotiations had fallen apart. They were never meant to reach an
+              agreement. As accounts provided by Khadim Husain Raja show, the
+              Eastern Command had been given the task of planning a military
+              operation weeks ago. Given the secrecy and general distrust of
+              Bengalis, the planners made sure that no Bengali officers were
+              involved in these consultations.
+            </p>
+            <p className={styles.view_para}>
+              The Operational Searchlight started on the midnight of 24-25
+              March. West Pakistani newspapers flashed celebratory headlines,
+              saluting Yahya Khan for doing the right thing and saving Pakistan.
+            </p>
+          </div>
+        </div>
+        <div className={styles.view_content_wrapper}>
+          <ResponsivePhotoSwitch photoData={photoData_} imgArr={newsImgArr_} />
+        </div>
+        <div className={styles.view_fw_content}>
+          <QuotePhoto
+            quote
+            addedMargin
+            photo={BhuttoQuote}
+            photoClassName={"ch2Q_6points"}
+            quoteTxt="By the grace of Almighty God, Pakistan has at last been saved"
+            quoteAlign="center"
+            color="white"
+            fontSize="big"
+            rotation="rotate2"
+            quoterText={
+              "Zulfiqar Ali Bhutto | On his return to Karachi from Dacca - 25 March 1971"
+            }
+            quotationMark={true}
+            bg = "purple"
+          />
         </div>
       </section>
 
@@ -600,12 +684,12 @@ function Polls() {
           {
             source: "istampgallery.com",
             description:
-              "Pakistani postage stamp commemmorating the 1970 election",
+              "Pakistani postage stamp commemorating the 1970 election",
             title: "def",
             width: "30",
             render: () => (
               <img
-                alt={"Pakistani postage stamp commemmorating the 1970 election"}
+                alt={"Pakistani postage stamp commemorating the 1970 election"}
                 className={""}
                 src={election1}
               ></img>

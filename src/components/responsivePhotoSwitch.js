@@ -8,13 +8,13 @@ export default function ResponsivePhotoSwitch({
 }) {
   return (
     <>
-      <MediaQuery minWidth={1280}>
+      <MediaQuery minWidth={1360}>
         <PhotoSwitch
           photoData={photoData}
           imgArr={imgArr}
         />
       </MediaQuery>
-      <MediaQuery maxWidth={1279} minWidth={960}>
+      <MediaQuery maxWidth={1359} minWidth={960}>
         <MediaQuery maxHeight={599}>
           <PhotoSwitch
             photoData={photoData}

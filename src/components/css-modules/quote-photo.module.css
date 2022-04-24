@@ -3,6 +3,11 @@
   padding: 50px 0px;
 }
 
+.bg_purple {
+  background-color: rgb(26, 72, 157);
+  padding: 50px 0px;
+}
+
 .quote_container {
   display: flex;
   flex-direction: column;
@@ -122,6 +127,10 @@
     padding: 40px 0px;
   }
 
+  .bg_purple {
+    padding: 40px 0px;
+  }
+
   .content_container {
     width: 70%;
   }
@@ -143,6 +152,11 @@
   .bg_white {
     padding: 30px 0px;
   }
+
+  .bg_purple {
+    padding: 30px 0px;
+  }
+
   .content_container {
     width: 75%;
   }
@@ -177,6 +191,11 @@
   .bg_white {
     padding: 30px 0px;
   }
+
+  .bg_purple {
+    padding: 30px 0px;
+  }
+
   .content_container {
     width: 75%;
   }
@@ -207,6 +226,10 @@
     padding: 25px 0px;
   }
 
+  .bg_purple {
+    padding: 25px 0px;
+  }
+
   .content_container {
     width: 85%;
   }
@@ -233,6 +256,10 @@
 
 @media screen and (max-width: 30em) {
   .bg_white {
+    padding: 20px 0px;
+  }
+
+  .bg_purple {
     padding: 20px 0px;
   }
 

@@ -126,93 +126,124 @@ class FullNav extends Component {
           className={styles.project_nav_options_container}
         >
           <p className={styles.browse_proj_heading}>Browse Chapters</p>
-          {this.props.location.pathname !== '/' && <Link
-            to="/"
-            style={{
-              textDecoration: "none",
-              width: "fit-content",
-              cursor: "default",
-            }}
-          >
-            <div className={styles.navItem}>
-              <p className={styles.projectTitle}>
-                <span className={styles.underline}>Home</span>
-              </p>
-            </div>
-          </Link>}
-          {this.props.location.pathname !== '/ch1' &&<Link
-            to="/ch1"
-            style={{
-              textDecoration: "none",
-              width: "fit-content",
-              cursor: "default",
-            }}
-          >
-            <div className={styles.navItem}>
-              <p className={styles.projectTitle}>
-                <span className={styles.underline}>Background</span>
-              </p>
-            </div>
-          </Link>}
-          {this.props.location.pathname !== '/ch2' &&<Link
-            to="/ch2"
-            style={{
-              textDecoration: "none",
-              width: "fit-content",
-              cursor: "default",
-            }}
-          >
-            <div className={styles.navItem}>
-              <p className={styles.projectTitle}>
-                <span className={styles.underline}>National Elections</span>
-              </p>
-            </div>
-          </Link>}
-          {this.props.location.pathname !== '/ch3' && <Link
-            to="/ch3"
-            style={{
-              textDecoration: "none",
-              width: "fit-content",
-              cursor: "default",
-            }}
-          >
-            <div className={styles.navItem}>
-              <p className={styles.projectTitle}>
-                <span className={styles.underline}>Military Operation</span>
-              </p>
-            </div>
-          </Link>}
-          {this.props.location.pathname !== '/ch4' && <Link
-            to="/ch4"
-            style={{
-              textDecoration: "none",
-              width: "fit-content",
-              cursor: "default",
-            }}
-          >
-            <div className={styles.navItem}>
-              <p className={styles.projectTitle}>
-                <span className={styles.underline}>After the Surrender</span>
-              </p>
-            </div>
-          </Link>}
-          {this.props.location.pathname !== '/appendix' && <Link
-            to="/appendix"
-            style={{
-              textDecoration: "none",
-              width: "fit-content",
-              cursor: "default",
-            }}
-          >
-            <div className={styles.navItem}>
-              <p className={styles.projectTitle}>
-                <span className={styles.underline}>Appendix</span>
-              </p>
-            </div>
-          </Link>}
+          {this.props.location.pathname !== "/" && (
+            <Link
+              to="/"
+              style={{
+                textDecoration: "none",
+                width: "fit-content",
+                cursor: "default",
+              }}
+            >
+              <div className={styles.navItem}>
+                <p className={styles.projectTitle}>
+                  <span className={styles.underline}>Home</span>
+                </p>
+              </div>
+            </Link>
+          )}
+          {this.props.location.pathname !== "/ch1" && (
+            <Link
+              to="/ch1"
+              style={{
+                textDecoration: "none",
+                width: "fit-content",
+                cursor: "default",
+              }}
+            >
+              <div className={styles.navItem}>
+                <p className={styles.projectTitle}>
+                  <span className={styles.underline}>Background</span>
+                </p>
+              </div>
+            </Link>
+          )}
+          {this.props.location.pathname !== "/ch2" && (
+            <Link
+              to="/ch2"
+              style={{
+                textDecoration: "none",
+                width: "fit-content",
+                cursor: "default",
+              }}
+            >
+              <div className={styles.navItem}>
+                <p className={styles.projectTitle}>
+                  <span className={styles.underline}>National Elections</span>
+                </p>
+              </div>
+            </Link>
+          )}
+          {this.props.location.pathname !== "/ch3" && (
+            <Link
+              to="/ch3"
+              style={{
+                textDecoration: "none",
+                width: "fit-content",
+                cursor: "default",
+              }}
+            >
+              <div className={styles.navItem}>
+                <p className={styles.projectTitle}>
+                  <span className={styles.underline}>Military Operation</span>
+                </p>
+              </div>
+            </Link>
+          )}
+          {this.props.location.pathname !== "/ch4" && (
+            <Link
+              to="/ch4"
+              style={{
+                textDecoration: "none",
+                width: "fit-content",
+                cursor: "default",
+              }}
+            >
+              <div className={styles.navItem}>
+                <p className={styles.projectTitle}>
+                  <span className={styles.underline}>Interantional Dimension</span>
+                </p>
+              </div>
+            </Link>
+          )}
+          {this.props.location.pathname !== "/ch5" && (
+            <Link
+              to="/ch5"
+              style={{
+                textDecoration: "none",
+                width: "fit-content",
+                cursor: "default",
+              }}
+            >
+              <div className={styles.navItem}>
+                <p className={styles.projectTitle}>
+                  <span className={styles.underline}>After the surrender</span>
+                </p>
+              </div>
+            </Link>
+          )}
+          {this.props.location.pathname !== "/appendix" && (
+            <Link
+              to="/appendix"
+              style={{
+                textDecoration: "none",
+                width: "fit-content",
+                cursor: "default",
+              }}
+            >
+              <div className={styles.navItem}>
+                <p className={styles.projectTitle}>
+                  <span className={styles.underline}>Appendix</span>
+                </p>
+              </div>
+            </Link>
+          )}
         </div>
         <div ref={this.delayedFade}>
-          <div className={styles.lums_archive_logo_contain} onClick={() => this.plotree()}>
+          <div
+            className={styles.lums_archive_logo_contain}
+            onClick={() => this.plotree()}
+          >
             <img
               alt="Lums Digital Archive"
               className={styles.lums_archive_logo}

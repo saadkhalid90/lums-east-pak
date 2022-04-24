@@ -86,7 +86,6 @@ function LocalNews() {
             structure for easy consumption of the reader
           </p>
         }
-        navChev={false}
       />
 
       <section className={styles.content_section}>
@@ -118,10 +117,10 @@ function LocalNews() {
                 key={monthName}
                 onClick={(e) => setMonth(e.target.id)}
                 style={{
-                  border:
+                  textDecoration:
                     month === monthName
-                      ? "2px solid #1a489dff"
-                      : "2px solid #1a489d00",
+                      ? "underline"
+                      : "none",
                   borderRadius: "4px",
                 }}
               >
@@ -167,9 +166,10 @@ function LocalNews() {
         projectDescription="The LUMS Digital Archive is a research repository that aims at collecting, cataloging and preserving rare material (books, pamphlets, newspapers and other items) of
       historical significance and making them available to researchers. In particular, the archive focuses on events, groups, movements and personalities relating to broader
       historical, political and cultural trends in South Asia, with an emphasis on preserving the accounts of marginalized and subaltern groups."
-        prevLink="/"
-        nextLink="/ch1"
-        chapterID={5}
+        prevLink="/ch5"
+        nextLink="/"
+        chapterID={6}
+        appendixShow = {false}
       />
     </div>
   );

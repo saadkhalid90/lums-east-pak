@@ -29,7 +29,7 @@ function ChapterTitle({
   return (
     <header className={styles.chapter_title} style={titleStyle}>
       <div className={styles.chapter_title_content}>
-        {number < 5 ? (
+        {number < 6 ? (
           <p className={styles.chapter_no}>
             Chapter - <span>{number}</span>
           </p>
@@ -65,7 +65,7 @@ function ChapterTitle({
           </div>
           {navChev && (
             <Link
-              to={parseInt(number) < 4 ? `/ch${parseInt(number) + 1}` : `/`}
+              to={parseInt(number) < 5 ? `/ch${parseInt(number) + 1}` : parseInt(number) == 5 ? `/appendix` : '/'}
               onMouseEnter={(e) => setNextActive(true)}
               onMouseLeave={(e) => setNextActive(false)}
               style={{

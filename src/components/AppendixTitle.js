@@ -7,7 +7,7 @@ import { useState, useEffect } from "react";
 
 import { Link } from "react-router-dom";
 import { BiChevronDown } from "react-icons/bi";
-import FadeRR from 'react-reveal/Fade';
+import FadeRR from "react-reveal/Fade";
 
 const titleStyle = {
   background: `linear-gradient(to bottom, #FFFFFFFF 5%, #FFFFFFDE 75%, #FFFFFFF7 100%), url(${mujeebBG}) no-repeat left top`,
@@ -28,7 +28,12 @@ function ChapterTitle({ number, imgArr, title, subtitle, desc }) {
         </p>
         <div className={styles.img_contain}>
           {imgArr.map((image, imgIdx) => (
-            <FadeRR top distance="40px" delay={imgIdx*imgDelay} key={`image${imgIdx}`}>      
+            <FadeRR
+              top
+              distance="40px"
+              delay={imgIdx * imgDelay}
+              key={`image${imgIdx}`}
+            >
               <img
                 src={image.image}
                 className={styles[`img${imgIdx + 1}`]}
@@ -37,18 +42,16 @@ function ChapterTitle({ number, imgArr, title, subtitle, desc }) {
           ))}
         </div>
         <div className={styles.chev_title_and_subtitle}>
-          {/*
-            <div
+          <div
             className={`${styles.chevron_explainer} ${
               styles.chevron_explainer_prev
             } ${prevActive && styles.active}`}
           >
             {parseInt(number) > 1 ? `Previous Chapter` : `Home page`}
           </div>
-          */}
-          
+
           <Link
-            to={parseInt(number) > 1 ? `/ch${parseInt(number) - 1}` : `/`}
+            to={`/ch5`}
             onMouseEnter={(e) => setPrevActive(true)}
             onMouseLeave={(e) => setPrevActive(false)}
             style={{
@@ -66,7 +69,7 @@ function ChapterTitle({ number, imgArr, title, subtitle, desc }) {
             <p className={styles.subtitle}>{subtitle}</p>
           </div>
           <Link
-            to={parseInt(number) < 5 ? `/ch${parseInt(number) + 1}` : `/`}
+            to={`/`}
             onMouseEnter={(e) => setNextActive(true)}
             onMouseLeave={(e) => setNextActive(false)}
             style={{
@@ -79,25 +82,25 @@ function ChapterTitle({ number, imgArr, title, subtitle, desc }) {
               <IoChevronForward />
             </div>
           </Link>
-          {/*
-            <div
+          <div
             className={`${styles.chevron_explainer} ${
               styles.chevron_explainer_next
             } ${nextActive && styles.active}`}
           >
             {parseInt(number) < 5 ? `Next Chapter` : `Home page`}
           </div>
-          */}
-          
         </div>
-        <FadeRR bottom distance="20px" delay={100}>      
+        <FadeRR bottom distance="20px" delay={100}>
           <p className={styles.desc}>{desc}</p>
         </FadeRR>
-        <FadeRR bottom distance="20px" delay={400}>      
+        <FadeRR bottom distance="20px" delay={400}>
           <div className={styles.chevron_container}>
             <p className={styles.chev_text}>Explore</p>
             <div className={styles.chevron_icon_container}>
-              <BiChevronDown id="md_arrow" className={styles.scroll_down_icon_arrow}/>
+              <BiChevronDown
+                id="md_arrow"
+                className={styles.scroll_down_icon_arrow}
+              />
             </div>
           </div>
         </FadeRR>

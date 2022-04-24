@@ -3,13 +3,21 @@ import lumsLogo from "../resources/nav/LumsArchiveLogoInv.png";
 import { Link } from "react-router-dom";
 import { useEffect, useState } from "react";
 
+import appendix from "../resources/Appendix/ch6_2.jpg";
+import chapter5 from "../resources/Chapter5/Chapter5_2.jpg";
 import chapter4 from "../resources/Chapter4/Chapter4_2.jpg";
 import chapter3 from "../resources/Chapter3/Chapter3_2.jpg";
 import chapter2 from "../resources/Chapter2/Chapter2_2.jpg";
 import chapter1 from "../resources/Chapter1/Chapter1_2.png";
 import title from "../resources/Home.jpg";
 
-function Footer({ chapterID, nextLink, prevLink, projectDescription }) {
+function Footer({
+  chapterID,
+  nextLink,
+  prevLink,
+  projectDescription,
+  appendixShow = true,
+}) {
   const [nextImage, setNextImage] = useState(null);
   const [prevImage, setPrevImage] = useState(null);
   const [nextHover, setNextHover] = useState(false);
@@ -26,11 +34,14 @@ function Footer({ chapterID, nextLink, prevLink, projectDescription }) {
       setNextImage(chapter4);
       setPrevImage(chapter2);
     } else if (chapterID === 4) {
-      setNextImage(title);
+      setNextImage(chapter5);
       setPrevImage(chapter3);
     } else if (chapterID === 5) {
-      setNextImage(chapter1);
-      setPrevImage(title);
+      setNextImage(appendix);
+      setPrevImage(chapter4);
+    } else if (chapterID === 6) {
+      setNextImage(title);
+      setPrevImage(chapter5);
     }
   }, []);
 
@@ -39,16 +50,24 @@ function Footer({ chapterID, nextLink, prevLink, projectDescription }) {
       <div className={styles.content_container}>
         <div className={styles.navigation_container}>
           <Link to={prevLink} className={styles.nav_half}>
-            <div className={styles.navigation_option} onMouseEnter={e => setPrevHover(true)} onMouseLeave={e => setPrevHover(false)}>
+            <div
+              className={styles.navigation_option}
+              onMouseEnter={(e) => setPrevHover(true)}
+              onMouseLeave={(e) => setPrevHover(false)}
+            >
               <img
                 src={prevImage}
-                className={`${styles.navigation_option_image} ${prevHover ? styles.imageScale : ''}`}
+                className={`${styles.navigation_option_image} ${
+                  prevHover ? styles.imageScale : ""
+                }`}
               ></img>
               <div className={styles.navigation_title}>
-                <p className={`${styles.navigation_button_title} ${(prevHover ? styles.hover : '')}`}>
-                  {chapterID === 5 ? (
-                    <span className={styles.chapter_text}>Home</span>
-                  ) : chapterID - 1 === 0 ? (
+                <p
+                  className={`${styles.navigation_button_title} ${
+                    prevHover ? styles.hover : ""
+                  }`}
+                >
+                  {chapterID - 1 === 0 ? (
                     <span className={styles.chapter_text}>Home Page</span>
                   ) : (
                     <span className={styles.chapter_text}>
@@ -61,17 +80,27 @@ function Footer({ chapterID, nextLink, prevLink, projectDescription }) {
             </div>
           </Link>
           <Link to={nextLink} className={styles.nav_half}>
-            <div className={styles.navigation_option} onMouseEnter={e => setNextHover(true)} onMouseLeave={e => setNextHover(false)}>
+            <div
+              className={styles.navigation_option}
+              onMouseEnter={(e) => setNextHover(true)}
+              onMouseLeave={(e) => setNextHover(false)}
+            >
               <img
                 src={nextImage}
-                className={`${styles.navigation_option_image} ${nextHover ? styles.imageScale : ''}`}
+                className={`${styles.navigation_option_image} ${
+                  nextHover ? styles.imageScale : ""
+                }`}
               ></img>
               <div className={styles.navigation_title}>
-                <p className={`${styles.navigation_button_title} ${(nextHover ? styles.hover : '')}`}>
-                  {chapterID === 5 ? (
-                    <span className={styles.chapter_text}>Chapter 1</span>
-                  ) : chapterID === 4 ? (
-                    <span className={styles.chapter_text}>Home Page</span>
+                <p
+                  className={`${styles.navigation_button_title} ${
+                    nextHover ? styles.hover : ""
+                  }`}
+                >
+                  {chapterID === 6 ? (
+                    <span className={styles.chapter_text}>Home</span>
+                  ) : chapterID === 5 ? (
+                    <span className={styles.chapter_text}>Appendix</span>
                   ) : (
                     <span className={styles.chapter_text}>
                       Chapter{" "}
@@ -90,9 +119,19 @@ function Footer({ chapterID, nextLink, prevLink, projectDescription }) {
             alt="Lahore University of Management Sciences"
           />
         </div>
-        <p className={styles.footer_paragraph}>To explore events as covered by West Pakistani Press, go to <Link className={styles.appendix_link} to="/Appendix" style={{color:'white', cursor: 'pointer'}}>
-            <span>Appendix</span>
-          </Link></p>
+        {appendixShow && (
+          <p className={styles.footer_paragraph}>
+            To explore events as covered by West Pakistani Press, go to{" "}
+            <Link
+              className={styles.appendix_link}
+              to="/Appendix"
+              style={{ color: "white", cursor: "pointer" }}
+            >
+              <span>Appendix</span>
+            </Link>
+          </p>
+        )}
+
         <p className={styles.footer_paragraph}>{projectDescription}</p>
       </div>
     </footer>
