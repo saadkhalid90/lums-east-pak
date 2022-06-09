@@ -3,7 +3,6 @@ import {useRef, useEffect, useState} from 'react';
 import * as d3 from 'd3';
 import styles from './css-modules/mapComp.module.css';
 
-
 export default function MapComp({
     classNme,
     svgWidth,
