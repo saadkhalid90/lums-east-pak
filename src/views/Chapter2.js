@@ -93,22 +93,22 @@ const photoData = [
   {
     title: "Bhutto demands transfer of power to two majority parties",
     description:
-      "Speaking to supporters in Nishtar Park, Karachi on March 14, Bhutto demands that power must be transferred to majority parties in East and West Pakistan, reinforcing the People's party's status as the leading political force in West Pakistan. This statement however is not received well by the Awami League leadership and is also criticized by the political parties in West Pakistan",
+      "Speaking to supporters in Nishtar Park, Karachi on March 14, Bhutto demands that power must be transferred to majority parties in East and West Pakistan, reinforcing the People’s party’s status as the leading political force in West Pakistan. This statement however is not received well by the Awami League leadership and is also criticized by other political parties in West Pakistan",
   },
   {
     title: "Talks to reach a political consensus",
     description:
-      "Multiple Headlines from West Pakistan's English Daily Dawn allude to President Yahya Khan's attempts to hold talks between the political leadership of the People's Party and Awami League. However, these attempts fail to bear fruit",
+      "Multiple Headlines from West Pakistan’s English Daily Dawn allude to President Yahya Khan’s attempts to hold talks between the political leadership of the People’s Party and Awami League. However, these attempts fail to bear fruit",
   },
   {
     title: "Mujib remains unwavering in his demands",
     description:
-      "Amidst the political deadlock, Sheikh Mujib continues to reiterate the message from his iconic March 7 speech about the Bengali's struggle for emancipation and freedom. In this newspaper clipping, he is seen speaking to a procession on the occasion of 'Resistance Day'",
+      "Amidst the political deadlock, Sheikh Mujib continues to reiterate the message from his iconic March 7 speech about the Bengalis’ struggle for emancipation and freedom. In this newspaper clipping, he is seen speaking to a procession on the occasion of ‘Resistance Day’",
   },
   {
-    title: "Bhutto questions Mujeeb's demands",
+    title: "Bhutto questions Mujib’s demands",
     description:
-      "Meanwhile, Bhutto and the People's party leadership continue to question the Awami League's demands for autonomy to be 'something bordering sovereignty'",
+      "Meanwhile, Bhutto and the People’s party leadership continue to question the Awami League’s demands for autonomy to be ‘something bordering sovereignty’",
   },
 ];
 
@@ -134,17 +134,27 @@ const photoData_ = [
   {
     title: "Awami League is banned",
     description:
-      "The president's statement calls Mujib's non-obedience movement an act of treason. Reports of political leaders praising the Army's intervention are also seen. Bhutto's famous statement 'Pakistan is saved' recorded in a deadline",
+      "The president’s statement calls Mujib’s non-obedience movement an act of treason. Reports of political leaders praising the Army’s intervention are also seen. Bhutto’s famous statement ‘Pakistan is saved’ recorded in a headline",
   },
   {
     title: "Army in control, Mujib house arrested",
-    description:
-      "states the Martial Law Administrators official statement published in Dawn, March 28, 1971. Bhutto's criticism of Mujib's aims to form an 'independent fascist and racist regime in East Pakistan' is reported in the news report to the left",
+    description: (
+      <>
+        states the Martial Law Administrators official statement published in{" "}
+        <i>Dawn</i>, March 28, 1971. Bhutto’s criticism that Mujib aims to form
+        an ‘independent fascist and racist regime in East Pakistan’ is reported
+        in the news report to the left
+      </>
+    ),
   },
   {
     title: "Awami Leagues' funds frozen",
-    description:
-      "A detailed martial law order banning all financial activity of the political party is reported in Dawn, March 29, 1971",
+    description: (
+      <p>
+        A detailed martial law order banning all financial activity of the
+        League is reported in <i>Dawn</i>, March 29, 1971
+      </p>
+    ),
   },
 ];
 
@@ -172,7 +182,7 @@ function Polls() {
         imgArr={imgArrCh2}
         title="National Elections"
         subtitle="1970"
-        desc="In the 1970 elections, the Awami League sweep East Pakistan and the Peoples Party win a majority in the West. Transfer of power becomes a challenge for the military junta, who were expecting a split mandate"
+        desc="Twenty-five years after its creation, Pakistanis went to the polls for the first time in December 1970 to cast ballots in a nationwide election. No one had expected the outcome of the elections and how it will alter the course of Pakistan’s history"
       />
 
       <section className={styles.content_section}>
@@ -185,7 +195,7 @@ function Polls() {
               franchise. The announcement, and the issuance of the Legal
               Framework Order (LFO) to provide the basis for the upcoming
               elections and framing of the subsequent constitution, generated a
-              flurry of political activities. As political parties galvanized to
+              flurry of political activity. As political parties galvanized to
               harness support, Mujib conducted his campaign on the famous six
               points as part of his party’s manifesto for the elections and the
               blueprint for the country’s future constitution.
@@ -230,8 +240,8 @@ function Polls() {
                 </li>
                 <li>A paramilitary force for East Pakistan</li>
                 <li>
-                  Fiscal affairs, much as taxation and resources allocation,
-                  will be state responsibility
+                  Both provinces would be in charge of their fiscal affairs, in
+                  particular taxation and resource allocation
                 </li>
                 <li>
                   Monetary and trade policies, such as foreign reserve
@@ -307,15 +317,16 @@ function Polls() {
             </p>
             <p className={styles.view_para}>
               But Yahya and the military junta had miscalculated badly. The
-              election results gave a massive, almost unanimous, decision for
-              Sheikh Mujib in East Pakistan. The Awami League grabbed 158 out of
-              160 seats. Zulfiqar Ali Bhutto’s Pakistan Peoples’ Party was a
-              clear winner in West Pakistan, winning 82 out of 138 seats. None
-              of the West Pakistan parties had been able to win a single seat in
-              East Pakistan. The two winning parties – Awami League and PPP –
-              had not even fielded a candidate in West and East Pakistan. The
-              electoral split that started with the provincial elections of 1954
-              reached political fruition in 1970.
+              election results revealed a massive, almost unanimous, wave of
+              support for Sheikh Mujib in East Pakistan. The Awami League
+              grabbed 158 out of 160 seats. Zulfiqar Ali Bhutto’s Pakistan
+              Peoples’ Party was a clear winner in West Pakistan, winning 82 out
+              of 138 seats. None of the West Pakistan parties had been able to
+              win a single seat in East Pakistan. In fact, the Awami League and
+              PPP, the two winning parties, had not even fielded a candidate in
+              West Pakistan and East Pakistan, respectively. The electoral split
+              that had started with the provincial elections of 1954 had reached
+              political fruition in 1970.
             </p>
           </div>
         </div>
@@ -378,13 +389,14 @@ function Polls() {
               They started discussions with the Awami League to iron out
               differences over contentious aspects of the six points. During
               these negotiations, the Military propped up Zulfiqar Ali Bhutto to
-              play the role of a spoiler. Bhutto warned against ignoring the
-              PPP, which had emerged as a clear winner in West Pakistan – the
-              bastion of power in Pakistan, as Bhutto put it. Hiding behind
-              Bhutto’s theatrics, the military junta feigned helplessness. In
-              the meanwhile, there was an increase in military buildup in East
-              Pakistan. The Awami League responded by taking to the streets and
-              attacking non-Bengali residents and their businesses.
+              play the role of a spoiler. Bhutto warned the Awami League against
+              ignoring the PPP, which had emerged as a clear winner in West
+              Pakistan, the bastion of power in Pakistan, as Bhutto put it.
+              Hiding behind Bhutto’s theatrics, the military junta feigned
+              helplessness. In the meanwhile, there was an increase in military
+              buildup in East Pakistan. The Awami League responded by taking to
+              the streets and attacking non-Bengali residents and their
+              businesses.
             </p>
             <PhotoContainer
               setDisplayedOverlay={setDisplayedOverlay}
@@ -431,11 +443,11 @@ function Polls() {
               decided to assert authority by addressing a public gathering. The
               Military was anxious that Rehman might go all the way and declare
               independence. He was told in no uncertain terms that this would be
-              intolerable and warned him of dire consequences. So, while Mujib
-              addressed a mammoth gathering at the Ramna Race Course in Dhaka,
-              he stopped short of declaring independence. He did, however, end
-              his speech by asserting that the struggle this time was for
-              freedom. (find YouTube video of the address)
+              intolerable, and he was warned of dire consequences. In his
+              address to a mammoth gathering at the Ramna Race Course in Dhaka,
+              Mujib stopped short of declaring independence. He did, however,
+              end his speech by asserting that the struggle this time was for
+              freedom.
             </p>
           </div>
           <div className={styles.video_contain_center}>
@@ -454,13 +466,34 @@ function Polls() {
             </div>
           </div>
           <div className={styles.view_content_container}>
+            <SectionHeading heading="Parliament Session" />
+            <p className={styles.view_para}>
+              Despite Sheikh Mujib’s insistence, Yahya kept on delaying the
+              convening of the inaugural session of the newly elected National
+              Assembly. Eventually, on <b>1 March</b>, the Martial Law regime
+              announced the postponement of the inaugural session that was set
+              to take place on <b>3 March</b>. Yahya did not bother to issue the
+              statement himself or give a new date for convening the session.
+              This led to massive unrest in East Pakistan. The Awami League
+              workers committed violence and vandalism against the West
+              Pakistani and Bihari civilians, resulting in numerous deaths.
+              There was a complete breakdown of government authority in the
+              province. Even shopkeepers refused to provide ration supplies to
+              military cantonments, and petty government officials followed
+              Sheikh Mujib’s orders in carrying out their duties. This
+              three-week period of violence and lawlessness provided the
+              Pakistani military with the rationale to launch a massive
+              operation to save the civilian population and establish its writ.
+            </p>
+          </div>
+          <div className={styles.view_content_container}>
             <SectionHeading heading="As the negotiations to transfer power fall apart, Awami League is outlawed" />
             <p className={styles.view_para}>
-              By the third week of March, the negotiations had reached a
-              dead-end. There was a back-and-forth between the negotiating teams
-              led by Awami League’s lawyers and economists, and the
-              constitutional wizards of the military junta. But as Yahya Khan
-              left Dhaka on the night of 24 March, everyone knew that the
+              By the third week of March, the negotiations had reached a dead
+              end. There was a back-and-forth between the negotiating teams led
+              by Awami League’s lawyers and economists, and constitutional
+              experts appointed by the military junta. But as Yahya Khan left
+              Dhaka on the night of 24 March, everyone knew that the
               negotiations had fallen apart. They were never meant to reach an
               agreement. As accounts provided by Khadim Husain Raja show, the
               Eastern Command had been given the task of planning a military
@@ -493,13 +526,13 @@ function Polls() {
               "Zulfiqar Ali Bhutto | On his return to Karachi from Dacca - 25 March 1971"
             }
             quotationMark={true}
-            bg = "purple"
+            bg="purple"
           />
         </div>
       </section>
 
       <Footer
-        projectName="Bangladesh’s Liberation War"
+        projectName="Bangladesh's Liberation War"
         projectSubTitle="A visual history"
         projectDescription="The LUMS Digital Archive is a research repository that aims at collecting, cataloging and preserving rare material (books, pamphlets, newspapers and other items) of
         historical significance and making them available to researchers. In particular, the archive focuses on events, groups, movements and personalities relating to broader

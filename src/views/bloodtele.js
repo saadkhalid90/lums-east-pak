@@ -329,7 +329,7 @@ function BloodTele() {
         </div>
       </section>
       <Footer
-        projectName="Bangladesh’s Liberation War"
+        projectName="Bangladesh's Liberation War"
         projectSubTitle="A visual history"
         projectDescription="The LUMS Digital Archive is a research repository that aims at collecting, cataloging and preserving rare material (books, pamphlets, newspapers and other items) of
       historical significance and making them available to researchers. In particular, the archive focuses on events, groups, movements and personalities relating to broader

@@ -84,19 +84,19 @@ function Background() {
           <div className={styles.view_content_container}>
             <SectionHeading heading="Political Differences emerge between the east and the west wings of a newborn state" />
             <p className={styles.view_para}>
-              The emergence of Pakistan in 1947 created an anomaly of a
+              The emergence of Pakistan in 1947 created an anomaly: a
               geographically fractured state. The two wings of the country – the
               majority Bengali population of East Bengal/East Pakistan and the
-              multiethnic provincial units, tribal areas, and formerly princely
-              states comprising West Pakistan – were divided by a 1200-miles
-              stretch of Indian territory.
+              multiethnic provincial units, tribal areas, and former princely
+              states comprising West Pakistan – were divided by 1200-miles of
+              Indian territory.
             </p>
             <p className={styles.view_para}>
               Economically, East Bengal was a rural hinterland, which had
-              suffered immensely because of losing connection with Calcutta's
-              commercial and intellectual hub, At the time of the Partition, the
-              British government had awarded Calcutta to India. Protesting
-              against this decision, Jinnah described it as forcing a man to
+              suffered immensely because of losing its connection with
+              Calcutta’s commercial and intellectual hub during Partition. The
+              Boundary Commission had awarded Calcutta to India. Protesting this
+              decision, Muhammad Ali Jinnah described it as forcing a man to
               live without his lungs.
             </p>
             <PhotoContainer
@@ -120,13 +120,13 @@ function Background() {
             />
             <p className={styles.view_para}>
               Politically, the two wings disagreed on the constitutional future
-              of the country. Despite being the numerical majority, the East
-              Bengalis felt marginalized and excluded. Due to Pakistan's failure
-              to develop a viable democratic structure, the political power was
-              wielded by the military and bureaucracy mainly recruited from
+              of the country. Despite being in the numerical majority, East
+              Bengalis felt marginalized and excluded. Due to Pakistan’s failure
+              to develop a viable democratic structure, political power was
+              wielded by the military and bureaucracy recruited mainly from
               Punjab and the North-Indian Muslim migrant elite. In a democratic
               setting, Bengali numerical superiority would have diluted the
-              disproportionate power held by Punjab and North Indian Muslim
+              disproportionate power held by the Punjab and North Indian Muslim
               elite. The political elite was reluctant to give up this power.
             </p>
             <p className={styles.view_para}>
@@ -135,7 +135,7 @@ function Background() {
               adopted. Much of the Bengali opposition rejected it.
             </p>
 
-            <SectionHeading heading="Identity Politics and the Bengali Language Movement" />
+            <SectionHeading heading="Bengali Language Movement" />
             <p className={styles.view_para}>
               Other than political disagreements about representation, the
               Bengali leadership was generally campaigning for a more inclusive
@@ -143,15 +143,16 @@ function Background() {
               attempts of the state to impose a homogenized Islam-based
               majoritarian ethos. As part of this statist project, Urdu was
               projected as the only national language, much to the chagrin of
-              Bengali leaders who, for a good reason, saw it as discriminatory
+              Bengali leaders who, for good reason, saw it as discriminatory
               against the Bengali majority. What exacerbated this tension was
-              the government's police action against protestors marching for the
-              imposition of Bengali language in February 1952 which resulted in
-              the death of many students. In the following years, various
-              Bengali political parties, leaders and organizations commemorated
-              the event by holding marches. They also built a monument to pay
-              tribute to what they described as the martyrs of the Bengali
-              language.
+              the government’s police action against protestors marching for the
+              recognition of Bengali as a national language in February 1952
+              which resulted in the death of many students. In the following
+              years, various Bengali political parties, leaders and
+              organizations commemorated this event by holding marches. They
+              also built a monument to pay tribute to what they described as the
+              martyrs of the Bengali language. This day, 21st February, is now
+              globally commemorated as the International Mother Language Day.
             </p>
 
             <PhotoContainer
@@ -222,18 +223,18 @@ function Background() {
             <p className={styles.view_para}>
               As a result of this disillusionment with the Pakistan project soon
               after independence and the trajectory that the state had taken,
-              the Bengali voters routed the ruling Muslim League out of power in
-              the first provincial elections held in 1954. The United Front - a
+              Bengali voters routed the ruling Muslim League out of power in the
+              first provincial elections held in 1954. The United Front - a
               conglomerate of Bengali opposition parties - secured more than 300
               seats compared to less than a dozen won by the Muslim League. Such
-              a dramatic reversal of electoral fortunes in just seven years
-              after independence effectively sealed the prospects of an
+              a dramatic reversal of electoral fortunes just seven years after
+              independence effectively sealed the prospects of an
               all-Pakistan-based polity.
             </p>
             <p className={styles.view_para}>
-              To their credit, Bengali leadership, led by H. S. Suharawardy –
-              and supported by his young lieutenant – Sheikh Mujib-ur-Rehman –
-              put up spirited opposition in the assembly debates between
+              To their credit, the Bengali leadership, led by H. S. Suharawardy
+              – and supported by his young lieutenant – Sheikh Mujib-ur-Rehman,
+              put up a spirited opposition in the assembly debates between
               1954-56. They warned against the excessive rhetoric of an Islamic
               state as a ruse to push a statist agenda of homogenization, denial
               of equal citizenship to non-Muslims, and diluting of Bengali
@@ -267,8 +268,8 @@ function Background() {
             <p className={styles.view_para}>
               With the death of prominent Bengali leaders like H. S. Suharwardy,
               A. K. Fazlul Haq, and Khawaja Nazimuddin in quick succession, a
-              power vacuum emerged, filled by the fiery and charismatic Sheikh
-              Mujib-ur-Rehman.
+              power vacuum emerged, which was filled by the fiery and
+              charismatic Sheikh Mujib-ur-Rehman.
             </p>
             <p className={styles.view_para}>
               By the 1960s, in addition to the systematic denial of political
@@ -291,15 +292,16 @@ function Background() {
               Sheikh Mujib spearheaded the movement capitalizing on the
               sentiment of deprivation, inequality, unfair treatment, and
               exploitation. Despite his disillusionment with the Pakistan
-              project, Mujib made a last attempt at all-Pakistan federal
+              project, Mujib made a last attempt at an all-Pakistan federal
               politics by supporting the candidacy of Fatima Jinnah – sister of
               the late founder of the country – against ‘Field Marshal’ Ayub
               Khan. Despite the tremendous public response that she received
               from the masses, Fatima Jinnah lost the elections. The popular
               opinion was that the military had massively rigged the elections.
               Sheikh Mujib had accompanied Fatima Jinnah during the election
-              trail. The resulting electoral disaster sealed the fate of a
-              democratic change for an inclusive federal polity.
+              trail. The resulting electoral disaster sealed the possibility of
+              bringing about an inclusive federal polity through democratic
+              change.
             </p>
             <div className={styles.view_section}>
               <div className={styles.video_contain_center}>
@@ -372,7 +374,7 @@ function Background() {
       </section>
 
       <Footer
-        projectName="Bangladesh’s Liberation War"
+        projectName="Bangladesh's Liberation War"
         projectSubTitle="A visual history"
         projectDescription="The LUMS Digital Archive is a research repository that aims at collecting, cataloging and preserving rare material (books, pamphlets, newspapers and other items) of
       historical significance and making them available to researchers. In particular, the archive focuses on events, groups, movements and personalities relating to broader

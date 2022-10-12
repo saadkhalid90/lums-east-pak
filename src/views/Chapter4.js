@@ -76,7 +76,7 @@ function AfterTheWar() {
         number="4"
         imgArr={imgArrCh4}
         title="Interantional Dimension"
-        subtitle="1971"
+        subtitle="Bangladesh's Liberation War"
         desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation"
       />
 
@@ -404,7 +404,7 @@ function AfterTheWar() {
         </div>
       </section>
       <Footer
-        projectName="Bangladesh’s Liberation War"
+        projectName="Bangladesh's Liberation War"
         projectSubTitle="A visual history"
         projectDescription="The LUMS Digital Archive is a research repository that aims at collecting, cataloging and preserving rare material (books, pamphlets, newspapers and other items) of
       historical significance and making them available to researchers. In particular, the archive focuses on events, groups, movements and personalities relating to broader

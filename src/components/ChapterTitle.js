@@ -39,7 +39,11 @@ function ChapterTitle({
 
         <div className={styles.img_contain}>
           {imgArr.map((image, imgIdx) => (
-            <img key={`image${imgIdx}`} src={image.image} className={styles[`img${imgIdx + 1}`]}></img>
+            <img
+              key={`image${imgIdx}`}
+              src={image.image}
+              className={styles[`img${imgIdx + 1}`]}
+            ></img>
           ))}
         </div>
         <div className={styles.chev_title_and_subtitle}>
@@ -65,7 +69,13 @@ function ChapterTitle({
           </div>
           {navChev && (
             <Link
-              to={parseInt(number) < 5 ? `/ch${parseInt(number) + 1}` : parseInt(number) == 5 ? `/appendix` : '/'}
+              to={
+                parseInt(number) < 5
+                  ? `/ch${parseInt(number) + 1}`
+                  : parseInt(number) == 5
+                  ? `/appendix`
+                  : "/"
+              }
               onMouseEnter={(e) => setNextActive(true)}
               onMouseLeave={(e) => setNextActive(false)}
               style={{
