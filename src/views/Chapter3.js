@@ -2056,7 +2056,7 @@ function Operation() {
             description:
               "Mujib-ur-Rehman awarded rape survivors with the honorific title of ‘Birangona’",
             title: "",
-            width: "60",
+            width: "35",
             render: () => (
               <img
                 alt={
@@ -2072,14 +2072,14 @@ function Operation() {
             description:
               "A sculpture at Mujibnagar, Dhaka paying homage to 'Birangona'",
             title: "",
-            width: "65",
+            width: "60",
             render: () => (
               <img
                 alt={
                   "A sculpture at Mujibnagar, Dhaka paying homage to 'Birangona'"
                 }
                 className={""}
-                src={war1}
+                src={birangona2}
               ></img>
             ),
           },
