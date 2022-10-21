@@ -14,6 +14,9 @@ import Chapter5_3 from "../resources/Chapter5/Chapter5_3.jpg";
 
 import BhuttoQuote from "../resources/Chapter3/others/BhuttoQuote.jpg";
 
+import mujibFlight from "../resources/Chapter5/mujib/mujib_flight.jpeg";
+import mujibRelease from "../resources/Chapter5/mujib/mujib_release.jpeg";
+
 import mujbhutt1 from "../resources/Chapter5/oic/mujeebBhutto1.jpg";
 import mujbhutt2 from "../resources/Chapter5/oic/mujeebBhutto2.jpg";
 import mujbhutt3 from "../resources/Chapter5/oic/mujeebBhutto3.jpg";
@@ -30,6 +33,7 @@ import azmatBook from "../resources/Chapter5/others/Azmat.jpg";
 import hamood from "../resources/Chapter5/hamood/hamoodurrehman.jpg";
 import hamoodRpt from "../resources/Chapter5/hamood/HamoodReport.jpg";
 
+import mush from "../resources/Chapter5/musharraf.jpeg";
 import film1 from "../resources/Chapter5/films/film1.jpg";
 import film2 from "../resources/Chapter5/films/film2.jpg";
 import film3 from "../resources/Chapter5/films/film3.jpg";
@@ -79,36 +83,118 @@ function AfterTheWar() {
         imgArr={imgArrCh4}
         title="After the Surrender"
         subtitle="1972 - 1974"
-        desc="Zulfiqar Ali Bhutto uses diplomatic channels to recognize the new state of Bangladesh. Pakistan revises its citizenship law in 1974. Urdu speaking East Pakistanis become refugees in Bangladesh"
+        desc="A new state of Bangladesh is born. Zulfiqar Ali Bhutto uses diplomatic channels to recognize the new state of Bangladesh. Urdu speaking East Pakistanis become refugees in Bangladesh"
       />
 
       <section className={styles.content_section}>
         <div className={styles.view_content_wrapper}>
           <div className={styles.view_content_container}>
             <p className={styles.view_para}>
+              The surrender on 16 December 1971 created two new countries –
+              Bangladesh <i>and</i> Pakistan. In the ‘new Pakistan,’ Yahya Khan
+              was unceremoniously kicked out by a mini revolt of junior military
+              officers. Zulfiqar Ali Bhutto became the Chief Martial Law
+              Administrator. For Bhutto, the immediate task was to rebuild the
+              morale of the Pakistani nation, ensure the safety of West
+              Pakistani civilians in Bangladesh, and take steps to bring the
+              Pakistani soldiers back from Indian captivity.
+            </p>
+            <p className={styles.view_para}>
+              The Pakistani authorities had kept Sheikh Mujib-ur-Rehman in
+              prison in West Pakistan throughout the military operation. The
+              jail authorities had kept Rehman completely in the dark about the
+              events in East Bengal. After the surrender had taken place, the
+              Pakistani government came under tremendous international pressure
+              to release him. Instead of sending him directly to Bangladesh, as
+              this would have amounted to a de facto recognition of the new
+              state, Pakistan boarded him on a chartered flight to London, from
+              where he traveled back to Dhaka in January 1972.
+            </p>
+            <PhotoContainer
+              setDisplayedOverlay={setDisplayedOverlay}
+              overlayID={"6"}
+              noScroll
+              imgArr={[
+                {
+                  image: mujibRelease,
+                  caption:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                  widthID: "fifty",
+                },
+                {
+                  image: mujibFlight,
+                  caption:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                  widthID: "fifty",
+                },
+              ]}
+            />
+            <div className={styles.video_contain_center}>
+              <div className={styles.video_contain}>
+                <iframe
+                  src="https://www.youtube.com/embed/WM8hVBOaba8"
+                  title="YouTube video player"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
+                <p className={styles.video_caption}>
+                  Post-independence interview of Sheikh Mujib-ur-Rahman (January
+                  16 1972)
+                </p>
+              </div>
+            </div>
+            <p className={styles.view_para}>
               After the war and military surrender, the Pakistani state was
               confronted with existential crises and several unresolved issues.
               The biggest challenge was to get the prisoners of war released and
-              ensure the safety of 'stranded Pakistanis' in former East
+              ensure the safety of ‘stranded Pakistanis’ in former East
               Pakistan.
+            </p>
+            <SectionHeading heading="Counter propaganda" />
+            <p className={styles.view_para}>
+              The Pakistani state had to counter the propaganda at two levels.
+              For the international audience, the Martial Law regime issued a
+              ‘White Paper’ to give an account of the situation that, in their
+              view, necessitated the launch of a military operation. A
+              significant reason was the violence against West Pakistanis in
+              East Bengal that the Awami League workers had inflicted from 1
+              March onwards. The state-owned Pakistan Television also produced a
+              documentary in English to show footage of violence against West
+              Pakistani civilians and the damage to their properties by the
+              Awami League workers and Mukti Bahinis.
+            </p>
+            <p className={styles.view_para}>
+              For the domestic audiences, the Martial Law regime controlled the
+              local press to make sure that it only reported stories about the
+              defeat, capture, and killing of Mukti Bahinis and their Indian
+              handlers. When the war started in December, leading English and
+              Urdu majors reported stories about the advances of Pakistani
+              troops in West and East Pakistan and the damage that they were
+              inflicting on Indian troops.
             </p>
             <SectionHeading heading="Pakistan's Recognition of Bangladesh" />
             <p className={styles.view_para}>
               Pakistan did not recognize the state of Bangladesh till 1974.
               Throughout the intervening years, the Pakistani Government
-              remained in contact with the Bangladeshi Government through the
-              intermediary of friendly countries. One of the outstanding issues
-              was Sheikh Mujib's insistence on trying about 200 Pakistani
-              officers for war crimes. Pakistan insisted that all PoWs must
-              return and that the Pakistani Government should be responsible for
-              taking any action that might be necessary.
+              remained in contact with the Bangladeshi Government through
+              friendly, intermediary countries. One of the outstanding issues
+              was Sheikh Mujib’s insistence on trying about 200 Pakistani
+              officers for war crimes. Pakistan insisted that all PoWs must be
+              returned and that the Pakistani Government should be responsible
+              for taking any action that might be necessary.
             </p>
             <p className={styles.view_para}>
-              Pakistan's formal recognition of Bangladesh in February 1974 at
+              Pakistan’s formal recognition of Bangladesh in February 1974 at
               the occasion of the second session of the Organization of Islamic
-              Countries (OIC) in Lahore (add picture) was followed by a
-              constitutional amendment to redefine Pakistan's sovereign
-              boundaries.
+              Countries (OIC) in Lahore was followed by a constitutional
+              amendment to redefine Pakistan's sovereign boundaries.
+            </p>
+            <p className={styles.view_para}>
+              Pakistan’s formal recognition of Bangladesh in February 1974 at
+              the occasion of the second session of the Organization of Islamic
+              Countries (OIC) in Lahore was followed by a constitutional
+              amendment to redefine Pakistan's sovereign boundaries.
             </p>
           </div>
           <div className={styles.view_content_container}>
@@ -251,7 +337,7 @@ function AfterTheWar() {
               organizations and mutual agreements between Pakistan and
               Bangladesh, little has been achieved on the repatriation of
               Urdu-speaking communities, collectively clubbed together as
-              'Biharis,' living in Bangladesh. Targeted for their pro-Pakistan
+              ‘Biharis,’ living in Bangladesh. Targeted for their pro-Pakistan
               stance, the Bangladeshi Government dumped them in refugee camps
               and refused to accept them as its citizens.
             </p>
@@ -360,16 +446,37 @@ function AfterTheWar() {
       <section className={styles.content_section}>
         <div className={styles.view_content_wrapper}>
           <div className={styles.view_content_container}>
+            <SectionHeading heading="Repatriation of Bengalis" />
+            <p className={styles.view_para}>
+              Along with the issue of stranded Pakistanis in Bangladesh, the
+              Pakistani government also had to deal with a vast Bengali
+              population – close to half a million – that was still in Pakistan.
+              As the security situation deteriorated in March 1971, the
+              Pakistani state treated every Bengali living in West Pakistan as a
+              potential traitor. It also set up huge internment camps in
+              different cities across the country, where Bengalis were kept in
+              difficult conditions. As Professor Ilyas Chattha’s forthcoming
+              research shows, the Pakistani state was holding Bengalis hostage
+              to pressure the Bangladeshi government to return all Pakistani
+              prisoners of war. The Bangladeshi government insisted on trying
+              close to 200 officers who they thought were instrumental in
+              planning and executing a genocidal operation against Bengalis.
+              Under tremendous foreign pressure, the Bangladeshi government had
+              to relent and did not insist on trying Pakistani officers for war
+              crimes.
+            </p>
             <SectionHeading heading="Hammoodur Rehman Commission" />
             <p className={styles.view_para}>
-              To probe the reasons for Pakistan's breakup and poor military
+              To probe the reasons for Pakistan’s breakup and poor military
               performance during the war, the Pakistani Government set up a
-              commission of inquiry headed by Justice Hammoodur Rehman – the
+              commission of inquiry headed by Justice Hammood-ur-Rehman – the
               Chief Justice of the Pakistani Supreme Court. The inquiry
               commission held marathon sessions to collect testimonies from
               hundreds of officers who had served during the war or were
               responsible for running the administration leading up to the
-              outbreak of violence in March 1971.
+              outbreak of violence in March 1971. It also acknowledged the
+              commission of crimes by the Pakistani military, but challenged the
+              number of casualties claimed by the Bangladeshi government.
             </p>
             <p className={styles.view_para}>
               Once India repatriated the PoWs, the Commission was reconvened to
@@ -379,7 +486,7 @@ function AfterTheWar() {
               prompted the Pakistani Government to issue an official version
               with some parts of the report redacted. We still do not have
               access to the transcripts of daily proceedings or possible
-              court-martial trials that might have taken place per the report's
+              court-martial trials that might have taken place per the report’s
               recommendations.
             </p>
             <PhotoContainer
@@ -401,25 +508,107 @@ function AfterTheWar() {
                 },
               ]}
             />
-            <SectionHeading heading="Pakistan's stance today" />
+            <SectionHeading heading="Memory and Justice in Bangladesh" />
             <p className={styles.view_para}>
-              The official Pakistani policy has been to 'bury the past' and move
-              forward by 'regretting' what happened in 1971. It falls short of a
-              formal apology or an explicit recognition of the military's crimes
+              In Bangladesh, the 1971 war is officially and popularly remembered
+              and commemorated as a war of liberation. It is also remembered as
+              ‘the worst genocide since the Second World War’. Bangladesh
+              estimates that approximately 3 million people were killed, 278,000
+              women were raped, and 10 million people were displaced and forced
+              to seek refuge in India. These figures are disputed by Pakistan,
+              which claimed that the number of casualties existed in the tens of
+              thousands. To date, there is no independent verification of these
+              claims.
+            </p>
+            <p className={styles.view_para}>
+              In recognition of the war crimes committed during the war, the
+              independent Bangladesh instituted an International Crimes
+              (Tribunals Act) in 1971 to provide for the ‘detention,
+              prosecution, and punishment of persons responsible for committing
+              genocide, crimes against humanity, war crimes and other crimes
+              under international law.’ It later set up an International Crimes
+              Tribunal in 2009 which over the following years tried prominent
+              suspects, many of whom were from the Jamat-i-Islami who
+              collaborated with the Pakistani Army in its military operation and
+              war crimes. Not without controversary, the trials resulted in the
+              conviction of prominent individuals who were sentenced to
+              punishments ranging from imprisonment to executions.
+            </p>
+            <div className={styles.video_contain_center}>
+              <div className={styles.video_contain}>
+                <iframe
+                  src="https://www.youtube.com/embed/V7ldGQaQtk8"
+                  title="YouTube video player"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
+                <p className={styles.video_caption}>
+                  A news report on the 2016 execution of Motiur Rahman Nizami, a
+                  Jamaat-i-Islami leader accused of war crimes in 1971
+                </p>
+              </div>
+            </div>
+            <SectionHeading heading="Memory and Accountability in Pakistan" />
+            <p className={styles.view_para}>
+              The official Pakistani policy has been to ‘bury the past’ and move
+              forward by ‘regretting’ what happened in 1971. It falls short of a
+              formal apology or an explicit recognition of the military’s crimes
               during the war.
             </p>
             <p className={styles.view_para}>
-              In school textbooks and popular media, Pakistan continues to deny
-              any wrongdoing. The usual practice is to put the entire blame on
-              India's support to Mukti Bahinis and its long-term plan to
-              destabilize and dismember Pakistan.
+              During a state visit to Bangladesh in 2002, General Parvez
+              Musharraf expressed ‘regrets’ at the ‘excesses’ committed during
+              the Bangladeshi war of independence.
+            </p>
+          </div>
+        </div>
+        <div className={styles.view_fw_content}>
+          <QuotePhoto
+            quote
+            addedMargin
+            photo={mush}
+            photoClassName={"ch2Q_6points"}
+            quoteTxt={
+              <p>
+                ...I would like to convey to the people of Bangladesh that their
+                brothers and sisters in Pakistan equally share the pain of the
+                events of 1971. I wish to express to the Bangladesh people
+                sincere regrets for the tragic events, which have left deep
+                wounds on both our nations. But wounds do heal with time and
+                during the course of the last thirty years relations of our two
+                brotherly nations have certainly come a long way. Let us
+                overcome the sorrow and the bitterness of our past...
+              </p>
+            }
+            quoteAlign="left"
+            color="white"
+            fontSize="small"
+            rotation="rotate2"
+            quoterText={
+              "Pervez Musharraf - Excerpt from a Speech in Dhaka on July 29, 2002"
+            }
+            quotationMark={true}
+          />
+        </div>
+        <div className={styles.view_content_wrapper}>
+          <div className={styles.view_content_container}>
+            <p className={styles.view_para}>
+              And yet, in school textbooks and popular media, Pakistan continues
+              to deny any wrongdoing. The usual practice is to put the entire
+              blame on India’s support for Mukti Bahinis and its long-term plan
+              to destabilize and dismember Pakistan. Indeed, India’s undeniable
+              role in supporting Bangladesh’s struggle for independence is
+              regularly invoked as a justification for further suppressing
+              ethno-nationalist movements in Pakistan’s peripheries.
             </p>
             <p className={styles.view_para}>
-              The Pakistani military mounted a PR offensive in the fiftieth year
-              of Bangladesh's independence. Its media wing – the Inter-Services
-              Public Relations (ISPR), sponsored several films, documentaries,
-              and TV serials to paddle a narrative about the 1971 war that
-              exonerated the military of any wrongdoing.
+              In 2021, which marked the 50th anniversary of the liberation of
+              Bangladesh, the Pakistani military mounted a PR offensive in the
+              fiftieth year of Bangladesh’s independence. Its media wing – the
+              Inter-Services Public Relations (ISPR) – sponsored several films,
+              documentaries, and TV serials to peddle a narrative about the 1971
+              war that exonerated the military of any wrongdoing.
             </p>
             <PhotoContainer
               setDisplayedOverlay={setDisplayedOverlay}
@@ -446,6 +635,23 @@ function AfterTheWar() {
                 },
               ]}
             />
+            <p className={styles.view_para}>
+              Finally, the security establishment also forced the cancellation
+              of a conference that aimed to bring together Pakistani and
+              Bangladeshi academics in an honest reckoning with our shared and
+              painful past. This conference was meant to be hosted at the Lahore
+              University of Management Sciences in March 2021, which would have
+              marked fifty years to Operation Searchlight. These attempts at
+              censorship and whitewashing the past are a troubling testament to
+              the continued reluctance of Pakistan to evade accountability and
+              acknowledgement for its excesses in 1971. Through this project, we
+              hope to create space for such a reckoning to take place. The power
+              of narrating the past that does not follow nationalist logics,
+              whether of Pakistan or Bangladesh, can bring both nations closer.
+              But only if we allow ourselves the space to interrogate our
+              collective and shared pasts more honestly. We hope this project is
+              a beginning of that conversation.
+            </p>
           </div>
         </div>
       </section>
@@ -721,6 +927,46 @@ function AfterTheWar() {
                 alt={"Theatrical Poster for Khel Khel Mein"}
                 className={""}
                 src={film3}
+              ></img>
+            ),
+          },
+        ]}
+      />
+      <Overlay
+        oId="6"
+        displayedOverlay={displayedOverlay}
+        closeOverlay={closeOverlay}
+        setDisplayedOverlay={setDisplayedOverlay}
+        slides={[
+          {
+            source: "",
+            description:
+              "Mujib holding a press conference in London after his release from Pakistani prison (January 08, 1971)",
+            title: "",
+            width: "70",
+            render: () => (
+              <img
+                alt={
+                  "Mujib holding a press conference in London after his release from Pakistani prison (January 08, 1972)"
+                }
+                className={""}
+                src={mujibRelease}
+              ></img>
+            ),
+          },
+          {
+            source: "",
+            description:
+              "Mujib flying from London to Dhaka via New Delhi after his release",
+            title: "",
+            width: "70",
+            render: () => (
+              <img
+                alt={
+                  "Mujib flying from London to Dhaka via New Delhi after his release"
+                }
+                className={""}
+                src={mujibFlight}
               ></img>
             ),
           },

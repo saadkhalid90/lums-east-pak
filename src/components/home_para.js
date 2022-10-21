@@ -38,10 +38,7 @@ class HomePara extends Component {
           </p>
         )}
 
-        <div
-          className={classNames("Lato", styles.para)}
-          dangerouslySetInnerHTML={{ __html: this.props.para }}
-        />
+        <div className={classNames("Lato", styles.para)}>{this.props.para}</div>
         {this.props.legend && (
           <div className={styles.partyLegend}>
             <div>

@@ -75,14 +75,26 @@ function AfterTheWar() {
       <ChapterTitle
         number="4"
         imgArr={imgArrCh4}
-        title="Interantional Dimension"
-        subtitle="Bangladesh's Liberation War"
-        desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation"
+        title="International Dimension"
+        subtitle="1971"
+        desc="The military operation is condemned by International media, human rights activists and prominent global leaders"
       />
 
       <section className={styles.content_section}>
         <div className={styles.view_content_wrapper}>
           <div className={styles.view_content_container}>
+            <p className={styles.view_para}>
+              Despite Pakistan’s claims that the insurgency in East Bengal was
+              an internal matter, there was a massive outcry in the
+              international media as reports about the military operation
+              emerged. It created a major ‘PR crisis’ for Pakistan as various
+              human rights activists, prominent global leaders, and even pop
+              stars supported the Bengali people and condemned the excesses of
+              Pakistan’s military operation. This international pressure,
+              combined with the influence and intervention of other powers,
+              including the United States, Soviet Union, and most prominently,
+              India, made the 1971 War an international war.
+            </p>
             <SectionHeading heading="Blood Telegram" />
             <p className={styles.view_para}>
               Silences are often weapons of oppression. And if one document
@@ -114,6 +126,16 @@ function AfterTheWar() {
       <section className={styles.content_section}>
         <div className={styles.view_content_wrapper}>
           <div className={styles.view_content_container}>
+            <p className={styles.view_para}>
+              In 2013, Gary J. Bass, Assistant Professor of Politics and
+              International Relations at Princeton, authored{" "}
+              <i>
+                The Blood Telegram: Nixon, Kissinger, and a Forgotten Genocide
+              </i>
+              , analyzing the American position on the Bangladesh Liberation war
+              of 1971. There are numerous declassified conversations between
+              Nixon, Kissinger, and other stakeholders.
+            </p>
             <PhotoContainer
               setDisplayedOverlay={setDisplayedOverlay}
               overlayID={"2"}
@@ -139,16 +161,6 @@ function AfterTheWar() {
                 },
               ]}
             />
-            <p className={styles.view_para}>
-              In 2013, Gary J. Bass, Assistant Professor of Politics and
-              International Relations at Princeton, authored{" "}
-              <i>
-                The Blood Telegram: Nixon, Kissinger, and a Forgotten Genocide
-              </i>
-              , analyzing the American position on the Bangladesh LIberation war
-              of 1971. There are numerous declassified conversations between
-              Nixon, Kissinger, and other stakeholders.
-            </p>
           </div>
         </div>
       </section>
@@ -158,8 +170,8 @@ function AfterTheWar() {
             <SectionHeading heading="International Solidarity for the Bangladeshi Struggle" />
             <p className={styles.view_para}>
               One such aspect of international solidarity for the Bangladeshi
-              cause was the Concert for Bangladesh, where iconic artists like
-              Ravi Shankar and George Harrison performed.
+              cause was the Concert for Bangladesh in August 1971, where iconic
+              artists like Ravi Shankar and George Harrison performed.
             </p>
             <div className={styles.video_contain_center}>
               <div className={styles.video_contain}>
@@ -294,7 +306,7 @@ function AfterTheWar() {
         <div className={styles.view_content_wrapper}>
           <div className={styles.view_content_container}>
             <p className={styles.view_para}>
-              Pakistan tried to sway the international opinion in its favor by
+              Pakistan tried to sway international opinion in its favor by
               producing counter-propaganda material. Here is a short clip from a
               documentary that the official Pakistani television produced to
               give a background to the East Pakistan crisis and the rationale
@@ -318,15 +330,15 @@ function AfterTheWar() {
             <SectionHeading heading="Influence of US Foreign Policy" />
             <p className={styles.view_para}>
               However, at the official level, the US government led by Nixon and
-              his infamous national security advisor, Henry Kissinger, were
-              miffed at these developments. They viewed Pakistan as a
-              significant ally that had helped establish a diplomatic thaw
-              between China and the US. The Pakistani Military facilitated this
-              exchange at the expense of considerable cost, i.e., open Soviet
-              hostility. The Soviets responded by signing a friendship treaty
-              with India, supplying them with a large cache of arms and
-              ammunition, which was eventually used in the decisive battle
-              against Pakistan in November-December 1971.
+              his national security advisor, Henry Kissinger, were miffed at
+              these developments. They viewed Pakistan as a significant ally
+              that had helped establish a diplomatic thaw between China and the
+              US. The Pakistani Military facilitated this exchange at the
+              expense of considerable cost, i.e., open Soviet hostility. The
+              Soviets responded by signing a friendship treaty with India,
+              supplying them with a large cache of arms and ammunition, which
+              was eventually used in the decisive battle against Pakistan in
+              November-December 1971.
             </p>
             <PhotoContainer
               setDisplayedOverlay={setDisplayedOverlay}

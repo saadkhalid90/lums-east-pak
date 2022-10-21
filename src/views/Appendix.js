@@ -80,10 +80,11 @@ function LocalNews() {
         desc={
           <p>
             This section summarizes the news coverage of major events in West
-            Pakistani Newspapers (Dawn, Jang and Nawai Waqt) from March to
-            December 1971. Data for this section were collected by LUMS students
-            from archived newspapers and were later organized in a narrative
-            structure for easy consumption of the reader
+            Pakistani Newspapers (<i>Dawn</i>, <i>Jang</i> and{" "}
+            <i>Nawa-i-Waqt</i>) from March to December 1971. Data for this
+            section were collected by LUMS students from archived newspapers and
+            were later organized in a narrative structure for easy consumption
+            of the reader
           </p>
         }
       />
@@ -117,10 +118,7 @@ function LocalNews() {
                 key={monthName}
                 onClick={(e) => setMonth(e.target.id)}
                 style={{
-                  textDecoration:
-                    month === monthName
-                      ? "underline"
-                      : "none",
+                  textDecoration: month === monthName ? "underline" : "none",
                   borderRadius: "4px",
                 }}
               >
@@ -169,7 +167,7 @@ function LocalNews() {
         prevLink="/ch5"
         nextLink="/"
         chapterID={6}
-        appendixShow = {false}
+        appendixShow={false}
       />
     </div>
   );

@@ -28,6 +28,12 @@ import lootedChests from "../resources/Chapter3/others/looted_chests.jpg";
 import muktiRailway from "../resources/Chapter3/others/Mukti_ damage_railways.jpg";
 import noticeMNA from "../resources/Chapter3/others/notices_Awami League_MNAs.jpg";
 
+import mujibnagar1 from "../resources/Chapter3/others/mujibnagar1.jpg";
+import mujibnagar2 from "../resources/Chapter3/others/mujibnagar2.jpg";
+
+import birangona1 from "../resources/Chapter3/birangona/birangona.jpg";
+import birangona2 from "../resources/Chapter3/birangona/birangona_sculpture.jpg";
+
 import muktiPosters from "../resources/Chapter3/others/Mukti_Bahini_posters.jpg";
 import muktiPractice from "../resources/Chapter3/others/Mukti_Practice.jpg";
 import muktiMural from "../resources/Chapter3/others/MuktiMural.jpg";
@@ -150,11 +156,18 @@ const localNewsArr = [
 const localNewsData = [
   {
     title: "News about returning stability after the operation",
-    description:
-      "are published in Pakistani Dailies. This issue of Dawn publishes a photo of Indian supporters of Sheikh Mujib ur Rehman demonstrating in front of the Pakistani Embassy in New Delhi. A headline also criticizes the false reports published in ‘Anglo-American’ press about the political crisis",
+    description: (
+      <>
+        are published in Pakistani Dailies. This issue of <i>Dawn</i> publishes
+        a photo of Indian supporters of Sheikh Mujib-ur-Rehman demonstrating in
+        front of the Pakistani Embassy in New Delhi. A headline also criticizes
+        the false reports published in the ‘Anglo-American’ press about the
+        political crisis
+      </>
+    ),
   },
   {
-    title: "While the coverage of Westen media is criticized,",
+    title: "While the coverage of Western media is criticized,",
     description:
       "International press coverage and statements of global leaders supporting the official narrative are lauded across headlines in various issues",
   },
@@ -170,18 +183,30 @@ const localNewsData = [
   },
   {
     title: "Headlines on the improved situation in the East Wing",
-    description:
-      "continue to be published. This clipping from Dawn shows the bustling activity of shoppers in a Dacca market to indicate the return to normalcy",
+    description: (
+      <>
+        continue to be published. This clipping from <i>Dawn</i> shows the
+        bustling activity of shoppers in a Dacca market to indicate the return
+        to normalcy
+      </>
+    ),
   },
   {
     title: "Bhutto becomes a spokesperson for the Martial Law Administration",
     description:
-      "Here a news report publishes his statement saying that he demanded to share power at the center with Awami league as he did ‘not trust Mujib ur Rehman’s aims and intentions’",
+      "Here a news report publishes his statement saying that he demanded to share power at the center with Awami league as he did ‘not trust Mujib-ur-Rehman’s aims and intentions’",
   },
   {
     title:
-      'A Pakistan Journalist flees to publish an article titled "Genocide" in the Sunday Times',
-    description: `Given the press censorship in West Pakistan, Karachi based Journalist Anthony Mascarenhas goes into self-imposed exile to get his article "Genocide", published in the Sunday Times, Britain. This was the first report that exposed the excesses of the Pakitan army to the world`,
+      "A Pakistan Journalist flees to publish an article titled “Genocide” in the Sunday Times",
+    description: (
+      <>
+        Given the press censorship in West Pakistan, Karachi based Journalist
+        Anthony Mascarenhas goes into self-imposed exile to get his article
+        “Genocide”, published in the <i>Sunday Times</i>, Britain. This was the
+        first report that exposed the excesses of the Pakistan army to the world
+      </>
+    ),
   },
 ];
 
@@ -228,19 +253,20 @@ function Operation() {
           <div className={styles.view_content_container}>
             <SectionHeading heading="Operation Searchlight begins" />
             <p className={styles.view_para}>
-              What followed after 25 March 1971 was a bloodbath. The Military
+              What followed after 25 March 1971 was a bloodbath. The military
               moved quickly to regain control in major cities and ports by
-              taking over key installations like Radio, TV, and government
-              offices. The human toll of ‘establishing the writ’ was innumerable
-              as confirmed by autobiographical accounts penned by various
-              military officers taking part in the operation. The weekly
-              situation reports published in Military’s mouthpiece – Hilal –
-              along with major Urdu dailies in West Pakistan, and even English
-              dailies in Dhaka – described the success of the operation in terms
-              of ‘neutralizing,’ ‘taking control,’ ‘eliminating’ or ‘clearing’
-              the areas. These euphemisms helped mask the brutality of the
-              operation that targeted civilians along with the band of Bengali
-              separatists – Mukti Bahini.
+              taking over key installations like the Radio and TV station, and
+              government offices. The human toll of ‘establishing the writ’ was
+              innumerable as confirmed by survivors and the autobiographical
+              accounts penned by various military officers taking part in the
+              operation. The weekly situation reports published in the
+              Military’s mouthpiece – <i>Hilal</i> – along with major Urdu
+              dailies in West Pakistan, and even English dailies in Dhaka –
+              described the success of the operation in terms of ‘neutralizing,’
+              ‘taking control,’ ‘eliminating’ or ‘clearing’ the areas. These
+              euphemisms helped mask the brutality of the operation that
+              targeted civilians along with the paramilitary force of Bengali
+              separatists – the Mukti Bahini.
             </p>
             <div className={styles.video_contain_center}>
               <div className={styles.video_contain}>
@@ -260,17 +286,52 @@ function Operation() {
             <p className={styles.view_para}>
               The military operation marked the end of the political process.
               The military had refused to accept the almost unanimous electoral
-              verdict in Sheikh Mujib’s demands for maximum political autonomy.
-              From 25 March onwards, the Bengalis viewed the military as an
-              occupying force formally issued a declaration of independence, and
-              started fighting what they thought was a legitimate liberation
-              war.
+              verdict in favour of Sheikh Mujib’s demands for maximum political
+              autonomy. From 25 March onwards, most Bengalis viewed the military
+              as an occupying force. A formal declaration of independence was
+              issued, and thus began what was considered to be, a war of
+              liberation.
+            </p>
+            <SectionHeading heading="Operation Searchlight begins" />
+            <p className={styles.view_para}>
+              One of the most controversial and bloody aspects of Operation
+              Searchlight was the Pakistani military’s action at Dhaka
+              University. The popular narrative is that the military opened fire
+              on unarmed students and specifically targeted the Jaganath Hall
+              because it housed Hindu students. The Pakistani military has
+              insisted that there were no classes in the university due to the
+              city’s prevailing law and order situation, and most students had
+              already left the campus weeks ago. The military claims to have
+              taken action against hardened militants. A graphic description of
+              the events that unfolded that night, especially at the Dhaka
+              University, has been captured in{" "}
+              <a
+                className={styles.clickLink}
+                href="https://www.youtube.com/watch?app=desktop&v=IQhi646vbpk&feature=youtu.be&fbclid=IwAR3swlKy7pwTnWXmE_xBT81cOT6DdOjTqdHrCCBD5n3Xt0ayaKgZHIrkfR8&ab_channel=Canvas-%E0%A6%95%E0%A7%8D%E0%A6%AF%E0%A6%BE%E0%A6%A8%E0%A6%AD%E0%A6%BE%E0%A6%B8"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                wireless communication
+              </a>{" "}
+              between the troops commanding the operation and the station HQ.
             </p>
             <p className={styles.view_para}>
-              One of the most brutal encounters took place in Dhaka University.
-              M B Naqvi, a Pakistani journalist, shares his account of what he
-              witnessed at the Jaganath Hall - the main residential building for
-              Hindu students at Dhaka University. A partial{" "}
+              A Bengali professor who had recently returned from the US with a
+              video camera recorded the shooting of unarmed students lined up on
+              the ground and shot at point-blank range.
+            </p>
+            <p className={styles.view_para}>
+              The Pakistani military entered the residential quarters of
+              university professors and singled out ‘suspicious’ faculty members
+              – especially Hindus – and killed them. Through its proxy –
+              Al-Badar and Al-Shams – the military repeated this planned
+              campaign against intellectuals towards the end of the conflict on
+              the midnight of 15-16 December. It was an act of revenge to bleed
+              the newly established country to death by depriving it of its
+              finest minds.
+            </p>
+            <p className={styles.view_para}>
+              A partial{" "}
               <a
                 className={styles.clickLink}
                 href={transcript}
@@ -280,7 +341,9 @@ function Operation() {
                 transcript
               </a>{" "}
               of military units engaged in the operation at Dhaka University has
-              also survived.
+              also survived. M B Naqvi, a Pakistani journalist, shares his
+              account of what he witnessed at the Jaganath Hall - the main
+              residential building for Hindu students at Dhaka University.
             </p>
           </div>
         </div>
@@ -336,21 +399,6 @@ function Operation() {
                 },
               ]}
             />
-            <div className={styles.video_contain_center}>
-              <div className={styles.video_contain}>
-                <iframe
-                  src="https://www.youtube.com/embed/J9NcosVnOMo"
-                  title="YouTube video player"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowFullScreen
-                ></iframe>
-                <p className={styles.video_caption}>
-                  Major Zia, a commander of the Mukti Bahini declares
-                  independence
-                </p>
-              </div>
-            </div>
           </div>
         </div>
       </section>
@@ -364,17 +412,18 @@ function Operation() {
               proved to be the proverbial last nail in the coffin. Except for
               the Biharis living in East Pakistan and a handful of Bengali
               Islamists, no significant section of the Bengali community
-              supported the idea of a united Pakistan anymore. So much so that a
-              substantial chunk of the Bengali military, mainly units in the
-              East Pakistan Rifles, defected to join the freedom fighters. The
-              entire diplomatic staff of the Pakistani consulate in Calcutta
-              defected to join the government in exile. Mujib was in a jail in
-              Punjab, where he was being tried for treason. His associates had
-              managed to escape when the operation started and crossed the
-              border into India to establish the government in exile. Some of
-              the leading figures ended up in London and other major capitals of
-              the world to garner support for the cause of the Bangladeshi
-              liberation movement.
+              supported the idea of a united Pakistan anymore. This sentiment
+              was so widespread that a substantial chunk of the Bengali
+              military, mainly units in the East Pakistan Rifles, defected to
+              join the freedom fighters. The entire diplomatic staff of the
+              Pakistani consulate in Calcutta defected to join the government in
+              exile. Meanwhile, Mujib was in a jail in Punjab, where he was
+              being tried for treason. His associates had managed to escape when
+              the operation started and crossed the border into India to
+              establish the government in exile. Some of the leading figures
+              ended up in London and other major capitals of the world to
+              mobilize support for the cause of the Bangladeshi liberation
+              movement.
             </p>
             <PhotoContainer
               setDisplayedOverlay={setDisplayedOverlay}
@@ -422,19 +471,149 @@ function Operation() {
             <p className={styles.view_para}>
               To garner local support against the overwhelming popularity of
               Mukti Bahini, the Pakistani Military raised a volunteer corps of
-              Al-Badar and Al-Shams. Mainly comprising young Bengalis belonging
-              to the Jamat-i-Islami, these volunteers served as a vital source
-              in providing logistic support to the Military in identifying
-              critical targets for its operations.
+              Al-Badar and Al-Shams. Mainly comprising of young Bengalis
+              belonging to the Jamat-i-Islami, these volunteers served as a
+              vital source in providing logistic support to the military in
+              identifying critical targets for its operations.
             </p>
             <p className={styles.view_para}>
               The volunteer corps of Al-Badr and Al-Shams were complicit in the
-              war crimes committed during the military operation. Towards the
-              end of the war, as defeat seemed imminent, the Pakistani military
-              and their collaborators killed hundreds of Bengali intellectuals,
-              journalists, and lawyers, with the intention to bleed the country
-              to devastation.
+              war crimes committed during the military operation. These included
+              widespread massacres of civilians, mass rapes, and forcible
+              displacement. Towards the end of the war, as defeat seemed
+              imminent, the Pakistani military and their collaborators killed
+              hundreds of Bengali intellectuals, journalists, and lawyers, with
+              the intention to bleed the country to devastation.
             </p>
+            <SectionHeading heading="Declaration of Independence" />
+            <p className={styles.view_para}>
+              Following Major Zia Rehman’s declaration of independence, Bengalis
+              in exile set up a provisional government and issued a formal
+              declaration of independence on 10 April 1971 from Mujibnagar. In
+              exile, the interim government operated from Indian territory and
+              continued to give directives to Bengali fighters in the field. It
+              also held discussions about the future constitutional structure of
+              a new republic.
+            </p>
+            <PhotoContainer
+              noScroll
+              setDisplayedOverlay={setDisplayedOverlay}
+              overlayID={"15"}
+              imgArr={[
+                {
+                  image: mujibnagar2,
+                  caption:
+                    "Sculptures commemorating Mujibnagar day (17 April, 1971)",
+                  widthID: "forty",
+                },
+                {
+                  image: mujibnagar1,
+                  caption:
+                    "Mujibnagar, 17 April, 1971: C-in-C Col. Osmany, Acting President Syed Nazrul Islam, and Prime Minister Tajuddin Ahmed at the swearing in ceremony of the first Bangladesh government",
+                  widthID: "forty",
+                },
+              ]}
+            />
+            <div className={styles.video_contain_center}>
+              <div className={styles.video_contain}>
+                <iframe
+                  src="https://www.youtube.com/embed/J9NcosVnOMo"
+                  title="YouTube video player"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
+                <p className={styles.video_caption}>
+                  Major Zia, a commander of the Mukti Bahini declares
+                  independence
+                </p>
+              </div>
+            </div>
+            <SectionHeading heading="General Niazi" />
+            <p className={styles.view_para}>
+              General A. A. K. Niazi (d. 2004) led the Pakistani troops in the
+              counter-insurgency operations against the Mukti Bahini and the war
+              against the Indian military in December 1971. Popularly known as
+              ‘Tiger Niazi’ in military circles for his outstanding performance
+              on the Burma front during the Second World War, General Niazi
+              boosted the confidence of the Pakistani military in dealing with
+              the Bengali insurgency. During the nine-month-long conflict, Niazi
+              visited different parts of the country to bolster the morale of
+              his troops. He appreciated the role of Razakars in assisting the
+              military to conduct operations against Mukti Bahinis.
+            </p>
+            <p className={styles.view_para}>
+              Niazi confidently refuted media reports about the successes of
+              Mukti Bahini operations and the casualties that the Pakistani
+              military was suffering. Even at the height of the conflict in the
+              early weeks of December 1971, Niazi spoke with commanding
+              authority about the impending success of his troops and rubbished
+              the reports of compromise or surrender.
+            </p>
+            <PhotoContainer
+              noScroll
+              setDisplayedOverlay={setDisplayedOverlay}
+              overlayID={"13"}
+              imgArr={[
+                {
+                  image: war0,
+                  caption:
+                    "General Niazi and General Arora (along with troops) before the signing of the official surrender",
+                  widthID: "forty",
+                },
+                {
+                  image: war1,
+                  caption:
+                    "General Niazi discusses military strategy with senior officers",
+                  widthID: "forty",
+                },
+              ]}
+            />
+            <p className={styles.view_para}>
+              Heavily outnumbered by the Indian military and their virtual
+              control over the airspace, Niazi and his troops were encircled
+              from all sides in Dhaka and had little option but to negotiate the
+              terms of surrender with the Indian military leadership. Niazi
+              insisted on a ‘ceasefire’ as a more amicable term. Eventually, he
+              had to sign an instrument of surrender in a massive public
+              gathering in Dhaka’s Ramna Racecourse on 16 December 1971. He
+              handed over his pistol to the Indian commanding officer, Lt.
+              General Jagjit Singh Aurora, as a symbolic gesture. Though it is
+              widely believed that 90,000 Pakistani troops surrendered to the
+              Indian military, the official Pakistani version is close to
+              40,000. They claim that the rest of the people were support staff,
+              West Pakistani civilian officers, and their families.
+            </p>
+            <div className={styles.video_contain_center}>
+              <div className={styles.video_contain}>
+                <iframe
+                  src="https://www.youtube.com/embed/WN9aRP-TW0E"
+                  title="YouTube video player"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
+                <p className={styles.video_caption}>
+                  Surrender ceremony of Pakistani officers
+                </p>
+              </div>
+            </div>
+            <div className={styles.video_contain_center}>
+              <div className={styles.video_contain}>
+                <iframe
+                  src="https://www.youtube.com/embed/sOnQ2gDG1gM"
+                  title="YouTube video player"
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowFullScreen
+                ></iframe>
+                <p className={styles.video_caption}>
+                  At the peak of the war, General Niazi rubbished the rumors
+                  about surrender. He called the BBC ‘Brahman Broadcast’ and
+                  vowed to continue fighting till death.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -443,13 +622,13 @@ function Operation() {
           <div className={styles.view_content_container}>
             <SectionHeading heading="Coverage by West Pakistani Press" />
             <p className={styles.view_para}>
-              Throughout the military operation, the people in West Pakistan
-              were largely oblivious of the excesses committed in the name of
+              Throughout the military operation, people in West Pakistan were
+              largely oblivious to the excesses committed in the name of
               national security. The political parties – especially Bhutto’s PPP
-              – were scared to voice opposition and found it suitable as it
-              paved the way for Bhutto to assume the role of leadership in the
-              country. He served as the military junta’s spokesperson to the
-              international community.
+              – were scared to voice opposition and in fact found it suitable as
+              it paved the way for Bhutto to assume the role of leadership in
+              the country. He served as the military junta’s spokesperson before
+              the international community.
             </p>
             <p className={styles.view_para}>
               Domestically, the Pakistani reader was fed with news about the
@@ -472,10 +651,19 @@ function Operation() {
           <div className={styles.view_content_container}>
             <SectionHeading heading="Refugee Crisis" />
             <p className={styles.view_para}>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui
-              dicta minus molestiae vel beatae natus eveniet ratione temporibus
-              aperiam harum alias officiis assumenda officia quibusdam deleniti
-              eos cupiditate dolore doloribus!
+              One of the most devastating and undeniable impacts of the military
+              operation in East Bengal was the displacement of millions of
+              Bengalis from their homes. Scared of reprisal attacks, close to 10
+              million Bengalis – of whom a disproportionately large number were
+              Hindu – ran for their lives and sought refuge in the neighboring
+              cities of India. Several Bengali intellectuals, doctors, and newly
+              elected members of parliament also migrated to India to take
+              shelter.
+            </p>
+            <p className={styles.view_para}>
+              The massive influx of refugees gave the Indian Prime Minister,
+              Indira Gandhi, an excuse to highlight it as an international
+              humanitarian crisis and intervene militarily in East Bengal.
             </p>
             <PhotoContainer
               setDisplayedOverlay={setDisplayedOverlay}
@@ -504,6 +692,43 @@ function Operation() {
                   caption:
                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
                   widthID: "twentyfive",
+                },
+              ]}
+            />
+            <SectionHeading heading="Sexual Violence" />
+            <p className={styles.view_para}>
+              Alongside widespread massacres and mass dislocations, the War
+              became synonymous with sexual violence. Rape, as a number of
+              academics have shown, was employed by all parties in the conflict
+              including and especially, the Pakistani military and its
+              paramilitary units as a weapon of war. Bangladesh, along with
+              other organizations, estimates the number of women raped by the
+              Pakistani military and paramilitary collaborators to be in the
+              hundreds of thousands. Survivors also bore witness to rape camps
+              where they were incarcerated and systematically raped by Pakistani
+              soldiers. In the aftermath of the War, Mujib-ur-Rehman awarded
+              rape survivors with the honorific title of ‘Birangona’ (war
+              heroine). Even so, rape survivors continued to face stigma,
+              shaming, and disavowal from their families. This included the
+              shaming and abandonment of an estimated tens of thousands of
+              ‘war-babies’ – children born of rape survivors.
+            </p>
+            <PhotoContainer
+              setDisplayedOverlay={setDisplayedOverlay}
+              overlayID={"14"}
+              noScroll
+              imgArr={[
+                {
+                  image: birangona1,
+                  caption:
+                    "Mujib-ur-Rehman awarded rape survivors with the honorific title of ‘Birangona’",
+                  widthID: "thirty",
+                },
+                {
+                  image: birangona2,
+                  caption:
+                    "A sculpture at Mujibnagar, Dhaka paying homage to 'Birangona'",
+                  widthID: "fifty",
                 },
               ]}
             />
@@ -695,28 +920,10 @@ function Operation() {
               ]}
             />
             <SectionHeading heading="Archived Photos of the War" />
-            <p className={styles.view_para}>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui
-              dicta minus molestiae vel beatae natus eveniet ratione temporibus
-              aperiam harum alias officiis assumenda officia quibusdam deleniti
-              eos cupiditate dolore doloribus!
-            </p>
             <PhotoContainer
               setDisplayedOverlay={setDisplayedOverlay}
               overlayID={"12"}
               imgArr={[
-                {
-                  image: war0,
-                  caption:
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-                  widthID: "twentyfive",
-                },
-                {
-                  image: war1,
-                  caption:
-                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-                  widthID: "thirty",
-                },
                 {
                   image: war2,
                   caption:
@@ -1080,8 +1287,12 @@ function Operation() {
         slides={[
           {
             source: "Hilal Archives",
-            description:
-              "Propaganda Headlines in the Pakistani Military’s magazine ‘Hilal’",
+            description: (
+              <>
+                Propaganda Headlines in the Pakistani Military’s magazine{" "}
+                <i>Hilal</i>
+              </>
+            ),
             title: "",
             width: "65",
             render: () => (
@@ -1096,8 +1307,11 @@ function Operation() {
           },
           {
             source: "Hilal Archives",
-            description:
-              "Cartoon published in Pakistani miltary’s magazine ‘Hilal’",
+            description: (
+              <>
+                Cartoon published in Pakistani miltary’s magazine <i>Hilal</i>
+              </>
+            ),
             title: "",
             width: "60",
             render: () => (
@@ -1112,8 +1326,11 @@ function Operation() {
           },
           {
             source: "Hilal Archives",
-            description:
-              "Cartoon published in Pakistani miltary’s magazine ‘Hilal’",
+            description: (
+              <>
+                Cartoon published in Pakistani miltary’s magazine <i>Hilal</i>
+              </>
+            ),
             title: "",
             width: "75",
             render: () => (
@@ -1128,8 +1345,12 @@ function Operation() {
           },
           {
             source: "Hilal",
-            description:
-              "A poem titled ‘Crush India’ published in Pakistani miltary’s magazine ‘Hilal’",
+            description: (
+              <>
+                A poem titled ‘Crush India’ published in Pakistani miltary’s
+                magazine <i>Hilal</i>
+              </>
+            ),
             title: "",
             width: "45",
             render: () => (
@@ -1152,7 +1373,11 @@ function Operation() {
         slides={[
           {
             source: "DAWN",
-            description: "Advertisements published in DAWN in December 1971",
+            description: (
+              <>
+                Advertisements published in <i>DAWN</i> in December 1971
+              </>
+            ),
             title: "",
             width: "35",
             render: () => (
@@ -1165,7 +1390,11 @@ function Operation() {
           },
           {
             source: "DAWN",
-            description: "Advertisements published in DAWN in December 1971",
+            description: (
+              <>
+                Advertisements published in <i>DAWN</i> in December 1971
+              </>
+            ),
             title: "",
             width: "70",
             render: () => (
@@ -1178,7 +1407,11 @@ function Operation() {
           },
           {
             source: "DAWN",
-            description: "Advertisements published in DAWN in December 1971",
+            description: (
+              <>
+                Advertisements published in <i>DAWN</i> in December 1971
+              </>
+            ),
             title: "",
             width: "70",
             render: () => (
@@ -1191,7 +1424,11 @@ function Operation() {
           },
           {
             source: "DAWN",
-            description: "Advertisements published in DAWN in December 1971",
+            description: (
+              <>
+                Advertisements published in <i>DAWN</i> in December 1971
+              </>
+            ),
             title: "",
             width: "40",
             render: () => (
@@ -1204,7 +1441,11 @@ function Operation() {
           },
           {
             source: "DAWN",
-            description: "Advertisements published in DAWN in December 1971",
+            description: (
+              <>
+                Advertisements published in <i>DAWN</i> in December 1971
+              </>
+            ),
             title: "",
             width: "40",
             render: () => (
@@ -1225,7 +1466,11 @@ function Operation() {
         slides={[
           {
             source: "DAWN",
-            description: "Headlines from Dawn",
+            description: (
+              <>
+                Headlines from <i>Dawn</i>
+              </>
+            ),
             title: "",
             width: "40",
             render: () => (
@@ -1234,7 +1479,11 @@ function Operation() {
           },
           {
             source: "DAWN",
-            description: "Headlines from Dawn",
+            description: (
+              <>
+                Headlines from <i>Dawn</i>
+              </>
+            ),
             title: "",
             width: "40",
             render: () => (
@@ -1243,7 +1492,11 @@ function Operation() {
           },
           {
             source: "DAWN",
-            description: "Headlines from Dawn",
+            description: (
+              <>
+                Headlines from <i>Dawn</i>
+              </>
+            ),
             title: "",
             width: "40",
             render: () => (
@@ -1252,7 +1505,11 @@ function Operation() {
           },
           {
             source: "DAWN",
-            description: "Headlines from Dawn",
+            description: (
+              <>
+                Headlines from <i>Dawn</i>
+              </>
+            ),
             title: "",
             width: "40",
             render: () => (
@@ -1261,7 +1518,11 @@ function Operation() {
           },
           {
             source: "DAWN",
-            description: "Headlines from Dawn",
+            description: (
+              <>
+                Headlines from <i>Dawn</i>
+              </>
+            ),
             title: "",
             width: "40",
             render: () => (
@@ -1307,8 +1568,14 @@ function Operation() {
           },
           {
             source: "Ali Usman Qasmi's collection",
-            description:
-              "In order to give a semblance of the situation under control while the war was ravaging major parts of East Pakistan, Morning News published a feature on the popularity of miniskirts",
+            description: (
+              <>
+                In order to give a semblance of the situation under control
+                while the war was ravaging major parts of East Pakistan,{" "}
+                <i>Morning News</i> published a feature on the popularity of
+                miniskirts
+              </>
+            ),
             title: "",
             width: "35",
             render: () => (
@@ -1323,8 +1590,12 @@ function Operation() {
           },
           {
             source: "Ali Usman Qasmi's collection",
-            description:
-              "Headline of Morning News on December 11, 1971 when the war was at its peak on both fronts",
+            description: (
+              <>
+                Headline of <i>Morning News</i> on December 11, 1971 when the
+                war was at its peak on both fronts
+              </>
+            ),
             title: "",
             width: "60",
             render: () => (
@@ -1339,8 +1610,13 @@ function Operation() {
           },
           {
             source: "Ali Usman Qasmi's collection",
-            description:
-              "Recruitment ads were still being printed as war had broken out on the Eastern Front with the overwhelming number of Bengalis opposed to the Pakistani military",
+            description: (
+              <>
+                Recruitment ads were still being printed as war had broken out
+                on the Eastern Front with the overwhelming number of Bengalis
+                opposed to the Pakistani military
+              </>
+            ),
             title: "",
             width: "40",
             render: () => (
@@ -1355,8 +1631,13 @@ function Operation() {
           },
           {
             source: "Ali Usman Qasmi's collection",
-            description:
-              "Making people believe in the myth of Pakistani military's victory over India during the war of 1965 and expecting a repetition of the same in 1971",
+            description: (
+              <>
+                Making people believe in the myth of Pakistani military's
+                victory over India during the war of 1965 and expecting a
+                repetition of the same in 1971
+              </>
+            ),
             title: "",
             width: "40",
             render: () => (
@@ -1371,8 +1652,12 @@ function Operation() {
           },
           {
             source: "Ali Usman Qasmi's collection",
-            description:
-              "Headline of Pakistan Observer just three days before surrender",
+            description: (
+              <>
+                Headline of <i>Pakistan Observer</i> just three days before
+                surrender
+              </>
+            ),
             title: "",
             width: "75",
             render: () => (
@@ -1387,14 +1672,21 @@ function Operation() {
           },
           {
             source: "Ali Usman Qasmi's collection",
-            description:
-              "Pakistan Observer becomes Observer as East Pakistan becomes Bangladesh",
+            description: (
+              <>
+                <i>Pakistan Observer</i> becomes Observer as East Pakistan
+                becomes Bangladesh
+              </>
+            ),
             title: "",
             width: "45",
             render: () => (
               <img
                 alt={
-                  "Pakistan Observer becomes Observer as East Pakistan becomes Bangladesh"
+                  <>
+                    <i>Pakistan Observer</i> becomes <i>Observer</i> as East Pakistan becomes
+                    Bangladesh
+                  </>
                 }
                 className={""}
                 src={bengalPaper8}
@@ -1404,7 +1696,7 @@ function Operation() {
           {
             source: "Ali Usman Qasmi's collection",
             description:
-              "An ad published in Morning News on December 27, 1971 in which the name Pakistan has been crossed out",
+              <>An ad published in <i>Morning News</i> on December 27, 1971 in which the name Pakistan has been crossed out</>,
             title: "",
             width: "40",
             render: () => (
@@ -1428,38 +1720,6 @@ function Operation() {
           {
             source: "Wajahat Masood's personal collection",
             description:
-              "General Niazi discusses military strategy with senior officers",
-            title: "",
-            width: "60",
-            render: () => (
-              <img
-                alt={
-                  "General Niazi discusses military strategy with senior officers"
-                }
-                className={""}
-                src={war0}
-              ></img>
-            ),
-          },
-          {
-            source: "Wajahat Masood's personal collection",
-            description:
-              "General Niazi and General Arora (along with troops) before the signing of the official surrender ",
-            title: "",
-            width: "65",
-            render: () => (
-              <img
-                alt={
-                  "General Niazi and General Arora (along with troops) before the signing of the official surrender "
-                }
-                className={""}
-                src={war1}
-              ></img>
-            ),
-          },
-          {
-            source: "Wajahat Masood's personal collection",
-            description:
               "General Niazi along with injured troops on a military plane",
             title: "",
             width: "65",
@@ -1475,28 +1735,24 @@ function Operation() {
           },
           {
             source: "Wajahat Masood's personal collection",
+            description: "Genaral Niazi",
+            title: "",
+            width: "70",
+            render: () => (
+              <img alt={"Genaral Niazi"} className={""} src={war3}></img>
+            ),
+          },
+          {
+            source: "Wajahat Masood's personal collection",
             description:
-              "Genaral Niazi",
+              "Genaral Niazi along with senior military men from the Indian Army during the surrender ceremony",
             title: "",
             width: "70",
             render: () => (
               <img
                 alt={
-                  "Genaral Niazi"
+                  "Genaral Niazi along with senior military men from the Indian Army during the surrender ceremony"
                 }
-                className={""}
-                src={war3}
-              ></img>
-            ),
-          },
-          {
-            source: "Wajahat Masood's personal collection",
-            description: "Genaral Niazi along with senior military men from the Indian Army during the surrender ceremony",
-            title: "",
-            width: "70",
-            render: () => (
-              <img
-                alt={"Genaral Niazi along with senior military men from the Indian Army during the surrender ceremony"}
                 className={""}
                 src={war4}
               ></img>
@@ -1520,7 +1776,13 @@ function Operation() {
             description: "General Niazi addressing troops",
             title: "",
             width: "75",
-            render: () => <img alt={"General Niazi addressing troops"} className={""} src={war6}></img>,
+            render: () => (
+              <img
+                alt={"General Niazi addressing troops"}
+                className={""}
+                src={war6}
+              ></img>
+            ),
           },
           {
             source: "Wajahat Masood's personal collection",
@@ -1572,6 +1834,290 @@ function Operation() {
                 }
                 className={""}
                 src={warsaw2}
+              ></img>
+            ),
+          },
+        ]}
+      />
+      <Overlay
+        oId="13"
+        displayedOverlay={displayedOverlay}
+        closeOverlay={closeOverlay}
+        setDisplayedOverlay={setDisplayedOverlay}
+        slides={[
+          {
+            source: "genocidebangladesh.org",
+            description:
+              "Mujibnagar, 17 April, 1971: C-in-C Col. Osmany, Acting President Syed Nazrul Islam, and Prime Minister Tajuddin Ahmed at the swearing in ceremony of the first Bangladesh government",
+            title: "",
+            width: "60",
+            render: () => (
+              <img
+                alt={
+                  "Mujibnagar, 17 April, 1971: C-in-C Col. Osmany, Acting President Syed Nazrul Islam, and Prime Minister Tajuddin Ahmed at the swearing in ceremony of the first Bangladesh government"
+                }
+                className={""}
+                src={mujibnagar1}
+              ></img>
+            ),
+          },
+          {
+            source: "https://www.kalerkantho.com/",
+            description:
+              "Sculptures commemorating Mujibnagar day (17 April, 1971)",
+            title: "",
+            width: "60",
+            render: () => (
+              <img
+                alt={"Sculptures commemorating Mujibnagar day (17 April, 1971)"}
+                className={""}
+                src={mujibnagar2}
+              ></img>
+            ),
+          },
+        ]}
+      />
+      <Overlay
+        oId="12"
+        displayedOverlay={displayedOverlay}
+        closeOverlay={closeOverlay}
+        setDisplayedOverlay={setDisplayedOverlay}
+        slides={[
+          {
+            source: "Wajahat Masood's personal collection",
+            description:
+              "General Niazi along with injured troops on a military plane",
+            title: "",
+            width: "65",
+            render: () => (
+              <img
+                alt={
+                  "General Niazi along with injured troops on a military plane"
+                }
+                className={""}
+                src={war2}
+              ></img>
+            ),
+          },
+          {
+            source: "Wajahat Masood's personal collection",
+            description: "Genaral Niazi",
+            title: "",
+            width: "70",
+            render: () => (
+              <img alt={"Genaral Niazi"} className={""} src={war3}></img>
+            ),
+          },
+          {
+            source: "Wajahat Masood's personal collection",
+            description:
+              "Genaral Niazi along with senior military men from the Indian Army during the surrender ceremony",
+            title: "",
+            width: "70",
+            render: () => (
+              <img
+                alt={
+                  "Genaral Niazi along with senior military men from the Indian Army during the surrender ceremony"
+                }
+                className={""}
+                src={war4}
+              ></img>
+            ),
+          },
+          {
+            source: "Wajahat Masood's personal collection",
+            description: "General Niazi passes on instruction to a troop",
+            title: "",
+            width: "65",
+            render: () => (
+              <img
+                alt={"General Niazi passes on instruction to a troop"}
+                className={""}
+                src={war5}
+              ></img>
+            ),
+          },
+          {
+            source: "Wajahat Masood's personal collection",
+            description: "General Niazi addressing troops",
+            title: "",
+            width: "75",
+            render: () => (
+              <img
+                alt={"General Niazi addressing troops"}
+                className={""}
+                src={war6}
+              ></img>
+            ),
+          },
+          {
+            source: "Wajahat Masood's personal collection",
+            description: "",
+            title: "",
+            width: "35",
+            render: () => <img alt={""} className={""} src={war7}></img>,
+          },
+          {
+            source: "Wajahat Masood's personal collection",
+            description: "",
+            title: "",
+            width: "60",
+            render: () => <img alt={""} className={""} src={war8}></img>,
+          },
+          {
+            source: "Wajahat Masood's personal collection",
+            description: "",
+            title: "",
+            width: "60",
+            render: () => <img alt={""} className={""} src={war9}></img>,
+          },
+          {
+            source: "Flickr",
+            description:
+              "Pakistan’s ambassador to Poland, Bashir ul Alam defects on December 22, 1971",
+            title: "",
+            width: "40",
+            render: () => (
+              <img
+                alt={
+                  "Pakistan’s ambassador to Poland, Bashir ul Alam defects on December 22, 1971"
+                }
+                className={""}
+                src={warsaw1}
+              ></img>
+            ),
+          },
+          {
+            source: "Flickr",
+            description:
+              "News on the defection of a Pakistani diplomat in Poland as he declared his loyalty to Bangladesh",
+            title: "",
+            width: "40",
+            render: () => (
+              <img
+                alt={
+                  "News on the defection of a Pakistani diplomat in Poland as he declared his loyalty to Bangladesh"
+                }
+                className={""}
+                src={warsaw2}
+              ></img>
+            ),
+          },
+        ]}
+      />
+      <Overlay
+        oId="13"
+        displayedOverlay={displayedOverlay}
+        closeOverlay={closeOverlay}
+        setDisplayedOverlay={setDisplayedOverlay}
+        slides={[
+          {
+            source: "Wajahat Masood's personal collection",
+            description:
+              "General Niazi discusses military strategy with senior officers",
+            title: "",
+            width: "60",
+            render: () => (
+              <img
+                alt={
+                  "General Niazi discusses military strategy with senior officers"
+                }
+                className={""}
+                src={war0}
+              ></img>
+            ),
+          },
+          {
+            source: "Wajahat Masood's personal collection",
+            description:
+              "General Niazi and General Arora (along with troops) before the signing of the official surrender ",
+            title: "",
+            width: "65",
+            render: () => (
+              <img
+                alt={
+                  "General Niazi and General Arora (along with troops) before the signing of the official surrender "
+                }
+                className={""}
+                src={war1}
+              ></img>
+            ),
+          },
+        ]}
+      />
+      <Overlay
+        oId="14"
+        displayedOverlay={displayedOverlay}
+        closeOverlay={closeOverlay}
+        setDisplayedOverlay={setDisplayedOverlay}
+        slides={[
+          {
+            source: "theguardian.com",
+            description:
+              "Mujib-ur-Rehman awarded rape survivors with the honorific title of ‘Birangona’",
+            title: "",
+            width: "60",
+            render: () => (
+              <img
+                alt={
+                  "Mujib-ur-Rehman awarded rape survivors with the honorific title of ‘Birangona’"
+                }
+                className={""}
+                src={birangona1}
+              ></img>
+            ),
+          },
+          {
+            source: "Wajahat Masood's personal collection",
+            description:
+              "A sculpture at Mujibnagar, Dhaka paying homage to 'Birangona'",
+            title: "",
+            width: "65",
+            render: () => (
+              <img
+                alt={
+                  "A sculpture at Mujibnagar, Dhaka paying homage to 'Birangona'"
+                }
+                className={""}
+                src={war1}
+              ></img>
+            ),
+          },
+        ]}
+      />
+      <Overlay
+        oId="15"
+        displayedOverlay={displayedOverlay}
+        closeOverlay={closeOverlay}
+        setDisplayedOverlay={setDisplayedOverlay}
+        slides={[
+          {
+            source: "theguardian.com",
+            description:
+              "Sculptures commemorating Mujibnagar day (17 April, 1971)",
+            title: "",
+            width: "60",
+            render: () => (
+              <img
+                alt={"Sculptures commemorating Mujibnagar day (17 April, 1971)"}
+                className={""}
+                src={mujibnagar2}
+              ></img>
+            ),
+          },
+          {
+            source: "Wajahat Masood's personal collection",
+            description:
+              "Mujibnagar, 17 April, 1971: C-in-C Col. Osmany, Acting President Syed Nazrul Islam, and Prime Minister Tajuddin Ahmed at the swearing in ceremony of the first Bangladesh government",
+            title: "",
+            width: "60",
+            render: () => (
+              <img
+                alt={
+                  "Mujibnagar, 17 April, 1971: C-in-C Col. Osmany, Acting President Syed Nazrul Islam, and Prime Minister Tajuddin Ahmed at the swearing in ceremony of the first Bangladesh government"
+                }
+                className={""}
+                src={mujibnagar1}
               ></img>
             ),
           },
