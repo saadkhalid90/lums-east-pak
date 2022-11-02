@@ -260,7 +260,7 @@ function Background() {
                 },
               ]}
             />
-            <SectionHeading heading="Martial Law and the Rise of Sheikh Mujibur rehman" />
+            <SectionHeading heading="Martial Law and the Rise of Sheikh Mujibur rahman" />
             <p className={styles.view_para}>
               This active phase of political opposition came to an end with the
               imposition of Martial Law in 1958.
@@ -449,13 +449,13 @@ function Background() {
           {
             source: "Wikimedia Commons",
             description:
-              "East Bengal’s cabinet formed by the United Front. Sheikh Mujibur rehman can be seen standing in the front row",
+              "East Bengal’s cabinet formed by the United Front. Sheikh Mujibur rahman can be seen standing in the front row",
             title: "def",
             width: "75",
             render: () => (
               <img
                 alt={
-                  "East Bengal’s cabinet formed by the United Front. Sheikh Mujibur rehman can be seen standing in the front row"
+                  "East Bengal’s cabinet formed by the United Front. Sheikh Mujibur rahman can be seen standing in the front row"
                 }
                 className={""}
                 src={cabinet1954}

@@ -245,7 +245,7 @@ function AfterTheWar() {
                 allowFullScreen
               ></iframe>
               <p className={styles.video_caption}>
-                Zulfiqar Ali Bhutto welcomes Sheikh Mujibur rehman to Lahore
+                Zulfiqar Ali Bhutto welcomes Sheikh Mujibur rahman to Lahore
                 for the International Islamic Conference
               </p>
             </div>
