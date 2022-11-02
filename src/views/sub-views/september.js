@@ -63,7 +63,7 @@ function September() {
         </p>
         <p className={styles.view_para_news}>
           Meanwhile, on September 28, it was reported that the trial of Sheikh
-          Mujib ur Rahman for waging war against Pakistan was in progress. The
+          Mujibur rehman for waging war against Pakistan was in progress. The
           prosecution had so far examined 20 witnesses and issued a warning was
           issued against contempt of court.
         </p>

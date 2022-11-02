@@ -197,7 +197,7 @@ function July() {
             the provinces with a strong center. No dignified nation can tolerate
             separatist attempts, says Turkish Parliamentary Delegation on their
             visit to Pak. On 26 July, it is reported that the Qayyum League also
-            joins the joint Muslim League(s). S B Rehman says that except the 7
+            joins the joint Muslim League(s). S B Rahman says that except the 7
             members of the outlawed AL, no one wants Bangladesh. On 28 July,
             Tikka Khan orders the construction of an Islamic Arabic University
             in E Pak

@@ -21,8 +21,11 @@ import chapter3_1 from "../resources/Chapter3/Chapter3_1.jpg";
 import chapter3_2 from "../resources/Chapter3/Chapter3_2.jpg";
 import chapter3_3 from "../resources/Chapter3/Chapter3_3.jpg";
 
-import transcript from "../resources/Chapter3/documents/Transcript.pdf";
 import Martyrs from "../resources/Chapter3/others/Martyrs.jpg";
+
+import transcript from "../resources/Chapter3/documents/Transcript.pdf";
+import razPayDoc from "../resources/Chapter3/documents/Razakar Documents.pdf";
+import razOrdDoc from "../resources/Chapter3/documents/Razakar Ordinance.pdf";
 
 import lootedChests from "../resources/Chapter3/others/looted_chests.jpg";
 import muktiRailway from "../resources/Chapter3/others/Mukti_ damage_railways.jpg";
@@ -39,6 +42,7 @@ import muktiPractice from "../resources/Chapter3/others/Mukti_Practice.jpg";
 import muktiMural from "../resources/Chapter3/others/MuktiMural.jpg";
 import razakaarId from "../resources/Chapter3/others/RazakaarId.jpeg";
 import razakaarOrd from "../resources/Chapter3/others/RazOrd.png";
+import razakaarPay from "../resources/Chapter3/others/razakarPay.jpg";
 import intellectuals from "../resources/Chapter3/others/intellectuals_bodies.jpg";
 
 import localnews1 from "../resources/Chapter3/photoStory1/localnews_1.jpg";
@@ -159,7 +163,7 @@ const localNewsData = [
     description: (
       <>
         are published in Pakistani Dailies. This issue of <i>Dawn</i> publishes
-        a photo of Indian supporters of Sheikh Mujib-ur-Rehman demonstrating in
+        a photo of Indian supporters of Sheikh Mujibur rahman demonstrating in
         front of the Pakistani Embassy in New Delhi. A headline also criticizes
         the false reports published in the ‘Anglo-American’ press about the
         political crisis
@@ -194,7 +198,7 @@ const localNewsData = [
   {
     title: "Bhutto becomes a spokesperson for the Martial Law Administration",
     description:
-      "Here a news report publishes his statement saying that he demanded to share power at the center with Awami league as he did ‘not trust Mujib-ur-Rehman’s aims and intentions’",
+      "Here a news report publishes his statement saying that he demanded to share power at the center with Awami league as he did ‘not trust Mujibur rahman’s aims and intentions’",
   },
   {
     title:
@@ -455,6 +459,12 @@ function Operation() {
                   widthID: "twentyfive",
                 },
                 {
+                  image: razakaarPay,
+                  caption:
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+                  widthID: "twentyfive",
+                },
+                {
                   image: muktiMural,
                   caption:
                     "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
@@ -487,7 +497,7 @@ function Operation() {
             </p>
             <SectionHeading heading="Declaration of Independence" />
             <p className={styles.view_para}>
-              Following Major Zia Rehman’s declaration of independence, Bengalis
+              Following Major Zia Rahman’s declaration of independence, Bengalis
               in exile set up a provisional government and issued a formal
               declaration of independence on 10 April 1971 from Mujibnagar. In
               exile, the interim government operated from Indian territory and
@@ -706,12 +716,12 @@ function Operation() {
               Pakistani military and paramilitary collaborators to be in the
               hundreds of thousands. Survivors also bore witness to rape camps
               where they were incarcerated and systematically raped by Pakistani
-              soldiers. In the aftermath of the War, Mujib-ur-Rehman awarded
-              rape survivors with the honorific title of ‘Birangona’ (war
-              heroine). Even so, rape survivors continued to face stigma,
-              shaming, and disavowal from their families. This included the
-              shaming and abandonment of an estimated tens of thousands of
-              ‘war-babies’ – children born of rape survivors.
+              soldiers. In the aftermath of the War, Mujibur rahman awarded rape
+              survivors with the honorific title of ‘Birangona’ (war heroine).
+              Even so, rape survivors continued to face stigma, shaming, and
+              disavowal from their families. This included the shaming and
+              abandonment of an estimated tens of thousands of ‘war-babies’ –
+              children born of rape survivors.
             </p>
             <PhotoContainer
               setDisplayedOverlay={setDisplayedOverlay}
@@ -721,7 +731,7 @@ function Operation() {
                 {
                   image: birangona1,
                   caption:
-                    "Mujib-ur-Rehman awarded rape survivors with the honorific title of ‘Birangona’",
+                    "Mujibur rahman awarded rape survivors with the honorific title of ‘Birangona’",
                   widthID: "thirty",
                 },
                 {
@@ -734,10 +744,13 @@ function Operation() {
             />
             <SectionHeading heading="War propaganda in West Pakistan" />
             <p className={styles.view_para}>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui
-              dicta minus molestiae vel beatae natus eveniet ratione temporibus
-              aperiam harum alias officiis assumenda officia quibusdam deleniti
-              eos cupiditate dolore doloribus!
+              The Pakistani military and its media wing mounted a
+              counter-propaganda offensive through its official magazine, hilal,
+              and by regulating several Urdu newspapers. To cater to an
+              international audience, the military arm-twisted several English
+              newspapers – especially those based in Dhaka – to highlight the
+              ‘atrocities’ of Bengali fighters and expose Indian conspiracies
+              against the Pakistani state.
             </p>
             <PhotoContainer
               setDisplayedOverlay={setDisplayedOverlay}
@@ -812,10 +825,12 @@ function Operation() {
               ]}
             />
             <p className={styles.view_para}>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui
-              dicta minus molestiae vel beatae natus eveniet ratione temporibus
-              aperiam harum alias officiis assumenda officia quibusdam deleniti
-              eos cupiditate dolore doloribus!
+              During the war, English newspapers flashed headlines about the
+              heroic achievements of the Pakistani military on the battlefield
+              and published ads invoking Jihad against Indian belligerence.
+              Nevertheless, as the war drew close to a conclusion, Dhaka-based
+              English newspapers joined others in celebrating the liberation of
+              Bangladesh. Hence, Pakistan Observer became Bangladesh Observer.
             </p>
             <PhotoContainer
               setDisplayedOverlay={setDisplayedOverlay}
@@ -853,12 +868,6 @@ function Operation() {
                 },
               ]}
             />
-            <p className={styles.view_para}>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui
-              dicta minus molestiae vel beatae natus eveniet ratione temporibus
-              aperiam harum alias officiis assumenda officia quibusdam deleniti
-              eos cupiditate dolore doloribus!
-            </p>
             <PhotoContainer
               setDisplayedOverlay={setDisplayedOverlay}
               overlayID={"11"}
@@ -1173,8 +1182,20 @@ function Operation() {
           },
           {
             source: "docstrangelove",
-            description:
-              "Headline about the East Pakistan Razakaar Ordinance promulgated by Tikka Khan",
+            description: (
+              <span>
+                Headline about the East Pakistan Razakaar Ordinance promulgated
+                by Tikka Khan.{" "}
+                <a
+                  className={styles.clickLinkInv}
+                  href={razPayDoc}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  The Ordinance can be found here.
+                </a>
+              </span>
+            ),
             title: "",
             width: "55",
             render: () => (
@@ -1184,6 +1205,31 @@ function Operation() {
                 }
                 className={""}
                 src={razakaarOrd}
+              ></img>
+            ),
+          },
+          {
+            source: "Bangladesh Documents",
+            description: (
+              <span>
+                Official document on pay of East Pakistan Razakaars.{" "}
+                <a
+                  className={styles.clickLinkInv}
+                  href={razPayDoc}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  The Document can be found here.
+                </a>
+              </span>
+            ),
+            title: "",
+            width: "55",
+            render: () => (
+              <img
+                alt={"Official documents on pay of East Pakistan Razakaars"}
+                className={""}
+                src={razakaarPay}
               ></img>
             ),
           },
@@ -1684,8 +1730,8 @@ function Operation() {
               <img
                 alt={
                   <>
-                    <i>Pakistan Observer</i> becomes <i>Observer</i> as East Pakistan becomes
-                    Bangladesh
+                    <i>Pakistan Observer</i> becomes <i>Observer</i> as East
+                    Pakistan becomes Bangladesh
                   </>
                 }
                 className={""}
@@ -1695,8 +1741,12 @@ function Operation() {
           },
           {
             source: "Ali Usman Qasmi's collection",
-            description:
-              <>An ad published in <i>Morning News</i> on December 27, 1971 in which the name Pakistan has been crossed out</>,
+            description: (
+              <>
+                An ad published in <i>Morning News</i> on December 27, 1971 in
+                which the name Pakistan has been crossed out
+              </>
+            ),
             title: "",
             width: "40",
             render: () => (
@@ -2054,13 +2104,13 @@ function Operation() {
           {
             source: "theguardian.com",
             description:
-              "Mujib-ur-Rehman awarded rape survivors with the honorific title of ‘Birangona’",
+              "Mujibur rahman awarded rape survivors with the honorific title of ‘Birangona’",
             title: "",
             width: "35",
             render: () => (
               <img
                 alt={
-                  "Mujib-ur-Rehman awarded rape survivors with the honorific title of ‘Birangona’"
+                  "Mujibur rahman awarded rape survivors with the honorific title of ‘Birangona’"
                 }
                 className={""}
                 src={birangona1}

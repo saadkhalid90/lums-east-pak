@@ -100,9 +100,9 @@ function AfterTheWar() {
               Pakistani soldiers back from Indian captivity.
             </p>
             <p className={styles.view_para}>
-              The Pakistani authorities had kept Sheikh Mujib-ur-Rehman in
+              The Pakistani authorities had kept Sheikh Mujibur rahman in
               prison in West Pakistan throughout the military operation. The
-              jail authorities had kept Rehman completely in the dark about the
+              jail authorities had kept Rahman completely in the dark about the
               events in East Bengal. After the surrender had taken place, the
               Pakistani government came under tremendous international pressure
               to release him. Instead of sending him directly to Bangladesh, as
@@ -188,7 +188,7 @@ function AfterTheWar() {
               Pakistan’s formal recognition of Bangladesh in February 1974 at
               the occasion of the second session of the Organization of Islamic
               Countries (OIC) in Lahore was followed by a constitutional
-              amendment to redefine Pakistan's sovereign boundaries.
+              amendment to redefine sovereign boundaries.
             </p>
             <p className={styles.view_para}>
               Pakistan’s formal recognition of Bangladesh in February 1974 at
@@ -245,7 +245,7 @@ function AfterTheWar() {
                 allowFullScreen
               ></iframe>
               <p className={styles.video_caption}>
-                Zulfiqar Ali Bhutto welcomes Sheikh Mujib Ur Rahman to Lahore
+                Zulfiqar Ali Bhutto welcomes Sheikh Mujibur rehman to Lahore
                 for the International Islamic Conference
               </p>
             </div>
@@ -384,7 +384,7 @@ function AfterTheWar() {
             </p>
             <p className={styles.view_para}>
               There was no such place as a home for the Biharis who were able to
-              return to what was left of Pakistan. Azmat Ashraf's autobiography
+              return to what was left of Pakistan. Azmat's autobiography
               gives a haunting account of those who survived the Bihari massacre
               in East Pakistan and their quest for a homeland, which eventually
               took him and some of his childhood friends to Canada. They still
@@ -465,11 +465,11 @@ function AfterTheWar() {
               to relent and did not insist on trying Pakistani officers for war
               crimes.
             </p>
-            <SectionHeading heading="Hammoodur Rehman Commission" />
+            <SectionHeading heading="Hamoodur Rahman Commission" />
             <p className={styles.view_para}>
               To probe the reasons for Pakistan’s breakup and poor military
               performance during the war, the Pakistani Government set up a
-              commission of inquiry headed by Justice Hammood-ur-Rehman – the
+              commission of inquiry headed by Justice Hamoodur Rahman – the
               Chief Justice of the Pakistani Supreme Court. The inquiry
               commission held marathon sessions to collect testimonies from
               hundreds of officers who had served during the war or were

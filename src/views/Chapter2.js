@@ -439,9 +439,9 @@ function Polls() {
               anxiety about the delaying tactics used by Yahya’s negotiating
               team, Bhutto’s intransigence, and the military buildup in and
               around Dhaka. Sensing this palpable tension as the convening of
-              the national assembly was delayed once again, Mujib-ur-Rehman
+              the national assembly was delayed once again, Mujibur rahman
               decided to assert authority by addressing a public gathering. The
-              Military was anxious that Rehman might go all the way and declare
+              Military was anxious that Rahman might go all the way and declare
               independence. He was told in no uncertain terms that this would be
               intolerable, and he was warned of dire consequences. In his
               address to a mammoth gathering at the Ramna Race Course in Dhaka,

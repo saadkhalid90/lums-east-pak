@@ -13,7 +13,7 @@ function March() {
           <span className={`jang ${styles.jang}`}>
             This was done on Mar 2 by Yahya
           </span>
-          as he wanted to continue political dialogue with Mujib ur Rehman, the
+          as he wanted to continue political dialogue with Mujibur rehman, the
           Awami League leader.
           <span className={`jang ${styles.jang}`}>
             On Mar 3 Martial Law administrators are also put in charge of the
@@ -43,7 +43,7 @@ function March() {
         </p>
         <SectionHeading heading="Reaction to the Postponement of the NA Session" />
         <p className={styles.view_para_news}>
-          Mujib ur Rehman fiercely opposed the postponement of the N.A session,
+          Mujibur rehman fiercely opposed the postponement of the N.A session,
           and in response to Mujib’s call, a 10-hour curfew was imposed in
           Dacca.
           <span className={styles.jang}>
@@ -64,7 +64,7 @@ function March() {
         </p>
         <p className={styles.view_para_news}>
           Bhutto announced that he would be willing to visit East Pakistan and
-          resolve the constitutional crisis with Sheikh Mujib ur Rehman. His
+          resolve the constitutional crisis with Sheikh Mujibur rehman. His
           policy of postponement was facing strong condemnation and he was being
           blamed for violating democracy and plunging the country into a state
           of unrest.
@@ -109,7 +109,7 @@ function March() {
             Under the pressure of constant demands to visit E. Pakistan,
           </span>
           President Yahya eventually decided to visit East Pakistan and discuss
-          the impending political crisis with Sheikh Mujib ur Rehman- his
+          the impending political crisis with Sheikh Mujibur rehman- his
           decision was welcomed by the Awami League.
           <span className={styles.jang}>
             Bhutto was being accused by other politicians, such as Daultana, for
@@ -143,9 +143,9 @@ function March() {
         <SectionHeading heading="Yahya Khan in Dacca" />
         <p className={styles.view_para_news}>
           On March 16, President Yahya Khan arrived in Dacca and held the first
-          round of talks with Awami League Chief, Sheikh Mujib ur Rehman. To
+          round of talks with Awami League Chief, Sheikh Mujibur rehman. To
           overcome the present constitutional deadlock, Yahya Khan agreed to
-          accept the 4-Point demands laid down by Sheikh Mujib ur Rehman.
+          accept the 4-Point demands laid down by Sheikh Mujibur rehman.
           <span className={styles.jang}>
             A commission to investigate the deployment of army in E Pak formed
             on 18 March. In the meantime, violence against non-Bengalis
@@ -173,7 +173,7 @@ function March() {
             satisfaction over his talks with Mujib, the latter is adamant that
             ‘We are on the right, victory will be ours.
           </span>
-          Sheikh Mujib ur Rehman expressed concern over the “regrettable delay
+          Sheikh Mujibur rehman expressed concern over the “regrettable delay
           in resolving the crisis politically.”
           <span className={styles.jang}>
             Bhutto says that although he sympathises with the people of E. Pak,
@@ -196,7 +196,7 @@ function March() {
           <span className={styles.jang}>
             Upon reaching Karachi Bhutto proclaimed that Pakistan had been
             saved. Both Yahya and Bhutto accuse Mujib of having always wanted
-            the splitting up of the country. On 28 Mar, Sheikh Mujib ur Rehman
+            the splitting up of the country. On 28 Mar, Sheikh Mujibur rehman
             was arrested from his house and the Army assumed complete control of
             East Pakistan. Pakistan also strongly protested against Indian
             interference in its internal affairs, a protest rejected by India.

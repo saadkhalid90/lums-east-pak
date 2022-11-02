@@ -233,7 +233,7 @@ function Background() {
             </p>
             <p className={styles.view_para}>
               To their credit, the Bengali leadership, led by H. S. Suharawardy
-              – and supported by his young lieutenant – Sheikh Mujib-ur-Rehman,
+              – and supported by his young lieutenant – Sheikh Mujibur rahman,
               put up a spirited opposition in the assembly debates between
               1954-56. They warned against the excessive rhetoric of an Islamic
               state as a ruse to push a statist agenda of homogenization, denial
@@ -260,7 +260,7 @@ function Background() {
                 },
               ]}
             />
-            <SectionHeading heading="Martial Law and the Rise of Sheikh Mujib ur Rehman" />
+            <SectionHeading heading="Martial Law and the Rise of Sheikh Mujibur rehman" />
             <p className={styles.view_para}>
               This active phase of political opposition came to an end with the
               imposition of Martial Law in 1958.
@@ -269,7 +269,7 @@ function Background() {
               With the death of prominent Bengali leaders like H. S. Suharwardy,
               A. K. Fazlul Haq, and Khawaja Nazimuddin in quick succession, a
               power vacuum emerged, which was filled by the fiery and
-              charismatic Sheikh Mujib-ur-Rehman.
+              charismatic Sheikh Mujibur rahman.
             </p>
             <p className={styles.view_para}>
               By the 1960s, in addition to the systematic denial of political
@@ -449,13 +449,13 @@ function Background() {
           {
             source: "Wikimedia Commons",
             description:
-              "East Bengal’s cabinet formed by the United Front. Sheikh Mujib Ur Rahman can be seen standing in the front row",
+              "East Bengal’s cabinet formed by the United Front. Sheikh Mujibur rehman can be seen standing in the front row",
             title: "def",
             width: "75",
             render: () => (
               <img
                 alt={
-                  "East Bengal’s cabinet formed by the United Front. Sheikh Mujib Ur Rahman can be seen standing in the front row"
+                  "East Bengal’s cabinet formed by the United Front. Sheikh Mujibur rehman can be seen standing in the front row"
                 }
                 className={""}
                 src={cabinet1954}
