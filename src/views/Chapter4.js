@@ -434,13 +434,13 @@ function AfterTheWar() {
           {
             source: "Amazon",
             description:
-              "2013 book by American journalist and academic Gary J. Bass about The Blood telegram",
+              <span>American journalist and academic Gary J. Bass’s book, <i>The Blood Telegram</i></span>,
             title: "",
             width: "40",
             render: () => (
               <img
                 alt={
-                  "2013 book by American journalist and academic Gary J. Bass about The Blood telegram"
+                  "American journalist and academic Gary J. Bass’s book, The Blood Telegram"
                 }
                 className={""}
                 src={bloodTelBook}
@@ -450,13 +450,13 @@ function AfterTheWar() {
           {
             source: "Wikimedia Commons",
             description:
-              "Archived copy of the telegram by Archer Blood, US High Commissioner in Dhaka, notifying the US State department of the excesses committed by Pakistan army",
+              "Archived copy of the telegram by Archer Blood, US Diplomat in Dhaka, notifying the US State department of the excesses committed by Pakistan army",
             title: "",
             width: "45",
             render: () => (
               <img
                 alt={
-                  "Archived copy of the telegram by Archer Blood, US High Commissioner in Dhaka, notifying the US State department of the excesses committed by Pakistan army"
+                  "Archived copy of the telegram by Archer Blood, US Diplomat in Dhaka, notifying the US State department of the excesses committed by Pakistan army"
                 }
                 className={""}
                 src={bloodTel}
@@ -466,13 +466,13 @@ function AfterTheWar() {
           {
             source: "Flickr",
             description:
-              "Telegram sent by US foreign officers (South Asia region), supporting the views expressed in the Blood Telegram",
+              "Telegram sent by US foreign officers (South Asia region) supporting the views expressed in the Blood Telegram",
             title: "",
             width: "45",
             render: () => (
               <img
                 alt={
-                  "Telegram sent by US foreign officers (South Asia region), supporting the views expressed in the Blood Telegram"
+                  "Telegram sent by US foreign officers (South Asia region) supporting the views expressed in the Blood Telegram"
                 }
                 className={""}
                 src={bloodTelSupp}
@@ -489,12 +489,12 @@ function AfterTheWar() {
         slides={[
           {
             source: "Amazon",
-            description: `Famous American singer ‘Joan Baez’  wrote "The Song of Bangladesh" based on the army’s crackdown on unarmed sleeping Bengali students`,
+            description: `Famous American singer ‘Joan Baez’  wrote "The Song of Bangladesh" to depict army’s crackdown on unarmed sleeping Bengali students`,
             title: "",
             width: "40",
             render: () => (
               <img
-                alt={`Famous American singer ‘Joan Baez’  wrote "The Song of Bangladesh" based on the army’s crackdown on unarmed sleeping Bengali students`}
+                alt={`Famous American singer ‘Joan Baez’  wrote "The Song of Bangladesh" to depict army’s crackdown on unarmed sleeping Bengali students`}
                 className={""}
                 src={solid1}
               ></img>
@@ -519,13 +519,13 @@ function AfterTheWar() {
           {
             source: "Wikimedia Commons",
             description:
-              "George Harrison along with many other eminent musicians played a series of concerts at the Madison Square Garden (New York) in solidarity with the Bangladeshi cause",
+              "A publicity poster of ‘The Concert for Bangladesh’ organized by George Harrison",
             title: "",
             width: "40",
             render: () => (
               <img
                 alt={
-                  "George Harrison along with many other eminent musicians played a series of concerts at the Madison Square Garden (New York) in solidarity with the Bangladeshi cause"
+                  "A publicity poster of ‘The Concert for Bangladesh’ organized by George Harrison"
                 }
                 className={""}
                 src={solid3}
@@ -543,13 +543,13 @@ function AfterTheWar() {
           {
             source: "TIME Magazine Online Archives",
             description:
-              "Peking for Peace: a caricature on the cover of Time magazine suggests President Nixon and Henry Kissinger’s keenness to establish diplomatic ties with China",
+              <span>Peking for Peace: a caricature on the cover of <i>Time</i> magazine about President Nixon and Henry Kissinger’s keenness to establish diplomatic ties with China</span>,
             title: "",
             width: "40",
             render: () => (
               <img
                 alt={
-                  "Peking for Peace: a caricature on the cover of Time magazine suggests President Nixon and Henry Kissinger’s keenness to establish diplomatic ties with China"
+                  "Peking for Peace: a caricature on the cover of Time magazine about President Nixon and Henry Kissinger’s keenness to establish diplomatic ties with China"
                 }
                 className={""}
                 src={timePeking}
@@ -614,7 +614,7 @@ function AfterTheWar() {
         slides={[
           {
             source: "TIME Magazine Online Archives",
-            description: "Cover of the Time Magazine (August 2, 1971)",
+            description: <span>Cover of the <i>Time</i> Magazine (August 2, 1971)</span>,
             title: "",
             width: "35",
             render: () => (
@@ -636,7 +636,7 @@ function AfterTheWar() {
                 >
                   Sticks and Spears against Tanks
                 </a>{" "}
-                by Sydney H. Schanberg published in the New York Times
+                by Sydney H. Schanberg published in the <i>New York Times</i>
               </span>
             ),
             title: "",
@@ -662,7 +662,7 @@ function AfterTheWar() {
                 >
                   A Nation Divided
                 </a>{" "}
-                by Peter R. Kan published in the Wall Street Journal
+                by Peter R. Kan published in the <i>Wall Street Journal</i>
               </span>
             ),
             title: "",

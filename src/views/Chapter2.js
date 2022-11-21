@@ -301,11 +301,6 @@ function Polls() {
                 },
               ]}
             />
-          </div>
-        </div>
-
-        <div className={styles.view_content_wrapper}>
-          <div className={styles.view_content_container}>
             <SectionHeading heading="Poll outcomes take the Military Junta by surprise" />
             <p className={styles.view_para}>
               In Yahya Khan’s calculus, the elections were going to give a split
@@ -582,13 +577,13 @@ function Polls() {
           {
             source: "DAWN",
             description:
-              "A painter depicts the plight of the flood-affected people (Published in DAWN)",
+              "A painter depicts the plight of flood-affected people",
             title: "",
             width: "45",
             render: () => (
               <img
                 alt={
-                  "A painter depicts the plight of the flood-affected people (Published in DAWN)"
+                  "A painter depicts the plight of flood-affected people"
                 }
                 className={""}
                 src={bhola3}
@@ -598,13 +593,13 @@ function Polls() {
           {
             source: "DAWN",
             description:
-              "A painter depicts the plight of the flood-affected people (Published in DAWN)",
+              "A painter depicts the plight of the flood-affected people",
             title: "",
             width: "45",
             render: () => (
               <img
                 alt={
-                  "A painter depicts the plight of the flood-affected people (Published in DAWN)"
+                  "A painter depicts the plight of the flood-affected people"
                 }
                 className={""}
                 src={bhola4}
@@ -621,12 +616,12 @@ function Polls() {
         slides={[
           {
             source: "DAWN",
-            description: "Headlines on the delay in transfer of power",
+            description: "Newspaper headlines announcing Martial Law regime’s decision to delay the transfer of power",
             title: "",
             width: "70",
             render: () => (
               <img
-                alt={"Headlines on the delay in transfer of power"}
+                alt={"Newspaper headlines announcing Martial Law regime’s decision to delay the transfer of power"}
                 className={""}
                 src={transfer1}
               ></img>
@@ -634,12 +629,12 @@ function Polls() {
           },
           {
             source: "DAWN",
-            description: "Headlines on the delay in transfer of power",
+            description: "Newspaper headlines announcing Martial Law regime’s decision to delay the transfer of power",
             title: "",
             width: "22",
             render: () => (
               <img
-                alt={"Headlines on the delay in transfer of power"}
+                alt={"Newspaper headlines announcing Martial Law regime’s decision to delay the transfer of power"}
                 className={""}
                 src={transfer3}
               ></img>
@@ -647,12 +642,12 @@ function Polls() {
           },
           {
             source: "DAWN",
-            description: "Headlines on the delay in transfer of power",
+            description: "Newspaper headlines announcing Martial Law regime’s decision to delay the transfer of power",
             title: "",
             width: "65",
             render: () => (
               <img
-                alt={"Headlines on the delay in transfer of power"}
+                alt={"Newspaper headlines announcing Martial Law regime’s decision to delay the transfer of power"}
                 className={""}
                 src={transfer2}
               ></img>

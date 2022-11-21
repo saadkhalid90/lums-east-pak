@@ -403,13 +403,7 @@ function Operation() {
                 },
               ]}
             />
-          </div>
-        </div>
-      </section>
-      <section className={styles.content_section}>
-        <div className={styles.view_content_wrapper}>
-          <div className={styles.view_content_container}>
-            <SectionHeading heading="Emergence of Paramilitary forces - Mukti Bahini, Al-Badr and Al-Shams" />
+                        <SectionHeading heading="Emergence of Paramilitary forces - Mukti Bahini, Al-Badr and Al-Shams" />
             <p className={styles.view_para}>
               The widespread massacre and the fact that the Military had
               resorted to violence instead of handing over power to Sheikh Mujib
@@ -478,6 +472,12 @@ function Operation() {
                 },
               ]}
             />
+          </div>
+        </div>
+      </section>
+      <section className={styles.content_section}>
+        <div className={styles.view_content_wrapper}>
+          <div className={styles.view_content_container}>
             <p className={styles.view_para}>
               To garner local support against the overwhelming popularity of
               Mukti Bahini, the Pakistani Military raised a volunteer corps of
@@ -995,13 +995,6 @@ function Operation() {
                 },
               ]}
             />
-          </div>
-        </div>
-      </section>
-
-      <section className={styles.content_section}>
-        <div className={styles.view_content_wrapper}>
-          <div className={styles.view_content_container}>
             <SectionHeading heading="Timeline of events during the war" />
             <p className={styles.view_para}>
               The material on the timeline of events during the war (December
@@ -1009,6 +1002,14 @@ function Operation() {
               journalist, Shamsuddoza Sajen’s compilation for the Daily{" "}
               <i>Star</i>
             </p>
+          </div>
+        </div>
+      </section>
+
+      <section className={styles.content_section}>
+        <div className={styles.view_content_wrapper}>
+          <div className={styles.view_content_container}>
+            
           </div>
           <div className={`${styles.selectPrompt} ${styles.margin2}`}>
             Select Dates
@@ -1021,11 +1022,10 @@ function Operation() {
                 key={monthName}
                 onClick={(e) => setMonth(e.target.id)}
                 style={{
-                  border:
+                  textDecoration:
                     month === monthName
-                      ? "2px solid #1a489dff"
-                      : "2px solid #1a489d00",
-                  borderRadius: "4px",
+                      ? "underline"
+                      : "none"
                 }}
               >
                 {monthName}
@@ -1074,8 +1074,7 @@ function Operation() {
             source: "Bangladesh Documents",
             description: (
               <span>
-                A government document listing looted items by the{" "}
-                <i>Mukti Bahini</i>
+                Government documents enumerating looted items by the Mukti Bahini
               </span>
             ),
             title: "",
@@ -1083,7 +1082,7 @@ function Operation() {
             render: () => (
               <img
                 alt={
-                  "A government document listing looted items by the Mukti Bahini"
+                  "Government documents enumerating looted items by the Mukti Bahini"
                 }
                 className={""}
                 src={lootedChests}
@@ -1094,8 +1093,7 @@ function Operation() {
             source: "Bangladesh Documents",
             description: (
               <span>
-                Government documents report damage caused by the{" "}
-                <i>Mukti Bahini</i> to the railway lines
+                Government documents report damage caused by the Mukti Bahini to the railway lines
               </span>
             ),
             title: "",
@@ -1113,13 +1111,13 @@ function Operation() {
           {
             source: "Bangladesh Documents",
             description:
-              "Martial Law government's notice to Awami league's parliamentarians",
+              "Martial Law government’s notice to Awami league parliamentarians",
             title: "",
             width: "45",
             render: () => (
               <img
                 alt={
-                  "Martial Law government's notice to Awami league parliamentarians"
+                  "Martial Law government’s notice to Awami league parliamentarians"
                 }
                 className={""}
                 src={noticeMNA}
@@ -1138,27 +1136,27 @@ function Operation() {
             source: "Wikimedia Commons",
             description: (
               <span>
-                A <i>Mukti Bahini</i> Poster
+                Mukti Bahini Poster
               </span>
             ),
             title: "",
             width: "40",
             render: () => (
-              <img alt={""} className={""} src={muktiPosters}></img>
+              <img alt={"Mukti Bahini Poster"} className={""} src={muktiPosters}></img>
             ),
           },
           {
             source: "Flickr",
             description: (
               <span>
-                <i>Mukti Bahini</i> fighters training
+                Mukti Bahini fighters undergoing training
               </span>
             ),
             title: "",
             width: "70",
             render: () => (
               <img
-                alt={"Mukti Bahini fighters training"}
+                alt={"Mukti Bahini fighters undergoing training"}
                 className={""}
                 src={muktiPractice}
               ></img>
@@ -1184,8 +1182,7 @@ function Operation() {
             source: "docstrangelove",
             description: (
               <span>
-                Headline about the East Pakistan Razakaar Ordinance promulgated
-                by Tikka Khan.{" "}
+                Headline about the East Pakistan Razakaar Ordinance promulgated by Tikka Khan.{" "}
                 <a
                   className={styles.clickLinkInv}
                   href={razPayDoc}
@@ -1237,14 +1234,14 @@ function Operation() {
             source: "",
             description: (
               <span>
-                A mural celebrating <i>Mukti Bahini</i>
+                A mural celebrating Mukti Bahini
               </span>
             ),
             title: "",
             width: "75",
             render: () => (
               <img
-                alt={"A mural celebrating Mukti Bahini "}
+                alt={"A mural celebrating Mukti Bahini"}
                 className={""}
                 src={muktiMural}
               ></img>
@@ -1785,23 +1782,23 @@ function Operation() {
           },
           {
             source: "Wajahat Masood's personal collection",
-            description: "Genaral Niazi",
+            description: "General Amir Abdullah Khan Niazi",
             title: "",
             width: "70",
             render: () => (
-              <img alt={"Genaral Niazi"} className={""} src={war3}></img>
+              <img alt={"General Amir Abdullah Khan Niazi"} className={""} src={war3}></img>
             ),
           },
           {
             source: "Wajahat Masood's personal collection",
             description:
-              "Genaral Niazi along with senior military men from the Indian Army during the surrender ceremony",
+              "Genaral Niazi along with senior military men from the indian army during the surrender ceremony",
             title: "",
             width: "70",
             render: () => (
               <img
                 alt={
-                  "Genaral Niazi along with senior military men from the Indian Army during the surrender ceremony"
+                  "Genaral Niazi along with senior military men from the indian army during the surrender ceremony"
                 }
                 className={""}
                 src={war4}
@@ -1810,12 +1807,12 @@ function Operation() {
           },
           {
             source: "Wajahat Masood's personal collection",
-            description: "General Niazi passes on instruction to a troop",
+            description: "General Niazi passes on instructions to his troops",
             title: "",
             width: "65",
             render: () => (
               <img
-                alt={"General Niazi passes on instruction to a troop"}
+                alt={"General Niazi passes on instructions to his troops"}
                 className={""}
                 src={war5}
               ></img>
@@ -1823,12 +1820,12 @@ function Operation() {
           },
           {
             source: "Wajahat Masood's personal collection",
-            description: "General Niazi addressing troops",
+            description: "General Niazi instructs a group of military men ",
             title: "",
             width: "75",
             render: () => (
               <img
-                alt={"General Niazi addressing troops"}
+                alt={"General Niazi instructs a group of military men"}
                 className={""}
                 src={war6}
               ></img>
@@ -2080,13 +2077,13 @@ function Operation() {
           {
             source: "Wajahat Masood's personal collection",
             description:
-              "General Niazi and General Arora (along with troops) before the signing of the official surrender ",
+              "General Niazi and General Arora before the signing of the instrument of surrender",
             title: "",
             width: "65",
             render: () => (
               <img
                 alt={
-                  "General Niazi and General Arora (along with troops) before the signing of the official surrender "
+                  "General Niazi and General Arora before the signing of the instrument of surrender"
                 }
                 className={""}
                 src={war1}

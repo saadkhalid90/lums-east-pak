@@ -123,6 +123,7 @@
   left: 60px;
   color: white;
   z-index: 3;
+  font-size: 14px;
   -webkit-user-select: none; /* Chrome/Safari */
   -moz-user-select: none; /* Firefox */
   -ms-user-select: none; /* IE10+ */
@@ -134,7 +135,7 @@
 .OverlayDescription {
   width: 70%;
   margin: 0 15%;
-  bottom: 50px;
+  top: 0px;
   padding: 12.5%;
   text-align: center;
   position: absolute;
@@ -145,6 +146,7 @@
   padding: 30px;
   box-sizing: border-box;
   z-index: 10;
+  background-color: #243B6188;
 }
 
 .OverlayDescription_Title {

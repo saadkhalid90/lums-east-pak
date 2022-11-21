@@ -674,13 +674,13 @@ function AfterTheWar() {
           {
             source: "Flickr",
             description:
-              "Yasir Arafat, Sheikh Mujib, Zulfiqar Bhutto and Muammar Gaddafi at the Organization of Islamic Countries (OIC) Conference at Lahore in 1974. The occasion was used as a diplomatic opportunity by Pakistan to recognize Bangladesh as an independent republic",
+              "Yasir Arafat, Sheikh Mujib, Zulfiqar Ali Bhutto and Muammar Gaddafi at the Organization of Islamic Countries (OIC) Conference at Lahore in 1974. The occasion was used as a diplomatic opportunity by Pakistan to recognize Bangladesh as an independent country",
             title: "",
             width: "70",
             render: () => (
               <img
                 alt={
-                  "Yasir Arafat, Sheikh Mujib, Zulfiqar Bhutto and Muammar Gaddafi at the Organization of Islamic Countries (OIC) Conference at Lahore in 1974. The occasion was used as a diplomatic opportunity by Pakistan to recognize Bangladesh as an independent republic"
+                  "Yasir Arafat, Sheikh Mujib, Zulfiqar Ali Bhutto and Muammar Gaddafi at the Organization of Islamic Countries (OIC) Conference at Lahore in 1974. The occasion was used as a diplomatic opportunity by Pakistan to recognize Bangladesh as an independent country"
                 }
                 className={""}
                 src={mujbhutt1}
@@ -755,12 +755,12 @@ function AfterTheWar() {
         slides={[
           {
             source: "",
-            description: "An act redefining the territories of Pakistan",
+            description: "Act redefining the territories of Pakistan",
             title: "",
             width: "45",
             render: () => (
               <img
-                alt={"An act redefining the territories of Pakistan"}
+                alt={"Act redefining the territories of Pakistan"}
                 className={""}
                 src={firstAmend1}
               ></img>
@@ -768,12 +768,12 @@ function AfterTheWar() {
           },
           {
             source: "",
-            description: "An act redefining the citizenship of Pakistan",
+            description: "Act redefining the citizenship of Pakistan",
             title: "",
             width: "70",
             render: () => (
               <img
-                alt={"An act redefining the citizenship of Pakistan"}
+                alt={"Act redefining the citizenship of Pakistan"}
                 className={""}
                 src={revokeCit}
               ></img>
@@ -824,13 +824,13 @@ function AfterTheWar() {
           {
             source: "Wikimedia Commons",
             description:
-              "Justice Hamoodur Rahman handing over judicial reports to Zulfiqar Ali Bhutto",
+              "Justice Hamoodur Rahman submitting findings of the commission to Zulfiqar Ali Bhutto",
             title: "",
             width: "65",
             render: () => (
               <img
                 alt={
-                  "Justice Hamoodur Rahman handing over judicial reports to Zulfiqar Ali Bhutto"
+                  "Justice Hamoodur Rahman submitting findings of the commission to Zulfiqar Ali Bhutto"
                 }
                 className={""}
                 src={hamood}

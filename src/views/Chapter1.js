@@ -393,13 +393,13 @@ function Background() {
           {
             source: "Flickr",
             description:
-              "Fatima Jinnah campaigning in East Pakistan for the 1965 Presidential Election. Sheikh Mujib can also be seen in the background",
+              "Fatima Jinnah campaigning in East Pakistan. Sheikh Mujib can also be seen in the background",
             title: "",
             width: "55",
             render: () => (
               <img
                 alt={
-                  "Fatima Jinnah campaigning in East Pakistan for the 1965 Presidential Election. Sheikh Mujib can also be seen in the background"
+                  "Fatima Jinnah campaigning in East Pakistan. Sheikh Mujib can also be seen in the background"
                 }
                 className={""}
                 src={fatimaJMuj}
@@ -409,13 +409,13 @@ function Background() {
           {
             source: "",
             description:
-              "Fatima Jinnah’s campaign poster reads ‘The flowers won’t be able to put out this lamp’. ‘Flower’ was the electoral symbol for Ayub Khan whereas ‘lamp’ represented Fatima Jinnah",
+              "Fatima Jinnah’s campaign poster reads: ‘The flowers won’t be able to extinguish this lamp’. ‘Flower’ was the electoral symbol for Ayub Khan whereas ‘lamp’ represented Fatima Jinnah.",
             title: "",
             width: "65",
             render: () => (
               <img
                 alt={
-                  "Fatima Jinnah’s campaign poster reads ‘The flowers won’t be able to put out this lamp’. ‘Flower’ was the electoral symbol for Ayub Khan whereas ‘lamp’ represented Fatima Jinnah"
+                  "Fatima Jinnah’s campaign poster reads: ‘The flowers won’t be able to extinguish this lamp’. ‘Flower’ was the electoral symbol for Ayub Khan whereas ‘lamp’ represented Fatima Jinnah."
                 }
                 className={""}
                 src={fatimaJPos}
@@ -433,13 +433,13 @@ function Background() {
           {
             source: "DAWN",
             description:
-              "Dawn’s headline on the United Front’s victory over the Muslim League in 1954 elections (18 March 1954)",
+              <span><i>Dawn</i>’s headline on the United Front’s victory over the Muslim League in 1954 elections</span>,
             title: "def",
             width: "70",
             render: () => (
               <img
                 alt={
-                  "Dawn’s headline on the United Front’s victory over the Muslim League in 1954 elections (18 March 1954)"
+                  "Dawn’s headline on the United Front’s victory over the Muslim League in 1954 elections"
                 }
                 className={""}
                 src={dawn1954}
@@ -449,13 +449,13 @@ function Background() {
           {
             source: "Wikimedia Commons",
             description:
-              "East Bengal’s cabinet formed by the United Front. Sheikh Mujibur rahman can be seen standing in the front row",
+              "East Bengal’s cabinet formed by the United Front. Sheikh Mujibur Rahman can be seen standing in the front row.",
             title: "def",
             width: "75",
             render: () => (
               <img
                 alt={
-                  "East Bengal’s cabinet formed by the United Front. Sheikh Mujibur rahman can be seen standing in the front row"
+                  "East Bengal’s cabinet formed by the United Front. Sheikh Mujibur Rahman can be seen standing in the front row."
                 }
                 className={""}
                 src={cabinet1954}
@@ -473,13 +473,13 @@ function Background() {
           {
             source: "Wikimedia Commons",
             description:
-              "A Bengali Langauge Movement Procession, held on 21 February 1952",
+              "Protestors demanding recognition of Bengali as a national language, 21 February 1952",
             title: "",
             width: "65",
             render: () => (
               <img
                 alt={
-                  "A Bengali Langauge Movement Procession was held on 21 February 1952"
+                  "Protestors demanding recognition of Bengali as a national language, 21 February 1952"
                 }
                 className={""}
                 src={blm}
@@ -505,13 +505,13 @@ function Background() {
           {
             source: "Observer BD",
             description:
-              "A Women’s sit-in during the Bengali Language movement in 1952",
+              "A Women’s sit-in commemorating the Bengali Language movement ",
             title: "",
             width: "70",
             render: () => (
               <img
                 alt={
-                  "A Women’s sit-in during the Bengali Language movement in 1952"
+                  "A Women’s sit-in commemorating the Bengali Language movement "
                 }
                 className={""}
                 src={heroines}
@@ -522,8 +522,7 @@ function Background() {
             source: "Flickr",
             description: (
               <span>
-                Maulana Abdul Hamid Khan Bhashani, a popular Bengali politician
-                after the foundation stone laying program for{" "}
+                Maulana Abdul Hamid Khan Bhashani, a popular Bengali politician at the ceremony to lay the foundation stone for{" "}
                 <i>Shahid Minar</i> (Martyrs' monument)
               </span>
             ),
@@ -532,7 +531,7 @@ function Background() {
             render: () => (
               <img
                 alt={
-                  "Maulana Abdul Hamid Khan Bhashani, a popular Bengali politician after the foundation stone laying program for Shahid Minar (Martyrs' monument)"
+                  "Maulana Abdul Hamid Khan Bhashani, a popular Bengali politician at the ceremony to lay the foundation stone for Shahid Minar (Martyrs' monument)"
                 }
                 className={""}
                 src={bhashaniSM}
@@ -543,7 +542,7 @@ function Background() {
             source: "Flickr",
             description: (
               <span>
-                Crowd gathers at the foundation laying ceremony for the{" "}
+                Crowd gathers to lay the foundation stone for{" "}
                 <i>Shahid Minar</i> (Martyrs' monument)
               </span>
             ),
@@ -552,7 +551,7 @@ function Background() {
             render: () => (
               <img
                 alt={
-                  "Crowd gathers at the foundation laying ceremony for the Shahid Minar (Martyrs' monument)"
+                  "Crowd gathers to lay the foundation stone for Shahid Minar (Martyrs' monument)"
                 }
                 className={""}
                 src={SM}
@@ -585,12 +584,13 @@ function Background() {
         slides={[
           {
             source: "",
-            description: `A caricature from a newspaper reads “The recent Governor’s Conference has brought the two wings of the country closer still”`,
+            description: `A caricature from a newspaper reads: “The recent Governor’s Conference has brought the two wings of the country closer still”
+            `,
             title: "",
             width: "70",
             render: () => (
               <img
-                alt={`A caricature from a newspaper reads “The recent Governor’s Conference has brought the two wings of the country closer still”`}
+                alt={`A caricature from a newspaper reads: “The recent Governor’s Conference has brought the two wings of the country closer still”`}
                 className={""}
                 src={eastWestFriends}
               ></img>

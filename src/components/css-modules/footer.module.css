@@ -161,12 +161,13 @@
   box-shadow: 6px 0px 27px -15px rgba(0,0,0,0.51);
   -webkit-box-shadow: 6px 0px 27px -15px rgba(0,0,0,0.51);
   -moz-box-shadow: 6px 0px 27px -15px rgba(0,0,0,0.51);
-  -webkit-transition: color 0.1s ease-in;
-  -o-transition: color 0.1s ease-in;
-  transition: color 0.1s ease-in;
+  -webkit-transition: color 0.1s ease-in, background 0.1s ease-in;
+  -o-transition: color 0.1s ease-in, background 0.1s ease-in;
+  transition: color 0.1s ease-in, background 0.1s ease-in;
   z-index: 0;
 }
 
+/*
 .navigation_button_title::after {
   position: absolute;
   content: '';
@@ -189,6 +190,7 @@
   transition: transform 0.2s ease-in;
   transition: transform 0.2s ease-in, -webkit-transform 0.2s ease-in;
 }
+*/
 
 .hover::after {
   -webkit-transform: scaleX(1);
@@ -201,6 +203,7 @@
 
 .hover{
   color: white;
+  background: #1B489D;
 }
 
 
