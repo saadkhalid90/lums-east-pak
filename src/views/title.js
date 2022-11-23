@@ -51,7 +51,7 @@ function Title() {
       <Navbar type="landing" />
       <Landing
         imgArr={imgArrCh1}
-        title="Bangladesh's Liberation War"
+        title="1971"
         subtitle="A visual history"
         desc="This is the story of Pakistan’s dismemberment and the independence of Bangladesh. It offers an overview of the historical and political forces that led the eastern wing of Pakistan (East Bengal/East Pakistan) to declare and fight for its independence from its Western half and provides an in-depth account of the 1971 conflict and its aftermath."
       />

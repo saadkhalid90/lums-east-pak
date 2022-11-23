@@ -42,7 +42,8 @@
 
 .title {
   color: #1B489D;
-  font-size: 2.7rem;
+  margin-top: 18px;
+  font-size: 3.1rem;
   font-family: 'Playfair Display', serif;
   font-weight: normal;
   margin-bottom: 10px;
@@ -51,7 +52,7 @@
 
 .subtitle {
   font-family: 'Roboto', sans-serif;
-  font-size: calc(1rem + 0.8vw);
+  font-size: calc(0.7rem + 0.8vw);
   color: #585858;
   font-weight: 500;
   margin: 5px 0 12px 0px;
@@ -145,10 +146,11 @@
     margin: 0px 180px;
   }
   .title {
-    font-size: 2rem;
+    margin-top: 15px;
+    font-size: 2.4rem;
   }
   .subtitle {
-    font-size: 1.3rem;
+    font-size: 1.15rem;
     margin: 3px 0 8px 0px;
   }
   .desc {
@@ -165,10 +167,11 @@
     margin: 0px 250px;
   }
   .title {
-    font-size: 1.8rem;
+    margin-top: 12px;
+    font-size: 2rem;
   }
   .subtitle {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     margin: 3px 0 6px 0px;
   }
   .desc {
@@ -199,6 +202,11 @@
     margin: 40px 0px 20px 0px;
   }
 
+  .title {
+    margin-top: 12px;
+    font-size: 2rem;
+  }
+
 }
 
 @media screen and (max-width: 40em) {
@@ -209,7 +217,7 @@
     width: 50%;
   }
   .title {
-    font-size: 1.8rem;
+    font-size: 1.9rem;
     margin-left: 1rem;
     margin-right: 1rem;
   }
