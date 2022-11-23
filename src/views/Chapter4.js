@@ -77,7 +77,7 @@ function AfterTheWar() {
         imgArr={imgArrCh4}
         title="International Dimension"
         subtitle="1971"
-        desc="The military operation is condemned by International media, human rights activists and prominent global leaders"
+        desc="The military operation is condemned by international media, human rights activists, and prominent global leaders"
       />
 
       <section className={styles.content_section}>
@@ -167,7 +167,7 @@ function AfterTheWar() {
       <section className={styles.content_section}>
         <div className={styles.view_content_wrapper}>
           <div className={styles.view_content_container}>
-            <SectionHeading heading="International Solidarity for the Bangladeshi Struggle" />
+            <SectionHeading heading="International Solidarity for the Bangladeshi Struggle and Counter Propaganda" />
             <p className={styles.view_para}>
               One such aspect of international solidarity for the Bangladeshi
               cause was the Concert for Bangladesh in August 1971, where iconic
@@ -306,11 +306,25 @@ function AfterTheWar() {
         <div className={styles.view_content_wrapper}>
           <div className={styles.view_content_container}>
             <p className={styles.view_para}>
-              Pakistan tried to sway international opinion in its favor by
-              producing counter-propaganda material. Here is a short clip from a
-              documentary that the official Pakistani television produced to
-              give a background to the East Pakistan crisis and the rationale
-              for conducting a military operation.
+              The Pakistani state had to counter the propaganda at two levels.
+              For the international audience, the Martial Law regime issued a
+              ‘White Paper’ to give an account of the situation that, in their
+              view, necessitated the launch of a military operation. A
+              significant reason was the violence against West Pakistanis in
+              East Bengal that the Awami League workers had inflicted from 1
+              March onwards. The state-owned Pakistan Television also produced a
+              documentary in English to show footage of violence against West
+              Pakistani civilians and the damage to their properties by the
+              Awami League workers and Mukti Bahinis.
+            </p>
+            <p className={styles.view_para}>
+              For the domestic audiences, the Martial Law regime controlled the
+              local press to make sure that it only reported stories about the
+              defeat, capture, and killing of Mukti Bahinis and their Indian
+              handlers. When the war started in December, leading English and
+              Urdu majors reported stories about the advances of Pakistani
+              troops in West and East Pakistan and the damage that they were
+              inflicting on Indian troops.
             </p>
             <div className={styles.video_contain_center}>
               <div className={styles.video_contain}>
@@ -433,8 +447,12 @@ function AfterTheWar() {
         slides={[
           {
             source: "Amazon",
-            description:
-              <span>American journalist and academic Gary J. Bass’s book, <i>The Blood Telegram</i></span>,
+            description: (
+              <span>
+                American journalist and academic Gary J. Bass’s book,{" "}
+                <i>The Blood Telegram</i>
+              </span>
+            ),
             title: "",
             width: "40",
             render: () => (
@@ -542,8 +560,13 @@ function AfterTheWar() {
         slides={[
           {
             source: "TIME Magazine Online Archives",
-            description:
-              <span>Peking for Peace: a caricature on the cover of <i>Time</i> magazine about President Nixon and Henry Kissinger’s keenness to establish diplomatic ties with China</span>,
+            description: (
+              <span>
+                Peking for Peace: a caricature on the cover of <i>Time</i>{" "}
+                magazine about President Nixon and Henry Kissinger’s keenness to
+                establish diplomatic ties with China
+              </span>
+            ),
             title: "",
             width: "40",
             render: () => (
@@ -614,7 +637,11 @@ function AfterTheWar() {
         slides={[
           {
             source: "TIME Magazine Online Archives",
-            description: <span>Cover of the <i>Time</i> Magazine (August 2, 1971)</span>,
+            description: (
+              <span>
+                Cover of the <i>Time</i> Magazine (August 2, 1971)
+              </span>
+            ),
             title: "",
             width: "35",
             render: () => (

@@ -25,9 +25,9 @@ const mapData = [
     marginLegend: false,
   },
   {
-    title: "Remaining seats",
+    title: "Other political parties",
     description:
-      "won by independents and all other parties (including all denominations of Muslim league) are shown on this map. The two non - Awami League seats in the East wing were located in Mymensingh and Chittagong Hill Tracts. The seat in Mymensingh was won by Pakistan Democratic Party candidate Nurul Amin, the former Chief Minister of East Pakistan who would also go on to serve as the Vice President of Pakistan under Bhutto from 1972 – 1973",
+      "Rest of the seats were won by independents and other parties (including all denominations of the Muslim league). The two non - Awami League seats in the East wing were located in Mymensingh and Chittagong Hill Tracts. The seat in Mymensingh was won by Pakistan Democratic Party candidate Nurul Amin, the former Chief Minister of East Pakistan who would also go on to serve as the Vice President of Pakistan under Bhutto from 1972 – 1973",
     legend: false,
     partialLegend: true,
     marginLegend: false,

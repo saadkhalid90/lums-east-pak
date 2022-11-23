@@ -159,21 +159,20 @@ const localNewsArr = [
 
 const localNewsData = [
   {
-    title: "News about returning stability after the operation",
+    title: "News about ‘normalcy’ after the operation",
     description: (
       <>
-        are published in Pakistani Dailies. This issue of <i>Dawn</i> publishes
-        a photo of Indian supporters of Sheikh Mujibur rahman demonstrating in
-        front of the Pakistani Embassy in New Delhi. A headline also criticizes
-        the false reports published in the ‘Anglo-American’ press about the
-        political crisis
+        This issue of <i>Dawn</i> publishes a photo of Indian supporters of
+        Sheikh Mujibur Rahman demonstrating in front of the Pakistani Embassy in
+        New Delhi. A headline also criticizes the false reports published in the
+        ‘Anglo-American’ press about the political crisis
       </>
     ),
   },
   {
-    title: "While the coverage of Western media is criticized,",
+    title: "Garnering support for Pakistan’s official narrative",
     description:
-      "International press coverage and statements of global leaders supporting the official narrative are lauded across headlines in various issues",
+      "International press coverage and statements of global leaders supporting Pakistan’s official narrative are highlighted in newspapers",
   },
   {
     title: "Photos showing Martial Law Administration in control",
@@ -181,34 +180,33 @@ const localNewsData = [
       "President in a meeting with his team of Martial Law administrators in President House, Rawalpindi (Top). Martial Law Administrator (East Wing), Lt. Gen Tikka Khan speaking with non-Awami league political leaders from West Pakistan (Bottom). A headline celebrates the success of the military operation with support of the Air Force",
   },
   {
-    title: "Interference of India",
+    title: "Indian conspiracy",
     description:
-      "in Pakistan’s domestic affairs becomes a key theme in English dailies from West Pakistan",
+      "English dailies in West Pakistan routinely highlight India’s role in the East Pakistan crisis",
   },
   {
     title: "Headlines on the improved situation in the East Wing",
     description: (
       <>
-        continue to be published. This clipping from <i>Dawn</i> shows the
-        bustling activity of shoppers in a Dacca market to indicate the return
-        to normalcy
+        This clipping from <i>Dawn</i> shows the bustling activity of shoppers
+        in a Dacca market to indicate the return to normalcy
       </>
     ),
   },
   {
     title: "Bhutto becomes a spokesperson for the Martial Law Administration",
     description:
-      "Here a news report publishes his statement saying that he demanded to share power at the center with Awami league as he did ‘not trust Mujibur rahman’s aims and intentions’",
+      "Here a news report publishes Bhutto’s statement saying that he demanded to share power at the center with Awami League as he did ‘not trust Mujibur Rahman's aims and intentions’",
   },
   {
     title:
       "A Pakistan Journalist flees to publish an article titled “Genocide” in the Sunday Times",
     description: (
       <>
-        Given the press censorship in West Pakistan, Karachi based Journalist
+        Given the press censorship in West Pakistan, Karachi-based journalist
         Anthony Mascarenhas goes into self-imposed exile to get his article
-        “Genocide”, published in the <i>Sunday Times</i>, Britain. This was the
-        first report that exposed the excesses of the Pakistan army to the world
+        “Genocide”, published in the <i>Sunday Times</i>, UK. This was the first
+        report that exposed the excesses of the Pakistan army to the world
       </>
     ),
   },
@@ -259,7 +257,7 @@ function Operation() {
             <p className={styles.view_para}>
               What followed after 25 March 1971 was a bloodbath. The military
               moved quickly to regain control in major cities and ports by
-              taking over key installations like the Radio and TV station, and
+              taking over key installations like the Radio and TV stations, and
               government offices. The human toll of ‘establishing the writ’ was
               innumerable as confirmed by survivors and the autobiographical
               accounts penned by various military officers taking part in the
@@ -293,10 +291,10 @@ function Operation() {
               verdict in favour of Sheikh Mujib’s demands for maximum political
               autonomy. From 25 March onwards, most Bengalis viewed the military
               as an occupying force. A formal declaration of independence was
-              issued, and thus began what was considered to be, a war of
+              issued; thus began what the Bengalis considered a war of
               liberation.
             </p>
-            <SectionHeading heading="Operation Searchlight begins" />
+            <SectionHeading heading="Dhaka University Operation" />
             <p className={styles.view_para}>
               One of the most controversial and bloody aspects of Operation
               Searchlight was the Pakistani military’s action at Dhaka
@@ -344,10 +342,10 @@ function Operation() {
               >
                 transcript
               </a>{" "}
-              of military units engaged in the operation at Dhaka University has
-              also survived. M B Naqvi, a Pakistani journalist, shares his
-              account of what he witnessed at the Jaganath Hall - the main
-              residential building for Hindu students at Dhaka University.
+              of the operation at Dhaka University has also available. M B
+              Naqvi, a Pakistani journalist, shares his account of what he
+              witnessed at the Jaganath Hall - the main residential building for
+              Hindu students at Dhaka University.
             </p>
           </div>
         </div>
@@ -403,7 +401,7 @@ function Operation() {
                 },
               ]}
             />
-                        <SectionHeading heading="Emergence of Paramilitary forces - Mukti Bahini, Al-Badr and Al-Shams" />
+            <SectionHeading heading="Emergence of Paramilitary forces - Mukti Bahini, Al-Badr and Al-Shams" />
             <p className={styles.view_para}>
               The widespread massacre and the fact that the Military had
               resorted to violence instead of handing over power to Sheikh Mujib
@@ -635,10 +633,8 @@ function Operation() {
               Throughout the military operation, people in West Pakistan were
               largely oblivious to the excesses committed in the name of
               national security. The political parties – especially Bhutto’s PPP
-              – were scared to voice opposition and in fact found it suitable as
-              it paved the way for Bhutto to assume the role of leadership in
-              the country. He served as the military junta’s spokesperson before
-              the international community.
+              – were scared to voice opposition. Bhutto also served as the
+              military junta’s spokesperson before the international community.
             </p>
             <p className={styles.view_para}>
               Domestically, the Pakistani reader was fed with news about the
@@ -709,15 +705,15 @@ function Operation() {
             <p className={styles.view_para}>
               Alongside widespread massacres and mass dislocations, the War
               became synonymous with sexual violence. Rape, as a number of
-              academics have shown, was employed by all parties in the conflict
+              academics have shown, was employed by all parties in the conflict,
               including and especially, the Pakistani military and its
-              paramilitary units as a weapon of war. Bangladesh, along with
+              paramilitary units, as a weapon of war. Bangladesh, along with
               other organizations, estimates the number of women raped by the
               Pakistani military and paramilitary collaborators to be in the
               hundreds of thousands. Survivors also bore witness to rape camps
               where they were incarcerated and systematically raped by Pakistani
-              soldiers. In the aftermath of the War, Mujibur rahman awarded rape
-              survivors with the honorific title of ‘Birangona’ (war heroine).
+              soldiers. In the aftermath of the War, Mujibur Rahman awarded rape
+              survivors with the honorific title of ‘Birangona’ (war heroines).
               Even so, rape survivors continued to face stigma, shaming, and
               disavowal from their families. This included the shaming and
               abandonment of an estimated tens of thousands of ‘war-babies’ –
@@ -745,12 +741,12 @@ function Operation() {
             <SectionHeading heading="War propaganda in West Pakistan" />
             <p className={styles.view_para}>
               The Pakistani military and its media wing mounted a
-              counter-propaganda offensive through its official magazine, hilal,
-              and by regulating several Urdu newspapers. To cater to an
-              international audience, the military arm-twisted several English
-              newspapers – especially those based in Dhaka – to highlight the
-              ‘atrocities’ of Bengali fighters and expose Indian conspiracies
-              against the Pakistani state.
+              counter-propaganda offensive through its official magazine,{" "}
+              <i>hilal</i>, and by regulating several Urdu newspapers. To cater
+              to an international audience, the military arm-twisted several
+              English newspapers – especially those based in Dhaka – to
+              highlight the ‘atrocities’ of Bengali fighters and expose Indian
+              conspiracies against the Pakistani state.
             </p>
             <PhotoContainer
               setDisplayedOverlay={setDisplayedOverlay}
@@ -782,12 +778,6 @@ function Operation() {
                 },
               ]}
             />
-            <p className={styles.view_para}>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Qui
-              dicta minus molestiae vel beatae natus eveniet ratione temporibus
-              aperiam harum alias officiis assumenda officia quibusdam deleniti
-              eos cupiditate dolore doloribus!
-            </p>
             <PhotoContainer
               setDisplayedOverlay={setDisplayedOverlay}
               overlayID={"9"}
@@ -830,7 +820,8 @@ function Operation() {
               and published ads invoking Jihad against Indian belligerence.
               Nevertheless, as the war drew close to a conclusion, Dhaka-based
               English newspapers joined others in celebrating the liberation of
-              Bangladesh. Hence, Pakistan Observer became Bangladesh Observer.
+              Bangladesh. Hence, <i>Pakistan Observer</i> became{" "}
+              <i>Bangladesh Observer</i>.
             </p>
             <PhotoContainer
               setDisplayedOverlay={setDisplayedOverlay}
@@ -1008,9 +999,7 @@ function Operation() {
 
       <section className={styles.content_section}>
         <div className={styles.view_content_wrapper}>
-          <div className={styles.view_content_container}>
-            
-          </div>
+          <div className={styles.view_content_container}></div>
           <div className={`${styles.selectPrompt} ${styles.margin2}`}>
             Select Dates
           </div>
@@ -1022,10 +1011,7 @@ function Operation() {
                 key={monthName}
                 onClick={(e) => setMonth(e.target.id)}
                 style={{
-                  textDecoration:
-                    month === monthName
-                      ? "underline"
-                      : "none"
+                  textDecoration: month === monthName ? "underline" : "none",
                 }}
               >
                 {monthName}
@@ -1074,7 +1060,8 @@ function Operation() {
             source: "Bangladesh Documents",
             description: (
               <span>
-                Government documents enumerating looted items by the Mukti Bahini
+                Government documents enumerating looted items by the Mukti
+                Bahini
               </span>
             ),
             title: "",
@@ -1093,7 +1080,8 @@ function Operation() {
             source: "Bangladesh Documents",
             description: (
               <span>
-                Government documents report damage caused by the Mukti Bahini to the railway lines
+                Government documents report damage caused by the Mukti Bahini to
+                the railway lines
               </span>
             ),
             title: "",
@@ -1134,24 +1122,20 @@ function Operation() {
         slides={[
           {
             source: "Wikimedia Commons",
-            description: (
-              <span>
-                Mukti Bahini Poster
-              </span>
-            ),
+            description: <span>Mukti Bahini Poster</span>,
             title: "",
             width: "40",
             render: () => (
-              <img alt={"Mukti Bahini Poster"} className={""} src={muktiPosters}></img>
+              <img
+                alt={"Mukti Bahini Poster"}
+                className={""}
+                src={muktiPosters}
+              ></img>
             ),
           },
           {
             source: "Flickr",
-            description: (
-              <span>
-                Mukti Bahini fighters undergoing training
-              </span>
-            ),
+            description: <span>Mukti Bahini fighters undergoing training</span>,
             title: "",
             width: "70",
             render: () => (
@@ -1182,7 +1166,8 @@ function Operation() {
             source: "docstrangelove",
             description: (
               <span>
-                Headline about the East Pakistan Razakaar Ordinance promulgated by Tikka Khan.{" "}
+                Headline about the East Pakistan Razakaar Ordinance promulgated
+                by Tikka Khan.{" "}
                 <a
                   className={styles.clickLinkInv}
                   href={razPayDoc}
@@ -1232,11 +1217,7 @@ function Operation() {
           },
           {
             source: "",
-            description: (
-              <span>
-                A mural celebrating Mukti Bahini
-              </span>
-            ),
+            description: <span>A mural celebrating Mukti Bahini</span>,
             title: "",
             width: "75",
             render: () => (
@@ -1786,7 +1767,11 @@ function Operation() {
             title: "",
             width: "70",
             render: () => (
-              <img alt={"General Amir Abdullah Khan Niazi"} className={""} src={war3}></img>
+              <img
+                alt={"General Amir Abdullah Khan Niazi"}
+                className={""}
+                src={war3}
+              ></img>
             ),
           },
           {

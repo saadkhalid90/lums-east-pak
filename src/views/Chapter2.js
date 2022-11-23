@@ -91,9 +91,9 @@ const newsImgArr = [
 
 const photoData = [
   {
-    title: "Bhutto demands transfer of power to two majority parties",
+    title: "Bhutto demands the transfer of power to two majority parties",
     description:
-      "Speaking to supporters in Nishtar Park, Karachi on March 14, Bhutto demands that power must be transferred to majority parties in East and West Pakistan, reinforcing the People’s party’s status as the leading political force in West Pakistan. This statement however is not received well by the Awami League leadership and is also criticized by other political parties in West Pakistan",
+      "Speaking to supporters in Nishtar Park, Karachi on March 14, Bhutto demands that power must be transferred to majority parties in East and West Pakistan, reinforcing the People’s Party’s status as the leading political force in West Pakistan. This statement, however, is not received well by the Awami League leadership and is also criticized by other political parties in West Pakistan",
   },
   {
     title: "Talks to reach a political consensus",
@@ -134,16 +134,15 @@ const photoData_ = [
   {
     title: "Awami League is banned",
     description:
-      "The president’s statement calls Mujib’s non-obedience movement an act of treason. Reports of political leaders praising the Army’s intervention are also seen. Bhutto’s famous statement ‘Pakistan is saved’ recorded in a headline",
+      "The president’s statement calls Mujib’s non-obedience movement an act of treason. Reports of political leaders praising the Army’s intervention are also seen. Bhutto’s famous statement ‘Pakistan is saved’ was recorded in a headline",
   },
   {
     title: "Army in control, Mujib house arrested",
     description: (
       <>
-        states the Martial Law Administrators official statement published in{" "}
-        <i>Dawn</i>, March 28, 1971. Bhutto’s criticism that Mujib aims to form
-        an ‘independent fascist and racist regime in East Pakistan’ is reported
-        in the news report to the left
+        Martial Law Administrator’s official statement published in <i>Dawn</i>,
+        March 28, 1971. Bhutto criticized Mujib for planning to form an
+        ‘independent fascist and racist regime in East Pakistan’.
       </>
     ),
   },
@@ -306,7 +305,7 @@ function Polls() {
               In Yahya Khan’s calculus, the elections were going to give a split
               mandate. He aimed to contrive a coalition government where he
               would continue to wield power as the country’s president. The
-              Military and its secret service generously funded religious and
+              Military and its secret service allegedly funded religious and
               conservative parties to offset the rising crescendo of socialist
               rhetoric in Pakistani politics.
             </p>
@@ -320,7 +319,7 @@ function Polls() {
               win a single seat in East Pakistan. In fact, the Awami League and
               PPP, the two winning parties, had not even fielded a candidate in
               West Pakistan and East Pakistan, respectively. The electoral split
-              that had started with the provincial elections of 1954 had reached
+              that had started with the provincial elections of 1954 reached
               political fruition in 1970.
             </p>
           </div>
@@ -382,16 +381,14 @@ function Polls() {
               What followed was a frantic attempt on the part of the military
               junta to delay the convening of the National Assembly session.
               They started discussions with the Awami League to iron out
-              differences over contentious aspects of the six points. During
-              these negotiations, the Military propped up Zulfiqar Ali Bhutto to
-              play the role of a spoiler. Bhutto warned the Awami League against
-              ignoring the PPP, which had emerged as a clear winner in West
-              Pakistan, the bastion of power in Pakistan, as Bhutto put it.
-              Hiding behind Bhutto’s theatrics, the military junta feigned
-              helplessness. In the meanwhile, there was an increase in military
-              buildup in East Pakistan. The Awami League responded by taking to
-              the streets and attacking non-Bengali residents and their
-              businesses.
+              differences over contentious aspects of the six points. Bhutto
+              warned the Awami League against ignoring the PPP, which had
+              emerged as a clear winner in West Pakistan, the bastion of power
+              in Pakistan, as Bhutto put it. Hiding behind Bhutto’s theatrics,
+              the military junta feigned helplessness. In the meanwhile, there
+              was an increase in military buildup in East Pakistan. The Awami
+              League responded by taking to the streets and attacking
+              non-Bengali residents and their businesses.
             </p>
             <PhotoContainer
               setDisplayedOverlay={setDisplayedOverlay}
@@ -434,7 +431,7 @@ function Polls() {
               anxiety about the delaying tactics used by Yahya’s negotiating
               team, Bhutto’s intransigence, and the military buildup in and
               around Dhaka. Sensing this palpable tension as the convening of
-              the national assembly was delayed once again, Mujibur rahman
+              the national assembly was delayed once again, Mujibur Rahman
               decided to assert authority by addressing a public gathering. The
               Military was anxious that Rahman might go all the way and declare
               independence. He was told in no uncertain terms that this would be
@@ -461,7 +458,7 @@ function Polls() {
             </div>
           </div>
           <div className={styles.view_content_container}>
-            <SectionHeading heading="Parliament Session" />
+            <SectionHeading heading="Parliament’s Session" />
             <p className={styles.view_para}>
               Despite Sheikh Mujib’s insistence, Yahya kept on delaying the
               convening of the inaugural session of the newly elected National
@@ -484,13 +481,13 @@ function Polls() {
           <div className={styles.view_content_container}>
             <SectionHeading heading="As the negotiations to transfer power fall apart, Awami League is outlawed" />
             <p className={styles.view_para}>
-              By the third week of March, the negotiations had reached a dead
-              end. There was a back-and-forth between the negotiating teams led
-              by Awami League’s lawyers and economists, and constitutional
-              experts appointed by the military junta. But as Yahya Khan left
-              Dhaka on the night of 24 March, everyone knew that the
-              negotiations had fallen apart. They were never meant to reach an
-              agreement. As accounts provided by Khadim Husain Raja show, the
+              By the third week of March, the negotiations were deadlocked but
+              they had not broken down. There was a back-and-forth between the
+              negotiating teams led by Awami League’s lawyers and economists,
+              and constitutional experts appointed by the military junta. But as
+              Yahya Khan left Dhaka on the night of 24 March, everyone knew that
+              the negotiations had fallen apart. They were never meant to reach
+              an agreement. As accounts provided by Khadim Husain Raja show, the
               Eastern Command had been given the task of planning a military
               operation weeks ago. Given the secrecy and general distrust of
               Bengalis, the planners made sure that no Bengali officers were
@@ -582,9 +579,7 @@ function Polls() {
             width: "45",
             render: () => (
               <img
-                alt={
-                  "A painter depicts the plight of flood-affected people"
-                }
+                alt={"A painter depicts the plight of flood-affected people"}
                 className={""}
                 src={bhola3}
               ></img>
@@ -616,12 +611,15 @@ function Polls() {
         slides={[
           {
             source: "DAWN",
-            description: "Newspaper headlines announcing Martial Law regime’s decision to delay the transfer of power",
+            description:
+              "Newspaper headlines announcing Martial Law regime’s decision to delay the transfer of power",
             title: "",
             width: "70",
             render: () => (
               <img
-                alt={"Newspaper headlines announcing Martial Law regime’s decision to delay the transfer of power"}
+                alt={
+                  "Newspaper headlines announcing Martial Law regime’s decision to delay the transfer of power"
+                }
                 className={""}
                 src={transfer1}
               ></img>
@@ -629,12 +627,15 @@ function Polls() {
           },
           {
             source: "DAWN",
-            description: "Newspaper headlines announcing Martial Law regime’s decision to delay the transfer of power",
+            description:
+              "Newspaper headlines announcing Martial Law regime’s decision to delay the transfer of power",
             title: "",
             width: "22",
             render: () => (
               <img
-                alt={"Newspaper headlines announcing Martial Law regime’s decision to delay the transfer of power"}
+                alt={
+                  "Newspaper headlines announcing Martial Law regime’s decision to delay the transfer of power"
+                }
                 className={""}
                 src={transfer3}
               ></img>
@@ -642,12 +643,15 @@ function Polls() {
           },
           {
             source: "DAWN",
-            description: "Newspaper headlines announcing Martial Law regime’s decision to delay the transfer of power",
+            description:
+              "Newspaper headlines announcing Martial Law regime’s decision to delay the transfer of power",
             title: "",
             width: "65",
             render: () => (
               <img
-                alt={"Newspaper headlines announcing Martial Law regime’s decision to delay the transfer of power"}
+                alt={
+                  "Newspaper headlines announcing Martial Law regime’s decision to delay the transfer of power"
+                }
                 className={""}
                 src={transfer2}
               ></img>

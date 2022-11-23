@@ -100,9 +100,9 @@ function AfterTheWar() {
               Pakistani soldiers back from Indian captivity.
             </p>
             <p className={styles.view_para}>
-              The Pakistani authorities had kept Sheikh Mujibur rahman in
-              prison in West Pakistan throughout the military operation. The
-              jail authorities had kept Rahman completely in the dark about the
+              The Pakistani authorities had kept Sheikh Mujibur Rahman in prison
+              in West Pakistan throughout the military operation. The jail
+              authorities had kept Rahman completely in the dark about the
               events in East Bengal. After the surrender had taken place, the
               Pakistani government came under tremendous international pressure
               to release him. Instead of sending him directly to Bangladesh, as
@@ -151,28 +151,6 @@ function AfterTheWar() {
               ensure the safety of ‘stranded Pakistanis’ in former East
               Pakistan.
             </p>
-            <SectionHeading heading="Counter propaganda" />
-            <p className={styles.view_para}>
-              The Pakistani state had to counter the propaganda at two levels.
-              For the international audience, the Martial Law regime issued a
-              ‘White Paper’ to give an account of the situation that, in their
-              view, necessitated the launch of a military operation. A
-              significant reason was the violence against West Pakistanis in
-              East Bengal that the Awami League workers had inflicted from 1
-              March onwards. The state-owned Pakistan Television also produced a
-              documentary in English to show footage of violence against West
-              Pakistani civilians and the damage to their properties by the
-              Awami League workers and Mukti Bahinis.
-            </p>
-            <p className={styles.view_para}>
-              For the domestic audiences, the Martial Law regime controlled the
-              local press to make sure that it only reported stories about the
-              defeat, capture, and killing of Mukti Bahinis and their Indian
-              handlers. When the war started in December, leading English and
-              Urdu majors reported stories about the advances of Pakistani
-              troops in West and East Pakistan and the damage that they were
-              inflicting on Indian troops.
-            </p>
             <SectionHeading heading="Pakistan's Recognition of Bangladesh" />
             <p className={styles.view_para}>
               Pakistan did not recognize the state of Bangladesh till 1974.
@@ -188,7 +166,7 @@ function AfterTheWar() {
               Pakistan’s formal recognition of Bangladesh in February 1974 at
               the occasion of the second session of the Organization of Islamic
               Countries (OIC) in Lahore was followed by a constitutional
-              amendment to redefine sovereign boundaries.
+              amendment to redefine Pakistan's sovereign boundaries.
             </p>
             <p className={styles.view_para}>
               Pakistan’s formal recognition of Bangladesh in February 1974 at
@@ -245,8 +223,8 @@ function AfterTheWar() {
                 allowFullScreen
               ></iframe>
               <p className={styles.video_caption}>
-                Zulfiqar Ali Bhutto welcomes Sheikh Mujibur rahman to Lahore
-                for the International Islamic Conference
+                Zulfiqar Ali Bhutto welcomes Sheikh Mujibur rahman to Lahore for
+                the International Islamic Conference
               </p>
             </div>
           </div>
@@ -384,7 +362,7 @@ function AfterTheWar() {
             </p>
             <p className={styles.view_para}>
               There was no such place as a home for the Biharis who were able to
-              return to what was left of Pakistan. Azmat's autobiography
+              return to what was left of Pakistan. Azmat Ashraf's autobiography
               gives a haunting account of those who survived the Bihari massacre
               in East Pakistan and their quest for a homeland, which eventually
               took him and some of his childhood friends to Canada. They still
@@ -459,7 +437,7 @@ function AfterTheWar() {
               research shows, the Pakistani state was holding Bengalis hostage
               to pressure the Bangladeshi government to return all Pakistani
               prisoners of war. The Bangladeshi government insisted on trying
-              close to 200 officers who they thought were instrumental in
+              close to 200 officers whom they thought were instrumental in
               planning and executing a genocidal operation against Bengalis.
               Under tremendous foreign pressure, the Bangladeshi government had
               to relent and did not insist on trying Pakistani officers for war
@@ -469,7 +447,7 @@ function AfterTheWar() {
             <p className={styles.view_para}>
               To probe the reasons for Pakistan’s breakup and poor military
               performance during the war, the Pakistani Government set up a
-              commission of inquiry headed by Justice Hamoodur Rahman – the
+              commission of inquiry headed by Justice Hammoodur Rahman – the
               Chief Justice of the Pakistani Supreme Court. The inquiry
               commission held marathon sessions to collect testimonies from
               hundreds of officers who had served during the war or were
@@ -521,18 +499,18 @@ function AfterTheWar() {
               claims.
             </p>
             <p className={styles.view_para}>
-              In recognition of the war crimes committed during the war, the
-              independent Bangladesh instituted an International Crimes
-              (Tribunals Act) in 1971 to provide for the ‘detention,
-              prosecution, and punishment of persons responsible for committing
-              genocide, crimes against humanity, war crimes and other crimes
-              under international law.’ It later set up an International Crimes
-              Tribunal in 2009 which over the following years tried prominent
-              suspects, many of whom were from the Jamat-i-Islami who
-              collaborated with the Pakistani Army in its military operation and
-              war crimes. Not without controversary, the trials resulted in the
-              conviction of prominent individuals who were sentenced to
-              punishments ranging from imprisonment to executions.
+              In recognition of the war crimes committed during the war,
+              Bangladesh instituted an International Crimes (Tribunals Act) in
+              1971 to provide for the ‘detention, prosecution, and punishment of
+              persons responsible for committing genocide, crimes against
+              humanity, war crimes and other crimes under international law.’ It
+              later set up an International Crimes Tribunal in 2009, which, over
+              the following years, tried prominent suspects, many of whom were
+              from the Jamat-i-Islami who collaborated with the Pakistani Army
+              in its military operation and war crimes. Not without controversy,
+              the trials resulted in the conviction of prominent individuals who
+              were sentenced to punishments ranging from imprisonment to
+              executions.
             </p>
             <div className={styles.video_contain_center}>
               <div className={styles.video_contain}>
@@ -606,9 +584,9 @@ function AfterTheWar() {
               In 2021, which marked the 50th anniversary of the liberation of
               Bangladesh, the Pakistani military mounted a PR offensive in the
               fiftieth year of Bangladesh’s independence. Its media wing – the
-              Inter-Services Public Relations (ISPR) – sponsored several films,
-              documentaries, and TV serials to peddle a narrative about the 1971
-              war that exonerated the military of any wrongdoing.
+              Inter-Services Public Relations (ISPR) – allegedly sponsored
+              films, documentaries, and TV serials to peddle a narrative about
+              the 1971 war that exonerated the military of any wrongdoing.
             </p>
             <PhotoContainer
               setDisplayedOverlay={setDisplayedOverlay}

@@ -88,7 +88,7 @@ function Background() {
               geographically fractured state. The two wings of the country – the
               majority Bengali population of East Bengal/East Pakistan and the
               multiethnic provincial units, tribal areas, and former princely
-              states comprising West Pakistan – were divided by 1200-miles of
+              states comprising West Pakistan – were divided by 1200 miles of
               Indian territory.
             </p>
             <p className={styles.view_para}>
@@ -152,7 +152,7 @@ function Background() {
               organizations commemorated this event by holding marches. They
               also built a monument to pay tribute to what they described as the
               martyrs of the Bengali language. This day, 21st February, is now
-              globally commemorated as the International Mother Language Day.
+              globally commemorated as International Mother Language Day.
             </p>
 
             <PhotoContainer
@@ -219,7 +219,7 @@ function Background() {
       <section className={styles.content_section}>
         <div className={styles.view_content_wrapper}>
           <div className={styles.view_content_container}>
-            <SectionHeading heading="East Pakistanis choose the United Front Coalition over the Muslim league in 1954 provincial elections" />
+            <SectionHeading heading="East Pakistanis choose the United Front Coalition over the Muslim League in the 1954 provincial elections" />
             <p className={styles.view_para}>
               As a result of this disillusionment with the Pakistan project soon
               after independence and the trajectory that the state had taken,
@@ -233,7 +233,7 @@ function Background() {
             </p>
             <p className={styles.view_para}>
               To their credit, the Bengali leadership, led by H. S. Suharawardy
-              – and supported by his young lieutenant – Sheikh Mujibur rahman,
+              – and supported by his young lieutenant – Sheikh Mujibur Rahman,
               put up a spirited opposition in the assembly debates between
               1954-56. They warned against the excessive rhetoric of an Islamic
               state as a ruse to push a statist agenda of homogenization, denial
@@ -260,7 +260,7 @@ function Background() {
                 },
               ]}
             />
-            <SectionHeading heading="Martial Law and the Rise of Sheikh Mujibur rahman" />
+            <SectionHeading heading="Martial Law and the Rise of Sheikh Mujibur Rahman" />
             <p className={styles.view_para}>
               This active phase of political opposition came to an end with the
               imposition of Martial Law in 1958.
@@ -269,11 +269,11 @@ function Background() {
               With the death of prominent Bengali leaders like H. S. Suharwardy,
               A. K. Fazlul Haq, and Khawaja Nazimuddin in quick succession, a
               power vacuum emerged, which was filled by the fiery and
-              charismatic Sheikh Mujibur rahman.
+              charismatic Sheikh Mujibur Rahman.
             </p>
             <p className={styles.view_para}>
               By the 1960s, in addition to the systematic denial of political
-              rights to the Bengali majority and imposition of Urdu-centric
+              rights to the Bengali majority and the imposition of Urdu-centric
               cultural policy on the region, the question of economic disparity
               had become an enormous concern. Bengali leaders felt that West
               Pakistan was gaining at the expense of East Pakistan. As
@@ -292,7 +292,7 @@ function Background() {
               Sheikh Mujib spearheaded the movement capitalizing on the
               sentiment of deprivation, inequality, unfair treatment, and
               exploitation. Despite his disillusionment with the Pakistan
-              project, Mujib made a last attempt at an all-Pakistan federal
+              project, Mujib made a last attempt at all-Pakistan federal
               politics by supporting the candidacy of Fatima Jinnah – sister of
               the late founder of the country – against ‘Field Marshal’ Ayub
               Khan. Despite the tremendous public response that she received
@@ -432,8 +432,12 @@ function Background() {
         slides={[
           {
             source: "DAWN",
-            description:
-              <span><i>Dawn</i>’s headline on the United Front’s victory over the Muslim League in 1954 elections</span>,
+            description: (
+              <span>
+                <i>Dawn</i>’s headline on the United Front’s victory over the
+                Muslim League in 1954 elections
+              </span>
+            ),
             title: "def",
             width: "70",
             render: () => (
@@ -522,7 +526,8 @@ function Background() {
             source: "Flickr",
             description: (
               <span>
-                Maulana Abdul Hamid Khan Bhashani, a popular Bengali politician at the ceremony to lay the foundation stone for{" "}
+                Maulana Abdul Hamid Khan Bhashani, a popular Bengali politician
+                at the ceremony to lay the foundation stone for{" "}
                 <i>Shahid Minar</i> (Martyrs' monument)
               </span>
             ),
