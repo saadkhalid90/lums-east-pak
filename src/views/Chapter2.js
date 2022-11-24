@@ -526,9 +526,7 @@ function Polls() {
       <Footer
         projectName="Bangladesh's Liberation War"
         projectSubTitle="A visual history"
-        projectDescription="The LUMS Digital Archive is a research repository that aims at collecting, cataloging and preserving rare material (books, pamphlets, newspapers and other items) of
-        historical significance and making them available to researchers. In particular, the archive focuses on events, groups, movements and personalities relating to broader
-        historical, political and cultural trends in South Asia, with an emphasis on preserving the accounts of marginalized and subaltern groups."
+        projectDescription="We gratefully acknowledge the contributions of Syeda Nida Hasan, Bakht Noor, Kumail Haider Jafri, Usama Liaqat, Mohid Ahsan,  Abdullah Niazi, and Noor Fatima Bokhari, who helped generate data for this project. We also thank Hafsa Omar Khawaja and Sajjadur Rahman for their input and valuable suggestions."
         prevLink="/ch1"
         nextLink="/ch3"
         chapterID={2}
@@ -700,13 +698,13 @@ function Polls() {
           {
             source: "The Friday Times",
             description:
-              "Zulfiqar Ali Bhutto ran a successful socialist campaign in West Pakistan",
+              "Zulfiqar Ali Bhutto ran a successful electoral socialist campaign in West Pakistan on the slogan of ‘Islamic Socialism’",
             title: "",
             width: "75",
             render: () => (
               <img
                 alt={
-                  "Zulfiqar Ali Bhutto ran a successful socialist campaign in West Pakistan"
+                  "Zulfiqar Ali Bhutto ran a successful electoral socialist campaign in West Pakistan on the slogan of ‘Islamic Socialism’"
                 }
                 className={""}
                 src={election4}

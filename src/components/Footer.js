@@ -117,6 +117,7 @@ function Footer({
             src={lumsLogo}
             className={styles.footer_logo}
             alt="Lahore University of Management Sciences"
+            onClick={() => {window.open("https://archive.lums.edu.pk/", "_blank")}}
           />
         </div>
         {appendixShow && (

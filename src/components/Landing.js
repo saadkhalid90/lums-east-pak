@@ -20,7 +20,13 @@ function Landing({ imgArr, title, subtitle, desc }) {
     <header className={styles.chapter_title} style={titleStyle}>
       <div className={styles.chapter_title_content}>
         <FadeRR top distance="40px" delay={100}>
-          <img className={styles.archive_logo} src={lumsLogo} />
+          <img
+            className={styles.archive_logo}
+            src={lumsLogo}
+            onClick={() =>
+              window.open("https://archive.lums.edu.pk/", "_blank")
+            }
+          />
         </FadeRR>
         <div className={styles.img_contain}>
           {imgArr.map((image, imgIdx) => (

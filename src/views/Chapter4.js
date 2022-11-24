@@ -432,9 +432,7 @@ function AfterTheWar() {
       <Footer
         projectName="Bangladesh's Liberation War"
         projectSubTitle="A visual history"
-        projectDescription="The LUMS Digital Archive is a research repository that aims at collecting, cataloging and preserving rare material (books, pamphlets, newspapers and other items) of
-      historical significance and making them available to researchers. In particular, the archive focuses on events, groups, movements and personalities relating to broader
-      historical, political and cultural trends in South Asia, with an emphasis on preserving the accounts of marginalized and subaltern groups."
+        projectDescription="We gratefully acknowledge the contributions of Syeda Nida Hasan, Bakht Noor, Kumail Haider Jafri, Usama Liaqat, Mohid Ahsan,  Abdullah Niazi, and Noor Fatima Bokhari, who helped generate data for this project. We also thank Hafsa Omar Khawaja and Sajjadur Rahman for their input and valuable suggestions."
         prevLink="/ch3"
         nextLink="/ch5"
         chapterID={4}
@@ -507,12 +505,12 @@ function AfterTheWar() {
         slides={[
           {
             source: "Amazon",
-            description: `Famous American singer ‘Joan Baez’  wrote "The Song of Bangladesh" to depict army’s crackdown on unarmed sleeping Bengali students`,
+            description: `Famous American singer ‘Joan Baez’  wrote "The Song of Bangladesh" to depict army’s crackdown on unarmed Bengali students`,
             title: "",
             width: "40",
             render: () => (
               <img
-                alt={`Famous American singer ‘Joan Baez’  wrote "The Song of Bangladesh" to depict army’s crackdown on unarmed sleeping Bengali students`}
+                alt={`Famous American singer ‘Joan Baez’  wrote "The Song of Bangladesh" to depict army’s crackdown on unarmed Bengali students`}
                 className={""}
                 src={solid1}
               ></img>

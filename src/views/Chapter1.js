@@ -376,9 +376,7 @@ function Background() {
       <Footer
         projectName="Bangladesh's Liberation War"
         projectSubTitle="A visual history"
-        projectDescription="The LUMS Digital Archive is a research repository that aims at collecting, cataloging and preserving rare material (books, pamphlets, newspapers and other items) of
-      historical significance and making them available to researchers. In particular, the archive focuses on events, groups, movements and personalities relating to broader
-      historical, political and cultural trends in South Asia, with an emphasis on preserving the accounts of marginalized and subaltern groups."
+        projectDescription="We gratefully acknowledge the contributions of Syeda Nida Hasan, Bakht Noor, Kumail Haider Jafri, Usama Liaqat, Mohid Ahsan,  Abdullah Niazi, and Noor Fatima Bokhari, who helped generate data for this project. We also thank Hafsa Omar Khawaja and Sajjadur Rahman for their input and valuable suggestions."
         prevLink="/"
         nextLink="/ch2"
         chapterID={1}
@@ -477,13 +475,13 @@ function Background() {
           {
             source: "Wikimedia Commons",
             description:
-              "Protestors demanding recognition of Bengali as a national language, 21 February 1952",
+              "Protestors commemorating the martyrs of language rights movement of  February 1952",
             title: "",
             width: "65",
             render: () => (
               <img
                 alt={
-                  "Protestors demanding recognition of Bengali as a national language, 21 February 1952"
+                  "Protestors commemorating the martyrs of language rights movement of  February 1952"
                 }
                 className={""}
                 src={blm}
@@ -493,13 +491,13 @@ function Background() {
           {
             source: "Flickr",
             description:
-              "Women students march in support of the Bengali Language movement in 1952",
+              "Commemorating the martyrs of the language rights movement of February 1952",
             title: "",
             width: "70",
             render: () => (
               <img
                 alt={
-                  "Women students march in support of the Bengali Language movement in 1952"
+                  "Commemorating the martyrs of the language rights movement of February 1952"
                 }
                 className={""}
                 src={blmWomen}
@@ -526,7 +524,7 @@ function Background() {
             source: "Flickr",
             description: (
               <span>
-                Maulana Abdul Hamid Khan Bhashani, a popular Bengali politician
+                Maulana Abdul Hamid Khan Bhashani, a popular Bengali politician,
                 at the ceremony to lay the foundation stone for{" "}
                 <i>Shahid Minar</i> (Martyrs' monument)
               </span>
@@ -536,7 +534,7 @@ function Background() {
             render: () => (
               <img
                 alt={
-                  "Maulana Abdul Hamid Khan Bhashani, a popular Bengali politician at the ceremony to lay the foundation stone for Shahid Minar (Martyrs' monument)"
+                  "Maulana Abdul Hamid Khan Bhashani, a popular Bengali politician, at the ceremony to lay the foundation stone for Shahid Minar (Martyrs' monument)"
                 }
                 className={""}
                 src={bhashaniSM}
@@ -566,13 +564,13 @@ function Background() {
           {
             source: "Art and Culture, Bangladesh",
             description:
-              "A street mural in Dhaka commemorating the Language Movement of 1952",
+              "A street mural in Dhaka commemorating the language rights movement of 1952",
             title: "def",
             width: "70",
             render: () => (
               <img
                 alt={
-                  "A street mural in Dhaka commemorating the Language Movement of 1952"
+                  "A street mural in Dhaka commemorating the language rights movement of 1952"
                 }
                 className={""}
                 src={mural}

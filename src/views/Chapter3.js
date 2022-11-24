@@ -1043,9 +1043,7 @@ function Operation() {
       <Footer
         projectName="Bangladesh's Liberation War"
         projectSubTitle="A visual history"
-        projectDescription="The LUMS Digital Archive is a research repository that aims at collecting, cataloging and preserving rare material (books, pamphlets, newspapers and other items) of
-      historical signifiance and making them available to researchers. In particular, the archive focuses on events, groups, movements and personalities relating to broader
-      historical, political and cultural trends in South Asia, with an emphasis on preserving the accounts of marginalized and subaltern groups."
+        projectDescription="We gratefully acknowledge the contributions of Syeda Nida Hasan, Bakht Noor, Kumail Haider Jafri, Usama Liaqat, Mohid Ahsan,  Abdullah Niazi, and Noor Fatima Bokhari, who helped generate data for this project. We also thank Hafsa Omar Khawaja and Sajjadur Rahman for their input and valuable suggestions."
         prevLink="/ch2"
         nextLink="/ch4"
         chapterID={3}
@@ -1081,7 +1079,7 @@ function Operation() {
             description: (
               <span>
                 Government documents report damage caused by the Mukti Bahini to
-                the railway lines
+                railway lines in East Bengal
               </span>
             ),
             title: "",
@@ -1089,7 +1087,7 @@ function Operation() {
             render: () => (
               <img
                 alt={
-                  "Government documents report damage caused by the Mukti Bahini to the railway lines"
+                  "Government documents report damage caused by the Mukti Bahini to railway lines in East Bengal"
                 }
                 className={""}
                 src={muktiRailway}
@@ -1149,13 +1147,13 @@ function Operation() {
           {
             source: "Bangladesh Tribune",
             description:
-              "ID cards of a Razakaar (member of the Pakistani government’s paramilitary force)",
+              "ID cards of a Razakar (member of the Pakistani government’s paramilitary force)",
             title: "",
             width: "55",
             render: () => (
               <img
                 alt={
-                  "ID cards of a Razakaar (member of the Pakistani government’s paramilitary force)"
+                  "ID cards of a Razakar (member of the Pakistani government’s paramilitary force)"
                 }
                 className={""}
                 src={razakaarId}
@@ -1166,7 +1164,7 @@ function Operation() {
             source: "docstrangelove",
             description: (
               <span>
-                Headline about the East Pakistan Razakaar Ordinance promulgated
+                Headline about the East Pakistan Razakar Ordinance promulgated
                 by Tikka Khan.{" "}
                 <a
                   className={styles.clickLinkInv}
@@ -1183,7 +1181,7 @@ function Operation() {
             render: () => (
               <img
                 alt={
-                  "Headline about the East Pakistan Razakaar Ordinance promulgated by Tikka Khan "
+                  "Headline about the East Pakistan Razakar Ordinance promulgated by Tikka Khan "
                 }
                 className={""}
                 src={razakaarOrd}
@@ -1777,13 +1775,13 @@ function Operation() {
           {
             source: "Wajahat Masood's personal collection",
             description:
-              "Genaral Niazi along with senior military men from the indian army during the surrender ceremony",
+              "Genaral Niazi along with senior military men from the Indian army during the surrender ceremony",
             title: "",
             width: "70",
             render: () => (
               <img
                 alt={
-                  "Genaral Niazi along with senior military men from the indian army during the surrender ceremony"
+                  "Genaral Niazi along with senior military men from the Indian army during the surrender ceremony"
                 }
                 className={""}
                 src={war4}
