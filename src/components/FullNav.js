@@ -248,6 +248,7 @@ class FullNav extends Component {
               alt="Lums Digital Archive"
               className={styles.lums_archive_logo}
               src={lumsLogo}
+              onClick={() => window.open('https://archive.lums.edu.pk/', "_blank")}
             />
           </div>
           <div className={styles.designed_by} onClick={() => this.plotree()}>
