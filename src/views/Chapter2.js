@@ -526,7 +526,7 @@ function Polls() {
       <Footer
         projectName="Bangladesh's Liberation War"
         projectSubTitle="A visual history"
-        projectDescription="We gratefully acknowledge the contributions of Syeda Nida Hasan, Bakht Noor, Kumail Haider Jafri, Usama Liaqat, Mohid Ahsan,  Abdullah Niazi, and Noor Fatima Bokhari, who helped generate data for this project. We also thank Hafsa Omar Khawaja and Sajjadur Rahman for their input and valuable suggestions."
+        projectDescription="We gratefully acknowledge the contributions of Nida Hasan, Bakht Noor, Kumail Haider Jafri, Usama Liaqat, Mohid Ahsan,  Abdullah Niazi, and Noor Fatima Bokhari, who helped generate data for this project. We also thank Hafsa Omar Khawaja and Sajjadur Rahman for their input and valuable suggestions."
         prevLink="/ch1"
         nextLink="/ch3"
         chapterID={2}

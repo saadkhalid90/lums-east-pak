@@ -161,7 +161,7 @@ function LocalNews() {
       <Footer
         projectName="Bangladesh's Liberation War"
         projectSubTitle="A visual history"
-        projectDescription="We gratefully acknowledge the contributions of Syeda Nida Hasan,
+        projectDescription="We gratefully acknowledge the contributions of Nida Hasan,
         Bakht Noor, Kumail Haider Jafri, Usama Liaqat, Mohid Ahsan,
         Abdullah Niazi, and Noor Fatima Bokhari, who helped generate data
         for this project. We also thank Hafsa Omar Khawaja and Sajjadur
