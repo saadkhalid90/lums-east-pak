@@ -1,5 +1,6 @@
 .sticky_container_container {
   position: relative;
+  width: 100%;
 }
 
 .absolute_sticky {
