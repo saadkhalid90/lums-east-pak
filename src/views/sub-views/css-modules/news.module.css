@@ -90,14 +90,17 @@
   background: white;
 }
 
-.jang {
+.boldAndGrey {
   font-weight: 700;
   color: #424242;
 }
 
-.nwakt {
-  font-weight: 700;
-  color: #1a489d
+.unBoldAndBlack {
+  font-weight: 400;
+  color: #000;
+}
+
+.jang, .nwakt {
 }
 
 .jang::before {

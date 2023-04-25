@@ -61,14 +61,16 @@ const monthArr = [
 
 function LocalNews() {
   const [month, setMonth] = useState("March");
+  const [newspaper, setNewspaper] = useState("None");
 
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
   useEffect(() => {
-    console.log(month);
-  }, [month]);
+    console.log(newspaper);
+  }, [newspaper]);
+
   return (
     <div className={styles.view_container}>
       <Navbar type="chapter_title" />
@@ -89,24 +91,51 @@ function LocalNews() {
         }
       />
 
-      <section className={styles.content_section}>
+      <section
+        className={styles.content_section}
+        onClick={(e) => setNewspaper("None")}
+      >
         <div className={styles.view_content_wrapper}>
-          <h3 className={styles.legend_header}>Text Style Legend</h3>
+          <h3 className={styles.legend_header}>Click on Newspaper Logo</h3>
           <p className={styles.legend_subheader}>
-            To separate newspaper sources
+            To highlight news from one newspaper source
           </p>
           <div className={styles.newspaper_logo_contain}>
-            <div className={styles.one_paper_contain}>
+            <div
+              className={styles.one_paper_contain}
+              onClick={(e) => {
+                setNewspaper("Dawn");
+                e.stopPropagation();
+              }}
+            >
               <img src={dawn_logo}></img>
-              <span className={styles.dawn_text}>Dawn</span>
+              <span className={newspaper === "Dawn" && styles.bold_news}>
+                Dawn
+              </span>
             </div>
-            <div className={styles.one_paper_contain}>
+            <div
+              className={styles.one_paper_contain}
+              onClick={(e) => {
+                setNewspaper("Jang");
+                e.stopPropagation();
+              }}
+            >
               <img src={jang_logo}></img>
-              <span className={styles.jang_text}>Jang</span>
+              <span className={newspaper === "Jang" && styles.bold_news}>
+                Jang
+              </span>
             </div>
-            <div className={styles.one_paper_contain}>
+            <div
+              className={styles.one_paper_contain}
+              onClick={(e) => {
+                setNewspaper("Nawai Waqt");
+                e.stopPropagation();
+              }}
+            >
               <img src={nwaqt_logo}></img>
-              <span className={styles.nwaqt_text}>Nawai Waqk</span>
+              <span className={newspaper === "Nawai Waqt" && styles.bold_news}>
+                Nawai Waqt
+              </span>
             </div>
           </div>
           <div className={styles.selectPrompt}>Select Month</div>
@@ -135,23 +164,23 @@ function LocalNews() {
           </div>
 
           {month === "March" ? (
-            <March />
+            <March newspaper={newspaper} />
           ) : month === "April" ? (
-            <April />
+            <April newspaper={newspaper} />
           ) : month === "May" ? (
-            <May />
+            <May newspaper={newspaper} />
           ) : month === "June" ? (
-            <June />
+            <June newspaper={newspaper} />
           ) : month === "July" ? (
-            <July />
+            <July newspaper={newspaper} />
           ) : month === "August" ? (
-            <August />
+            <August newspaper={newspaper} />
           ) : month === "September" ? (
-            <September />
+            <September newspaper={newspaper} />
           ) : month === "October" ? (
-            <October />
+            <October newspaper={newspaper} />
           ) : month === "November" ? (
-            <November />
+            <November newspaper={newspaper} />
           ) : (
             <December />
           )}

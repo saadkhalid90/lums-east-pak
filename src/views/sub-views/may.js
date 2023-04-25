@@ -2,17 +2,22 @@ import SectionHeading from "../../components/SectionHeading.js";
 import styles from "./css-modules/news.module.css";
 import FadeRR from "react-reveal/Fade";
 
-function May() {
+function May({newspaper}) {
+  const dawnStyles = `${styles.view_para_news} ${(newspaper === "Dawn") ? styles.boldAndGrey : styles.unBoldAndBlack}`;
+  const jangStyles = `${styles.jang} ${(newspaper === "Jang") ? styles.boldAndGrey : styles.unBoldAndBlack}`;
+  const nwaqtStyles = `${styles.nwakt} ${(newspaper === "Nawai Waqt") ? styles.boldAndGrey : styles.unBoldAndBlack}`;
+
+
   return (
     <FadeRR top distance="10px">
       <div className={styles.view_content_container}>
         <SectionHeading heading="Reports of Indian Aggression" />
-        <p className={styles.view_para_news}>
+        <p className={dawnStyles}>
           On 1st May, India was reported to have increased aid, including
           military supplies, food supplies and training facilities, to agents in
           East Pakistan according to reports published by the “New York Times”
           and “Washington Post”.
-          <span className={styles.nwakt}>
+          <span className={nwaqtStyles}>
             In the Nawa i Waqt, it was reported that “European newspapers are
             publishing misleading news regarding East Pakistan, and that Indian
             Embassy is shedding crocodile tears to the world”. On the same day,
@@ -23,8 +28,8 @@ function May() {
             teeth in chains)”
           </span>
         </p>
-        <p className={styles.view_para_news}>
-          <span className={styles.nwakt}>
+        <p className={dawnStyles}>
+          <span className={nwaqtStyles}>
             On 2nd May, two Indian warplanes were detected flying over the
             Rangpore District, in a blatant violation of Pakistan’s airspace.
           </span>
@@ -34,31 +39,31 @@ function May() {
           territorial violations by India. The Indian government was informed
           that it had been “systemically creating an atmosphere of confrontation
           with Pakistan.”
-          <span className={styles.nwakt}>
+          <span className={nwaqtStyles}>
             On 4th May, it was an Indian fighter jets was reported as having
             illegally hovered in the East Pakistan air.
           </span>
         </p>
-        <p className={styles.view_para_news}>
+        <p className={dawnStyles}>
           On 5th May, the East Wing people were reported to be critical of
           separatist ideals, claiming that secession would prelude to slavery to
           India. According to APP’s special correspondent’s reports, a public
           meeting held at an urban village in Khulna concluded with a firm
           resolution to uphold the sanctity and solidarity of Pakistan, and
           thwart India’s attempts at instigation.
-          <span className={styles.nwakt}>
+          <span className={nwaqtStyles}>
             9th May: At the same time, there were mass protests in East Pakistan
             over Indian aggression.
           </span>
         </p>
-        <p className={styles.view_para_news}>
+        <p className={dawnStyles}>
           Then on 11th May in Jessore, armed incursions organised by India
           violated Pakistan’s territorial integrity. Firing on various border
           posts was observed, while India provided substantial logistical
           support to the miscreants. The common pattern in incursions involved
           bursts of mortar and machine-gun fire by Indians, and their immediate
           withdrawal as soon as the Pakistan Army retaliated.
-          <span className={styles.nwakt}>
+          <span className={nwaqtStyles}>
             On 14th May, India posted seven armed divisions in borders with
             Azaad Kashmir, while on 20th May, Indira Gandhi warned of an
             impending war with Pakistan. On 26th May, it was reported that
@@ -66,7 +71,7 @@ function May() {
             Many were killed, injured, and taken in custody.
           </span>
         </p>
-        <p className={styles.view_para_news}>
+        <p className={dawnStyles}>
           On 26th May, the Government of Pakistan strongly protested against
           India’s “unprovoked threat of armed conflict with Pakistan.” Indira
           Gandhi had said in a statement released earlier on May 19 that India
@@ -74,7 +79,7 @@ function May() {
           note to the Indian High Commissioner expressed that India’s aim was to
           create a situation of conflict with Pakistan, and Delhi was urged to
           restrain from pursuing such a dangerous course in politics.
-          <span className={styles.nwakt}>
+          <span className={nwaqtStyles}>
             On 27th May, Indira said that India will attack Pakistan without
             caring for the views of thebig countries. On 29th May, it was
             reported that India was carrying out preparations for a war on the
@@ -82,14 +87,14 @@ function May() {
           </span>
         </p>
         <SectionHeading heading="International Affairs" />
-        <p className={styles.view_para_news}>
+        <p className={dawnStyles}>
           On 1st May, Pakistan’s chief delegate to the CENTO conference stressed
           the difficulty in establishing good relations between India and
           Pakistan, following India’s “open interference” in Pakistan’s internal
           affairs. The United Nations Secretary-General U Thant also reached an
           agreement with Yahya Khan to provide humanitarian aid to East
           Pakistan.
-          <span className={styles.nwakt}>
+          <span className={nwaqtStyles}>
             13 May: At the same time, english Newspapers continued publishing
             inflammatory material against Pakistan. On 24th May, Nawa i Waqt
             posited that the situation in East Pakistan was result of a
@@ -101,8 +106,8 @@ function May() {
           had met back in July.
         </p>
         <SectionHeading heading="Awami League’s Secessionist Plot?" />
-        <p className={styles.view_para_news}>
-          <span className={styles.nwakt}>
+        <p className={dawnStyles}>
+          <span className={nwaqtStyles}>
             2nd May: “Me and many Awami league people were patriotic but didn’t
             know the anti-Pakistan intentions of some groups within the league”,
             says S B Zaman.
@@ -117,8 +122,8 @@ function May() {
           seeking aid from Israel’s Prime Minister, Golda Meir.
         </p>
         <SectionHeading heading="Domestic Politics and Plans for Transfer of Power" />
-        <p className={styles.view_para_news}>
-          <span className={styles.nwakt}>
+        <p className={dawnStyles}>
+          <span className={nwaqtStyles}>
             1st May: Abdul Qayoom Khan of Muslim League calls for a new election
             in East Pakistan so both wings can get the transfer of power
             together. People’s Party in disarray, ZA Bhutto admits. 2nd May: a
@@ -136,14 +141,14 @@ function May() {
           He also declared that the Government would grant amnesty to all those
           who were “genuinely misled,” but not to those who had rebelled and
           committed crimes such as murders, loot and arson.
-          <span className={styles.nwakt}>
+          <span className={nwaqtStyles}>
             25 May: Yahya Khan gives the estimate of two to three weeks within
             which power would be transferred to ‘representatives of the people’
           </span>
         </p>
         <SectionHeading heading="Situation in the East Wing?" />
-        <p className={styles.view_para_news}>
-          <span className={styles.nwakt}>
+        <p className={dawnStyles}>
+          <span className={nwaqtStyles}>
             1 May: Awami League and Hindus in alliance killed innocent people.
             Only in Chatgram on the 3rd of march, 500 women, children and men
             were burned alive. 4 kill chambers set up across east pakistan.

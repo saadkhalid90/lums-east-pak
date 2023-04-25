@@ -2,12 +2,16 @@ import SectionHeading from "../../components/SectionHeading.js";
 import styles from "./css-modules/news.module.css";
 import FadeRR from "react-reveal/Fade";
 
-function June() {
+function June({newspaper}) {
+  const dawnStyles = `${styles.view_para_news} ${(newspaper === "Dawn") ? styles.boldAndGrey : styles.unBoldAndBlack}`;
+  const jangStyles = `${styles.jang} ${(newspaper === "Jang") ? styles.boldAndGrey : styles.unBoldAndBlack}`;
+  const nwaqtStyles = `${styles.nwakt} ${(newspaper === "Nawai Waqt") ? styles.boldAndGrey : styles.unBoldAndBlack}`;
+
   return (
     <FadeRR top distance="10px">
       <div className={styles.view_content_container}>
         <SectionHeading heading="Reports of Indian Aggression and hostility" />
-        <p className={styles.view_para_news}>
+        <p className={dawnStyles}>
           India was reported to be conspiring in East Pakistan. East Pakistan
           provided an opportunity to exercise complete autonomy over the Bay of
           Bengal and link the violent elements of West Bengal with the
@@ -20,7 +24,7 @@ function June() {
           farce of ‘Bangla Desh radio,’ claiming that the radio was located in
           India.
         </p>
-        <p className={styles.view_para_news}>
+        <p className={dawnStyles}>
           On 2 June, Indira Gandhi was asked by an Indian Parliamentarian,
           Baburao Patel to launch an invasion of West Pakistan. West Pakistan
           was considered as a “fortnight’s meal” for the sophisticated Indian
@@ -30,8 +34,8 @@ function June() {
           belongings. This depicted that India was preventing bona fide
           Pakistani nationals from returning to East Pakistan.
         </p>
-        <p className={styles.view_para_news}>
-          <span className={styles.jang}>
+        <p className={dawnStyles}>
+          <span className={jangStyles}>
             4 June: India training 30,000 militants near West pakistan border,
             to be sent to invade Pakistan in September. On 17 June, the Indian
             Army and Border Security Forces executed unprovoked shelling and
@@ -46,14 +50,14 @@ function June() {
             movement. 22 June: Indira Gandhi orders Indian army to get ready.
           </span>
         </p>
-        <p className={styles.view_para_news}>
+        <p className={dawnStyles}>
           The Government lodged a strong protest with the Indian government in
           response. On June 24, Pakistan raised attention of the heads of
           Government of all states to the “mounting threat to peace and security
           in the subcontinent as a result of India’s policy and actions.”
           India’s false propaganda campaigns were also being met with great
           criticism.
-          <span className={styles.jang}>
+          <span className={jangStyles}>
             25 June: 12 Pakistani soldiers killed by firing from Indian army. 26
             June: large caravans of Indian army moving towards East pakistan
             border.
@@ -62,22 +66,22 @@ function June() {
           Chittagong University Campus by the Pakistan Army was refuted. The
           University’s teachers and Vice-Chancellor denounced it as a “shame
           faced lie.”
-          <span className={styles.jang}>
+          <span className={jangStyles}>
             30 June: Aggressive firing of Indian army result in 20 Pakistanis
             killed and injured.
           </span>
         </p>
         <SectionHeading heading="Unrest in India" />
-        <p className={styles.view_para_news}>
-          <span className={styles.jang}>
+        <p className={dawnStyles}>
+          <span className={jangStyles}>
             2 June: West Bengal and Kashmir both wanting independence from
             India. 28 June: In the past 2 years, 2600 major personalities have
             been assassinated in West Bengal.
           </span>
         </p>
         <SectionHeading heading="The Refugees" />
-        <p className={styles.view_para_news}>
-          <span className={styles.jang}>
+        <p className={dawnStyles}>
+          <span className={jangStyles}>
             2 June: Hundreds of muslims died in Indian camps of hunger and
             disease. The indian authorities only looking after the Hindus,
             leaving the muslims to die. Not being buried too, instead throwing
@@ -87,7 +91,7 @@ function June() {
           systemic campaign to prevent East Pakistani refugees in India from
           returning to their homes. This was being done through malicious
           propaganda and intimidation tactics.
-          <span className={styles.jang}>
+          <span className={jangStyles}>
             5 June: 23,000 refugees pushed to death by conduct of indian
             authorities
           </span>
@@ -97,13 +101,13 @@ function June() {
           and Martial Law Administrator, General Tikka Khan issued a call to the
           people of East Pakistan- who had left their homes under pressures of
           Indian propaganda- to return to their homes.
-          <span className={styles.jang}>
+          <span className={jangStyles}>
             18 June: extreme goonda gardi against muslims in refugee camps. 19
             June: Christians too being persecuted in West Bengal refugee camps.
           </span>
         </p>
         <SectionHeading heading="An Impending Refugee Crisis" />
-        <p className={styles.view_para_news}>
+        <p className={dawnStyles}>
           On June 13, Calcutta launched a crackdown on East Pakistan refugees
           who had been shifting to the city. Refugees were perceived to crowd
           roads and the facilities provided to them. On June 15, Indira Gandhi
@@ -112,7 +116,7 @@ function June() {
           further told the Parliament that India would not accept any political
           settlement that might mean the demise of “Bangla Desh.”
         </p>
-        <p className={styles.view_para_news}>
+        <p className={dawnStyles}>
           Meanwhile, the influx of Pakistani nationals increased following
           President Yahya Khan’s assurance of amnesty. Despite emaciated
           conditions and tattered clothes, the returnees were reported to beam
@@ -122,7 +126,7 @@ function June() {
           in East Pakistan. At the same time, DPs confirmed incidents of
           atrocities, coercion and intimidation by India.
         </p>
-        <p className={styles.view_para_news}>
+        <p className={dawnStyles}>
           On 18 June, Yahya Khan appealed to all Pakistani nationals-
           irrespective of caste, creed and religion- who had left Pakistan for
           India, to return to their homes in East Pakistan. Citizens belonging
@@ -130,13 +134,13 @@ function June() {
           they were to be treated as equal citizens, with promises of full
           protection.
         </p>
-        <p className={styles.view_para_news}>
+        <p className={dawnStyles}>
           On June 25, 100 East Wing DPs perished of starvation. The refugees had
           been experiencing maltreatment in Assam town.
         </p>
         <SectionHeading heading="Internal Politics" />
-        <p className={styles.view_para_news}>
-          <span className={styles.jang}>
+        <p className={dawnStyles}>
+          <span className={jangStyles}>
             4 June: Patriotic members of banned Awami league to form new
             political party soon. 6 June: East Pakistan has been completely
             clear of all rebels and manipulators. 16 June: Pakistan Army ready
@@ -146,14 +150,14 @@ function June() {
           </span>
         </p>
         <SectionHeading heading="The U.N’s Relief Operations" />
-        <p className={styles.view_para_news}>
+        <p className={dawnStyles}>
           On 5 June, the Pakistan Government and the United Nations reached full
           agreement on the organisation of relief operations in East Pakistan.
           By June 12, a UN coordination system for aid to East Wing was set up
           and Pakistan was regarded as the most receptive and cooperative to aid
           by the UN-Under-Secretary-General Ismat Kittani.
         </p>
-        <p className={styles.view_para_news}>
+        <p className={dawnStyles}>
           The UN also announced to provide relief to the returning DPs in the
           East Wing and post their representative at Dacca. The statement was
           simultaneously issued both from Islamabad and Geneva at the end of the
@@ -162,14 +166,14 @@ function June() {
           India.
         </p>
         <SectionHeading heading="On the International Front" />
-        <p className={styles.view_para_news}>
+        <p className={dawnStyles}>
           On 8 June, Indian interference was reportedly snubbed again- by Japan
           this time. Prime Minister Eisaku Sato told the Indian Education
           Minister, Siddhartha Shanker Ray that political intervention in
           Pakistan’s internal affairs should be eschewed.
         </p>
         <SectionHeading heading="Transfer of Power" />
-        <p className={styles.view_para_news}>
+        <p className={dawnStyles}>
           On June 28, President Yahya Khan announced his plan to transfer power
           to the elected representatives of the people at both National and
           Provincial levels, in a period of about fourth months. In a

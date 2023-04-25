@@ -346,6 +346,7 @@ function Polls() {
         </div>
         <div className={styles.view_content_wrapper}>
           <div className={styles.view_content_container}>
+            <SectionHeading heading="Photographs from the 1971 election" />
             <PhotoContainer
               setDisplayedOverlay={setDisplayedOverlay}
               overlayID={"3"}

@@ -727,7 +727,7 @@ function Operation() {
                 {
                   image: birangona1,
                   caption:
-                    "Mujibur rahman awarded rape survivors with the honorific title of ‘Birangona’",
+                    "Mujibur Rahman awarded rape survivors with the honorific title of ‘Birangona’",
                   widthID: "thirty",
                 },
                 {
@@ -2084,13 +2084,13 @@ function Operation() {
           {
             source: "theguardian.com",
             description:
-              "Mujibur rahman awarded rape survivors with the honorific title of ‘Birangona’",
+              "Mujibur Rahman awarded rape survivors with the honorific title of ‘Birangona’",
             title: "",
             width: "35",
             render: () => (
               <img
                 alt={
-                  "Mujibur rahman awarded rape survivors with the honorific title of ‘Birangona’"
+                  "Mujibur Rahman awarded rape survivors with the honorific title of ‘Birangona’"
                 }
                 className={""}
                 src={birangona1}

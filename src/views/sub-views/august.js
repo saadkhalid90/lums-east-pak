@@ -2,12 +2,17 @@ import SectionHeading from "../../components/SectionHeading.js";
 import styles from "./css-modules/news.module.css";
 import FadeRR from "react-reveal/Fade";
 
-function August() {
+function August({newspaper}) {
+  const dawnStyles = `${styles.view_para_news} ${(newspaper === "Dawn") ? styles.boldAndGrey : styles.unBoldAndBlack}`;
+  const jangStyles = `${styles.jang} ${(newspaper === "Jang") ? styles.boldAndGrey : styles.unBoldAndBlack}`;
+  const nwaqtStyles = `${styles.nwakt} ${(newspaper === "Nawai Waqt") ? styles.boldAndGrey : styles.unBoldAndBlack}`;
+
+
   return (
     <FadeRR top distance="10px">
       <div className={styles.view_content_container}>
         <SectionHeading heading="Situation in East Pakistan" />
-        <p className={styles.view_para_news}>
+        <p className={dawnStyles}>
           On August 1, President Yahya Khan urged the financial and banking
           community to help revive the East Wing economy and accelerate the
           development process. Banks were asked to establish booths in order to
@@ -16,7 +21,7 @@ function August() {
           breathed a sigh of relief over the suppression of armed revolt staged
           by the Awami League secessionists along with their Indian
           counterparts.
-          <span className={styles.jang}>
+          <span className={jangStyles}>
             On 1 Aug Daultana was reported as saying that he will oppose any
             attempt to transfer power by force and that he believes majority of
             the people of E Pak are patriotic. On 3 Aug, Abdul Qayyum Khan says
@@ -29,8 +34,8 @@ function August() {
           the people’s representatives “as soon as possible,” which according to
           his assessment would take three to four months.
         </p>
-        <p className={styles.view_para_news}>
-          <span className={styles.jang}>
+        <p className={dawnStyles}>
+          <span className={jangStyles}>
             As violence done by the Awami League ‘goons’ was deplored, it was
             warned that the dignity of no one’s wife or daughter is safe in
             Bengali camps and that the spends all time in drink and dance. On 7
@@ -58,7 +63,7 @@ function August() {
           The influx of displaced Pakistani nationals continued despite many
           obstructions. By August 7, five thousand more DPs had returned to East
           Pakistan, including 600 non-Muslims.
-          <span className={styles.jang}>
+          <span className={jangStyles}>
             Claims were also being made that Urdu gives the message of love and
             that it is not the opponent of any language. It was also announced
             that the membership of 88 members of the outlawed AL will remain
@@ -69,8 +74,8 @@ function August() {
             begin in the military court on the 12 Aug.
           </span>
         </p>
-        <p className={styles.view_para_news}>
-          <span className={styles.jang}>
+        <p className={dawnStyles}>
+          <span className={jangStyles}>
             It was also reported on 11 Aug that Razakaars had put several Indian
             agents to death. Bhutto announced that he will visit E Pak to talk
             with the elected members of the Awami League in order to make PPP a
@@ -100,8 +105,8 @@ function August() {
             “Jhooti Aakash Vaani” and all the famous stars will take part in it.
           </span>
         </p>
-        <p className={styles.view_para_news}>
-          <span className={styles.jang}>
+        <p className={dawnStyles}>
+          <span className={jangStyles}>
             Jamaat E Islami says that the respect for law is diminishing and
             peaceful citizens are being harassed. 24 Indian agents killed, 33
             arrested. They had Indian made machine guns, rifles, hand grenades
@@ -113,8 +118,8 @@ function August() {
             while blackout exercises were to take place in Karachi that night.
           </span>
         </p>
-        <p className={styles.view_para_news}>
-          <span className={styles.jang}>
+        <p className={dawnStyles}>
+          <span className={jangStyles}>
             On 29 Aug Yahya is reported as being keen to establish a civil
             government. He says that if India doesn’t obstruct, the refugees
             could be returned to their homes in 2 months. Maulana Hazarvi says
@@ -127,8 +132,8 @@ function August() {
           </span>
         </p>
         <SectionHeading heading="U.N on the East Wing Situation" />
-        <p className={styles.view_para_news}>
-          <span className={styles.jang}>
+        <p className={dawnStyles}>
+          <span className={jangStyles}>
             On 1 Aug it was reported that the aid promised by the UN for the
             refugees still hadn’t reached Pakistan. Pak would welcome debates on
             Pak-India tensions in the UN Security Council, while it was claimed
@@ -141,15 +146,15 @@ function August() {
           force nor an observer group. Later, U Thant announced his
           determination of persuading India into accepting the U.N’s proposal of
           stationing observers on both sides of the India-East Pakistan border.
-          <span className={styles.jang}>
+          <span className={jangStyles}>
             On 12 Aug, it was reported that U Thant will assign international
             experts in E Pak. He also presented a cheque for a million dollars
             for the aid of the homeless people in E Pak.
           </span>
         </p>
         <SectionHeading heading="Increased Indo-Pak Hostility" />
-        <p className={styles.view_para_news}>
-          <span className={styles.jang}>
+        <p className={dawnStyles}>
+          <span className={jangStyles}>
             On 1 Aug, it was reported that Pakistan had informed the global
             powers of the threat of war, while it was clearly stated that India
             was supplying arms to the Mukhti army. Moreover, the International
@@ -169,24 +174,24 @@ function August() {
           East Pakistan, formulated by the outlawed Awami League was also
           uncovered. The Party’s high command was supposed to signal the
           program’s launch on March 26. (White paper and plan clippings)
-          <span className={styles.jang}>
+          <span className={jangStyles}>
             On 9 Aug it was reported that India planned to officially recognise
             Bangladesh on 15 Aug, as it hastened to get Russian support for the
             ‘so-called Bangladesh’.
           </span>
         </p>
-        <p className={styles.view_para_news}>
-          <span className={styles.jang}>
+        <p className={dawnStyles}>
+          <span className={jangStyles}>
             On 8 Aug, Pak High Commission in Delhi was attacked by Jan Sanghi
             mob. On 9 Aug, Russia and India sign a defence agreement whereby
             attack on one would be considered an attack on the other.
           </span>
           On August 10, there were reports of unprovoked shelling at the Rangpur
           border,
-          <span className={styles.jang}>which left 20 Pakistanis dead.</span>
+          <span className={jangStyles}>which left 20 Pakistanis dead.</span>
           Indian regular troops were reported to have initiated routine attacks
           on the East Pakistan border outposts.
-          <span className={styles.jang}>
+          <span className={jangStyles}>
             Reports also came where Abdul Ghaffar Khan was called a traitor for
             having delivered a speech broadcast on Radio Kabul where he said
             that Mujib and his party have committed no crime and that their only
@@ -195,7 +200,7 @@ function August() {
           The next day, Swaran Singh, the Indian Foreign Minister announced that
           no country, even the Soviet Union, could restrain India from resorting
           to unilateral action in East Pakistan.
-          <span className={styles.jang}>
+          <span className={jangStyles}>
             While Pakistan protested that by entering into a treaty with India,
             Russia had violated the Tashkent Agreement. Bhutto, nevertheless,
             called for a review of the foreign policy in view of this agreement.
@@ -219,13 +224,13 @@ function August() {
           Pakistan’s proposal for establishing a good offices committee
           consisting of U.N Security Council members, who would visit India and
           Pakistan to placate tensions.
-          <span className={styles.jang}>
+          <span className={jangStyles}>
             Statements came from Pak urging the Indian leaders to stop their
             government from committing acts of war.
           </span>
         </p>
         <SectionHeading heading="Independence Day" />
-        <p className={styles.view_para_news}>
+        <p className={dawnStyles}>
           On the eve of Independence Day, Yahya Khan reiterated his pledge to
           defend Pakistan and asserted that the prevalent crisis had cemented a
           stronger nation. On August 14, Bhutto also summoned the people to
@@ -236,22 +241,22 @@ function August() {
           country.
         </p>
         <SectionHeading heading="Floods in East Pakistan" />
-        <p className={styles.view_para_news}>
+        <p className={dawnStyles}>
           There was heavy flooding in East Pakistan.
-          <span className={styles.jang}>
+          <span className={jangStyles}>
             It was reported as early as on 10 August, that the water-levels of 3
             rivers in E Pak were rising rapidly.
           </span>
           By August 24, floods had affected six districts and threatened to
           inundate more areas, as water levels continued to rise. At least 60
           people perished and another 40 lakh became homeless.
-          <span className={styles.jang}>
+          <span className={jangStyles}>
             Yahya establishes a panel for relief work in E Pak. Floods destroy
             3.5 lakh houses in E Pak.
           </span>
           The flood situation was specifically described as unprecedented in the
           districts of Kushtia. Crops and property worth Rs. 470m were damaged.
-          <span className={styles.jang}>
+          <span className={jangStyles}>
             Floods destroy crops worth 5 crore in E Pak. Flood conditions
             continue to worse in 5 districts of E Pak including Faridpur and
             Jessore.
@@ -259,7 +264,7 @@ function August() {
           Eventually, Bhutto made a plea for monetary help to the people of East
           Pakistan, and appealed to the four provincial governors in West
           Pakistan to launch Governor’s relief funds.
-          <span className={styles.jang}>
+          <span className={jangStyles}>
             Tikka Khan says that no one in need will be denied necessary aid. On
             30 Aug the flood was reported to have entered Dhaka city.
           </span>

@@ -1,13 +1,19 @@
 import SectionHeading from "../../components/SectionHeading.js";
 import styles from "./css-modules/news.module.css";
 import FadeRR from "react-reveal/Fade";
+import { useEffect } from "react";
 
-function April() {
+function April({newspaper}) {
+  const dawnStyles = `${styles.view_para_news} ${(newspaper === "Dawn") ? styles.boldAndGrey : styles.unBoldAndBlack}`;
+  const jangStyles = `${styles.jang} ${(newspaper === "Jang") ? styles.boldAndGrey : styles.unBoldAndBlack}`;
+  const nwaqtStyles = `${styles.nwakt} ${(newspaper === "Nawai Waqt") ? styles.boldAndGrey : styles.unBoldAndBlack}`;
+
+
   return (
     <FadeRR top distance="10px">
       <div className={styles.view_content_container}>
         <SectionHeading heading="India Gets Involved" />
-        <p className={styles.view_para_news}>
+        <p className={dawnStyles}>
           On 31st March, the Indian Parliament unanimously adopted a resolution
           expressing solidarity with the people of East Pakistan and assured
           them with the provision of “whole hearted support.” The resolution
@@ -15,7 +21,7 @@ function April() {
           hostile and outrageous act by Pakistan. Meanwhile, life in East
           Pakistan gradually returned to normal economic life as peaceful
           conditions prevailed.
-          <span className={styles.jang}>
+          <span className={jangStyles}>
             As reports of peace came from Dhaka, Tikka Khan said that work hard
             must be directed towards rectifying the economic loss. As operations
             against insurgents in Chaatgaam were concluded, Maududi claimed that
@@ -25,14 +31,14 @@ function April() {
           </span>
         </p>
         <SectionHeading heading="Tensions Escalate With India" />
-        <p className={styles.view_para_news}>
+        <p className={dawnStyles}>
           On 1st April, reports of infiltration of armed Indians in the border
           areas of East Pakistan were received. The situation deteriorated and
           Pakistan warned India of “serious consequences” if India continued to
           intervene in Pakistan’s internal affairs. Indian authorities were also
           reported to have taken measures to supply the insurgent elements with
           arms and ammunition.
-          <span className={styles.jang}>
+          <span className={jangStyles}>
             In view of the new situation, Maududi asked for the implementation
             of the constitutional draft of 1954. At the same time, the supply of
             water and electricity was restored in East Pakistan. Those who had
@@ -47,8 +53,8 @@ function April() {
           Forces. Despite earning a bulk of the foreign exchange, 80% of the
           foreign exchange was spent on West Pakistan.
         </p>
-        <p className={styles.view_para_news}>
-          <span className={styles.jang}>
+        <p className={dawnStyles}>
+          <span className={jangStyles}>
             Bhutto states that he was not surprised at Indian aggression and the
             government should not hesitate to take the necessary measures. JUI
             claimed that it would prepare mujahideen in case a jihad is
@@ -58,14 +64,14 @@ function April() {
           </span>
           On 4th April, India airlifted additional troops to East Pakistan’s
           border.
-          <span className={styles.jang}>
+          <span className={jangStyles}>
             A group of Indian cars was destroyed on their way to Sylhet.
           </span>
           Several advocates from East Pakistan also condemned India, claiming
           that the “blatant interference aimed at undoing Pakistan.”
         </p>
-        <p className={styles.view_para_news}>
-          <span className={styles.jang}>
+        <p className={dawnStyles}>
+          <span className={jangStyles}>
             There were atttempts to frame the issue as one of Hindu aggression:
             Mujib was portrayed as a pawn of the enemy, and Indian agent. On 5
             April, India deployed 5 divisions of its army on its East Pakistan
@@ -77,14 +83,14 @@ function April() {
           action. On April 6, the situation aggravated in the state of West
           Bengal following reports of liquidation of Bengali soldiers by the
           Pakistan Army in East Wing.
-          <span className={styles.jang}>
+          <span className={jangStyles}>
             Yahya, meanwhile, state that the population had not given Awami
             League the right to undo the country, while Bhutto expressed faith
             in China to come to Pakistan’s aid.
           </span>
         </p>
         <SectionHeading heading="India’s Appeal to the UN" />
-        <p className={styles.view_para_news}>
+        <p className={dawnStyles}>
           In the United Nations, India claimed that it had been showing "great
           restraint,” and summoned the international community to take action
           against Pakistan Army’s increasing “repression” in East Pakistan. On
@@ -93,7 +99,7 @@ function April() {
           Pakistan, and did not warrant a UN intervention.
         </p>
         <SectionHeading heading="China’s Criticism of India" />
-        <p className={styles.view_para_news}>
+        <p className={dawnStyles}>
           On April 8, China voiced criticism against India’s interference in
           Pakistan’s domestic affairs and warned India that it had been
           “flagrantly interfering in the internal affairs of Pakistan.” Later,
@@ -103,7 +109,7 @@ function April() {
           against Indian oppression.
         </p>
         <SectionHeading heading="Coverage of Indian Infiltration by International Press" />
-        <p className={styles.view_para_news}>
+        <p className={dawnStyles}>
           The “Yorkshire Post” expressed in an editorial that if India used the
           East Pakistan situation as a pretext for intervention, it would birth
           grave consequences. Arab newspapers also expressed fervent hopes for
@@ -115,8 +121,8 @@ function April() {
           confirmed by newspaper reports in “The Times” and the “Guardian.’
         </p>
         <SectionHeading heading="Pakistan’s Armed Forces Regain Control of East Pakistan" />
-        <p className={styles.view_para_news}>
-          <span className={styles.jang}>
+        <p className={dawnStyles}>
+          <span className={jangStyles}>
             On 6th April, Pakistan army took a great pile of Indian ammunition
             in its possession. On 7th April, Pak Army neutralised 20000 Indian
             terrorists, while on 8th April, Sylhet, Rangpur, and Rajshahi were
@@ -132,22 +138,22 @@ function April() {
           citizens cooperated with the local Martial Law authorities, according
           to sources.
         </p>
-        <p className={styles.view_para_news}>
-          <span className={styles.jang}>
+        <p className={dawnStyles}>
+          <span className={jangStyles}>
             PPP delcared that the blame for the actions of Awami League couldn’t
             be laid on 7 crore Pakistanis and that PPP will struggle for the
             rights of the people of East Pakistan. On 10th April, Tikka Khan
             took oath as the governor of East Pakistan. On 11th April, a peace
             committee consisting of 40 notable citizens of Dhaka was formed.
           </span>
-          <span className={styles.jang}>On 12th April, </span>
+          <span className={jangStyles}>On 12th April, </span>
           two Indian BSF (Border Security Force) companies operating within the
           Pakistan territory, particularly{" "}
-          <span className={styles.jang}>Jessore</span>, were wiped out by the
+          <span className={jangStyles}>Jessore</span>, were wiped out by the
           Pakistan Army.
         </p>
-        <p className={styles.view_para_news}>
-          <span className={styles.jang}>
+        <p className={dawnStyles}>
+          <span className={jangStyles}>
             On 14th April, it is reported that both Pakistan and Indian armies
             had assembled before each other and a full scale war in Binapol was
             likely at any moment. At the same time, there were reports of
@@ -157,15 +163,15 @@ function April() {
           Brahmanbaria in Comilla sector and Meherpur in the Kushtia region,
           without meeting any resistance - disproving India’s claim that
           Brahmanbaria was the stronghold of anti-State elements.
-          <span className={styles.jang}>
+          <span className={jangStyles}>
             On 20th April, Tikka Khan declared that Pak Army will not allow East
             Pakistan to become a slave of India. Official report on the
             hijacking of an Indian plane in January was released where it was
             concluded that it was orchestrated by Indian Intelligence.
           </span>
         </p>
-        <p className={styles.view_para_news}>
-          <span className={styles.jang}>
+        <p className={dawnStyles}>
+          <span className={jangStyles}>
             It was claimed in the newspapers that the goons of the Awami League
             used to kidnap girls from noble families and bring them to the Dhaka
             University.
@@ -180,8 +186,8 @@ function April() {
           facilitate insurgents in East Pakistan.
         </p>
         <SectionHeading heading="An Independent Republic of “Bangla Desh”?" />
-        <p className={styles.view_para_news}>
-          <span className={styles.jang}>
+        <p className={dawnStyles}>
+          <span className={jangStyles}>
             On 15th April, an official Bangladeshi government is established
             with Mujib as the Rashttar Pati and Tajuddin as the Prime Minister.
             Pakistan announces that it would consider the recognition of this
@@ -196,15 +202,15 @@ function April() {
           mobilising more infiltrators - up to 10,000 ex-servicemen - to
           facilitate insurgents in East Pakistan.
         </p>
-        <p className={styles.view_para_news}>
-          <span className={styles.jang}>
+        <p className={dawnStyles}>
+          <span className={jangStyles}>
             Yahya planned to present a constitution with a strong center and
             sufficient provincial autonomy.
           </span>
           Meanwhile, normalcy was observed in Jessore, Kushtia and Khulna as the
           Pakistan Army secured main points on Indo-Pakistan border in the
           Western region.
-          <span className={styles.jang}>
+          <span className={jangStyles}>
             At the same time, anti-India and anti-Hindu sentiment flared in
             Pakistan. At the same time, the violence of the Awami League was
             criticised.] [J: On 22nd April, the hotel where Pakistani Deputy
@@ -213,8 +219,8 @@ function April() {
             and ordered India to do the same in Dhaka.
           </span>
         </p>
-        <p className={styles.view_para_news}>
-          <span className={styles.jang}>
+        <p className={dawnStyles}>
+          <span className={jangStyles}>
             As numerous members of the Jamaat E Islami were killed by the
             separatists, an ordinance for the control of newspapers was imposed
             on 26th April. On 27th April, India placed restrictions on the

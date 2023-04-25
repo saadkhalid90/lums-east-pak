@@ -1,5 +1,5 @@
 import "./App.css";
-import preloadImage from "./resources/navBG.png";
+import preloadImage from "./resources/navBG.jpg";
 import { useEffect, useState } from "react";
 
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";

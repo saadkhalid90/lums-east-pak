@@ -168,12 +168,6 @@ function AfterTheWar() {
               Countries (OIC) in Lahore was followed by a constitutional
               amendment to redefine Pakistan's sovereign boundaries.
             </p>
-            <p className={styles.view_para}>
-              Pakistan’s formal recognition of Bangladesh in February 1974 at
-              the occasion of the second session of the Organization of Islamic
-              Countries (OIC) in Lahore was followed by a constitutional
-              amendment to redefine Pakistan's sovereign boundaries.
-            </p>
           </div>
           <div className={styles.view_content_container}>
             <PhotoContainer
@@ -223,7 +217,7 @@ function AfterTheWar() {
                 allowFullScreen
               ></iframe>
               <p className={styles.video_caption}>
-                Zulfiqar Ali Bhutto welcomes Sheikh Mujibur rahman to Lahore for
+                Zulfiqar Ali Bhutto welcomes Sheikh Mujibur Rahman to Lahore for
                 the International Islamic Conference
               </p>
             </div>

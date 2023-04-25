@@ -2,13 +2,18 @@ import SectionHeading from "../../components/SectionHeading.js";
 import styles from "./css-modules/news.module.css";
 import FadeRR from "react-reveal/Fade";
 
-function November() {
+function November({newspaper}) {
+  const dawnStyles = `${styles.view_para_news} ${(newspaper === "Dawn") ? styles.boldAndGrey : styles.unBoldAndBlack}`;
+  const jangStyles = `${styles.jang} ${(newspaper === "Jang") ? styles.boldAndGrey : styles.unBoldAndBlack}`;
+  const nwaqtStyles = `${styles.nwakt} ${(newspaper === "Nawai Waqt") ? styles.boldAndGrey : styles.unBoldAndBlack}`;
+
+
   return (
     <FadeRR top distance="10px">
       <div className={styles.view_content_container}>
         <SectionHeading heading="Situation Deteriorates in East Wing" />
-        <p className={styles.view_para_news}>
-          <span className={styles.jang}>
+        <p className={dawnStyles}>
+          <span className={jangStyles}>
             On 1 Dec, it was reported that 28 Pakistanis had been martyred by
             Indian bombing, that the convener of the Peace Committee had been
             shot; and that 200 Razakars took oath in Rajshahi to protect
@@ -36,7 +41,7 @@ function November() {
           On November 6, instances of stabbing, firing and bombing were reported
           in Dacca and Narayanganj, resulting in the deaths of 3 persons and
           woundings of 4.
-          <span className={styles.jang}>
+          <span className={jangStyles}>
             On 7 Nov, Bhutto is reported to have met Zhou Enlai, who assures
             Pakistan of Chinese support against aggression. At the same time, an
             Indian attempt to capture the border villages in Sylhet was foiled.
@@ -45,18 +50,18 @@ function November() {
             member of Assembly, in Dhaka.
           </span>
         </p>
-        <p className={styles.view_para_news}>
+        <p className={dawnStyles}>
           On November 10, Pakistan Armed Forces were reported to have
           counter-acted a major Indian offensive in Belonia bulge of Naokhali
           district.
-          <span className={styles.jang}>
+          <span className={jangStyles}>
             40 Indians were killed and 80 injured.
           </span>
           The offensive was supported by tanks and machine guns.
-          <span className={styles.jang}>
+          <span className={jangStyles}>
             40 Indians were killed and 80 injured.
           </span>
-          <span className={styles.jang}>
+          <span className={jangStyles}>
             India also dropped 1600 bombs on 18 villages. On 10 Nov a stupendous
             break was reported between the traitor Awami League and Mukti
             Bahini. Brigadier Zia was removed, Major Musharraf killed. On 11 Nov
@@ -83,13 +88,13 @@ function November() {
             many.
           </span>
         </p>
-        <p className={styles.view_para_news}>
+        <p className={dawnStyles}>
           On November 19, a bomb blast at the local office of the Central
           Department of Films and Publications (DFP) in Dacca was reported.
         </p>
         <SectionHeading heading="Indira Gandhi’s Statement " />
-        <p className={styles.view_para_news}>
-          <span className={styles.jang}>
+        <p className={dawnStyles}>
+          <span className={jangStyles}>
             On 2 Nov, Gandhi said that Pakistan should hold talks with the
             leaders of Bangladesh, while Yahya says that the establishment of
             Bangladesh would be an act of war. Indira’s visit to the West is an
@@ -100,7 +105,7 @@ function November() {
           conference, she repeated statements about “genocide” in East Pakistan
           and called the Western world to rally for India’s support and upkeep
           of the “avalanche of refugees.”
-          <span className={styles.jang}>
+          <span className={jangStyles}>
             Bhutto said that if there is a war, the colour of the Indus and the
             Ganges would change. On 12 Nov, Gandhi says that without the release
             of Mujib the refugees cannot go back. On 18 Nov, Indira is reported
@@ -111,19 +116,19 @@ function November() {
           </span>
         </p>
         <SectionHeading heading="International Affairs" />
-        <p className={styles.view_para_news}>
+        <p className={dawnStyles}>
           On November 12, the “Guardian” reported from London that increasing
           evidence of augmentation of Indian arms supply to guerrillas had been
           revealed. This followed the Russian assurance of replenishing Soviet
           weapons to India.
         </p>
-        <p className={styles.view_para_news}>
+        <p className={dawnStyles}>
           China called India to end its policy of interference in Pakistan’s
           internal affairs and blamed it for the exacerbating refugee crisis.
         </p>
         <SectionHeading heading="Political Situation in Pak" />
-        <p className={styles.view_para_news}>
-          <span className={styles.jang}>
+        <p className={dawnStyles}>
+          <span className={jangStyles}>
             On 15 Nov, Nurul Amin is reported to have stated that if the seat of
             power is not given to an E Pak, the country wouldn’t stay united. On
             16 Bhutto is reported to have responded by saying that if the PM is
@@ -160,16 +165,16 @@ function November() {
           </span>
         </p>
         <SectionHeading heading="The War Begins" />
-        <p className={styles.view_para_news}>
+        <p className={dawnStyles}>
           On November 22, India without issuing a war declaration had launched
           an all-out offensive against East Pakistan. This proceeded a month of
           border skirmishes and the build-up of above 12 Indian infantry
           divisions.
         </p>
-        <p className={styles.view_para_news}>
+        <p className={dawnStyles}>
           On November 23, Pakistan Armed Forces were reported to have
           annihilated an Indian Battalion at Comilla, killing 19 enemy soldiers.
-          <span className={styles.jang}>
+          <span className={jangStyles}>
             7 enemy tanks destroyed in a terrible war or the border of Jessore.
             The attack of 2 brigades of foot soldiers, a tank regiment, and
             armoured cars repelled. 90 Indians killed, 160 injured. 4 Pakistanis
@@ -177,12 +182,12 @@ function November() {
           </span>
           Meanwhile, Yahya Khan announced a State of Emergency in the country.
         </p>
-        <p className={styles.view_para_news}>
+        <p className={dawnStyles}>
           On November 24, India was reported to have [J: attacked E Pak from 3
           directions] and opened another war front at Hilli in Dinajpur
           District. Two enemy tanks were obliterated and India faced heavy
           casualties.
-          <span className={styles.jang}>
+          <span className={jangStyles}>
             130 Indian soldiers were killed, 18 tanks destroyed, while 7
             Pakistanis were martyred.
           </span>
@@ -192,58 +197,58 @@ function November() {
           that India had captured under intensive artillery fighting. The
           Indians however made a fresh attack in the Hills area, from where they
           had been entirely driven out.
-          <span className={styles.jang}>
+          <span className={jangStyles}>
             Reports came of Indian soldiers on the border of E Pak forcing
             themselves criminally on the local women and the refugees. Saudi
             Arabia gifts Pakistan 75 war planes.
           </span>
         </p>
-        <p className={styles.view_para_news}>
-          <span className={styles.jang}>
+        <p className={dawnStyles}>
+          <span className={jangStyles}>
             On 25 Nov, a whole battalion of the enemy was destroyed in the
             Comilla sector, 2 enemy planes were also destroyed near Jessore. 197
             Indians were killed, 500+ injured. Jessore airport was bombed using
             Russian tanks. Calls for the declaration of jihad.
           </span>
         </p>
-        <p className={styles.view_para_news}>
+        <p className={dawnStyles}>
           On November 26, Sylhet observed complete hartal as a protest against
           the unprovoked Indian attack on Pakistan. A huge procession of 50,000
           people paraded through the streets, chanting slogans such of Pakistan
           Zindabad.
-          <span className={styles.jang}>
+          <span className={jangStyles}>
             It was reported that the enemy had been pushed away from Sylhet. 300
             Indians killed and injured in Zakiganj and Atgram while the
             Pakistani army strengthened positions in Binapur and Chaatgaam.
           </span>
         </p>
-        <p className={styles.view_para_news}>
+        <p className={dawnStyles}>
           On November 27, Pakistan troops were reported to have repelled 5
           Indian battalion-size attacks in Jessore, Comilla, and Nokhali
           Districts. 1000 deaths were reported in a span of six days,
-          <span className={styles.jang}>
+          <span className={jangStyles}>
             300 alone on the 27th. The US foreign minister says that both Pak
             and India should remove their forces from the border. There were
             demands that in order to stop Indian aggression, it should be
             attacked from W Pak.
           </span>
         </p>
-        <p className={styles.view_para_news}>
+        <p className={dawnStyles}>
           On November 28, India launched fresh large-scale offensive against
           Pakistan using three armored regiments, two divisions, and several
           artillery units. The Army was also reportedly being supported by the
           Indian Air Force.
-          <span className={styles.jang}>
+          <span className={jangStyles}>
             There was danger of an Indian attack on W Pak.
           </span>
         </p>
-        <p className={styles.view_para_news}>
+        <p className={dawnStyles}>
           Delhi’s involvement in East Wing was also reported to have been
           featured in headlines around the world. On November 29, Yahya Khan
           communicated with the U.N Secretary-General U Thant, inviting his
           attention to the rapidly deteriorating East Pakistan crisis, and asked
           for the stationing of U.N observers.
-          <span className={styles.jang}>
+          <span className={jangStyles}>
             Indira says that India will not accept any pressure from either the
             big nations or the UN. Nixon says that the US will intervene to stop
             an Indo-Pak clash. India has prepared an attack on Sindh border.
