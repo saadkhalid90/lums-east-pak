@@ -98,7 +98,7 @@ function LocalNews() {
         <div className={styles.view_content_wrapper}>
           <h3 className={styles.legend_header}>Click on Newspaper Logo</h3>
           <p className={styles.legend_subheader}>
-            To highlight news from one newspaper source
+            To highlight news from one newspaper source. Click anywhere on the screen to unhighlight
           </p>
           <div className={styles.newspaper_logo_contain}>
             <div

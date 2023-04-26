@@ -197,6 +197,8 @@
 .legend_subheader {
   font-weight: 400;
   font-size: 12px;
+  max-width: 370px;
+  text-align: center;
 }
 
 .one_paper_contain {

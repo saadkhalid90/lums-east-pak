@@ -100,9 +100,6 @@
   color: #000;
 }
 
-.jang, .nwakt {
-}
-
 .jang::before {
   content: ' ';
 }
