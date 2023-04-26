@@ -445,6 +445,10 @@
     margin: 20px 0px;
     font-size: 0.8rem;
   }
+
+  .legend_subheader {
+    max-width: 280px;
+  }
 }
 
 @media screen and (max-width: 30em) {
@@ -472,6 +476,10 @@
   .video_caption {
     width: 350px;
   }
+
+  .legend_subheader {
+    max-width: 250px;
+  }
 }
 
 @media screen and (max-width: 20em) {
@@ -486,5 +494,9 @@
 
   .video_caption {
     width: 276px;
+  }
+
+  .legend_subheader {
+    max-width: 220px;
   }
 }
