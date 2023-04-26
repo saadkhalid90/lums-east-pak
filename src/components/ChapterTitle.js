@@ -27,11 +27,6 @@ function ChapterTitle({
   const [nextActive, setNextActive] = useState(false);
   const [loadedImages, setLoadedImages] = useState(0);
 
-  useEffect(() => {
-    console.log('imageLoaded!');
-    console.log(loadedImages);
-  }, [loadedImages])
-
   return (
     <header className={styles.chapter_title} style={titleStyle}>
       <div className={styles.chapter_title_content}>
