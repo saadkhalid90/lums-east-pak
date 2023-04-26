@@ -25,6 +25,12 @@ function ChapterTitle({
 }) {
   const [prevActive, setPrevActive] = useState(false);
   const [nextActive, setNextActive] = useState(false);
+  const [loadedImages, setLoadedImages] = useState(0);
+
+  useEffect(() => {
+    console.log('imageLoaded!');
+    console.log(loadedImages);
+  }, [loadedImages])
 
   return (
     <header className={styles.chapter_title} style={titleStyle}>
@@ -42,7 +48,9 @@ function ChapterTitle({
             <img
               key={`image${imgIdx}`}
               src={image.image}
-              className={styles[`img${imgIdx + 1}`]}
+              className={`${styles[`img${imgIdx + 1}`]} ${(loadedImages === 3) ? styles.active : ''}`}
+              onLoad={() => setLoadedImages(loadedImages + 1)}
+              style={{visibility: (loadedImages === 3) ? 'visible' : 'hidden'}}
             ></img>
           ))}
         </div>

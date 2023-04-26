@@ -168,19 +168,19 @@
   animation-fill-mode: forwards;
 }
 
-.img1 {
+.img1.active {
   width: 20%;
   animation: title_photo 0.6s ease-out 1;
   animation-fill-mode: forwards;
   opacity: 0;
 }
-.img3 {
+.img3.active {
   width: 20%;
   animation: title_photo 0.6s 0.4s ease-out 1;
   animation-fill-mode: forwards;
   opacity: 0;
 }
-.img2 {
+.img2.active {
   width: 50%;
   animation: title_photo 0.6s 0.2s ease-out 1;
   animation-fill-mode: forwards;
