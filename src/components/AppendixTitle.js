@@ -28,17 +28,10 @@ function ChapterTitle({ number, imgArr, title, subtitle, desc }) {
         </p>
         <div className={styles.img_contain}>
           {imgArr.map((image, imgIdx) => (
-            <FadeRR
-              top
-              distance="40px"
-              delay={imgIdx * imgDelay}
-              key={`image${imgIdx}`}
-            >
               <img
                 src={image.image}
                 className={styles[`img${imgIdx + 1}`]}
               ></img>
-            </FadeRR>
           ))}
         </div>
         <div className={styles.chev_title_and_subtitle}>
@@ -90,10 +83,7 @@ function ChapterTitle({ number, imgArr, title, subtitle, desc }) {
             {parseInt(number) < 5 ? `Next Chapter` : `Home page`}
           </div>
         </div>
-        <FadeRR bottom distance="20px" delay={100}>
-          <p className={styles.desc}>{desc}</p>
-        </FadeRR>
-        <FadeRR bottom distance="20px" delay={400}>
+        <p className={styles.desc}>{desc}</p>
           <div className={styles.chevron_container}>
             <p className={styles.chev_text}>Explore</p>
             <div className={styles.chevron_icon_container}>
@@ -103,7 +93,6 @@ function ChapterTitle({ number, imgArr, title, subtitle, desc }) {
               />
             </div>
           </div>
-        </FadeRR>
       </div>
     </header>
   );

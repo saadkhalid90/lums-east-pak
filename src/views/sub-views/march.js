@@ -8,7 +8,7 @@ function March({newspaper}) {
   const nwaqtStyles = `${styles.nwakt} ${(newspaper === "Nawai Waqt") ? styles.boldAndGrey : styles.unBoldAndBlack}`;
 
   return (
-    <FadeRR top distance="10px">
+    <FadeRR in={true} top distance="10px">
       <div className={styles.view_content_container}>
         <SectionHeading heading="Postponement of National Assembly Session" />
         <p className={dawnStyles}>
